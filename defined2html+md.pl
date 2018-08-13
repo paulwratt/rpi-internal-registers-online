@@ -317,7 +317,8 @@ sub toDOCS {
         ."</head>\n"
         ."<body>\n"
         ."<font face='sans-serif'><h1>RPi Registers</h1>\n"
-        ."<table border=0 class="nobdr"><tr><th>by Base Address</th><th>&nbps;</th><th>a-z Alphabetical</th></tr>\n<tr><td>";
+        ."<table border=0 class='nobdr'>"
+        ."<tr><th>by Base Address</th><th>&nbps;</th><th>a-z Alphabetical</th></tr>\n<tr><td>";
 
     # resort to base addresses
     my $adrs=$d;
@@ -341,7 +342,7 @@ sub toDOCS {
     print FH "</td><td>&nbsp;</td><td>\n";
 
     # output a-z first alphabetical
-    print FH "<table border=1><tr><th>Region</th><th>Base</th><th>Description</th></tr>\n";
+    print FH "<table><tr><th>Region</th><th>Base</th><th>Description</th></tr>\n";
     foreach my $k (sort keys %{$d}) {
 	print FH "<tr>"
             ."<td>&nbsp;<a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a>&nbsp;</td>"
@@ -351,7 +352,7 @@ sub toDOCS {
     }
     print FH "</table>\n";
 
-    print FH "</td></tr></table>"
+    print FH "</td></tr></table>\n";
     print FH "</font>\n</body>\n</html>\n";
     close(FH);
 
@@ -406,7 +407,7 @@ sub toDOCS {
 	    my $defs=$d->{$s}->{defs};
 	    print FH "<h2>Unsupported Defines</h2>\n";
 
-	    print FH "<table border=1><tr><th>Define</th><th>Value</th></tr>\n";
+	    print FH "<table><tr><th>Define</th><th>Value</th></tr>\n";
 	    foreach my $n (@k) {
 		if ($n eq $defs->{$n}) {
 		    print FH "<tr><td>&nbsp;".$n."&nbsp;</td><td align=center>&nbsp;<pre>UNKNOWN</pre>&nbsp;</td></tr>\n";
@@ -423,9 +424,9 @@ sub toDOCS {
 	    if (exists $r->{bits}) {
 		my $bits=$r->{bits};
 		#create register map
-		print FH "\<h3><a name='".$r->{name}."'>".$r->{name}."</a></h3>\n<h4>Address: ".$r->{addr}."</h4>\n";
+		print FH "<h3><a name='".$r->{name}."'>".$r->{name}."</a></h3>\n<h4>Address: ".$r->{addr}."</h4>\n";
 
-		print FH "<table border=1 style='border:collapse; border: 1px solid black;'>\n"
+		print FH "<table>"
                     ."<tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>\n";
 		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
 			       keys %{$bits}) {
@@ -439,7 +440,7 @@ sub toDOCS {
 		    ."<td align=center>&nbsp;".$f->{reset}."&nbsp;</td>"
 		    ."</tr>\n";
 		}
-                print FH "</table>\n\n";
+                print FH "</table><br>\n\n";
 	    }
 	}
         print FH "<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>\n";

@@ -189,11 +189,14 @@ sub toHTML {
     print "<h1>Raspberry Pi Registers Index</h1>\n<ul>\n";
     foreach my $k (sort keys %{$d}) {
 	if ($d->{$k}->{description}) {
-	    print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
-	        ."(".$d->{$k}->{base}.") - ".$d->{$k}->{description}."</a></li>\n";
+	    print "  <li><a href=\"#".$d->{$k}->{name}."\">"
+                ."(".$d->{$k}->{base}.")"
+                ." ".$d->{$k}->{name}." "
+	        ."- ".$d->{$k}->{description}."</a></li>\n";
 	} else {
-	    print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
-	        ."(".$d->{$k}->{base}.")</a></li>\n";
+	    print "  <li><a href=\"#".$d->{$k}->{name}."\">"
+                ." (".$d->{$k}->{base}.")"
+	        ." ".$d->{$k}->{name}."</a></li>\n";
 	}
     }
     print "</ul>\n";

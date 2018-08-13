@@ -1,15 +1,19 @@
 help:
 	@echo "Usage: make BRCMBASE=<base of exploded brcm_android.tar> <target>"
-	@echo "Targets: html md mw"
+	@echo "Targets: html docs md mw"
 
 clean:
 	rm -f rpi-registers.html  defined.txt md/*md
 
-all: html md mw
+all: html docs md mw
 
 html: testenv rpi-registers.html
 rpi-registers.html: defined2html+md.pl defined.txt
 	perl defined2html+md.pl -html defined.txt > rpi-registers.html
+
+docs: testenv docs/index.html
+docs/index.html: defined2html+md.pl defined.txt
+	perl defined2html+md.pl -docs defined.txt
 
 md: testenv md/README.md
 md/README.md: defined2html+md.pl defined.txt

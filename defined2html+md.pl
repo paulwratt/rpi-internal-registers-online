@@ -407,7 +407,7 @@ sub toDOCS {
 		    ."<td>".$f->{reset}."</td>"
 		    ."</tr>\n";
 		}
-                print FH "</table>\n";
+                print FH "</table>\n\n";
 	    }
 	}
         print FH "</font>\n</body>\n</html>\n";

@@ -313,10 +313,11 @@ sub toDOCS {
     print FH "<html>\n"
         ."<head>\n"
         ."<title>RPi Registers</title>\n"
+        ."<style>table,td{ border: 1px solid black; } table.nobdr,table.nobdr td{ border:none; }</style>\n"
         ."</head>\n"
         ."<body>\n"
         ."<font face='sans-serif'><h1>RPi Registers</h1>\n"
-        ."<table border=0><tr><th>by Base Address</th><th>&nbps;</th><th>a-z Alphabetical</th></tr>\n<tr><td>";
+        ."<table border=0 class="nobdr"><tr><th>by Base Address</th><th>&nbps;</th><th>a-z Alphabetical</th></tr>\n<tr><td>";
 
     # resort to base addresses
     my $adrs=$d;
@@ -325,27 +326,27 @@ sub toDOCS {
         keys %{$adrs};
 
     # output base first numerical
-    print FH "<table border=1><tr><th>Base</th><th>Region</th><th>Description</th></tr>\n";
+    print FH "<table><tr><th>Base</th><th>Region</th><th>Description</th></tr>\n";
     foreach my $k (@basesorted) {
 	print FH "<tr>"
-            ."<td>".$d->{$k}->{base}."</td>"
+            ."<td><pre>".$d->{$k}->{base}."</pre></td>"
             ."<td><a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a></td>"
-            ."<td>".$d->{$k}->{description}."</td>"
+            ."<td>".$d->{$k}->{description}."&nbsp;</td>"
             ."</tr>\n";
     }
     print FH "</table>\n";
 
 
     # divider
-    print FH "</td><td>&nbsp;</td><td>\n"
+    print FH "</td><td>&nbsp;</td><td>\n";
 
     # output a-z first alphabetical
     print FH "<table border=1><tr><th>Region</th><th>Base</th><th>Description</th></tr>\n";
     foreach my $k (sort keys %{$d}) {
 	print FH "<tr>"
-            ."<td><a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a></td>"
-            ."<td>".$d->{$k}->{base}."</td>"
-            ."<td>".$d->{$k}->{description}."</td>"
+            ."<td>&nbsp;<a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a>&nbsp;</td>"
+            ."<td>&nbsp;<pre>".$d->{$k}->{base}."&nbsp;</pre></td>"
+            ."<td>&nbsp;".$d->{$k}->{description}."&nbsp;</td>"
             ."</tr>\n";
     }
     print FH "</table>\n";
@@ -361,22 +362,23 @@ sub toDOCS {
         print FH "<html>\n"
             ."<head>\n"
             ."<title>".$d->{$s}->{name}." - RPi Registers</title>\n"
+            ."<style>table,td { border: 1px solid black; }</style>\n"
             ."</head>\n"
             ."<body>\n"
             ."<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>\n";
 	print FH "<h1>Register Region: ".$d->{$s}->{name}." (".$d->{$s}->{base}.")</h1>\n";
 
 	print FH "<h2>Info</h2>\n";
-	print FH "<table border=1><tr><th>Name</th><th>Value</th></tr>\n";
+	print FH "<table><tr><th>Name</th><th>Value</th></tr>\n";
 	for my $k ("description", "notes", "base","id","password") {
 	    if ($d->{$s}->{$k}) {
-		print FH "<tr><td>".$k."</td><td>".$d->{$s}->{$k}."</td></tr>\n";
+		print FH "<tr><td>&nbsp;".$k."&nbsp;</td><td>&nbsp;<pre>".$d->{$s}->{$k}."</pre>&nbsp;</td></tr>\n";
 	    }
 	}
         print FH "</table>\n\n";
 
 	print FH "<h2>Registers</h2>\n";
-	print FH "<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>\n";
+	print FH "<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>\n";
 	my $regs=$d->{$s}->{regs};
 	my @regssorted = sort
 	    { hex($regs->{$a}->{addr}) <=> hex($regs->{$b}->{addr}) }
@@ -385,16 +387,16 @@ sub toDOCS {
 	foreach my $k (@regssorted) {
 	    my $r = $regs->{$k};
 	    if (exists $r->{bits}) {
-		print FH "<tr><td><a hre='#".lc($k)."'>".$r->{name}."</a></td>";
+		print FH "<tr><td>&nbsp;<a href='#".lc($k)."'>".$r->{name}."</a>&nbsp;</td>";
 	    } else {
-		print FH "<tr><td>".$r->{name}."</td>";
+		print FH "<tr><td>&nbsp;".$r->{name}."&nbsp;</td>";
 	    }
 	    print FH ""
-                ."<td>".$r->{addr}."</td>"
-	        ."<td>".$r->{type}."</td>"
-	        ."<td>".$r->{width}."</td>"
-	        ."<td>".$r->{mask}."</td>"
-	        ."<td>".$r->{reset}."</td>"
+                ."<td>&nbsp;<pre>".$r->{addr}."</pre>&nbsp;</td>"
+	        ."<td align=center>&nbsp;".$r->{type}."&nbsp;</td>"
+	        ."<td align=center>&nbsp;".$r->{width}."&nbsp;</td>"
+	        ."<td>&nbsp;<pre>".$r->{mask}."</pre>&nbsp;</td>"
+	        ."<td align=center>&nbsp;<pre>".$r->{reset}."</pre>&nbsp;</td>"
 	        ."</tr>\n";
 	}
         print FH "</table>\n\n";
@@ -407,9 +409,9 @@ sub toDOCS {
 	    print FH "<table border=1><tr><th>Define</th><th>Value</th></tr>\n";
 	    foreach my $n (@k) {
 		if ($n eq $defs->{$n}) {
-		    print FH "<tr><td>".$n."</td><td>UNKNOWN</td></tr>\n";
+		    print FH "<tr><td>&nbsp;".$n."&nbsp;</td><td align=center>&nbsp;<pre>UNKNOWN</pre>&nbsp;</td></tr>\n";
 		} else {
-		    print FH "<tr><td>".$n."</td><td>".$defs->{$n}."</td></tr>\n";
+		    print FH "<tr><td>&nbsp;".$n."&nbsp;</td><td align=center>&nbsp;<pre>".$defs->{$n}."</pre>&nbsp;</td></tr>\n";
 		}
 	    }
             print FH "</table>\n\n";
@@ -423,22 +425,24 @@ sub toDOCS {
 		#create register map
 		print FH "\<h3><a name='".$r->{name}."'>".$r->{name}."</a></h3>\n<h4>Address: ".$r->{addr}."</h4>\n";
 
-		print FH "<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>\n";
+		print FH "<table border=1 style='border:collapse; border: 1px solid black;'>\n"
+                    ."<tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>\n";
 		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
 			       keys %{$bits}) {
 		    my $f=$bits->{$b};
 		    print FH "<tr>"
-                    ."<td>".$f->{name}."</td>"
-		    ."<td>".$f->{lsb}."</td>"
-		    ."<td>".$f->{msb}."</td>"
-		    ."<td>".$f->{set}."</td>"
-		    ."<td>".$f->{clear}."</td>"
-		    ."<td>".$f->{reset}."</td>"
+                    ."<td>&nbsp;".$f->{name}."&nbsp;</td>"
+		    ."<td align=center>&nbsp;".$f->{lsb}."&nbsp;</td>"
+		    ."<td align=center>&nbsp;".$f->{msb}."&nbsp;</td>"
+		    ."<td>&nbsp;<pre>".$f->{set}."</pre></td>"
+		    ."<td>&nbsp;<pre>".$f->{clear}."</pre>&nbsp;</td>"
+		    ."<td align=center>&nbsp;".$f->{reset}."&nbsp;</td>"
 		    ."</tr>\n";
 		}
                 print FH "</table>\n\n";
 	    }
 	}
+        print FH "<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>\n";
         print FH "</font>\n</body>\n</html>\n";
 	close(FH);
     }

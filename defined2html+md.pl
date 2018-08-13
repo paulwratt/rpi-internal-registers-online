@@ -183,17 +183,17 @@ sub parseDefined {
 
 sub toHTML {
     my ($d)=@_;
-    # start with the html
-    print "<html>\n<body>\n";
+    # start with the html head tags
+    print "<html>\n<head>\n<title>Raspberry Pi Registers</title>\n</head>\n<body>\n<font face='sans-serif'>\n";
     # now the index
-    print "<h1>Index</h1>\n<ul>\n";
+    print "<h1>Raspberry Pi Registers Index</h1>\n<ul>\n";
     foreach my $k (sort keys %{$d}) {
 	if ($d->{$k}->{description}) {
 	    print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
-	    ."(".$d->{$k}->{base}.") - ".$d->{$k}->{description}."</a></li>\n";
+	        ."(".$d->{$k}->{base}.") - ".$d->{$k}->{description}."</a></li>\n";
 	} else {
 	    print "  <li><a href=\"#".$d->{$k}->{name}."\">".$d->{$k}->{name}
-	    ."(".$d->{$k}->{base}.")</a></li>\n";
+	        ."(".$d->{$k}->{base}.")</a></li>\n";
 	}
     }
     print "</ul>\n";
@@ -271,7 +271,7 @@ sub toHTML {
 		my $bits=$r->{bits};
 		#create register map
 		print "<h2><a name=\"".$k."\">Register:".$r->{name}
-		." (".$r->{addr}.")"
+		    ." (".$r->{addr}.")"
 		    ."</h2><br/>\n";
 		print "<table border=\"1\">\n"
 		    ."  <tr>\n"
@@ -299,6 +299,116 @@ sub toHTML {
 	    }
 	}
     }
+    # close the html tags 
+    print "</font></body></html>\n"
+}
+
+sub toDocs {
+    my ($d)=@_;
+    # first create the region index.html
+    open(FH,">","docs/index.html");
+    print FH "<html>\n"
+        ."<head>\n"
+        ."<title>RPi Registers</title>\n"
+        ."</head>\n"
+        ."<body>\n"
+        ."<font face='sans-serif'><h1>RPi Registers</h1>\n";
+
+    print FH "<table border=1><tr><th>Region</th><th>Base</th><th>Description</th></tr>\n";
+    foreach my $k (sort keys %{$d}) {
+	print FH "<tr><td><a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a></td><td>".$d->{$k}->{base}."</td><td>".$d->{$k}->{description}."</td></tr>\n";
+    }
+    print FH "</table>\n</font>\n</body>\n</html>\n";
+    close(FH);
+
+    # and now the html sections
+    foreach my $s (sort keys %{$d}) {
+
+	open(FH,">","docs/Region_".$d->{$s}->{name}.".html");
+        print FH "<html>\n"
+            ."<head>\n"
+            ."<title>".$d->{$s}->{name}." - RPi Registers</title>\n"
+            ."</head>\n"
+            ."<body>\n"
+            ."<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>\n";
+	print FH "<h1>Register Region: ".$d->{$s}->{name}." (base: ".$d->{$s}->{base}."</h1>\n";
+
+	print FH "<h2>Info</h2>\n";
+	print FH "<table border=1><tr><th>Name</th><th>Value</th></tr>\n";
+	for my $k ("description", "notes", "base","id","password") {
+	    if ($d->{$s}->{$k}) {
+		print FH "<tr><td>".$k."</td><td>".$d->{$s}->{$k}."</td></tr>\n";
+	    }
+	}
+        print FH "</table>\n\n";
+
+	print FH "<h2>Registers</h2>\n";
+	print FH "<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>\n";
+	my $regs=$d->{$s}->{regs};
+	my @regssorted = sort
+	    { hex($regs->{$a}->{addr}) <=> hex($regs->{$b}->{addr}) }
+	    keys %{$regs};
+
+	foreach my $k (@regssorted) {
+	    my $r = $regs->{$k};
+	    if (exists $r->{bits}) {
+		print FH "<tr><td><a hre='#".lc($k)."'>".$r->{name}."</a></td>";
+	    } else {
+		print FH "<tr><td>".$r->{name}."</td>";
+	    }
+	    print FH ""
+                ."<td>".$r->{addr}."</td>"
+	        ."<td>".$r->{type}."</td>"
+	        ."<td>".$r->{width}."</td>"
+	        ."<td>".$r->{mask}."</td>"
+	        ."<td>".$r->{reset}."</td>"
+	        ."</tr>\n";
+	}
+        print FH "</table>\n\n";
+
+	my @k=sort keys %{$d->{$s}->{defs}};
+	if ($#k > -1) {
+	    my $defs=$d->{$s}->{defs};
+	    print FH "<h2>Unsupported Defines</h2>\n";
+
+	    print FH "<table border=1><tr><th>Define</th><th>Value</th></tr>\n";
+	    foreach my $n (@k) {
+		if ($n eq $defs->{$n}) {
+		    print FH "<tr><td>".$n."</td><td>UNKNOWN</td></tr>\n";
+		} else {
+		    print FH "<tr><td>".$n."</td><td>".$defs->{$n}."</td></tr>\n";
+		}
+	    }
+            print FH "</table>\n\n";
+	}
+
+	print FH "<h2>Register info</h2>\n";
+	foreach my $k (@regssorted) {
+	    my $r = $regs->{$k};
+	    if (exists $r->{bits}) {
+		my $bits=$r->{bits};
+		#create register map
+		print FH "\<h3><a name='".$r->{name}."'>".$r->{name}."</a></h3>\n<h4>Address: ".$r->{addr}."</h4>\n";
+
+		print FH "<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>\n";
+		foreach my $b (sort {$bits->{$a}->{lsb} <=> $bits->{$b}->{lsb}}
+			       keys %{$bits}) {
+		    my $f=$bits->{$b};
+		    print FH "<tr>"
+                    ."<td>".$f->{name}."</td>"
+		    ."<td>".$f->{lsb}."</td>"
+		    ."<td>".$f->{msb}."</td>"
+		    ."<td>".$f->{set}."</td>"
+		    ."<td>".$f->{clear}."</td>"
+		    ."<td>".$f->{reset}."</td>"
+		    ."</tr>\n";
+		}
+                print FH "</table>\n";
+	    }
+	}
+        print FH "</font>\n</body>\n</html>\n";
+	close(FH);
+    }
 }
 
 sub toMD {
@@ -313,7 +423,7 @@ sub toMD {
     }
     close(FH);
 
-    # and now the sections
+    # and now the md sections
     foreach my $s (sort keys %{$d}) {
 
 	open(FH,">","md/Region_".$d->{$s}->{name}.".md");
@@ -373,7 +483,7 @@ sub toMD {
 	    if (exists $r->{bits}) {
 		my $bits=$r->{bits};
 		#create register map
-		print FH "\n### $r->{name}\n Address: ".$r->{addr}."\n\n";
+		print FH "\n### ".$r->{name}."\n Address: ".$r->{addr}."\n\n";
 
 		print FH "| field_name | start_bit | end_bit | set | clear | reset |\n";
 		print FH "| --- | --- | --- | --- | --- | --- |\n";

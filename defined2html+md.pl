@@ -316,7 +316,11 @@ sub toDOCS {
 
     print FH "<table border=1><tr><th>Region</th><th>Base</th><th>Description</th></tr>\n";
     foreach my $k (sort keys %{$d}) {
-	print FH "<tr><td><a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a></td><td>".$d->{$k}->{base}."</td><td>".$d->{$k}->{description}."</td></tr>\n";
+	print FH "<tr>"
+            ."<td><a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a></td>"
+            ."<td>".$d->{$k}->{base}."</td>"
+            ."<td>".$d->{$k}->{description}."</td>"
+            ."</tr>\n";
     }
     print FH "</table>\n</font>\n</body>\n</html>\n";
     close(FH);

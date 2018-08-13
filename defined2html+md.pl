@@ -303,7 +303,7 @@ sub toHTML {
     print "</font></body></html>\n"
 }
 
-sub toDocs {
+sub toDOCS {
     my ($d)=@_;
     # first create the region index.html
     open(FH,">","docs/index.html");
@@ -608,13 +608,15 @@ sub toMW {
 }
 
 if ($#ARGV <1) {
-    print STDERR "Usage: $0 [-html|-markdown|-mediawiki] <defined.txt>\n";
+    print STDERR "Usage: $0 [-html|-docs|-markdown|-mediawiki] <defined.txt>\n";
     exit(1);
 }
 my $type=shift(@ARGV);
 my $d=parseDefined();
 if ($type eq "-html") {
     toHTML($d);
+} elsif ($type eq "-docs") {
+    toDOCS($d);
 } elsif ($type eq "-markdown") {
     toMD($d);
 } elsif ($type eq "-mediawiki") {

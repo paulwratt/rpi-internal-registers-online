@@ -1,93 +1,97 @@
 <html>
+<head>
+<title>Raspberry Pi Registers</title>
+</head>
 <body>
-<h1>Index</h1>
+<font face='sans-serif'>
+<h1>Raspberry Pi Registers Index</h1>
 <ul>
-  <li><a href="#Unhandled">Unhandled(NA)</a></li>
-  <li><a href="#A2W">A2W(0x7e102000) - Clock manager PLL control</a></li>
-  <li><a href="#APERF0">APERF0(0x7e009800)</a></li>
-  <li><a href="#APERF1">APERF1(0x7ee08000)</a></li>
-  <li><a href="#APHY_CSR">APHY_CSR(0x7ee06000) - SDRAM Adress (pin) control</a></li>
-  <li><a href="#ARM">ARM(0x7E00B000)</a></li>
-  <li><a href="#ASB">ASB(0x7e00a000)</a></li>
-  <li><a href="#AUX">AUX(0x7E215000)</a></li>
-  <li><a href="#AVE_IN">AVE_IN(0x7e910000)</a></li>
-  <li><a href="#AVE_OUT">AVE_OUT(0x7e240000)</a></li>
-  <li><a href="#CAM0">CAM0(0x7e800000)</a></li>
-  <li><a href="#CAM1">CAM1(0x7e801000)</a></li>
-  <li><a href="#CCP2TX">CCP2TX(0x7e001000)</a></li>
-  <li><a href="#CM">CM(0x7e101000) - Clock manager</a></li>
-  <li><a href="#CMI">CMI(0x7e802000)</a></li>
-  <li><a href="#CPG">CPG(0x7e211000)</a></li>
-  <li><a href="#DMA">DMA(0x7e007fe0)</a></li>
-  <li><a href="#DMA0">DMA0(0x7e007000)</a></li>
-  <li><a href="#DMA1">DMA1(0x7e007100)</a></li>
-  <li><a href="#DMA10">DMA10(0x7e007a00)</a></li>
-  <li><a href="#DMA11">DMA11(0x7e007b00)</a></li>
-  <li><a href="#DMA12">DMA12(0x7e007c00)</a></li>
-  <li><a href="#DMA13">DMA13(0x7e007d00)</a></li>
-  <li><a href="#DMA14">DMA14(0x7e007e00)</a></li>
-  <li><a href="#DMA15">DMA15(0x7ee05000)</a></li>
-  <li><a href="#DMA2">DMA2(0x7e007200)</a></li>
-  <li><a href="#DMA3">DMA3(0x7e007300)</a></li>
-  <li><a href="#DMA4">DMA4(0x7e007400)</a></li>
-  <li><a href="#DMA5">DMA5(0x7e007500)</a></li>
-  <li><a href="#DMA6">DMA6(0x7e007600)</a></li>
-  <li><a href="#DMA7">DMA7(0x7e007700)</a></li>
-  <li><a href="#DMA8">DMA8(0x7e007800)</a></li>
-  <li><a href="#DMA9">DMA9(0x7e007900)</a></li>
-  <li><a href="#DPHY_CSR">DPHY_CSR(0x7ee07000) - SDRAM Data (pin) control</a></li>
-  <li><a href="#DPI">DPI(0x7e208000)</a></li>
-  <li><a href="#DSI">DSI(0x7e209000)</a></li>
-  <li><a href="#DSI0">DSI0(0x7e209000)</a></li>
-  <li><a href="#DSI1">DSI1(0x7e700000)</a></li>
-  <li><a href="#EMMC">EMMC(0x7e300000)</a></li>
-  <li><a href="#FPGA">FPGA(0x7e20b600)</a></li>
-  <li><a href="#GP">GP(0x7e200000) - GPIO control</a></li>
-  <li><a href="#H264">H264(0x7f000000)</a></li>
-  <li><a href="#HD">HD(0x7e808000)</a></li>
-  <li><a href="#HDCP">HDCP(0x7e809000)</a></li>
-  <li><a href="#HDMI">HDMI(0x7e902000)</a></li>
-  <li><a href="#I2C0">I2C0(0x7e205000)</a></li>
-  <li><a href="#I2C1">I2C1(0x7e804000)</a></li>
-  <li><a href="#I2C2">I2C2(0x7e805000)</a></li>
-  <li><a href="#I2C_SPI_SLV">I2C_SPI_SLV(0x7e214000)</a></li>
-  <li><a href="#IC0">IC0(0x7e002000)</a></li>
-  <li><a href="#IC1">IC1(0x7e002800)</a></li>
-  <li><a href="#ISP">ISP(0x7ea00000)</a></li>
-  <li><a href="#JP">JP(0x7e005000)</a></li>
-  <li><a href="#L1">L1(0x7ee02000) - VC4-L1 control</a></li>
-  <li><a href="#L2">L2(0x7ee01000) - VC4-L2 control</a></li>
-  <li><a href="#MPHI">MPHI(0x7e006000)</a></li>
-  <li><a href="#MS">MS(0x7e000000)</a></li>
-  <li><a href="#NU">NU(0x7e008000)</a></li>
-  <li><a href="#OTP">OTP(0x7e20f000) - One Time programmable</a></li>
-  <li><a href="#PCM">PCM(0x7e203000)</a></li>
-  <li><a href="#PIARBCTL">PIARBCTL(0x7e80a000)</a></li>
-  <li><a href="#PIXELVALVE0">PIXELVALVE0(0x7e206000)</a></li>
-  <li><a href="#PIXELVALVE1">PIXELVALVE1(0x7e207000)</a></li>
-  <li><a href="#PIXELVALVE2">PIXELVALVE2(0x7e807000)</a></li>
-  <li><a href="#PM">PM(0x7e100000) - Power manager</a></li>
-  <li><a href="#PRM">PRM(0x7e20d000)</a></li>
-  <li><a href="#PWM">PWM(0x7e20c000)</a></li>
-  <li><a href="#RNG">RNG(0x7e104000)</a></li>
-  <li><a href="#SCALER">SCALER(0x7e400000)</a></li>
-  <li><a href="#SD">SD(0x7ee00000) - SDRAM</a></li>
-  <li><a href="#SH">SH(0x7e202000)</a></li>
-  <li><a href="#SLIM">SLIM(0x7e210000)</a></li>
-  <li><a href="#SMI">SMI(0x7e600000)</a></li>
-  <li><a href="#SPI">SPI(0x7e204000)</a></li>
-  <li><a href="#ST">ST(0x7e003000)</a></li>
-  <li><a href="#SYSAC">SYSAC(0x7e009000)</a></li>
-  <li><a href="#TB">TB(0x7e20b000)</a></li>
-  <li><a href="#TE">TE(0x7e20e000)</a></li>
-  <li><a href="#TS">TS(0x7e212000)</a></li>
-  <li><a href="#TXP">TXP(0x7e004000)</a></li>
-  <li><a href="#UART">UART(0x7e201000)</a></li>
-  <li><a href="#USB">USB(0x7e980000)</a></li>
-  <li><a href="#V3D">V3D(0x7ec00000)</a></li>
-  <li><a href="#VCE">VCE(0x7f100000)</a></li>
-  <li><a href="#VEC">VEC(0x7e806000)</a></li>
-  <li><a href="#VPU_ARB_CTRL">VPU_ARB_CTRL(0x7ee04000)</a></li>
+  <li><a href="#Unhandled"> (NA) Unhandled</a></li>
+  <li><a href="#A2W">(0x7e102000) A2W - Clock manager PLL control</a></li>
+  <li><a href="#APERF0"> (0x7e009800) APERF0</a></li>
+  <li><a href="#APERF1"> (0x7ee08000) APERF1</a></li>
+  <li><a href="#APHY_CSR">(0x7ee06000) APHY_CSR - SDRAM Adress (pin) control</a></li>
+  <li><a href="#ARM"> (0x7E00B000) ARM</a></li>
+  <li><a href="#ASB"> (0x7e00a000) ASB</a></li>
+  <li><a href="#AUX"> (0x7E215000) AUX</a></li>
+  <li><a href="#AVE_IN"> (0x7e910000) AVE_IN</a></li>
+  <li><a href="#AVE_OUT"> (0x7e240000) AVE_OUT</a></li>
+  <li><a href="#CAM0"> (0x7e800000) CAM0</a></li>
+  <li><a href="#CAM1"> (0x7e801000) CAM1</a></li>
+  <li><a href="#CCP2TX"> (0x7e001000) CCP2TX</a></li>
+  <li><a href="#CM">(0x7e101000) CM - Clock manager</a></li>
+  <li><a href="#CMI"> (0x7e802000) CMI</a></li>
+  <li><a href="#CPG"> (0x7e211000) CPG</a></li>
+  <li><a href="#DMA"> (0x7e007fe0) DMA</a></li>
+  <li><a href="#DMA0"> (0x7e007000) DMA0</a></li>
+  <li><a href="#DMA1"> (0x7e007100) DMA1</a></li>
+  <li><a href="#DMA10"> (0x7e007a00) DMA10</a></li>
+  <li><a href="#DMA11"> (0x7e007b00) DMA11</a></li>
+  <li><a href="#DMA12"> (0x7e007c00) DMA12</a></li>
+  <li><a href="#DMA13"> (0x7e007d00) DMA13</a></li>
+  <li><a href="#DMA14"> (0x7e007e00) DMA14</a></li>
+  <li><a href="#DMA15"> (0x7ee05000) DMA15</a></li>
+  <li><a href="#DMA2"> (0x7e007200) DMA2</a></li>
+  <li><a href="#DMA3"> (0x7e007300) DMA3</a></li>
+  <li><a href="#DMA4"> (0x7e007400) DMA4</a></li>
+  <li><a href="#DMA5"> (0x7e007500) DMA5</a></li>
+  <li><a href="#DMA6"> (0x7e007600) DMA6</a></li>
+  <li><a href="#DMA7"> (0x7e007700) DMA7</a></li>
+  <li><a href="#DMA8"> (0x7e007800) DMA8</a></li>
+  <li><a href="#DMA9"> (0x7e007900) DMA9</a></li>
+  <li><a href="#DPHY_CSR">(0x7ee07000) DPHY_CSR - SDRAM Data (pin) control</a></li>
+  <li><a href="#DPI"> (0x7e208000) DPI</a></li>
+  <li><a href="#DSI"> (0x7e209000) DSI</a></li>
+  <li><a href="#DSI0"> (0x7e209000) DSI0</a></li>
+  <li><a href="#DSI1"> (0x7e700000) DSI1</a></li>
+  <li><a href="#EMMC"> (0x7e300000) EMMC</a></li>
+  <li><a href="#FPGA"> (0x7e20b600) FPGA</a></li>
+  <li><a href="#GP">(0x7e200000) GP - GPIO control</a></li>
+  <li><a href="#H264"> (0x7f000000) H264</a></li>
+  <li><a href="#HD"> (0x7e808000) HD</a></li>
+  <li><a href="#HDCP"> (0x7e809000) HDCP</a></li>
+  <li><a href="#HDMI"> (0x7e902000) HDMI</a></li>
+  <li><a href="#I2C0"> (0x7e205000) I2C0</a></li>
+  <li><a href="#I2C1"> (0x7e804000) I2C1</a></li>
+  <li><a href="#I2C2"> (0x7e805000) I2C2</a></li>
+  <li><a href="#I2C_SPI_SLV"> (0x7e214000) I2C_SPI_SLV</a></li>
+  <li><a href="#IC0"> (0x7e002000) IC0</a></li>
+  <li><a href="#IC1"> (0x7e002800) IC1</a></li>
+  <li><a href="#ISP"> (0x7ea00000) ISP</a></li>
+  <li><a href="#JP"> (0x7e005000) JP</a></li>
+  <li><a href="#L1">(0x7ee02000) L1 - VC4-L1 control</a></li>
+  <li><a href="#L2">(0x7ee01000) L2 - VC4-L2 control</a></li>
+  <li><a href="#MPHI"> (0x7e006000) MPHI</a></li>
+  <li><a href="#MS"> (0x7e000000) MS</a></li>
+  <li><a href="#NU"> (0x7e008000) NU</a></li>
+  <li><a href="#OTP">(0x7e20f000) OTP - One Time programmable</a></li>
+  <li><a href="#PCM"> (0x7e203000) PCM</a></li>
+  <li><a href="#PIARBCTL"> (0x7e80a000) PIARBCTL</a></li>
+  <li><a href="#PIXELVALVE0"> (0x7e206000) PIXELVALVE0</a></li>
+  <li><a href="#PIXELVALVE1"> (0x7e207000) PIXELVALVE1</a></li>
+  <li><a href="#PIXELVALVE2"> (0x7e807000) PIXELVALVE2</a></li>
+  <li><a href="#PM">(0x7e100000) PM - Power manager</a></li>
+  <li><a href="#PRM"> (0x7e20d000) PRM</a></li>
+  <li><a href="#PWM"> (0x7e20c000) PWM</a></li>
+  <li><a href="#RNG"> (0x7e104000) RNG</a></li>
+  <li><a href="#SCALER"> (0x7e400000) SCALER</a></li>
+  <li><a href="#SD">(0x7ee00000) SD - SDRAM</a></li>
+  <li><a href="#SH"> (0x7e202000) SH</a></li>
+  <li><a href="#SLIM"> (0x7e210000) SLIM</a></li>
+  <li><a href="#SMI"> (0x7e600000) SMI</a></li>
+  <li><a href="#SPI"> (0x7e204000) SPI</a></li>
+  <li><a href="#ST"> (0x7e003000) ST</a></li>
+  <li><a href="#SYSAC"> (0x7e009000) SYSAC</a></li>
+  <li><a href="#TB"> (0x7e20b000) TB</a></li>
+  <li><a href="#TE"> (0x7e20e000) TE</a></li>
+  <li><a href="#TS"> (0x7e212000) TS</a></li>
+  <li><a href="#TXP"> (0x7e004000) TXP</a></li>
+  <li><a href="#UART"> (0x7e201000) UART</a></li>
+  <li><a href="#USB"> (0x7e980000) USB</a></li>
+  <li><a href="#V3D"> (0x7ec00000) V3D</a></li>
+  <li><a href="#VCE"> (0x7f100000) VCE</a></li>
+  <li><a href="#VEC"> (0x7e806000) VEC</a></li>
+  <li><a href="#VPU_ARB_CTRL"> (0x7ee04000) VPU_ARB_CTRL</a></li>
 </ul>
 <hr/>
 <h1><a name="Unhandled">Unhandled</a></h1><br/>
@@ -10248,7 +10252,7 @@
     <td>0000000000</td>
   </tr>
   <tr>
-    <td>APERF0_BW2_RPEND</td>
+    <td>APERF0_BW0_RPEND</td>
     <td>0x7e009868</td>
     <td>RO</td>
     <td>8</td>
@@ -10256,7 +10260,7 @@
     <td>0000000000</td>
   </tr>
   <tr>
-    <td>APERF0_BW0_RPEND</td>
+    <td>APERF0_BW2_RPEND</td>
     <td>0x7e009868</td>
     <td>RO</td>
     <td>8</td>
@@ -10791,7 +10795,7 @@
     <td>0000000000</td>
   </tr>
   <tr>
-    <td>APERF1_BW1_RPEND</td>
+    <td>APERF1_BW2_RPEND</td>
     <td>0x7ee08068</td>
     <td>RO</td>
     <td>8</td>
@@ -10799,7 +10803,7 @@
     <td>0000000000</td>
   </tr>
   <tr>
-    <td>APERF1_BW2_RPEND</td>
+    <td>APERF1_BW1_RPEND</td>
     <td>0x7ee08068</td>
     <td>RO</td>
     <td>8</td>
@@ -11960,7 +11964,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>ARM_1_SEM0</td>
+    <td>ARM_1_SEMS</td>
     <td>0x7e00b900</td>
     <td>RW</td>
     <td></td>
@@ -11968,7 +11972,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>ARM_1_SEMS</td>
+    <td>ARM_1_SEM0</td>
     <td>0x7e00b900</td>
     <td>RW</td>
     <td></td>
@@ -12160,7 +12164,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>ARM_2_SEM0</td>
+    <td>ARM_2_SEMS</td>
     <td>0x7e00ba00</td>
     <td>RW</td>
     <td></td>
@@ -12168,7 +12172,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>ARM_2_SEMS</td>
+    <td>ARM_2_SEM0</td>
     <td>0x7e00ba00</td>
     <td>RW</td>
     <td></td>
@@ -13513,14 +13517,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>AUX_MU_BDMS</td>
-    <td>0x7e215044</td>
-    <td>MU_BDMS</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>AUX_MU_IER</td>
     <td>0x7e215044</td>
     <td>MU_IER</td>
@@ -13529,9 +13525,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>AUX_MU_IIR</td>
-    <td>0x7e215048</td>
-    <td>MU_IIR</td>
+    <td>AUX_MU_BDMS</td>
+    <td>0x7e215044</td>
+    <td>MU_BDMS</td>
     <td></td>
     <td></td>
     <td></td>
@@ -13540,6 +13536,14 @@
     <td>AUX_MU_FCR</td>
     <td>0x7e215048</td>
     <td>MU_FCR</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AUX_MU_IIR</td>
+    <td>0x7e215048</td>
+    <td>MU_IIR</td>
     <td></td>
     <td></td>
     <td></td>
@@ -36596,14 +36600,6 @@
     <th>reset</th>
   </tr>
   <tr>
-    <td>FPGA_CTRL0_DIS_CTL0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0x00000001</td>
-    <td>0xfffffffe</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>FPGA_CTRL0_CAM_CTL0</td>
     <td>0</td>
     <td>0</td>
@@ -36612,12 +36608,12 @@
     <td></td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>1</td>
-    <td>-1</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
+    <td>FPGA_CTRL0_DIS_CTL0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0x00000001</td>
+    <td>0xfffffffe</td>
+    <td></td>
   </tr>
   <tr>
     <td>FPGA_CTRL0_CAM_CTL1</td>
@@ -36634,6 +36630,14 @@
     <td>0x00000002</td>
     <td>0xfffffffd</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>1</td>
+    <td>-1</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>missing definiton</td>
@@ -36660,20 +36664,20 @@
     <td></td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>3</td>
-    <td>1</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>FPGA_CTRL0_DIS_RST</td>
     <td>3</td>
     <td>3</td>
     <td>0x00000008</td>
     <td>0xfffffff7</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>3</td>
+    <td>1</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>FPGA_CTRL0_SD_PSU_EN</td>
@@ -39444,48 +39448,8 @@
     <th>reset</th>
   </tr>
   <tr>
-    <td>HDMI_PCI_MASK_CLEAR</td>
-    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x2c</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_TX_PHY_HDMI_TX_PHY_RESET_CTL</td>
-    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 0</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_PCI_MASK_STATUS</td>
-    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x24</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_PCI_MASK_SET</td>
-    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x28</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_HDMI_13_AUDIO_CFG_1</td>
-    <td>HDMI_BASE_ADDRESS + 336</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_TX_PHY_HDMI_TX_PHY_STATUS</td>
-    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 24</td>
+    <td>HDMI_TX_PHY_HDMI65_TX_PHY_TMDS_CFG</td>
+    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 20</td>
     <td>RW</td>
     <td></td>
     <td></td>
@@ -39500,118 +39464,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>HDMI_ASYNC_RM_PHASE_INC</td>
-    <td>(HDMI_BASE_ADDRESS + 0x300) + 12</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_HDMI_13_AUDIO_STATUS_1</td>
-    <td>HDMI_BASE_ADDRESS + 340</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_TX_PHY_HDMI_TX_PHY_SPARE</td>
-    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 32</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_PCI_STATUS</td>
-    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x18</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_ASYNC_RM_OFFSET</td>
-    <td>(HDMI_BASE_ADDRESS + 0x300) + 20</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_TX_PHY_HDMI_TX_PHY_CTL_2</td>
-    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 12</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_HDMI_HBR_AUDIO_PACKET_HEADER</td>
-    <td>HDMI_BASE_ADDRESS + 344</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_ASYNC_RM_RATE_RATIO</td>
-    <td>(HDMI_BASE_ADDRESS + 0x300) + 4</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_RAM_PACKET_RSVD_1</td>
-    <td>(HDMI_BASE_ADDRESS + 0x400) + 508</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_PCI_SET</td>
-    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x1c</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_ASYNC_RM_INTEGRATOR</td>
-    <td>(HDMI_BASE_ADDRESS + 0x300) + 16</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_PCI_CLEAR</td>
-    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x20</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_ASYNC_RM_CONTROL</td>
-    <td>(HDMI_BASE_ADDRESS + 0x300) + 0</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_TX_PHY_HDMI65_TX_PHY_TMDS_CFG</td>
-    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 20</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>HDMI_PERT_INSERT_ERR_SEPARATION</td>
     <td>HDMI_BASE_ADDRESS + 132</td>
     <td>RW</td>
@@ -39620,24 +39472,8 @@
     <td></td>
   </tr>
   <tr>
-    <td>HDMI_ASYNC_RM_FORMAT</td>
-    <td>(HDMI_BASE_ADDRESS + 0x300) + 24</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_ASYNC_RM_SAMPLE_INC</td>
-    <td>(HDMI_BASE_ADDRESS + 0x300) + 8</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>HDMI_TX_PHY_HDMI_TX_PHY_CTL_1</td>
-    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 8</td>
+    <td>HDMI_PCI_MASK_STATUS</td>
+    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x24</td>
     <td>RW</td>
     <td></td>
     <td></td>
@@ -39652,8 +39488,176 @@
     <td></td>
   </tr>
   <tr>
+    <td>HDMI_ASYNC_RM_PHASE_INC</td>
+    <td>(HDMI_BASE_ADDRESS + 0x300) + 12</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_TX_PHY_HDMI_TX_PHY_STATUS</td>
+    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 24</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_ASYNC_RM_FORMAT</td>
+    <td>(HDMI_BASE_ADDRESS + 0x300) + 24</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_PCI_STATUS</td>
+    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x18</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_ASYNC_RM_CONTROL</td>
+    <td>(HDMI_BASE_ADDRESS + 0x300) + 0</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_RAM_PACKET_RSVD_1</td>
+    <td>(HDMI_BASE_ADDRESS + 0x400) + 508</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_PCI_CLEAR</td>
+    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x20</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_TX_PHY_HDMI_TX_PHY_CTL_2</td>
+    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 12</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_HDMI_13_AUDIO_STATUS_1</td>
+    <td>HDMI_BASE_ADDRESS + 340</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_TX_PHY_HDMI_TX_PHY_RESET_CTL</td>
+    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 0</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_ASYNC_RM_SAMPLE_INC</td>
+    <td>(HDMI_BASE_ADDRESS + 0x300) + 8</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_PCI_SET</td>
+    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x1c</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_ASYNC_RM_OFFSET</td>
+    <td>(HDMI_BASE_ADDRESS + 0x300) + 20</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_TX_PHY_HDMI_TX_PHY_CTL_1</td>
+    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 8</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_ASYNC_RM_INTEGRATOR</td>
+    <td>(HDMI_BASE_ADDRESS + 0x300) + 16</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_ASYNC_RM_RATE_RATIO</td>
+    <td>(HDMI_BASE_ADDRESS + 0x300) + 4</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_TX_PHY_HDMI_TX_PHY_SPARE</td>
+    <td>(HDMI_BASE_ADDRESS + 0x2c0) + 32</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_HDMI_13_AUDIO_CFG_1</td>
+    <td>HDMI_BASE_ADDRESS + 336</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_HDMI_HBR_AUDIO_PACKET_HEADER</td>
+    <td>HDMI_BASE_ADDRESS + 344</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>HDMI_TX_PHY_HDMI_TX_PHY_PLL_CFG</td>
     <td>(HDMI_BASE_ADDRESS + 0x2c0) + 16</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_PCI_MASK_CLEAR</td>
+    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x2c</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>HDMI_PCI_MASK_SET</td>
+    <td>(HDMI_BASE_ADDRESS + 0x340) + 0x28</td>
     <td>RW</td>
     <td></td>
     <td></td>
@@ -52736,14 +52740,6 @@
     <td></td>
   </tr>
   <tr>
-    <td><a href="#SCALER_DISPECTRL">SCALER_DISPECTRL</a></td>
-    <td>0x7e40000c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_ALT_CONTROL</td>
     <td>0x7e40000c</td>
     <td>RW</td>
@@ -52752,11 +52748,11 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_PROFILE</td>
-    <td>0x7e400010</td>
+    <td><a href="#SCALER_DISPECTRL">SCALER_DISPECTRL</a></td>
+    <td>0x7e40000c</td>
     <td>RW</td>
-    <td></td>
-    <td></td>
+    <td>32</td>
+    <td>0xffffffff</td>
     <td></td>
   </tr>
   <tr>
@@ -52768,11 +52764,11 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPDITHER</td>
-    <td>0x7e400014</td>
+    <td>SCALER_PROFILE</td>
+    <td>0x7e400010</td>
     <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -52781,6 +52777,14 @@
     <td>RW</td>
     <td></td>
     <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_DISPDITHER</td>
+    <td>0x7e400014</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
     <td></td>
   </tr>
   <tr>
@@ -52824,19 +52828,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPLIST2</td>
-    <td>0x7e400028</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_DISP_LIST_2</td>
     <td>0x7e400028</td>
     <td>RW</td>
     <td></td>
     <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_DISPLIST2</td>
+    <td>0x7e400028</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
     <td></td>
   </tr>
   <tr>
@@ -52880,19 +52884,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPCTL_0</td>
-    <td>0x7e400040</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_DISPCTRL0</td>
     <td>0x7e400040</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_DISPCTL_0</td>
+    <td>0x7e400040</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -52936,19 +52940,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPCTRL1</td>
-    <td>0x7e400050</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_DISPCTL_1</td>
     <td>0x7e400050</td>
     <td>RW</td>
     <td></td>
     <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_DISPCTRL1</td>
+    <td>0x7e400050</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
     <td></td>
   </tr>
   <tr>
@@ -52968,19 +52972,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPSTAT1</td>
-    <td>0x7e400058</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_DISPSTAT_1</td>
     <td>0x7e400058</td>
     <td>RW</td>
     <td></td>
     <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_DISPSTAT1</td>
+    <td>0x7e400058</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
     <td></td>
   </tr>
   <tr>
@@ -53000,19 +53004,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPCTL_2</td>
-    <td>0x7e400060</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_DISPCTRL2</td>
     <td>0x7e400060</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_DISPCTL_2</td>
+    <td>0x7e400060</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -53032,14 +53036,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPSTAT_2</td>
-    <td>0x7e400068</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_DISPSTAT2</td>
     <td>0x7e400068</td>
     <td>RW</td>
@@ -53048,8 +53044,8 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_DISPBASE_2</td>
-    <td>0x7e40006c</td>
+    <td>SCALER_DISPSTAT_2</td>
+    <td>0x7e400068</td>
     <td>RW</td>
     <td></td>
     <td></td>
@@ -53061,6 +53057,14 @@
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_DISPBASE_2</td>
+    <td>0x7e40006c</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -53144,19 +53148,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>SCALER_GAM_DATA</td>
-    <td>0x7e4000e0</td>
-    <td>RW</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>SCALER_DISPGAMDAT</td>
     <td>0x7e4000e0</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCALER_GAM_DATA</td>
+    <td>0x7e4000e0</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
 </table>
@@ -53448,7 +53452,7 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>4</td>
+    <td>14</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -53457,22 +53461,6 @@
     <td>missing definiton</td>
     <td>32</td>
     <td>15</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>3</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>7</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -53504,6 +53492,22 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
+    <td>4</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>7</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
     <td>6</td>
     <td>NA</td>
     <td>NA</td>
@@ -53520,7 +53524,7 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>14</td>
+    <td>3</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -53675,14 +53679,6 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>8</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
     <td>28</td>
     <td>NA</td>
     <td>NA</td>
@@ -53691,7 +53687,7 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
-    <td>9</td>
+    <td>25</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -53700,22 +53696,6 @@
     <td>missing definiton</td>
     <td>32</td>
     <td>11</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>10</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>32</td>
-    <td>25</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -53739,7 +53719,31 @@
   <tr>
     <td>missing definiton</td>
     <td>32</td>
+    <td>9</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>8</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
     <td>30</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>32</td>
+    <td>10</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -60506,7 +60510,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>SYSAC_V3D_LIMITER_INCREMENT</td>
+    <td>SYSAC_V3D_LIMITER_ENABLE</td>
     <td>0</td>
     <td>0</td>
     <td>0x00000001</td>
@@ -60514,7 +60518,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>SYSAC_V3D_LIMITER_ENABLE</td>
+    <td>SYSAC_V3D_LIMITER_INCREMENT</td>
     <td>0</td>
     <td>0</td>
     <td>0x00000001</td>
@@ -61793,12 +61797,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>UART_LCR_STB</td>
+    <td>missing definiton</td>
     <td>2</td>
-    <td>2</td>
-    <td>0x00000004</td>
-    <td>0xfffffffb</td>
-    <td>0x0</td>
+    <td>0</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>UART_LCR_OUT1</td>
@@ -61809,12 +61813,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
+    <td>UART_LCR_STB</td>
     <td>2</td>
-    <td>0</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
+    <td>2</td>
+    <td>0x00000004</td>
+    <td>0xfffffffb</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>UART_LCR_PEN</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0x00000008</td>
+    <td>0xfffffff7</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>UART_LCR_OUT2</td>
@@ -61833,12 +61845,12 @@
     <td>NA</td>
   </tr>
   <tr>
-    <td>UART_LCR_PEN</td>
-    <td>3</td>
-    <td>3</td>
-    <td>0x00000008</td>
-    <td>0xfffffff7</td>
-    <td>0x0</td>
+    <td>missing definiton</td>
+    <td>4</td>
+    <td>2</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>UART_LCR_LOOP</td>
@@ -61855,14 +61867,6 @@
     <td>0x00000010</td>
     <td>0xffffffef</td>
     <td>0x0</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>4</td>
-    <td>2</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
   </tr>
   <tr>
     <td>UART_LCR_SP</td>
@@ -62233,14 +62237,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_GAXIDEV</td>
-    <td>0x7e980054</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>USB_GLPMCFG</td>
     <td>0x7e980054</td>
     <td>RW</td>
@@ -62249,11 +62245,11 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_MDIO_CSR</td>
-    <td>0x7e980080</td>
+    <td>USB_GAXIDEV</td>
+    <td>0x7e980054</td>
     <td>RW</td>
-    <td></td>
-    <td></td>
+    <td>32</td>
+    <td>0xffffffff</td>
     <td></td>
   </tr>
   <tr>
@@ -62262,6 +62258,14 @@
     <td>RW</td>
     <td>16</td>
     <td>0x0000ffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_MDIO_CSR</td>
+    <td>0x7e980080</td>
+    <td>RW</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -62281,19 +62285,19 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_GVBUSDRV</td>
-    <td>0x7e980088</td>
-    <td>RW</td>
-    <td>16</td>
-    <td>0x0000ffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>USB_VBUS_DRV</td>
     <td>0x7e980088</td>
     <td>RW</td>
     <td></td>
     <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_GVBUSDRV</td>
+    <td>0x7e980088</td>
+    <td>RW</td>
+    <td>16</td>
+    <td>0x0000ffff</td>
     <td></td>
   </tr>
   <tr>
@@ -62337,14 +62341,6 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DPTXFSIZ3</td>
-    <td>0x7e98010c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>USB_DIEPTXF3</td>
     <td>0x7e98010c</td>
     <td>RW</td>
@@ -62353,8 +62349,8 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF4</td>
-    <td>0x7e980110</td>
+    <td>USB_DPTXFSIZ3</td>
+    <td>0x7e98010c</td>
     <td>RW</td>
     <td>32</td>
     <td>0xffffffff</td>
@@ -62362,6 +62358,14 @@
   </tr>
   <tr>
     <td>USB_DPTXFSIZ4</td>
+    <td>0x7e980110</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DIEPTXF4</td>
     <td>0x7e980110</td>
     <td>RW</td>
     <td>32</td>
@@ -62433,7 +62437,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF9</td>
+    <td>USB_DPTXFSIZ9</td>
     <td>0x7e980124</td>
     <td>RW</td>
     <td>32</td>
@@ -62441,7 +62445,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DPTXFSIZ9</td>
+    <td>USB_DIEPTXF9</td>
     <td>0x7e980124</td>
     <td>RW</td>
     <td>32</td>
@@ -62481,7 +62485,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPTXF12</td>
+    <td>USB_DPTXFSIZ12</td>
     <td>0x7e980130</td>
     <td>RW</td>
     <td>32</td>
@@ -62489,7 +62493,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DPTXFSIZ12</td>
+    <td>USB_DIEPTXF12</td>
     <td>0x7e980130</td>
     <td>RW</td>
     <td>32</td>
@@ -63329,7 +63333,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS4</td>
+    <td>USB_DIEPDMAB4</td>
     <td>0x7e980998</td>
     <td>RW</td>
     <td>32</td>
@@ -63337,7 +63341,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB4</td>
+    <td>USB_DTXFSTS4</td>
     <td>0x7e980998</td>
     <td>RW</td>
     <td>32</td>
@@ -63377,7 +63381,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS5</td>
+    <td>USB_DIEPDMAB5</td>
     <td>0x7e9809b8</td>
     <td>RW</td>
     <td>32</td>
@@ -63385,7 +63389,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB5</td>
+    <td>USB_DTXFSTS5</td>
     <td>0x7e9809b8</td>
     <td>RW</td>
     <td>32</td>
@@ -63473,7 +63477,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS7</td>
+    <td>USB_DIEPDMAB7</td>
     <td>0x7e9809f8</td>
     <td>RW</td>
     <td>32</td>
@@ -63481,7 +63485,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB7</td>
+    <td>USB_DTXFSTS7</td>
     <td>0x7e9809f8</td>
     <td>RW</td>
     <td>32</td>
@@ -63521,7 +63525,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS8</td>
+    <td>USB_DIEPDMAB8</td>
     <td>0x7e980a18</td>
     <td>RW</td>
     <td>32</td>
@@ -63529,7 +63533,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB8</td>
+    <td>USB_DTXFSTS8</td>
     <td>0x7e980a18</td>
     <td>RW</td>
     <td>32</td>
@@ -63617,7 +63621,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB10</td>
+    <td>USB_DTXFSTS10</td>
     <td>0x7e980a58</td>
     <td>RW</td>
     <td>32</td>
@@ -63625,7 +63629,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS10</td>
+    <td>USB_DIEPDMAB10</td>
     <td>0x7e980a58</td>
     <td>RW</td>
     <td>32</td>
@@ -63761,7 +63765,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS13</td>
+    <td>USB_DIEPDMAB13</td>
     <td>0x7e980ab8</td>
     <td>RW</td>
     <td>32</td>
@@ -63769,7 +63773,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB13</td>
+    <td>USB_DTXFSTS13</td>
     <td>0x7e980ab8</td>
     <td>RW</td>
     <td>32</td>
@@ -63809,7 +63813,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS14</td>
+    <td>USB_DIEPDMAB14</td>
     <td>0x7e980ad8</td>
     <td>RW</td>
     <td>32</td>
@@ -63817,7 +63821,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB14</td>
+    <td>USB_DTXFSTS14</td>
     <td>0x7e980ad8</td>
     <td>RW</td>
     <td>32</td>
@@ -63857,7 +63861,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DTXFSTS15</td>
+    <td>USB_DIEPDMAB15</td>
     <td>0x7e980af8</td>
     <td>RW</td>
     <td>32</td>
@@ -63865,7 +63869,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DIEPDMAB15</td>
+    <td>USB_DTXFSTS15</td>
     <td>0x7e980af8</td>
     <td>RW</td>
     <td>32</td>
@@ -63913,47 +63917,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB12</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB6</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>USB_DOEPDMAB13</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB2</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB3</td>
-    <td>0x7e980b1c</td>
-    <td>RW</td>
-    <td>32</td>
-    <td>0xffffffff</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>USB_DOEPDMAB4</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -63969,7 +63933,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB11</td>
+    <td>USB_DOEPDMAB2</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -63977,7 +63941,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB10</td>
+    <td>USB_DOEPDMAB6</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -63985,7 +63949,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB1</td>
+    <td>USB_DOEPDMAB14</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -63994,6 +63958,38 @@
   </tr>
   <tr>
     <td>USB_DOEPDMAB7</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB12</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB4</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB0</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB10</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -64017,7 +64013,7 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB14</td>
+    <td>USB_DOEPDMAB1</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -64025,7 +64021,15 @@
     <td></td>
   </tr>
   <tr>
-    <td>USB_DOEPDMAB0</td>
+    <td>USB_DOEPDMAB3</td>
+    <td>0x7e980b1c</td>
+    <td>RW</td>
+    <td>32</td>
+    <td>0xffffffff</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>USB_DOEPDMAB11</td>
     <td>0x7e980b1c</td>
     <td>RW</td>
     <td>32</td>
@@ -65459,20 +65463,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>22</td>
-    <td>20</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>USB_GINTMSK_FET_SUSP</td>
     <td>22</td>
     <td>22</td>
     <td>0x00400000</td>
     <td>0xffbfffff</td>
     <td>0x0</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>22</td>
+    <td>20</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>missing definiton</td>
@@ -65558,14 +65562,6 @@
     <th>reset</th>
   </tr>
   <tr>
-    <td>USB_GRXSTSP_HST_CH_NUM</td>
-    <td>0</td>
-    <td>3</td>
-    <td>0x0000000f</td>
-    <td>0xfffffff0</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_GRXSTSP_DEV_EP_NUM</td>
     <td>0</td>
     <td>3</td>
@@ -65574,11 +65570,11 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GRXSTSP_DEV_BCNT</td>
-    <td>4</td>
-    <td>14</td>
-    <td>0x00007ff0</td>
-    <td>0xffff800f</td>
+    <td>USB_GRXSTSP_HST_CH_NUM</td>
+    <td>0</td>
+    <td>3</td>
+    <td>0x0000000f</td>
+    <td>0xfffffff0</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -65590,7 +65586,7 @@
     <td>NA</td>
   </tr>
   <tr>
-    <td>USB_GRXSTSP_HST_BCNT</td>
+    <td>USB_GRXSTSP_DEV_BCNT</td>
     <td>4</td>
     <td>14</td>
     <td>0x00007ff0</td>
@@ -65598,11 +65594,11 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GRXSTSP_HST_DPID</td>
-    <td>15</td>
-    <td>16</td>
-    <td>0x00018000</td>
-    <td>0xfffe7fff</td>
+    <td>USB_GRXSTSP_HST_BCNT</td>
+    <td>4</td>
+    <td>14</td>
+    <td>0x00007ff0</td>
+    <td>0xffff800f</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -65622,6 +65618,22 @@
     <td>0x0</td>
   </tr>
   <tr>
+    <td>USB_GRXSTSP_HST_DPID</td>
+    <td>15</td>
+    <td>16</td>
+    <td>0x00018000</td>
+    <td>0xfffe7fff</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>USB_GRXSTSP_HST_PKT_STS</td>
+    <td>17</td>
+    <td>20</td>
+    <td>0x001e0000</td>
+    <td>0xffe1ffff</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
     <td>USB_GRXSTSP_DEV_PKT_STS</td>
     <td>17</td>
     <td>20</td>
@@ -65636,14 +65648,6 @@
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
-  </tr>
-  <tr>
-    <td>USB_GRXSTSP_HST_PKT_STS</td>
-    <td>17</td>
-    <td>20</td>
-    <td>0x001e0000</td>
-    <td>0xffe1ffff</td>
-    <td>0x0</td>
   </tr>
   <tr>
     <td>USB_GRXSTSP_DEV_FN</td>
@@ -65716,20 +65720,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>16</td>
-    <td>-1</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>USB_GNPTXFSIZ_NP_TXF_DEP</td>
     <td>16</td>
     <td>31</td>
     <td>0xffff0000</td>
     <td>0x0000ffff</td>
     <td>0x0</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>16</td>
+    <td>-1</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>missing definiton</td>
@@ -65893,19 +65897,19 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_GPVNDCTL_CTRL_UTMI</td>
-    <td>8</td>
-    <td>11</td>
-    <td>0x00000f00</td>
-    <td>0xfffff0ff</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_GPVNDCTL_CTRL_ULPI</td>
     <td>8</td>
     <td>13</td>
     <td>0x00003f00</td>
     <td>0xffffc0ff</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>USB_GPVNDCTL_CTRL_UTMI</td>
+    <td>8</td>
+    <td>11</td>
+    <td>0x00000f00</td>
+    <td>0xfffff0ff</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -67351,7 +67355,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPCTL0_EO_FR_NUM</td>
+    <td>USB_DIEPCTL0_DPID</td>
     <td>16</td>
     <td>16</td>
     <td>0x00010000</td>
@@ -67359,7 +67363,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPCTL0_DPID</td>
+    <td>USB_DIEPCTL0_EO_FR_NUM</td>
     <td>16</td>
     <td>16</td>
     <td>0x00010000</td>
@@ -67447,12 +67451,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
+    <td>USB_DIEPCTL0_SET_D1_PID</td>
     <td>29</td>
-    <td>27</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
+    <td>29</td>
+    <td>0x20000000</td>
+    <td>0xdfffffff</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>USB_DIEPCTL0_SET_ODD_FR</td>
@@ -67463,12 +67467,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPCTL0_SET_D1_PID</td>
+    <td>missing definiton</td>
     <td>29</td>
-    <td>29</td>
-    <td>0x20000000</td>
-    <td>0xdfffffff</td>
-    <td>0x0</td>
+    <td>27</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DIEPCTL0_DIS</td>
@@ -67570,12 +67574,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
+    <td>USB_DIEPINT0_IN_TKN_EP_MIS</td>
     <td>5</td>
-    <td>3</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
+    <td>5</td>
+    <td>0x00000020</td>
+    <td>0xffffffdf</td>
+    <td>0x0</td>
   </tr>
   <tr>
     <td>USB_DIEPINT0_STS_PHSE_RCVD</td>
@@ -67586,12 +67590,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DIEPINT0_IN_TKN_EP_MIS</td>
+    <td>missing definiton</td>
     <td>5</td>
-    <td>5</td>
-    <td>0x00000020</td>
-    <td>0xffffffdf</td>
-    <td>0x0</td>
+    <td>3</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>6</td>
+    <td>4</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DIEPINT0_IN_EP_NAK_EFF</td>
@@ -67611,8 +67623,8 @@
   </tr>
   <tr>
     <td>missing definiton</td>
-    <td>6</td>
-    <td>4</td>
+    <td>7</td>
+    <td>5</td>
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
@@ -67624,14 +67636,6 @@
     <td>0x00000080</td>
     <td>0xffffff7f</td>
     <td>0x0</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>7</td>
-    <td>5</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DIEPINT0_TX_FIFO_UNDRN</td>
@@ -67650,20 +67654,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
-    <td>9</td>
-    <td>7</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
     <td>USB_DIEPINT0_BNA</td>
     <td>9</td>
     <td>9</td>
     <td>0x00000200</td>
     <td>0xfffffdff</td>
     <td>0x0</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>9</td>
+    <td>7</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
 </table>
 <h2><a name="USB_DIEPTSIZ0">Register:USB_DIEPTSIZ0 (0x7e980910)</h2><br/>
@@ -67693,6 +67697,14 @@
     <td>0x0</td>
   </tr>
   <tr>
+    <td>USB_DIEPTSIZ0_RX_DPID</td>
+    <td>29</td>
+    <td>30</td>
+    <td>0x60000000</td>
+    <td>0x9fffffff</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
     <td>USB_DIEPTSIZ0_MC</td>
     <td>29</td>
     <td>30</td>
@@ -67702,14 +67714,6 @@
   </tr>
   <tr>
     <td>USB_DIEPTSIZ0_SUP_CNT</td>
-    <td>29</td>
-    <td>30</td>
-    <td>0x60000000</td>
-    <td>0x9fffffff</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
-    <td>USB_DIEPTSIZ0_RX_DPID</td>
     <td>29</td>
     <td>30</td>
     <td>0x60000000</td>
@@ -67883,6 +67887,14 @@
     <td>0x0</td>
   </tr>
   <tr>
+    <td>USB_DOEPCTL0_SET_ODD_FR</td>
+    <td>29</td>
+    <td>29</td>
+    <td>0x20000000</td>
+    <td>0xdfffffff</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
     <td>USB_DOEPCTL0_SET_D1_PID</td>
     <td>29</td>
     <td>29</td>
@@ -67899,12 +67911,12 @@
     <td>NA</td>
   </tr>
   <tr>
-    <td>USB_DOEPCTL0_SET_ODD_FR</td>
-    <td>29</td>
-    <td>29</td>
-    <td>0x20000000</td>
-    <td>0xdfffffff</td>
-    <td>0x0</td>
+    <td>missing definiton</td>
+    <td>30</td>
+    <td>28</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DOEPCTL0_DIS</td>
@@ -67913,14 +67925,6 @@
     <td>0x40000000</td>
     <td>0xbfffffff</td>
     <td>0x0</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>30</td>
-    <td>28</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DOEPCTL0_ENA</td>
@@ -67982,12 +67986,12 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_OUT_TKN_EP_DIS</td>
+    <td>missing definiton</td>
     <td>4</td>
-    <td>4</td>
-    <td>0x00000010</td>
-    <td>0xffffffef</td>
-    <td>0x0</td>
+    <td>2</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>USB_DOEPINT0_IN_TKN_TXFEMP</td>
@@ -67998,27 +68002,11 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>missing definiton</td>
+    <td>USB_DOEPINT0_OUT_TKN_EP_DIS</td>
     <td>4</td>
-    <td>2</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>missing definiton</td>
-    <td>5</td>
-    <td>3</td>
-    <td>NA</td>
-    <td>NA</td>
-    <td>NA</td>
-  </tr>
-  <tr>
-    <td>USB_DOEPINT0_STS_PHSE_RCVD</td>
-    <td>5</td>
-    <td>5</td>
-    <td>0x00000020</td>
-    <td>0xffffffdf</td>
+    <td>4</td>
+    <td>0x00000010</td>
+    <td>0xffffffef</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -68030,12 +68018,20 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_IN_EP_NAK_EFF</td>
-    <td>6</td>
-    <td>6</td>
-    <td>0x00000040</td>
-    <td>0xffffffbf</td>
+    <td>USB_DOEPINT0_STS_PHSE_RCVD</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0x00000020</td>
+    <td>0xffffffdf</td>
     <td>0x0</td>
+  </tr>
+  <tr>
+    <td>missing definiton</td>
+    <td>5</td>
+    <td>3</td>
+    <td>NA</td>
+    <td>NA</td>
+    <td>NA</td>
   </tr>
   <tr>
     <td>missing definiton</td>
@@ -68047,6 +68043,14 @@
   </tr>
   <tr>
     <td>USB_DOEPINT0_BACK2BACK_SETUP</td>
+    <td>6</td>
+    <td>6</td>
+    <td>0x00000040</td>
+    <td>0xffffffbf</td>
+    <td>0x0</td>
+  </tr>
+  <tr>
+    <td>USB_DOEPINT0_IN_EP_NAK_EFF</td>
     <td>6</td>
     <td>6</td>
     <td>0x00000040</td>
@@ -68070,14 +68074,6 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_TX_FIFO_UNDRN</td>
-    <td>8</td>
-    <td>8</td>
-    <td>0x00000100</td>
-    <td>0xfffffeff</td>
-    <td>0x0</td>
-  </tr>
-  <tr>
     <td>USB_DOEPINT0_OUT_PKT_ERR</td>
     <td>8</td>
     <td>8</td>
@@ -68086,11 +68082,11 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPINT0_BNA</td>
-    <td>9</td>
-    <td>9</td>
-    <td>0x00000200</td>
-    <td>0xfffffdff</td>
+    <td>USB_DOEPINT0_TX_FIFO_UNDRN</td>
+    <td>8</td>
+    <td>8</td>
+    <td>0x00000100</td>
+    <td>0xfffffeff</td>
     <td>0x0</td>
   </tr>
   <tr>
@@ -68100,6 +68096,14 @@
     <td>NA</td>
     <td>NA</td>
     <td>NA</td>
+  </tr>
+  <tr>
+    <td>USB_DOEPINT0_BNA</td>
+    <td>9</td>
+    <td>9</td>
+    <td>0x00000200</td>
+    <td>0xfffffdff</td>
+    <td>0x0</td>
   </tr>
 </table>
 <h2><a name="USB_DOEPTSIZ0">Register:USB_DOEPTSIZ0 (0x7e980b10)</h2><br/>
@@ -68129,7 +68133,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPTSIZ0_MC</td>
+    <td>USB_DOEPTSIZ0_SUP_CNT</td>
     <td>29</td>
     <td>30</td>
     <td>0x60000000</td>
@@ -68137,7 +68141,7 @@
     <td>0x0</td>
   </tr>
   <tr>
-    <td>USB_DOEPTSIZ0_SUP_CNT</td>
+    <td>USB_DOEPTSIZ0_MC</td>
     <td>29</td>
     <td>30</td>
     <td>0x60000000</td>
@@ -69827,3 +69831,4 @@
     <td>0x0</td>
   </tr>
 </table>
+</font></body></html>

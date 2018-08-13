@@ -315,8 +315,31 @@ sub toDOCS {
         ."<title>RPi Registers</title>\n"
         ."</head>\n"
         ."<body>\n"
-        ."<font face='sans-serif'><h1>RPi Registers</h1>\n";
+        ."<font face='sans-serif'><h1>RPi Registers</h1>\n"
+        ."<table border=0><tr><th>by Base Address</th><th>&nbps;</th><th>a-z Alphabetical</th></tr>\n<tr><td>";
 
+    # resort to base addresses
+    my $adrs=$d;
+    my @basesorted = sort
+        { hex($adrs->{$a}->{base}) <=> hex($adrs->{$b}->{base}) }
+        keys %{$adrs};
+
+    # output base first numerical
+    print FH "<table border=1><tr><th>Base</th><th>Region</th><th>Description</th></tr>\n";
+    foreach my $k (@basesorted) {
+	print FH "<tr>"
+            ."<td>".$d->{$k}->{base}."</td>"
+            ."<td><a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a></td>"
+            ."<td>".$d->{$k}->{description}."</td>"
+            ."</tr>\n";
+    }
+    print FH "</table>\n";
+
+
+    # divider
+    print FH "</td><td>&nbsp;</td><td>\n"
+
+    # output a-z first alphabetical
     print FH "<table border=1><tr><th>Region</th><th>Base</th><th>Description</th></tr>\n";
     foreach my $k (sort keys %{$d}) {
 	print FH "<tr>"
@@ -325,7 +348,10 @@ sub toDOCS {
             ."<td>".$d->{$k}->{description}."</td>"
             ."</tr>\n";
     }
-    print FH "</table>\n</font>\n</body>\n</html>\n";
+    print FH "</table>\n";
+
+    print FH "</td></tr></table>"
+    print FH "</font>\n</body>\n</html>\n";
     close(FH);
 
     # and now the html sections
@@ -338,7 +364,7 @@ sub toDOCS {
             ."</head>\n"
             ."<body>\n"
             ."<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>\n";
-	print FH "<h1>Register Region: ".$d->{$s}->{name}." (base: ".$d->{$s}->{base}."</h1>\n";
+	print FH "<h1>Register Region: ".$d->{$s}->{name}." (".$d->{$s}->{base}.")</h1>\n";
 
 	print FH "<h2>Info</h2>\n";
 	print FH "<table border=1><tr><th>Name</th><th>Value</th></tr>\n";
@@ -436,7 +462,7 @@ sub toMD {
 	open(FH,">","md/Region_".$d->{$s}->{name}.".md");
 	print FH "# Register Region: ".$d->{$s}->{name}."\n\n";
 
-	print FH "\n## Info\n";
+	print FH "\n## Info\n\n";
 	print FH "| Name | value |\n| --- | --- |\n";
 	for my $k ("description", "notes", "base","id","password") {
 	    if ($d->{$s}->{$k}) {
@@ -445,7 +471,6 @@ sub toMD {
 	}
 
 	print FH "\n## Registers\n\n";
-
 	print FH "| register name | address | type | width | mask | reset |\n";
 	print FH "| --- | --- | --- | --- | --- | --- |\n";
 	my $regs=$d->{$s}->{regs};

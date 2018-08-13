@@ -1,109 +1,111 @@
 <html>
 <head>
 <title>TB - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: TB (base: 0x7e20b000</h1>
+<h1>Register Region: TB (0x7e20b000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e20b000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e20b000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>TB_ADDR</td><td>0x7e20b000</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#tb_task'>TB_TASK</a></td><td>0x7e20b000</td><td>RW</td><td>17</td><td>0x0001ffff</td><td></td></tr>
-<tr><td>TB_TASK_PARAM1</td><td>0x7e20b004</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_TASK_PARAM2</td><td>0x7e20b008</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_TASK_PARAM3</td><td>0x7e20b00c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_TASK_STATUS</td><td>0x7e20b080</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_TASK_RXDATA1</td><td>0x7e20b084</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_TASK_RXDATA2</td><td>0x7e20b088</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_TASK_TXTCLR</td><td>0x7e20b0f0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_HDMI</td><td>0x7e20b100</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_PCM</td><td>0x7e20b200</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_HOST</td><td>0x7e20b300</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#tb_printer_ctrl'>TB_PRINTER_CTRL</a></td><td>0x7e20b400</td><td>RW</td><td>16</td><td>0x0000fff3</td><td></td></tr>
-<tr><td>TB_PRINTER_DATA</td><td>0x7e20b404</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_BOOT_ADDR</td><td>0x7e20b500</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#tb_boot_opt'>TB_BOOT_OPT</a></td><td>0x7e20b504</td><td>RW</td><td>32</td><td>0x800007ff</td><td></td></tr>
-<tr><td><a hre='#tb_boot_secure_mode'>TB_BOOT_SECURE_MODE</a></td><td>0x7e20b508</td><td>RW</td><td>2</td><td>0x00000003</td><td></td></tr>
-<tr><td><a hre='#tb_boot_status'>TB_BOOT_STATUS</a></td><td>0x7e20b50c</td><td>RW</td><td>1</td><td>0x00000001</td><td></td></tr>
-<tr><td><a hre='#tb_jtb_config'>TB_JTB_CONFIG</a></td><td>0x7e20b800</td><td>RW</td><td>32</td><td>0xbfffffff</td><td></td></tr>
-<tr><td>TB_JTB_TMS</td><td>0x7e20b804</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_JTB_TDI</td><td>0x7e20b808</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_JTB_TDO</td><td>0x7e20b80c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>TB_JTB_BITCNT</td><td>0x7e20b810</td><td>RW</td><td>6</td><td>0x0000003f</td><td></td></tr>
-<tr><td>TB_JTB_PORTEN</td><td>0x7e20b814</td><td>RW</td><td>8</td><td>0x000000ff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;TB_ADDR&nbsp;</td><td>&nbsp;<pre>0x7e20b000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#tb_task'>TB_TASK</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_PARAM1&nbsp;</td><td>&nbsp;<pre>0x7e20b004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_PARAM2&nbsp;</td><td>&nbsp;<pre>0x7e20b008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_PARAM3&nbsp;</td><td>&nbsp;<pre>0x7e20b00c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_STATUS&nbsp;</td><td>&nbsp;<pre>0x7e20b080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_RXDATA1&nbsp;</td><td>&nbsp;<pre>0x7e20b084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_RXDATA2&nbsp;</td><td>&nbsp;<pre>0x7e20b088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_TXTCLR&nbsp;</td><td>&nbsp;<pre>0x7e20b0f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_HDMI&nbsp;</td><td>&nbsp;<pre>0x7e20b100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_PCM&nbsp;</td><td>&nbsp;<pre>0x7e20b200</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_HOST&nbsp;</td><td>&nbsp;<pre>0x7e20b300</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#tb_printer_ctrl'>TB_PRINTER_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b400</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000fff3</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_PRINTER_DATA&nbsp;</td><td>&nbsp;<pre>0x7e20b404</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_ADDR&nbsp;</td><td>&nbsp;<pre>0x7e20b500</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#tb_boot_opt'>TB_BOOT_OPT</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b504</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x800007ff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#tb_boot_secure_mode'>TB_BOOT_SECURE_MODE</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b508</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#tb_boot_status'>TB_BOOT_STATUS</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b50c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#tb_jtb_config'>TB_JTB_CONFIG</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b800</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_TMS&nbsp;</td><td>&nbsp;<pre>0x7e20b804</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_TDI&nbsp;</td><td>&nbsp;<pre>0x7e20b808</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_TDO&nbsp;</td><td>&nbsp;<pre>0x7e20b80c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_BITCNT&nbsp;</td><td>&nbsp;<pre>0x7e20b810</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_PORTEN&nbsp;</td><td>&nbsp;<pre>0x7e20b814</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='TB_TASK'>TB_TASK</a></h3>
 <h4>Address: 0x7e20b000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TB_TASK_NUM</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td></td></tr>
-<tr><td>TB_TASK_TEXT_FLAG</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TB_TASK_NUM&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_TASK_TEXT_FLAG&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TB_PRINTER_CTRL'>TB_PRINTER_CTRL</a></h3>
 <h4>Address: 0x7e20b400</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TB_PRINTER_CTRL_OFFSET</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td></td></tr>
-<tr><td>missing definiton</td><td>2</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>TB_PRINTER_CTRL_TASKNO</td><td>4</td><td>15</td><td>0x0000fff0</td><td>0xffff000f</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TB_PRINTER_CTRL_OFFSET&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;TB_PRINTER_CTRL_TASKNO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000fff0</pre></td><td>&nbsp;<pre>0xffff000f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TB_BOOT_OPT'>TB_BOOT_OPT</a></h3>
 <h4>Address: 0x7e20b504</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TB_BOOT_OPT_FAST_OPT</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_EIGHT_BANK</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_FPGA</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_TCL_SIM</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_ELPIDA</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_SDC_BEHAV_PHY</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_NO_PRINT</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_BOOT_HALT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_BANK_MODE</td><td>8</td><td>9</td><td>0x00000300</td><td>0xfffffcff</td><td></td></tr>
-<tr><td>TB_BOOT_OPT_DONT_SET_VPU_CLK</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td></td></tr>
-<tr><td>missing definiton</td><td>11</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>TB_BOOT_OPT_TB_PRESENT</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TB_BOOT_OPT_FAST_OPT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_EIGHT_BANK&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_FPGA&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_TCL_SIM&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_ELPIDA&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_SDC_BEHAV_PHY&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_NO_PRINT&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_BOOT_HALT&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_BANK_MODE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000300</pre></td><td>&nbsp;<pre>0xfffffcff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_DONT_SET_VPU_CLK&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;TB_BOOT_OPT_TB_PRESENT&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TB_BOOT_SECURE_MODE'>TB_BOOT_SECURE_MODE</a></h3>
 <h4>Address: 0x7e20b508</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TB_BOOT_SECURE_MODE_JTAG_SECURE</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TB_BOOT_SECURE_MODE_JTAG_SECURE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TB_BOOT_STATUS'>TB_BOOT_STATUS</a></h3>
 <h4>Address: 0x7e20b50c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TB_BOOT_STATUS_CPRMAN_PROGRAMMED</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TB_BOOT_STATUS_CPRMAN_PROGRAMMED&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TB_JTB_CONFIG'>TB_JTB_CONFIG</a></h3>
 <h4>Address: 0x7e20b800</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TB_JTB_CONFIG_SBITS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td></td></tr>
-<tr><td>missing definiton</td><td>5</td><td>5</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>TB_JTB_CONFIG_OUT_MS</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_INV_CLK</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_TMS_RISE</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_TDI_RISE</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_TDO_RISE</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_ENABLE</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_D_HOLD</td><td>12</td><td>13</td><td>0x00003000</td><td>0xffffcfff</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_TRSTN</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td></td></tr>
-<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>TB_JTB_CONFIG_SPEED</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td></td></tr>
-<tr><td>TB_JTB_CONFIG_BITCNT</td><td>23</td><td>29</td><td>0x3f800000</td><td>0xc07fffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>24</td><td>22</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>30</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>TB_JTB_CONFIG_BUSY</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TB_JTB_CONFIG_SBITS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_OUT_MS&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_INV_CLK&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_TMS_RISE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_TDI_RISE&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_TDO_RISE&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_ENABLE&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_D_HOLD&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003000</pre></td><td>&nbsp;<pre>0xffffcfff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_TRSTN&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_SPEED&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ff0000</pre></td><td>&nbsp;<pre>0xff00ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_BITCNT&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f800000</pre></td><td>&nbsp;<pre>0xc07fffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;TB_JTB_CONFIG_BUSY&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

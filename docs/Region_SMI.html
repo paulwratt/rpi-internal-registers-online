@@ -1,234 +1,236 @@
 <html>
 <head>
 <title>SMI - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: SMI (base: 0x7e600000</h1>
+<h1>Register Region: SMI (0x7e600000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e600000</td></tr>
-<tr><td>id</td><td>0x534d4958</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e600000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x534d4958</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#smi_cs'>SMI_CS</a></td><td>0x7e600000</td><td>RW</td><td>32</td><td>0xff00ffff</td><td></td></tr>
-<tr><td>SMI_L</td><td>0x7e600004</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#smi_a'>SMI_A</a></td><td>0x7e600008</td><td>RW</td><td>10</td><td>0x0000033f</td><td>0000000000</td></tr>
-<tr><td>SMI_D</td><td>0x7e60000c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#smi_dsr0'>SMI_DSR0</a></td><td>0x7e600010</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dsw0'>SMI_DSW0</a></td><td>0x7e600014</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dsr1'>SMI_DSR1</a></td><td>0x7e600018</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dsw1'>SMI_DSW1</a></td><td>0x7e60001c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dsr2'>SMI_DSR2</a></td><td>0x7e600020</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dsw2'>SMI_DSW2</a></td><td>0x7e600024</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dsr3'>SMI_DSR3</a></td><td>0x7e600028</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dsw3'>SMI_DSW3</a></td><td>0x7e60002c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x0101000c</td></tr>
-<tr><td><a hre='#smi_dc'>SMI_DC</a></td><td>0x7e600030</td><td>RW</td><td>29</td><td>0x11ffffff</td><td>0x00c10820</td></tr>
-<tr><td><a hre='#smi_dcs'>SMI_DCS</a></td><td>0x7e600034</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td><a hre='#smi_da'>SMI_DA</a></td><td>0x7e600038</td><td>RW</td><td>10</td><td>0x0000033f</td><td>0000000000</td></tr>
-<tr><td>SMI_DD</td><td>0x7e60003c</td><td>RW</td><td>18</td><td>0x0003ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#smi_fd'>SMI_FD</a></td><td>0x7e600040</td><td>RW</td><td>14</td><td>0x00003f3f</td><td>0000000000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#smi_cs'>SMI_CS</a>&nbsp;</td><td>&nbsp;<pre>0x7e600000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xff00ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_L&nbsp;</td><td>&nbsp;<pre>0x7e600004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_a'>SMI_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e600008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x0000033f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_D&nbsp;</td><td>&nbsp;<pre>0x7e60000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsr0'>SMI_DSR0</a>&nbsp;</td><td>&nbsp;<pre>0x7e600010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsw0'>SMI_DSW0</a>&nbsp;</td><td>&nbsp;<pre>0x7e600014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsr1'>SMI_DSR1</a>&nbsp;</td><td>&nbsp;<pre>0x7e600018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsw1'>SMI_DSW1</a>&nbsp;</td><td>&nbsp;<pre>0x7e60001c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsr2'>SMI_DSR2</a>&nbsp;</td><td>&nbsp;<pre>0x7e600020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsw2'>SMI_DSW2</a>&nbsp;</td><td>&nbsp;<pre>0x7e600024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsr3'>SMI_DSR3</a>&nbsp;</td><td>&nbsp;<pre>0x7e600028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dsw3'>SMI_DSW3</a>&nbsp;</td><td>&nbsp;<pre>0x7e60002c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0101000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dc'>SMI_DC</a>&nbsp;</td><td>&nbsp;<pre>0x7e600030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x11ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00c10820</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_dcs'>SMI_DCS</a>&nbsp;</td><td>&nbsp;<pre>0x7e600034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_da'>SMI_DA</a>&nbsp;</td><td>&nbsp;<pre>0x7e600038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x0000033f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DD&nbsp;</td><td>&nbsp;<pre>0x7e60003c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x0003ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#smi_fd'>SMI_FD</a>&nbsp;</td><td>&nbsp;<pre>0x7e600040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00003f3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>SMI_BASE_DIRECT</td><td>0x7E601000</td></tr>
-<tr><td>SMI_DMA</td><td>0x40000</td></tr>
-<tr><td>SMI_FIFO_ADDRESS(device,addr)</td><td>MACRO</td></tr>
-<tr><td>SMI_SCALER_0_DMA</td><td>0x180000</td></tr>
-<tr><td>SMI_SCALER_1_DMA</td><td>0x190000</td></tr>
-<tr><td>SMI_SCALER_2_DMA</td><td>0x1a0000</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;SMI_BASE_DIRECT&nbsp;</td><td align=center>&nbsp;<pre>0x7E601000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x40000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_FIFO_ADDRESS(device,addr)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_SCALER_0_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x180000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_SCALER_1_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x190000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_SCALER_2_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x1a0000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='SMI_CS'>SMI_CS</a></h3>
 <h4>Address: 0x7e600000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_CS_ENABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>SMI_CS_DONE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>SMI_CS_ACTIVE</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>SMI_CS_START</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>SMI_CS_CLEAR</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>SMI_CS_WRITE</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>SMI_CS_PAD</td><td>6</td><td>7</td><td>0x000000c0</td><td>0xffffff3f</td><td>0x0</td></tr>
-<tr><td>SMI_CS_TEEN</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_INTD</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_INTT</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_INTR</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_PVMODE</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_SETERR</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_PXLDAT</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_EDREQ</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>16</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SMI_CS_PRDY</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_AFERR</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_TXW</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x1</td></tr>
-<tr><td>SMI_CS_RXR</td><td>27</td><td>27</td><td>0x08000000</td><td>0xf7ffffff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_TXD</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x1</td></tr>
-<tr><td>SMI_CS_RXD</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
-<tr><td>SMI_CS_TXE</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x1</td></tr>
-<tr><td>SMI_CS_RXF</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_CS_ENABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_DONE&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_ACTIVE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_START&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_CLEAR&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_WRITE&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_PAD&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000c0</pre></td><td>&nbsp;<pre>0xffffff3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_TEEN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_INTD&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_INTT&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_INTR&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_PVMODE&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_SETERR&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_PXLDAT&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_EDREQ&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_PRDY&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x01000000</pre></td><td>&nbsp;<pre>0xfeffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_AFERR&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>0x02000000</pre></td><td>&nbsp;<pre>0xfdffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_TXW&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x04000000</pre></td><td>&nbsp;<pre>0xfbffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_RXR&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x08000000</pre></td><td>&nbsp;<pre>0xf7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_TXD&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_RXD&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_TXE&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_CS_RXF&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_A'>SMI_A</a></h3>
 <h4>Address: 0x7e600008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_A_ADDR</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SMI_A_DEVICE</td><td>8</td><td>9</td><td>0x00000300</td><td>0xfffffcff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_A_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_A_DEVICE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000300</pre></td><td>&nbsp;<pre>0xfffffcff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSR0'>SMI_DSR0</a></h3>
 <h4>Address: 0x7e600010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSR0_RSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSR0_RDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSR0_RPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR0_RPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR0_RHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR0_FSETUP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR0_MODE68</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR0_RSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR0_RWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSR0_RSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_RDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_RPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_RPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_RHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_FSETUP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_MODE68&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_RSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR0_RWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSW0'>SMI_DSW0</a></h3>
 <h4>Address: 0x7e600014</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSW0_WSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSW0_WDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSW0_WPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW0_WPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW0_WHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW0_WSWAP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW0_WFORMAT</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW0_WSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW0_WWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSW0_WSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WSWAP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WFORMAT&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW0_WWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSR1'>SMI_DSR1</a></h3>
 <h4>Address: 0x7e600018</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSR1_RSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSR1_RDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSR1_RPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR1_RPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR1_RHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR1_FSETUP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR1_MODE68</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR1_RSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR1_RWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSR1_RSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_RDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_RPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_RPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_RHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_FSETUP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_MODE68&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_RSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR1_RWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSW1'>SMI_DSW1</a></h3>
 <h4>Address: 0x7e60001c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSW1_WSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSW1_WDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSW1_WPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW1_WPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW1_WHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW1_WSWAP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW1_WFORMAT</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW1_WSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW1_WWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSW1_WSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WSWAP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WFORMAT&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW1_WWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSR2'>SMI_DSR2</a></h3>
 <h4>Address: 0x7e600020</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSR2_RSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSR2_RDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSR2_RPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR2_RPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR2_RHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR2_FSETUP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR2_MODE68</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR2_RSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR2_RWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSR2_RSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_RDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_RPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_RPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_RHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_FSETUP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_MODE68&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_RSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR2_RWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSW2'>SMI_DSW2</a></h3>
 <h4>Address: 0x7e600024</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSW2_WSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSW2_WDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSW2_WPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW2_WPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW2_WHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW2_WSWAP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW2_WFORMAT</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW2_WSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW2_WWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSW2_WSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WSWAP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WFORMAT&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW2_WWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSR3'>SMI_DSR3</a></h3>
 <h4>Address: 0x7e600028</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSR3_RSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSR3_RDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSR3_RPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR3_RPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR3_RHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR3_FSETUP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR3_MODE68</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSR3_RSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSR3_RWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSR3_RSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_RDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_RPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_RPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_RHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_FSETUP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_MODE68&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_RSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSR3_RWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DSW3'>SMI_DSW3</a></h3>
 <h4>Address: 0x7e60002c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DSW3_WSTROBE</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0xc</td></tr>
-<tr><td>SMI_DSW3_WDREQ</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SMI_DSW3_WPACE</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW3_WPACEALL</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW3_WHOLD</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW3_WSWAP</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW3_WFORMAT</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
-<tr><td>SMI_DSW3_WSETUP</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
-<tr><td>SMI_DSW3_WWIDTH</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DSW3_WSTROBE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0xc&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WDREQ&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WPACE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WPACEALL&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WHOLD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WSWAP&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WFORMAT&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WSETUP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DSW3_WWIDTH&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DC'>SMI_DC</a></h3>
 <h4>Address: 0x7e600030</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DC_REQW</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x20</td></tr>
-<tr><td>SMI_DC_REQR</td><td>6</td><td>11</td><td>0x00000fc0</td><td>0xfffff03f</td><td>0x20</td></tr>
-<tr><td>SMI_DC_PANICW</td><td>12</td><td>17</td><td>0x0003f000</td><td>0xfffc0fff</td><td>0x10</td></tr>
-<tr><td>SMI_DC_PANICR</td><td>18</td><td>23</td><td>0x00fc0000</td><td>0xff03ffff</td><td>0x30</td></tr>
-<tr><td>SMI_DC_DMAP</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>25</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SMI_DC_DMAEN</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DC_REQW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x20&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DC_REQR&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fc0</pre></td><td>&nbsp;<pre>0xfffff03f</pre>&nbsp;</td><td align=center>&nbsp;0x20&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DC_PANICW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0003f000</pre></td><td>&nbsp;<pre>0xfffc0fff</pre>&nbsp;</td><td align=center>&nbsp;0x10&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DC_PANICR&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00fc0000</pre></td><td>&nbsp;<pre>0xff03ffff</pre>&nbsp;</td><td align=center>&nbsp;0x30&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DC_DMAP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x01000000</pre></td><td>&nbsp;<pre>0xfeffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DC_DMAEN&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DCS'>SMI_DCS</a></h3>
 <h4>Address: 0x7e600034</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DCS_EANBLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>SMI_DCS_START</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>SMI_DCS_DONE</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>SMI_DCS_WRITE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DCS_EANBLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DCS_START&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DCS_DONE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DCS_WRITE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_DA'>SMI_DA</a></h3>
 <h4>Address: 0x7e600038</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_DA_ADDR</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SMI_DA_WRITE</td><td>8</td><td>9</td><td>0x00000300</td><td>0xfffffcff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_DA_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_DA_WRITE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000300</pre></td><td>&nbsp;<pre>0xfffffcff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SMI_FD'>SMI_FD</a></h3>
 <h4>Address: 0x7e600040</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SMI_FD_FCNT</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SMI_FD_FLVL</td><td>8</td><td>13</td><td>0x00003f00</td><td>0xffffc0ff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SMI_FD_FCNT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SMI_FD_FLVL&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003f00</pre></td><td>&nbsp;<pre>0xffffc0ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

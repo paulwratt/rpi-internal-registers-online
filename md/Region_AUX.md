@@ -2,6 +2,7 @@
 
 
 ## Info
+
 | Name | value |
 | --- | --- |
 | base | 0x7E215000 |
@@ -14,8 +15,8 @@
 | AUX_MU_BDLS | 0x7e215040 | MU_BDLS |  |  |  |
 | AUX_MU_IER | 0x7e215044 | MU_IER |  |  |  |
 | AUX_MU_BDMS | 0x7e215044 | MU_BDMS |  |  |  |
-| AUX_MU_IIR | 0x7e215048 | MU_IIR |  |  |  |
 | AUX_MU_FCR | 0x7e215048 | MU_FCR |  |  |  |
+| AUX_MU_IIR | 0x7e215048 | MU_IIR |  |  |  |
 | AUX_MU_LCR | 0x7e21504c | MU_LCR |  |  |  |
 | AUX_MU_MCR | 0x7e215050 | MU_MCR |  |  |  |
 | AUX_MU_LSR | 0x7e215054 | MU_LSR |  |  |  |

@@ -1,216 +1,218 @@
 <html>
 <head>
 <title>L1 - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: L1 (base: 0x7ee02000</h1>
+<h1>Register Region: L1 (0x7ee02000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>description</td><td>VC4-L1 control</td></tr>
-<tr><td>base</td><td>0x7ee02000</td></tr>
-<tr><td>id</td><td>0x4c314343</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;description&nbsp;</td><td>&nbsp;<pre>VC4-L1 control</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7ee02000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x4c314343</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#l1_ic0_control'>L1_IC0_CONTROL</a></td><td>0x7ee02000</td><td>RW</td><td>7</td><td>0x0000007f</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_ic0_priority'>L1_IC0_PRIORITY</a></td><td>0x7ee02004</td><td>RW</td><td>16</td><td>0x0000ffff</td><td>0x000034af</td></tr>
-<tr><td>L1_IC0_FLUSH_S</td><td>0x7ee02008</td><td>RW</td><td>32</td><td>0xffffffe0</td><td>0000000000</td></tr>
-<tr><td>L1_IC0_FLUSH_E</td><td>0x7ee0200c</td><td>RW</td><td>32</td><td>0xffffffe0</td><td>0xffffffff</td></tr>
-<tr><td>L1_IC0_RD_HITS</td><td>0x7ee02040</td><td>RW</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC0_RD_MISSES</td><td>0x7ee02044</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC0_BP_HITS</td><td>0x7ee02048</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC0_BP_MISSES</td><td>0x7ee0204c</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC0_RAS_PUSHES</td><td>0x7ee02050</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC0_RAS_POPS</td><td>0x7ee02054</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC0_RAS_UNDERFLOW</td><td>0x7ee02058</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td><a hre='#l1_ic1_control'>L1_IC1_CONTROL</a></td><td>0x7ee02080</td><td>RW</td><td>7</td><td>0x0000007f</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_ic1_priority'>L1_IC1_PRIORITY</a></td><td>0x7ee02084</td><td>RW</td><td>16</td><td>0x0000ffff</td><td>0x000034af</td></tr>
-<tr><td>L1_IC1_FLUSH_S</td><td>0x7ee02088</td><td>RW</td><td>32</td><td>0xffffffe0</td><td>0000000000</td></tr>
-<tr><td>L1_IC1_FLUSH_E</td><td>0x7ee0208c</td><td>RW</td><td>32</td><td>0xffffffe0</td><td>0xffffffff</td></tr>
-<tr><td>L1_IC1_RD_HITS</td><td>0x7ee020c0</td><td>RW</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC1_RD_MISSES</td><td>0x7ee020c4</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC1_BP_HITS</td><td>0x7ee020c8</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC1_BP_MISSES</td><td>0x7ee020cc</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC1_RAS_PUSHES</td><td>0x7ee020d0</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC1_RAS_POPS</td><td>0x7ee020d4</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_IC1_RAS_UNDERFLOW</td><td>0x7ee020d8</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td><a hre='#l1_d_control'>L1_D_CONTROL</a></td><td>0x7ee02100</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td>L1_D_FLUSH_S</td><td>0x7ee02104</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td>L1_D_FLUSH_E</td><td>0x7ee02108</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0x3fffffff</td></tr>
-<tr><td><a hre='#l1_d_priority'>L1_D_PRIORITY</a></td><td>0x7ee0210c</td><td>RW</td><td>28</td><td>0x0fff0fff</td><td>0000000000</td></tr>
-<tr><td>L1_D0_RD_HITS</td><td>0x7ee02140</td><td>RW</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_RD_SNOOPS</td><td>0x7ee02144</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_RD_MISSES</td><td>0x7ee02148</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_RD_THRUS</td><td>0x7ee0214c</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_WR_HITS</td><td>0x7ee02150</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_WR_SNOOPS</td><td>0x7ee02154</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_WR_MISSES</td><td>0x7ee02158</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_WR_THRUS</td><td>0x7ee0215c</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D0_WBACKS</td><td>0x7ee02160</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_RD_HITS</td><td>0x7ee02180</td><td>RW</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_RD_SNOOPS</td><td>0x7ee02184</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_RD_MISSES</td><td>0x7ee02188</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_RD_THRUS</td><td>0x7ee0218c</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_WR_HITS</td><td>0x7ee02190</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_WR_SNOOPS</td><td>0x7ee02194</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_WR_MISSES</td><td>0x7ee02198</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_WR_THRUS</td><td>0x7ee0219c</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td>L1_D1_WBACKS</td><td>0x7ee021a0</td><td>RO</td><td>0</td><td>0000000000</td><td></td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start0'>L1_L1_SANDBOX_START0</a></td><td>0x7ee02800</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0x00000007</td></tr>
-<tr><td>L1_L1_SANDBOX_END0</td><td>0x7ee02804</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0x3fffffe0</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start1'>L1_L1_SANDBOX_START1</a></td><td>0x7ee02808</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td>L1_L1_SANDBOX_END1</td><td>0x7ee0280c</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start2'>L1_L1_SANDBOX_START2</a></td><td>0x7ee02810</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td>L1_L1_SANDBOX_END2</td><td>0x7ee02814</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start3'>L1_L1_SANDBOX_START3</a></td><td>0x7ee02818</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td>L1_L1_SANDBOX_END3</td><td>0x7ee0281c</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start4'>L1_L1_SANDBOX_START4</a></td><td>0x7ee02820</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td>L1_L1_SANDBOX_END4</td><td>0x7ee02824</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start5'>L1_L1_SANDBOX_START5</a></td><td>0x7ee02828</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td>L1_L1_SANDBOX_END5</td><td>0x7ee0282c</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start6'>L1_L1_SANDBOX_START6</a></td><td>0x7ee02830</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td>L1_L1_SANDBOX_END6</td><td>0x7ee02834</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_start7'>L1_L1_SANDBOX_START7</a></td><td>0x7ee02838</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td>L1_L1_SANDBOX_END7</td><td>0x7ee0283c</td><td>RW</td><td>30</td><td>0x3fffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#l1_l1_sandbox_peri_br'>L1_L1_SANDBOX_PERI_BR</a></td><td>0x7ee02840</td><td>RW</td><td>13</td><td>0x00001f1f</td><td>0x00000707</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#l1_ic0_control'>L1_IC0_CONTROL</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_ic0_priority'>L1_IC0_PRIORITY</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000034af</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_FLUSH_S&nbsp;</td><td>&nbsp;<pre>0x7ee02008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_FLUSH_E&nbsp;</td><td>&nbsp;<pre>0x7ee0200c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0xffffffff</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_RD_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee02040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_RD_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee02044</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_BP_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee02048</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_BP_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee0204c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_RAS_PUSHES&nbsp;</td><td>&nbsp;<pre>0x7ee02050</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_RAS_POPS&nbsp;</td><td>&nbsp;<pre>0x7ee02054</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_RAS_UNDERFLOW&nbsp;</td><td>&nbsp;<pre>0x7ee02058</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_ic1_control'>L1_IC1_CONTROL</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_ic1_priority'>L1_IC1_PRIORITY</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000034af</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_FLUSH_S&nbsp;</td><td>&nbsp;<pre>0x7ee02088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_FLUSH_E&nbsp;</td><td>&nbsp;<pre>0x7ee0208c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0xffffffff</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_RD_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee020c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_RD_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee020c4</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_BP_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee020c8</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_BP_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee020cc</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_RAS_PUSHES&nbsp;</td><td>&nbsp;<pre>0x7ee020d0</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_RAS_POPS&nbsp;</td><td>&nbsp;<pre>0x7ee020d4</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_RAS_UNDERFLOW&nbsp;</td><td>&nbsp;<pre>0x7ee020d8</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_d_control'>L1_D_CONTROL</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_FLUSH_S&nbsp;</td><td>&nbsp;<pre>0x7ee02104</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_FLUSH_E&nbsp;</td><td>&nbsp;<pre>0x7ee02108</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_d_priority'>L1_D_PRIORITY</a>&nbsp;</td><td>&nbsp;<pre>0x7ee0210c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x0fff0fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_RD_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee02140</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_RD_SNOOPS&nbsp;</td><td>&nbsp;<pre>0x7ee02144</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_RD_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee02148</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_RD_THRUS&nbsp;</td><td>&nbsp;<pre>0x7ee0214c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_WR_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee02150</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_WR_SNOOPS&nbsp;</td><td>&nbsp;<pre>0x7ee02154</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_WR_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee02158</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_WR_THRUS&nbsp;</td><td>&nbsp;<pre>0x7ee0215c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D0_WBACKS&nbsp;</td><td>&nbsp;<pre>0x7ee02160</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_RD_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee02180</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_RD_SNOOPS&nbsp;</td><td>&nbsp;<pre>0x7ee02184</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_RD_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee02188</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_RD_THRUS&nbsp;</td><td>&nbsp;<pre>0x7ee0218c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_WR_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee02190</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_WR_SNOOPS&nbsp;</td><td>&nbsp;<pre>0x7ee02194</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_WR_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee02198</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_WR_THRUS&nbsp;</td><td>&nbsp;<pre>0x7ee0219c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D1_WBACKS&nbsp;</td><td>&nbsp;<pre>0x7ee021a0</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start0'>L1_L1_SANDBOX_START0</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02800</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000007</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END0&nbsp;</td><td>&nbsp;<pre>0x7ee02804</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start1'>L1_L1_SANDBOX_START1</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02808</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END1&nbsp;</td><td>&nbsp;<pre>0x7ee0280c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start2'>L1_L1_SANDBOX_START2</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02810</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END2&nbsp;</td><td>&nbsp;<pre>0x7ee02814</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start3'>L1_L1_SANDBOX_START3</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02818</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END3&nbsp;</td><td>&nbsp;<pre>0x7ee0281c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start4'>L1_L1_SANDBOX_START4</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02820</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END4&nbsp;</td><td>&nbsp;<pre>0x7ee02824</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start5'>L1_L1_SANDBOX_START5</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02828</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END5&nbsp;</td><td>&nbsp;<pre>0x7ee0282c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start6'>L1_L1_SANDBOX_START6</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02830</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END6&nbsp;</td><td>&nbsp;<pre>0x7ee02834</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_start7'>L1_L1_SANDBOX_START7</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02838</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_END7&nbsp;</td><td>&nbsp;<pre>0x7ee0283c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l1_l1_sandbox_peri_br'>L1_L1_SANDBOX_PERI_BR</a>&nbsp;</td><td>&nbsp;<pre>0x7ee02840</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00001f1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000707</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='L1_IC0_CONTROL'>L1_IC0_CONTROL</a></h3>
 <h4>Address: 0x7ee02000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_IC0_CONTROL_DISABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>L1_IC0_CONTROL_START_FLUSH</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>L1_IC0_CONTROL_ENABLE_STATS</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>L1_IC0_CONTROL_BP_DISABLE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>L1_IC0_CONTROL_RAS_DISABLE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>L1_IC0_CONTROL_DISABLE_VLINE</td><td>5</td><td>6</td><td>0x00000060</td><td>0xffffff9f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_IC0_CONTROL_DISABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_CONTROL_START_FLUSH&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_CONTROL_ENABLE_STATS&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_CONTROL_BP_DISABLE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_CONTROL_RAS_DISABLE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_CONTROL_DISABLE_VLINE&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000060</pre></td><td>&nbsp;<pre>0xffffff9f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_IC0_PRIORITY'>L1_IC0_PRIORITY</a></h3>
 <h4>Address: 0x7ee02004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_IC0_PRIORITY_IC0_APRIORITY0</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0xf</td></tr>
-<tr><td>L1_IC0_PRIORITY_IC0_APRIORITY1</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0xa</td></tr>
-<tr><td>L1_IC0_PRIORITY_IC0_APRIORITY2</td><td>8</td><td>11</td><td>0x00000f00</td><td>0xfffff0ff</td><td>0x4</td></tr>
-<tr><td>L1_IC0_PRIORITY_IC0_APRIORITY3</td><td>12</td><td>15</td><td>0x0000f000</td><td>0xffff0fff</td><td>0x3</td></tr>
-</table>
+<tr><td>&nbsp;L1_IC0_PRIORITY_IC0_APRIORITY0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0xf&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_PRIORITY_IC0_APRIORITY1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0xa&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_PRIORITY_IC0_APRIORITY2&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000f00</pre></td><td>&nbsp;<pre>0xfffff0ff</pre>&nbsp;</td><td align=center>&nbsp;0x4&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC0_PRIORITY_IC0_APRIORITY3&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000f000</pre></td><td>&nbsp;<pre>0xffff0fff</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_IC1_CONTROL'>L1_IC1_CONTROL</a></h3>
 <h4>Address: 0x7ee02080</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_IC1_CONTROL_DISABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>L1_IC1_CONTROL_START_FLUSH</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>L1_IC1_CONTROL_ENABLE_STATS</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>L1_IC1_CONTROL_BP_DISABLE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>L1_IC1_CONTROL_RAS_DISABLE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>L1_IC1_CONTROL_DISABLE_VLINE</td><td>5</td><td>6</td><td>0x00000060</td><td>0xffffff9f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_IC1_CONTROL_DISABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_CONTROL_START_FLUSH&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_CONTROL_ENABLE_STATS&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_CONTROL_BP_DISABLE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_CONTROL_RAS_DISABLE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_CONTROL_DISABLE_VLINE&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000060</pre></td><td>&nbsp;<pre>0xffffff9f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_IC1_PRIORITY'>L1_IC1_PRIORITY</a></h3>
 <h4>Address: 0x7ee02084</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_IC1_PRIORITY_IC1_APRIORITY0</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0xf</td></tr>
-<tr><td>L1_IC1_PRIORITY_IC1_APRIORITY1</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0xa</td></tr>
-<tr><td>L1_IC1_PRIORITY_IC1_APRIORITY2</td><td>8</td><td>11</td><td>0x00000f00</td><td>0xfffff0ff</td><td>0x4</td></tr>
-<tr><td>L1_IC1_PRIORITY_IC1_APRIORITY3</td><td>12</td><td>15</td><td>0x0000f000</td><td>0xffff0fff</td><td>0x3</td></tr>
-</table>
+<tr><td>&nbsp;L1_IC1_PRIORITY_IC1_APRIORITY0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0xf&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_PRIORITY_IC1_APRIORITY1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0xa&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_PRIORITY_IC1_APRIORITY2&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000f00</pre></td><td>&nbsp;<pre>0xfffff0ff</pre>&nbsp;</td><td align=center>&nbsp;0x4&nbsp;</td></tr>
+<tr><td>&nbsp;L1_IC1_PRIORITY_IC1_APRIORITY3&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000f000</pre></td><td>&nbsp;<pre>0xffff0fff</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_D_CONTROL'>L1_D_CONTROL</a></h3>
 <h4>Address: 0x7ee02100</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_D_CONTROL_DC_DISABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>L1_D_CONTROL_DC0_FLUSH</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>L1_D_CONTROL_DC1_FLUSH</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>L1_D_CONTROL_DC_EN_STATS</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_D_CONTROL_DC_DISABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_CONTROL_DC0_FLUSH&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_CONTROL_DC1_FLUSH&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_CONTROL_DC_EN_STATS&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_D_PRIORITY'>L1_D_PRIORITY</a></h3>
 <h4>Address: 0x7ee0210c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_D_PRIORITY_c0_l2_priority</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
-<tr><td>L1_D_PRIORITY_c0_uc_priority</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
-<tr><td>L1_D_PRIORITY_c0_per_priority</td><td>8</td><td>11</td><td>0x00000f00</td><td>0xfffff0ff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>12</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_D_PRIORITY_c1_l2_priority</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
-<tr><td>L1_D_PRIORITY_c1_uc_priority</td><td>20</td><td>23</td><td>0x00f00000</td><td>0xff0fffff</td><td>0x0</td></tr>
-<tr><td>L1_D_PRIORITY_c1_per_priority</td><td>24</td><td>27</td><td>0x0f000000</td><td>0xf0ffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_D_PRIORITY_c0_l2_priority&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_PRIORITY_c0_uc_priority&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_PRIORITY_c0_per_priority&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000f00</pre></td><td>&nbsp;<pre>0xfffff0ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_PRIORITY_c1_l2_priority&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_PRIORITY_c1_uc_priority&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00f00000</pre></td><td>&nbsp;<pre>0xff0fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L1_D_PRIORITY_c1_per_priority&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0f000000</pre></td><td>&nbsp;<pre>0xf0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START0'>L1_L1_SANDBOX_START0</a></h3>
 <h4>Address: 0x7ee02800</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START0_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x1</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START0_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START0_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START0_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START1'>L1_L1_SANDBOX_START1</a></h3>
 <h4>Address: 0x7ee02808</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START1_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START1_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START1_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START1_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START2'>L1_L1_SANDBOX_START2</a></h3>
 <h4>Address: 0x7ee02810</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START2_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START2_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START2_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START2_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START3'>L1_L1_SANDBOX_START3</a></h3>
 <h4>Address: 0x7ee02818</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START3_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START3_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START3_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START3_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START4'>L1_L1_SANDBOX_START4</a></h3>
 <h4>Address: 0x7ee02820</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START4_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START4_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START4_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START4_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START5'>L1_L1_SANDBOX_START5</a></h3>
 <h4>Address: 0x7ee02828</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START5_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START5_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START5_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START5_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START6'>L1_L1_SANDBOX_START6</a></h3>
 <h4>Address: 0x7ee02830</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START6_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START6_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START6_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START6_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_START7'>L1_L1_SANDBOX_START7</a></h3>
 <h4>Address: 0x7ee02838</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_START7_CTRL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_START7_START_ADDR</td><td>5</td><td>29</td><td>0x3fffffe0</td><td>0xc000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_START7_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_START7_START_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffe0</pre></td><td>&nbsp;<pre>0xc000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='L1_L1_SANDBOX_PERI_BR'>L1_L1_SANDBOX_PERI_BR</a></h3>
 <h4>Address: 0x7ee02840</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L1_L1_SANDBOX_PERI_BR_sandbox_bootrom</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x7</td></tr>
-<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L1_L1_SANDBOX_PERI_BR_sandbox_peri</td><td>8</td><td>12</td><td>0x00001f00</td><td>0xffffe0ff</td><td>0x7</td></tr>
-</table>
+<tr><td>&nbsp;L1_L1_SANDBOX_PERI_BR_sandbox_bootrom&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;0x7&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L1_L1_SANDBOX_PERI_BR_sandbox_peri&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001f00</pre></td><td>&nbsp;<pre>0xffffe0ff</pre>&nbsp;</td><td align=center>&nbsp;0x7&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

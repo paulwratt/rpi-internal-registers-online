@@ -1,133 +1,135 @@
 <html>
 <head>
 <title>CCP2TX - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: CCP2TX (base: 0x7e001000</h1>
+<h1>Register Region: CCP2TX (0x7e001000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e001000</td></tr>
-<tr><td>id</td><td>0x63637032</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e001000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x63637032</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#ccp2tx_tc'>CCP2TX_TC</a></td><td>0x7e001000</td><td>RW</td><td>32</td><td>0x8000ff07</td><td>0x0000ff00</td></tr>
-<tr><td><a hre='#ccp2tx_ts'>CCP2TX_TS</a></td><td>0x7e001004</td><td>RW</td><td>20</td><td>0x000f1f7f</td><td>0000000000</td></tr>
-<tr><td><a hre='#ccp2tx_tac'>CCP2TX_TAC</a></td><td>0x7e001008</td><td>RW</td><td>32</td><td>0xffffff0f</td><td>0x77434307</td></tr>
-<tr><td><a hre='#ccp2tx_tpc'>CCP2TX_TPC</a></td><td>0x7e00100c</td><td>RW</td><td>16</td><td>0x0000ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ccp2tx_tsc'>CCP2TX_TSC</a></td><td>0x7e001010</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0x00000002</td></tr>
-<tr><td><a hre='#ccp2tx_tic'>CCP2TX_TIC</a></td><td>0x7e001014</td><td>RW</td><td>8</td><td>0x000000f7</td><td>0000000000</td></tr>
-<tr><td><a hre='#ccp2tx_ttc'>CCP2TX_TTC</a></td><td>0x7e001018</td><td>RW</td><td>32</td><td>0x80ff1fff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#ccp2tx_tba'>CCP2TX_TBA</a></td><td>0x7e00101c</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ccp2tx_tdl'>CCP2TX_TDL</a></td><td>0x7e001020</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ccp2tx_td'>CCP2TX_TD</a></td><td>0x7e001024</td><td>RW</td><td>8</td><td>0x000000ff</td><td></td></tr>
-<tr><td>CCP2TX_TSPARE</td><td>0x7e001028</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_tc'>CCP2TX_TC</a>&nbsp;</td><td>&nbsp;<pre>0x7e001000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x8000ff07</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000ff00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_ts'>CCP2TX_TS</a>&nbsp;</td><td>&nbsp;<pre>0x7e001004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000f1f7f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_tac'>CCP2TX_TAC</a>&nbsp;</td><td>&nbsp;<pre>0x7e001008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x77434307</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_tpc'>CCP2TX_TPC</a>&nbsp;</td><td>&nbsp;<pre>0x7e00100c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_tsc'>CCP2TX_TSC</a>&nbsp;</td><td>&nbsp;<pre>0x7e001010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_tic'>CCP2TX_TIC</a>&nbsp;</td><td>&nbsp;<pre>0x7e001014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000f7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_ttc'>CCP2TX_TTC</a>&nbsp;</td><td>&nbsp;<pre>0x7e001018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x80ff1fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_tba'>CCP2TX_TBA</a>&nbsp;</td><td>&nbsp;<pre>0x7e00101c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_tdl'>CCP2TX_TDL</a>&nbsp;</td><td>&nbsp;<pre>0x7e001020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ccp2tx_td'>CCP2TX_TD</a>&nbsp;</td><td>&nbsp;<pre>0x7e001024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TSPARE&nbsp;</td><td>&nbsp;<pre>0x7e001028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='CCP2TX_TC'>CCP2TX_TC</a></h3>
 <h4>Address: 0x7e001000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TC_TEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TC_MEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TC_CLKM</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>3</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TC_TIP</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0xff</td></tr>
-<tr><td>missing definiton</td><td>16</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TC_SWR</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TC_TEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TC_MEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TC_CLKM&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TC_TIP&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ff00</pre></td><td>&nbsp;<pre>0xffff00ff</pre>&nbsp;</td><td align=center>&nbsp;0xff&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TC_SWR&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TS'>CCP2TX_TS</a></h3>
 <h4>Address: 0x7e001004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TS_TXB</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_IEB</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_ARE</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_TUE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_TFE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_TFF</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_TFP</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TS_TQL</td><td>8</td><td>12</td><td>0x00001f00</td><td>0xffffe0ff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TS_IS</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_TII</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_TEI</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TS_TQI</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TS_TXB&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_IEB&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_ARE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TUE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TFE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TFF&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TFP&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TQL&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001f00</pre></td><td>&nbsp;<pre>0xffffe0ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_IS&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TII&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TEI&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x00040000</pre></td><td>&nbsp;<pre>0xfffbffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TS_TQI&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x00080000</pre></td><td>&nbsp;<pre>0xfff7ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TAC'>CCP2TX_TAC</a></h3>
 <h4>Address: 0x7e001008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TAC_ARST</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x1</td></tr>
-<tr><td>CCP2TX_TAC_APD</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x1</td></tr>
-<tr><td>CCP2TX_TAC_BPD</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x1</td></tr>
-<tr><td>CCP2TX_TAC_TPC</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>4</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TAC_DLAC</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x43</td></tr>
-<tr><td>CCP2TX_TAC_CLAC</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td>0x43</td></tr>
-<tr><td>CCP2TX_TAC_PTATADJ</td><td>24</td><td>27</td><td>0x0f000000</td><td>0xf0ffffff</td><td>0x7</td></tr>
-<tr><td>CCP2TX_TAC_CTATADJ</td><td>28</td><td>31</td><td>0xf0000000</td><td>0x0fffffff</td><td>0x7</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TAC_ARST&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TAC_APD&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TAC_BPD&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TAC_TPC&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TAC_DLAC&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ff00</pre></td><td>&nbsp;<pre>0xffff00ff</pre>&nbsp;</td><td align=center>&nbsp;0x43&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TAC_CLAC&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ff0000</pre></td><td>&nbsp;<pre>0xff00ffff</pre>&nbsp;</td><td align=center>&nbsp;0x43&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TAC_PTATADJ&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0f000000</pre></td><td>&nbsp;<pre>0xf0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x7&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TAC_CTATADJ&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xf0000000</pre></td><td>&nbsp;<pre>0x0fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x7&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TPC'>CCP2TX_TPC</a></h3>
 <h4>Address: 0x7e00100c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TPC_TNP</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TPC_TPP</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TPC_TPT</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TPC_TNP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TPC_TPP&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TPC_TPT&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ff00</pre></td><td>&nbsp;<pre>0xffff00ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TSC'>CCP2TX_TSC</a></h3>
 <h4>Address: 0x7e001010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TSC_TSM</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x2</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TSC_TSM&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TIC'>CCP2TX_TIC</a></h3>
 <h4>Address: 0x7e001014</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TIC_TIIE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TIC_TEIE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TIC_TQIE</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TIC_TQIT</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TIC_TIIE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TIC_TEIE&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TIC_TQIE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TIC_TQIT&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TTC'>CCP2TX_TTC</a></h3>
 <h4>Address: 0x7e001018</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TTC_LCN</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TTC_LSC</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
-<tr><td>CCP2TX_TTC_LEC</td><td>8</td><td>11</td><td>0x00000f00</td><td>0xfffff0ff</td><td>0x1</td></tr>
-<tr><td>CCP2TX_TTC_FSP</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TTC_BI</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>24</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>CCP2TX_TTC_ATX</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TTC_LCN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TTC_LSC&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TTC_LEC&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000f00</pre></td><td>&nbsp;<pre>0xfffff0ff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TTC_FSP&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TTC_BI&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ff0000</pre></td><td>&nbsp;<pre>0xff00ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TTC_ATX&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TBA'>CCP2TX_TBA</a></h3>
 <h4>Address: 0x7e00101c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TBA_ADDR</td><td>0</td><td>29</td><td>0x3fffffff</td><td>0xc0000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TBA_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre></td><td>&nbsp;<pre>0xc0000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TDL'>CCP2TX_TDL</a></h3>
 <h4>Address: 0x7e001020</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TDL_LEN</td><td>0</td><td>29</td><td>0x3fffffff</td><td>0xc0000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TDL_LEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre></td><td>&nbsp;<pre>0xc0000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='CCP2TX_TD'>CCP2TX_TD</a></h3>
 <h4>Address: 0x7e001024</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>CCP2TX_TD_TCS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td></td></tr>
-<tr><td>CCP2TX_TD_IES</td><td>5</td><td>6</td><td>0x00000060</td><td>0xffffff9f</td><td></td></tr>
-</table>
+<tr><td>&nbsp;CCP2TX_TD_TCS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;CCP2TX_TD_IES&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000060</pre></td><td>&nbsp;<pre>0xffffff9f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

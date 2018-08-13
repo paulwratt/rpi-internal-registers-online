@@ -1,262 +1,264 @@
 <html>
 <head>
 <title>ARM - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: ARM (base: 0x7E00B000</h1>
+<h1>Register Region: ARM (0x7E00B000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7E00B000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7E00B000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>ARM_CONTROL0</td><td>0x7e00b000</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_ID_SECURE</td><td>0x7e00b00c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_TRANSLATE</td><td>0x7e00b100</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_PEND0</td><td>0x7e00b200</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_PEND1</td><td>0x7e00b204</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_PEND2</td><td>0x7e00b208</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_FAST</td><td>0x7e00b20c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_ENBL1</td><td>0x7e00b210</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_ENBL2</td><td>0x7e00b214</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_ENBL3</td><td>0x7e00b218</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_DIBL1</td><td>0x7e00b21c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_DIBL2</td><td>0x7e00b220</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_IRQ_DIBL3</td><td>0x7e00b224</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_LOAD</td><td>0x7e00b400</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_VALUE</td><td>0x7e00b404</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_CONTROL</td><td>0x7e00b408</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_IRQCNTL</td><td>0x7e00b40c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_RAWIRQ</td><td>0x7e00b410</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_MSKIRQ</td><td>0x7e00b414</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_RELOAD</td><td>0x7e00b418</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_PREDIV</td><td>0x7e00b41c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_T_FREECNT</td><td>0x7e00b420</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_CONTROL1</td><td>0x7e00b440</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_STATUS</td><td>0x7e00b444</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_ERRHALT</td><td>0x7e00b448</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_ID</td><td>0x7e00b44c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEMS</td><td>0x7e00b800</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM0</td><td>0x7e00b800</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM1</td><td>0x7e00b804</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM2</td><td>0x7e00b808</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM3</td><td>0x7e00b80c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM4</td><td>0x7e00b810</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM5</td><td>0x7e00b814</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM6</td><td>0x7e00b818</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEM7</td><td>0x7e00b81c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_BELL0</td><td>0x7e00b840</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_BELL1</td><td>0x7e00b844</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_BELL2</td><td>0x7e00b848</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_BELL3</td><td>0x7e00b84c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL0_WRT</td><td>0x7e00b880</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL0_RD</td><td>0x7e00b880</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL0_POL</td><td>0x7e00b890</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL0_SND</td><td>0x7e00b894</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL0_STA</td><td>0x7e00b898</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL0_CNF</td><td>0x7e00b89c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL1_WRT</td><td>0x7e00b8a0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MAIL1_STA</td><td>0x7e00b8b8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_SEMCLRDBG</td><td>0x7e00b8e0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_BELLCLRDBG</td><td>0x7e00b8e4</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_ALL_IRQS</td><td>0x7e00b8f8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_0_MY_IRQS</td><td>0x7e00b8fc</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEMS</td><td>0x7e00b900</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM0</td><td>0x7e00b900</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM1</td><td>0x7e00b904</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM2</td><td>0x7e00b908</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM3</td><td>0x7e00b90c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM4</td><td>0x7e00b910</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM5</td><td>0x7e00b914</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM6</td><td>0x7e00b918</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEM7</td><td>0x7e00b91c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_BELL0</td><td>0x7e00b940</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_BELL1</td><td>0x7e00b944</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_BELL2</td><td>0x7e00b948</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_BELL3</td><td>0x7e00b94c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL0_WRT</td><td>0x7e00b980</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL0_STA</td><td>0x7e00b998</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL1_WRT</td><td>0x7e00b9a0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL1_RD</td><td>0x7e00b9a0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL1_POL</td><td>0x7e00b9b0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL1_SND</td><td>0x7e00b9b4</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL1_STA</td><td>0x7e00b9b8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MAIL1_CNF</td><td>0x7e00b9bc</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_SEMCLRDBG</td><td>0x7e00b9e0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_BELLCLRDBG</td><td>0x7e00b9e4</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_ALL_IRQS</td><td>0x7e00b9f8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_1_MY_IRQS</td><td>0x7e00b9fc</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEMS</td><td>0x7e00ba00</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM0</td><td>0x7e00ba00</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM1</td><td>0x7e00ba04</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM2</td><td>0x7e00ba08</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM3</td><td>0x7e00ba0c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM4</td><td>0x7e00ba10</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM5</td><td>0x7e00ba14</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM6</td><td>0x7e00ba18</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEM7</td><td>0x7e00ba1c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_BELL0</td><td>0x7e00ba40</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_BELL1</td><td>0x7e00ba44</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_BELL2</td><td>0x7e00ba48</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_BELL3</td><td>0x7e00ba4c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_MAIL0_WRT</td><td>0x7e00ba80</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_MAIL0_STA</td><td>0x7e00ba98</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_MAIL1_WRT</td><td>0x7e00baa0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_MAIL1_STA</td><td>0x7e00bab8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_SEMCLRDBG</td><td>0x7e00bae0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_BELLCLRDBG</td><td>0x7e00bae4</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_ALL_IRQS</td><td>0x7e00baf8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_2_MY_IRQS</td><td>0x7e00bafc</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEMS</td><td>0x7e00bb00</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM0</td><td>0x7e00bb00</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM1</td><td>0x7e00bb04</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM2</td><td>0x7e00bb08</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM3</td><td>0x7e00bb0c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM4</td><td>0x7e00bb10</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM5</td><td>0x7e00bb14</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM6</td><td>0x7e00bb18</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEM7</td><td>0x7e00bb1c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_BELL0</td><td>0x7e00bb40</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_BELL1</td><td>0x7e00bb44</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_BELL2</td><td>0x7e00bb48</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_BELL3</td><td>0x7e00bb4c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_MAIL0_WRT</td><td>0x7e00bb80</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_MAIL0_STA</td><td>0x7e00bb98</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_MAIL1_WRT</td><td>0x7e00bba0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_MAIL1_STA</td><td>0x7e00bbb8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_SEMCLRDBG</td><td>0x7e00bbe0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_BELLCLRDBG</td><td>0x7e00bbe4</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_ALL_IRQS</td><td>0x7e00bbf8</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>ARM_3_MY_IRQS</td><td>0x7e00bbfc</td><td>RW</td><td></td><td></td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;ARM_CONTROL0&nbsp;</td><td>&nbsp;<pre>0x7e00b000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_ID_SECURE&nbsp;</td><td>&nbsp;<pre>0x7e00b00c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_TRANSLATE&nbsp;</td><td>&nbsp;<pre>0x7e00b100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_PEND0&nbsp;</td><td>&nbsp;<pre>0x7e00b200</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_PEND1&nbsp;</td><td>&nbsp;<pre>0x7e00b204</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_PEND2&nbsp;</td><td>&nbsp;<pre>0x7e00b208</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_FAST&nbsp;</td><td>&nbsp;<pre>0x7e00b20c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_ENBL1&nbsp;</td><td>&nbsp;<pre>0x7e00b210</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_ENBL2&nbsp;</td><td>&nbsp;<pre>0x7e00b214</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_ENBL3&nbsp;</td><td>&nbsp;<pre>0x7e00b218</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_DIBL1&nbsp;</td><td>&nbsp;<pre>0x7e00b21c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_DIBL2&nbsp;</td><td>&nbsp;<pre>0x7e00b220</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IRQ_DIBL3&nbsp;</td><td>&nbsp;<pre>0x7e00b224</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_LOAD&nbsp;</td><td>&nbsp;<pre>0x7e00b400</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_VALUE&nbsp;</td><td>&nbsp;<pre>0x7e00b404</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_CONTROL&nbsp;</td><td>&nbsp;<pre>0x7e00b408</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_IRQCNTL&nbsp;</td><td>&nbsp;<pre>0x7e00b40c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_RAWIRQ&nbsp;</td><td>&nbsp;<pre>0x7e00b410</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_MSKIRQ&nbsp;</td><td>&nbsp;<pre>0x7e00b414</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_RELOAD&nbsp;</td><td>&nbsp;<pre>0x7e00b418</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_PREDIV&nbsp;</td><td>&nbsp;<pre>0x7e00b41c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_T_FREECNT&nbsp;</td><td>&nbsp;<pre>0x7e00b420</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_CONTROL1&nbsp;</td><td>&nbsp;<pre>0x7e00b440</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_STATUS&nbsp;</td><td>&nbsp;<pre>0x7e00b444</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_ERRHALT&nbsp;</td><td>&nbsp;<pre>0x7e00b448</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_ID&nbsp;</td><td>&nbsp;<pre>0x7e00b44c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM0&nbsp;</td><td>&nbsp;<pre>0x7e00b800</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEMS&nbsp;</td><td>&nbsp;<pre>0x7e00b800</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM1&nbsp;</td><td>&nbsp;<pre>0x7e00b804</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM2&nbsp;</td><td>&nbsp;<pre>0x7e00b808</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM3&nbsp;</td><td>&nbsp;<pre>0x7e00b80c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM4&nbsp;</td><td>&nbsp;<pre>0x7e00b810</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM5&nbsp;</td><td>&nbsp;<pre>0x7e00b814</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM6&nbsp;</td><td>&nbsp;<pre>0x7e00b818</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEM7&nbsp;</td><td>&nbsp;<pre>0x7e00b81c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_BELL0&nbsp;</td><td>&nbsp;<pre>0x7e00b840</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_BELL1&nbsp;</td><td>&nbsp;<pre>0x7e00b844</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_BELL2&nbsp;</td><td>&nbsp;<pre>0x7e00b848</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_BELL3&nbsp;</td><td>&nbsp;<pre>0x7e00b84c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL0_RD&nbsp;</td><td>&nbsp;<pre>0x7e00b880</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL0_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00b880</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL0_POL&nbsp;</td><td>&nbsp;<pre>0x7e00b890</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL0_SND&nbsp;</td><td>&nbsp;<pre>0x7e00b894</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL0_STA&nbsp;</td><td>&nbsp;<pre>0x7e00b898</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL0_CNF&nbsp;</td><td>&nbsp;<pre>0x7e00b89c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL1_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00b8a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MAIL1_STA&nbsp;</td><td>&nbsp;<pre>0x7e00b8b8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_SEMCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00b8e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_BELLCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00b8e4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_ALL_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00b8f8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_0_MY_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00b8fc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM0&nbsp;</td><td>&nbsp;<pre>0x7e00b900</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEMS&nbsp;</td><td>&nbsp;<pre>0x7e00b900</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM1&nbsp;</td><td>&nbsp;<pre>0x7e00b904</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM2&nbsp;</td><td>&nbsp;<pre>0x7e00b908</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM3&nbsp;</td><td>&nbsp;<pre>0x7e00b90c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM4&nbsp;</td><td>&nbsp;<pre>0x7e00b910</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM5&nbsp;</td><td>&nbsp;<pre>0x7e00b914</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM6&nbsp;</td><td>&nbsp;<pre>0x7e00b918</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEM7&nbsp;</td><td>&nbsp;<pre>0x7e00b91c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_BELL0&nbsp;</td><td>&nbsp;<pre>0x7e00b940</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_BELL1&nbsp;</td><td>&nbsp;<pre>0x7e00b944</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_BELL2&nbsp;</td><td>&nbsp;<pre>0x7e00b948</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_BELL3&nbsp;</td><td>&nbsp;<pre>0x7e00b94c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL0_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00b980</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL0_STA&nbsp;</td><td>&nbsp;<pre>0x7e00b998</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL1_RD&nbsp;</td><td>&nbsp;<pre>0x7e00b9a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL1_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00b9a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL1_POL&nbsp;</td><td>&nbsp;<pre>0x7e00b9b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL1_SND&nbsp;</td><td>&nbsp;<pre>0x7e00b9b4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL1_STA&nbsp;</td><td>&nbsp;<pre>0x7e00b9b8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MAIL1_CNF&nbsp;</td><td>&nbsp;<pre>0x7e00b9bc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_SEMCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00b9e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_BELLCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00b9e4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_ALL_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00b9f8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_1_MY_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00b9fc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM0&nbsp;</td><td>&nbsp;<pre>0x7e00ba00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEMS&nbsp;</td><td>&nbsp;<pre>0x7e00ba00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM1&nbsp;</td><td>&nbsp;<pre>0x7e00ba04</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM2&nbsp;</td><td>&nbsp;<pre>0x7e00ba08</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM3&nbsp;</td><td>&nbsp;<pre>0x7e00ba0c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM4&nbsp;</td><td>&nbsp;<pre>0x7e00ba10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM5&nbsp;</td><td>&nbsp;<pre>0x7e00ba14</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM6&nbsp;</td><td>&nbsp;<pre>0x7e00ba18</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEM7&nbsp;</td><td>&nbsp;<pre>0x7e00ba1c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_BELL0&nbsp;</td><td>&nbsp;<pre>0x7e00ba40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_BELL1&nbsp;</td><td>&nbsp;<pre>0x7e00ba44</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_BELL2&nbsp;</td><td>&nbsp;<pre>0x7e00ba48</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_BELL3&nbsp;</td><td>&nbsp;<pre>0x7e00ba4c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_MAIL0_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00ba80</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_MAIL0_STA&nbsp;</td><td>&nbsp;<pre>0x7e00ba98</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_MAIL1_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00baa0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_MAIL1_STA&nbsp;</td><td>&nbsp;<pre>0x7e00bab8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_SEMCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00bae0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_BELLCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00bae4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_ALL_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00baf8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_2_MY_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00bafc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM0&nbsp;</td><td>&nbsp;<pre>0x7e00bb00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEMS&nbsp;</td><td>&nbsp;<pre>0x7e00bb00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM1&nbsp;</td><td>&nbsp;<pre>0x7e00bb04</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM2&nbsp;</td><td>&nbsp;<pre>0x7e00bb08</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM3&nbsp;</td><td>&nbsp;<pre>0x7e00bb0c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM4&nbsp;</td><td>&nbsp;<pre>0x7e00bb10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM5&nbsp;</td><td>&nbsp;<pre>0x7e00bb14</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM6&nbsp;</td><td>&nbsp;<pre>0x7e00bb18</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEM7&nbsp;</td><td>&nbsp;<pre>0x7e00bb1c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_BELL0&nbsp;</td><td>&nbsp;<pre>0x7e00bb40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_BELL1&nbsp;</td><td>&nbsp;<pre>0x7e00bb44</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_BELL2&nbsp;</td><td>&nbsp;<pre>0x7e00bb48</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_BELL3&nbsp;</td><td>&nbsp;<pre>0x7e00bb4c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_MAIL0_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00bb80</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_MAIL0_STA&nbsp;</td><td>&nbsp;<pre>0x7e00bb98</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_MAIL1_WRT&nbsp;</td><td>&nbsp;<pre>0x7e00bba0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_MAIL1_STA&nbsp;</td><td>&nbsp;<pre>0x7e00bbb8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_SEMCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00bbe0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_BELLCLRDBG&nbsp;</td><td>&nbsp;<pre>0x7e00bbe4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_ALL_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00bbf8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_3_MY_IRQS&nbsp;</td><td>&nbsp;<pre>0x7e00bbfc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>ARM_AIS0_HAVEDATA</td><td>0x00000010</td></tr>
-<tr><td>ARM_AIS0_HAVESPAC</td><td>0x00000020</td></tr>
-<tr><td>ARM_AIS0_OPPEMPTY</td><td>0x00000040</td></tr>
-<tr><td>ARM_AIS1_HAVEDATA</td><td>0x00000080</td></tr>
-<tr><td>ARM_AIS1_HAVESPAC</td><td>0x00000100</td></tr>
-<tr><td>ARM_AIS1_OPPEMPTY</td><td>0x00000200</td></tr>
-<tr><td>ARM_AIS_BELL0</td><td>0x00000001</td></tr>
-<tr><td>ARM_AIS_BELL1</td><td>0x00000002</td></tr>
-<tr><td>ARM_AIS_BELL2</td><td>0x00000004</td></tr>
-<tr><td>ARM_AIS_BELL3</td><td>0x00000008</td></tr>
-<tr><td>ARM_BD_BELL0</td><td>0x00000100</td></tr>
-<tr><td>ARM_BD_BELL1</td><td>0x00000200</td></tr>
-<tr><td>ARM_BD_BELL2</td><td>0x00000400</td></tr>
-<tr><td>ARM_BD_BELL3</td><td>0x00000800</td></tr>
-<tr><td>ARM_BD_OWN0</td><td>0x00000003</td></tr>
-<tr><td>ARM_BD_OWN1</td><td>0x0000000C</td></tr>
-<tr><td>ARM_BD_OWN2</td><td>0x00000030</td></tr>
-<tr><td>ARM_BD_OWN3</td><td>0x000000C0</td></tr>
-<tr><td>ARM_C0_APROTMSK</td><td>0x0000F000</td></tr>
-<tr><td>ARM_C0_APROTPASS</td><td>0x0000A000</td></tr>
-<tr><td>ARM_C0_APROTSYST</td><td>0x0000F000</td></tr>
-<tr><td>ARM_C0_APROTUSER</td><td>0x00000000</td></tr>
-<tr><td>ARM_C0_BOOTHI</td><td>0x00000010</td></tr>
-<tr><td>ARM_C0_BRESP0</td><td>0x00000000</td></tr>
-<tr><td>ARM_C0_BRESP1</td><td>0x00000004</td></tr>
-<tr><td>ARM_C0_BRESP2</td><td>0x00000008</td></tr>
-<tr><td>ARM_C0_DBG0SYNC</td><td>0x00010000</td></tr>
-<tr><td>ARM_C0_DBG1SYNC</td><td>0x00020000</td></tr>
-<tr><td>ARM_C0_FULLPERI</td><td>0x00000040</td></tr>
-<tr><td>ARM_C0_JTAGBASH</td><td>0x00000800</td></tr>
-<tr><td>ARM_C0_JTAGGPIO</td><td>0x00000C00</td></tr>
-<tr><td>ARM_C0_JTAGMASK</td><td>0x00000E00</td></tr>
-<tr><td>ARM_C0_JTAGOFF</td><td>0x00000000</td></tr>
-<tr><td>ARM_C0_PASSHALT</td><td>0x00080000</td></tr>
-<tr><td>ARM_C0_PRIO_L2</td><td>0x0F000000</td></tr>
-<tr><td>ARM_C0_PRIO_PER</td><td>0x00F00000</td></tr>
-<tr><td>ARM_C0_PRIO_UC</td><td>0xF0000000</td></tr>
-<tr><td>ARM_C0_SIZ128M</td><td>0x00000000</td></tr>
-<tr><td>ARM_C0_SIZ1G</td><td>0x00000003</td></tr>
-<tr><td>ARM_C0_SIZ256M</td><td>0x00000001</td></tr>
-<tr><td>ARM_C0_SIZ512M</td><td>0x00000002</td></tr>
-<tr><td>ARM_C0_SWDBGREQ</td><td>0x00040000</td></tr>
-<tr><td>ARM_C0_UNUSED05</td><td>0x00000020</td></tr>
-<tr><td>ARM_C0_UNUSED78</td><td>0x00000180</td></tr>
-<tr><td>ARM_C1_BELL0</td><td>0x00000004</td></tr>
-<tr><td>ARM_C1_BELL1</td><td>0x00000008</td></tr>
-<tr><td>ARM_C1_MAIL</td><td>0x00000002</td></tr>
-<tr><td>ARM_C1_PERSON</td><td>0x00000100</td></tr>
-<tr><td>ARM_C1_REQSTOP</td><td>0x00000200</td></tr>
-<tr><td>ARM_C1_TIMER</td><td>0x00000001</td></tr>
-<tr><td>ARM_DS_ACTIVE</td><td>0x00000004</td></tr>
-<tr><td>ARM_DS_OWNER</td><td>0x00000003</td></tr>
-<tr><td>ARM_EH_ARMHALT</td><td>0x00000020</td></tr>
-<tr><td>ARM_EH_ILLADDRS1</td><td>0x00000002</td></tr>
-<tr><td>ARM_EH_ILLADDRS2</td><td>0x00000004</td></tr>
-<tr><td>ARM_EH_PERIBURST</td><td>0x00000001</td></tr>
-<tr><td>ARM_EH_VPU0HALT</td><td>0x00000008</td></tr>
-<tr><td>ARM_EH_VPU1HALT</td><td>0x00000010</td></tr>
-<tr><td>ARM_I0_BANK1</td><td>0x00000100</td></tr>
-<tr><td>ARM_I0_BANK2</td><td>0x00000200</td></tr>
-<tr><td>ARM_I0_BELL0</td><td>0x00000004</td></tr>
-<tr><td>ARM_I0_BELL1</td><td>0x00000008</td></tr>
-<tr><td>ARM_I0_MAIL</td><td>0x00000002</td></tr>
-<tr><td>ARM_I0_TIMER</td><td>0x00000001</td></tr>
-<tr><td>ARM_IDVAL</td><td>0x364D5241</td></tr>
-<tr><td>ARM_IE_BELL0</td><td>0x00000004</td></tr>
-<tr><td>ARM_IE_BELL1</td><td>0x00000008</td></tr>
-<tr><td>ARM_IE_ILLEGAL</td><td>0x00000040</td></tr>
-<tr><td>ARM_IE_MAIL</td><td>0x00000002</td></tr>
-<tr><td>ARM_IE_TIMER</td><td>0x00000001</td></tr>
-<tr><td>ARM_IE_VP0HALT</td><td>0x00000010</td></tr>
-<tr><td>ARM_IE_VP1HALT</td><td>0x00000020</td></tr>
-<tr><td>ARM_IF_BELL0</td><td>0x00000042</td></tr>
-<tr><td>ARM_IF_BELL1</td><td>0x00000043</td></tr>
-<tr><td>ARM_IF_ENABLE</td><td>0x00000080</td></tr>
-<tr><td>ARM_IF_ILLEGAL</td><td>0x00000046</td></tr>
-<tr><td>ARM_IF_INDEX</td><td>0x0000007F</td></tr>
-<tr><td>ARM_IF_MAIL</td><td>0x00000041</td></tr>
-<tr><td>ARM_IF_TIMER</td><td>0x00000040</td></tr>
-<tr><td>ARM_IF_VCMASK</td><td>0x0000003F</td></tr>
-<tr><td>ARM_IF_VP0HALT</td><td>0x00000044</td></tr>
-<tr><td>ARM_IF_VP1HALT</td><td>0x00000045</td></tr>
-<tr><td>ARM_MC_ERRNOOWN</td><td>0x00000100</td></tr>
-<tr><td>ARM_MC_ERROVERFLW</td><td>0x00000200</td></tr>
-<tr><td>ARM_MC_ERRUNDRFLW</td><td>0x00000400</td></tr>
-<tr><td>ARM_MC_IHAVEDATAIRQEN</td><td>0x00000001</td></tr>
-<tr><td>ARM_MC_IHAVEDATAIRQPEND</td><td>0x00000010</td></tr>
-<tr><td>ARM_MC_IHAVESPACEIRQEN</td><td>0x00000002</td></tr>
-<tr><td>ARM_MC_IHAVESPACEIRQPEND</td><td>0x00000020</td></tr>
-<tr><td>ARM_MC_MAIL_CLEAR</td><td>0x00000008</td></tr>
-<tr><td>ARM_MC_OPPISEMPTYIRQEN</td><td>0x00000004</td></tr>
-<tr><td>ARM_MC_OPPISEMPTYIRQPEND</td><td>0x00000040</td></tr>
-<tr><td>ARM_MS_EMPTY</td><td>0x40000000</td></tr>
-<tr><td>ARM_MS_FULL</td><td>0x80000000</td></tr>
-<tr><td>ARM_MS_LEVEL</td><td>0x400000FF</td></tr>
-<tr><td>ARM_MYIRQ_BELL</td><td>0x00000001</td></tr>
-<tr><td>ARM_MYIRQ_MAIL</td><td>0x00000002</td></tr>
-<tr><td>ARM_SBM_OWN0</td><td>0x7e00b800</td></tr>
-<tr><td>ARM_SBM_OWN1</td><td>0x7e00b900</td></tr>
-<tr><td>ARM_SBM_OWN2</td><td>0x7e00ba00</td></tr>
-<tr><td>ARM_SBM_OWN3</td><td>0x7e00bb00</td></tr>
-<tr><td>ARM_SD_OWN0</td><td>0x00000003</td></tr>
-<tr><td>ARM_SD_OWN1</td><td>0x0000000C</td></tr>
-<tr><td>ARM_SD_OWN2</td><td>0x00000030</td></tr>
-<tr><td>ARM_SD_OWN3</td><td>0x000000C0</td></tr>
-<tr><td>ARM_SD_OWN4</td><td>0x00000300</td></tr>
-<tr><td>ARM_SD_OWN5</td><td>0x00000C00</td></tr>
-<tr><td>ARM_SD_OWN6</td><td>0x00003000</td></tr>
-<tr><td>ARM_SD_OWN7</td><td>0x0000C000</td></tr>
-<tr><td>ARM_SD_SEM0</td><td>0x00010000</td></tr>
-<tr><td>ARM_SD_SEM1</td><td>0x00020000</td></tr>
-<tr><td>ARM_SD_SEM2</td><td>0x00040000</td></tr>
-<tr><td>ARM_SD_SEM3</td><td>0x00080000</td></tr>
-<tr><td>ARM_SD_SEM4</td><td>0x00100000</td></tr>
-<tr><td>ARM_SD_SEM5</td><td>0x00200000</td></tr>
-<tr><td>ARM_SD_SEM6</td><td>0x00400000</td></tr>
-<tr><td>ARM_SD_SEM7</td><td>0x00800000</td></tr>
-<tr><td>ARM_S_ACKSTOP</td><td>0x80000000</td></tr>
-<tr><td>ARM_S_READPEND</td><td>0x000003FF</td></tr>
-<tr><td>ARM_S_WRITPEND</td><td>0x000FFC00</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;ARM_AIS0_HAVEDATA&nbsp;</td><td align=center>&nbsp;<pre>0x00000010</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS0_HAVESPAC&nbsp;</td><td align=center>&nbsp;<pre>0x00000020</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS0_OPPEMPTY&nbsp;</td><td align=center>&nbsp;<pre>0x00000040</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS1_HAVEDATA&nbsp;</td><td align=center>&nbsp;<pre>0x00000080</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS1_HAVESPAC&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS1_OPPEMPTY&nbsp;</td><td align=center>&nbsp;<pre>0x00000200</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS_BELL0&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS_BELL1&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS_BELL2&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_AIS_BELL3&nbsp;</td><td align=center>&nbsp;<pre>0x00000008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_BELL0&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_BELL1&nbsp;</td><td align=center>&nbsp;<pre>0x00000200</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_BELL2&nbsp;</td><td align=center>&nbsp;<pre>0x00000400</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_BELL3&nbsp;</td><td align=center>&nbsp;<pre>0x00000800</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_OWN0&nbsp;</td><td align=center>&nbsp;<pre>0x00000003</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_OWN1&nbsp;</td><td align=center>&nbsp;<pre>0x0000000C</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_OWN2&nbsp;</td><td align=center>&nbsp;<pre>0x00000030</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_BD_OWN3&nbsp;</td><td align=center>&nbsp;<pre>0x000000C0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_APROTMSK&nbsp;</td><td align=center>&nbsp;<pre>0x0000F000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_APROTPASS&nbsp;</td><td align=center>&nbsp;<pre>0x0000A000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_APROTSYST&nbsp;</td><td align=center>&nbsp;<pre>0x0000F000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_APROTUSER&nbsp;</td><td align=center>&nbsp;<pre>0x00000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_BOOTHI&nbsp;</td><td align=center>&nbsp;<pre>0x00000010</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_BRESP0&nbsp;</td><td align=center>&nbsp;<pre>0x00000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_BRESP1&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_BRESP2&nbsp;</td><td align=center>&nbsp;<pre>0x00000008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_DBG0SYNC&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_DBG1SYNC&nbsp;</td><td align=center>&nbsp;<pre>0x00020000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_FULLPERI&nbsp;</td><td align=center>&nbsp;<pre>0x00000040</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_JTAGBASH&nbsp;</td><td align=center>&nbsp;<pre>0x00000800</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_JTAGGPIO&nbsp;</td><td align=center>&nbsp;<pre>0x00000C00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_JTAGMASK&nbsp;</td><td align=center>&nbsp;<pre>0x00000E00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_JTAGOFF&nbsp;</td><td align=center>&nbsp;<pre>0x00000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_PASSHALT&nbsp;</td><td align=center>&nbsp;<pre>0x00080000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_PRIO_L2&nbsp;</td><td align=center>&nbsp;<pre>0x0F000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_PRIO_PER&nbsp;</td><td align=center>&nbsp;<pre>0x00F00000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_PRIO_UC&nbsp;</td><td align=center>&nbsp;<pre>0xF0000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_SIZ128M&nbsp;</td><td align=center>&nbsp;<pre>0x00000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_SIZ1G&nbsp;</td><td align=center>&nbsp;<pre>0x00000003</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_SIZ256M&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_SIZ512M&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_SWDBGREQ&nbsp;</td><td align=center>&nbsp;<pre>0x00040000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_UNUSED05&nbsp;</td><td align=center>&nbsp;<pre>0x00000020</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C0_UNUSED78&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C1_BELL0&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C1_BELL1&nbsp;</td><td align=center>&nbsp;<pre>0x00000008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C1_MAIL&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C1_PERSON&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C1_REQSTOP&nbsp;</td><td align=center>&nbsp;<pre>0x00000200</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_C1_TIMER&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_DS_ACTIVE&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_DS_OWNER&nbsp;</td><td align=center>&nbsp;<pre>0x00000003</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_EH_ARMHALT&nbsp;</td><td align=center>&nbsp;<pre>0x00000020</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_EH_ILLADDRS1&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_EH_ILLADDRS2&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_EH_PERIBURST&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_EH_VPU0HALT&nbsp;</td><td align=center>&nbsp;<pre>0x00000008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_EH_VPU1HALT&nbsp;</td><td align=center>&nbsp;<pre>0x00000010</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_I0_BANK1&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_I0_BANK2&nbsp;</td><td align=center>&nbsp;<pre>0x00000200</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_I0_BELL0&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_I0_BELL1&nbsp;</td><td align=center>&nbsp;<pre>0x00000008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_I0_MAIL&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_I0_TIMER&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IDVAL&nbsp;</td><td align=center>&nbsp;<pre>0x364D5241</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IE_BELL0&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IE_BELL1&nbsp;</td><td align=center>&nbsp;<pre>0x00000008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IE_ILLEGAL&nbsp;</td><td align=center>&nbsp;<pre>0x00000040</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IE_MAIL&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IE_TIMER&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IE_VP0HALT&nbsp;</td><td align=center>&nbsp;<pre>0x00000010</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IE_VP1HALT&nbsp;</td><td align=center>&nbsp;<pre>0x00000020</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_BELL0&nbsp;</td><td align=center>&nbsp;<pre>0x00000042</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_BELL1&nbsp;</td><td align=center>&nbsp;<pre>0x00000043</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_ENABLE&nbsp;</td><td align=center>&nbsp;<pre>0x00000080</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_ILLEGAL&nbsp;</td><td align=center>&nbsp;<pre>0x00000046</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_INDEX&nbsp;</td><td align=center>&nbsp;<pre>0x0000007F</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_MAIL&nbsp;</td><td align=center>&nbsp;<pre>0x00000041</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_TIMER&nbsp;</td><td align=center>&nbsp;<pre>0x00000040</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_VCMASK&nbsp;</td><td align=center>&nbsp;<pre>0x0000003F</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_VP0HALT&nbsp;</td><td align=center>&nbsp;<pre>0x00000044</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_IF_VP1HALT&nbsp;</td><td align=center>&nbsp;<pre>0x00000045</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_ERRNOOWN&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_ERROVERFLW&nbsp;</td><td align=center>&nbsp;<pre>0x00000200</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_ERRUNDRFLW&nbsp;</td><td align=center>&nbsp;<pre>0x00000400</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_IHAVEDATAIRQEN&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_IHAVEDATAIRQPEND&nbsp;</td><td align=center>&nbsp;<pre>0x00000010</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_IHAVESPACEIRQEN&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_IHAVESPACEIRQPEND&nbsp;</td><td align=center>&nbsp;<pre>0x00000020</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_MAIL_CLEAR&nbsp;</td><td align=center>&nbsp;<pre>0x00000008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_OPPISEMPTYIRQEN&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MC_OPPISEMPTYIRQPEND&nbsp;</td><td align=center>&nbsp;<pre>0x00000040</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MS_EMPTY&nbsp;</td><td align=center>&nbsp;<pre>0x40000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MS_FULL&nbsp;</td><td align=center>&nbsp;<pre>0x80000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MS_LEVEL&nbsp;</td><td align=center>&nbsp;<pre>0x400000FF</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MYIRQ_BELL&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_MYIRQ_MAIL&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SBM_OWN0&nbsp;</td><td align=center>&nbsp;<pre>0x7e00b800</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SBM_OWN1&nbsp;</td><td align=center>&nbsp;<pre>0x7e00b900</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SBM_OWN2&nbsp;</td><td align=center>&nbsp;<pre>0x7e00ba00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SBM_OWN3&nbsp;</td><td align=center>&nbsp;<pre>0x7e00bb00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN0&nbsp;</td><td align=center>&nbsp;<pre>0x00000003</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN1&nbsp;</td><td align=center>&nbsp;<pre>0x0000000C</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN2&nbsp;</td><td align=center>&nbsp;<pre>0x00000030</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN3&nbsp;</td><td align=center>&nbsp;<pre>0x000000C0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN4&nbsp;</td><td align=center>&nbsp;<pre>0x00000300</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN5&nbsp;</td><td align=center>&nbsp;<pre>0x00000C00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN6&nbsp;</td><td align=center>&nbsp;<pre>0x00003000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_OWN7&nbsp;</td><td align=center>&nbsp;<pre>0x0000C000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM0&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM1&nbsp;</td><td align=center>&nbsp;<pre>0x00020000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM2&nbsp;</td><td align=center>&nbsp;<pre>0x00040000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM3&nbsp;</td><td align=center>&nbsp;<pre>0x00080000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM4&nbsp;</td><td align=center>&nbsp;<pre>0x00100000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM5&nbsp;</td><td align=center>&nbsp;<pre>0x00200000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM6&nbsp;</td><td align=center>&nbsp;<pre>0x00400000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_SD_SEM7&nbsp;</td><td align=center>&nbsp;<pre>0x00800000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_S_ACKSTOP&nbsp;</td><td align=center>&nbsp;<pre>0x80000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_S_READPEND&nbsp;</td><td align=center>&nbsp;<pre>0x000003FF</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;ARM_S_WRITPEND&nbsp;</td><td align=center>&nbsp;<pre>0x000FFC00</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

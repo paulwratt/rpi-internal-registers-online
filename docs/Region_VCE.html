@@ -1,75 +1,77 @@
 <html>
 <head>
 <title>VCE - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: VCE (base: 0x7f100000</h1>
+<h1>Register Region: VCE (0x7f100000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7f100000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7f100000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>VCE_DATA_MEM_BASE</td><td>0x7f100000</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_PROGRAM_MEM_BASE</td><td>0x7f110000</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_REGISTERS_BASE</td><td>0x7f120000</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_STATUS</td><td>0x7f140000</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_VERSION</td><td>0x7f140004</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_PC_PF0</td><td>0x7f140008</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_PC_IF0</td><td>0x7f14000c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_PC_RD0</td><td>0x7f140010</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_PC_EX0</td><td>0x7f140014</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_CONTROL</td><td>0x7f140020</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_SEMA_CLEAR</td><td>0x7f140024</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_SEMA_SET</td><td>0x7f140028</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_BAD_ADDR</td><td>0x7f140030</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>VCE_SIM_DEBUG_OPTIONS</td><td>0x7f140100</td><td>RW</td><td></td><td></td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;VCE_DATA_MEM_BASE&nbsp;</td><td>&nbsp;<pre>0x7f100000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PROGRAM_MEM_BASE&nbsp;</td><td>&nbsp;<pre>0x7f110000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_REGISTERS_BASE&nbsp;</td><td>&nbsp;<pre>0x7f120000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS&nbsp;</td><td>&nbsp;<pre>0x7f140000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_VERSION&nbsp;</td><td>&nbsp;<pre>0x7f140004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_PF0&nbsp;</td><td>&nbsp;<pre>0x7f140008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_IF0&nbsp;</td><td>&nbsp;<pre>0x7f14000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_RD0&nbsp;</td><td>&nbsp;<pre>0x7f140010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_EX0&nbsp;</td><td>&nbsp;<pre>0x7f140014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_CONTROL&nbsp;</td><td>&nbsp;<pre>0x7f140020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_SEMA_CLEAR&nbsp;</td><td>&nbsp;<pre>0x7f140024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_SEMA_SET&nbsp;</td><td>&nbsp;<pre>0x7f140028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_BAD_ADDR&nbsp;</td><td>&nbsp;<pre>0x7f140030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_SIM_DEBUG_OPTIONS&nbsp;</td><td>&nbsp;<pre>0x7f140100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>VCE_BAD_ADDR_OFFSET</td><td>0x40030</td></tr>
-<tr><td>VCE_BUSY_BKPT</td><td>0x00</td></tr>
-<tr><td>VCE_BUSY_DMAIN</td><td>0x08</td></tr>
-<tr><td>VCE_BUSY_DMAOUT</td><td>0x09</td></tr>
-<tr><td>VCE_BUSY_MEMSYNC</td><td>0x0a</td></tr>
-<tr><td>VCE_BUSY_SLEEP</td><td>0x0b</td></tr>
-<tr><td>VCE_BUSY_USER</td><td>0x01</td></tr>
-<tr><td>VCE_CONTROL_CLEAR_RUN</td><td>0</td></tr>
-<tr><td>VCE_CONTROL_OFFSET</td><td>0x40020</td></tr>
-<tr><td>VCE_CONTROL_SET_RUN</td><td>1</td></tr>
-<tr><td>VCE_CONTROL_SINGLE_STEP</td><td>3</td></tr>
-<tr><td>VCE_DATA_MEM_OFFSET</td><td>0</td></tr>
-<tr><td>VCE_DATA_MEM_SIZE</td><td>0x2000</td></tr>
-<tr><td>VCE_PC_EX0_OFFSET</td><td>0x40014</td></tr>
-<tr><td>VCE_PC_IF0_OFFSET</td><td>0x4000c</td></tr>
-<tr><td>VCE_PC_PF0_OFFSET</td><td>0x40008</td></tr>
-<tr><td>VCE_PC_RD0_OFFSET</td><td>0x40010</td></tr>
-<tr><td>VCE_PROGRAM_MEM_OFFSET</td><td>0x10000</td></tr>
-<tr><td>VCE_PROGRAM_MEM_SIZE</td><td>0x4000</td></tr>
-<tr><td>VCE_REASON_RESET</td><td>0x12</td></tr>
-<tr><td>VCE_REASON_RUNNING</td><td>0x11</td></tr>
-<tr><td>VCE_REASON_SINGLE</td><td>0x13</td></tr>
-<tr><td>VCE_REASON_STOPPED</td><td>0x10</td></tr>
-<tr><td>VCE_REGISTERS_COUNT</td><td>63</td></tr>
-<tr><td>VCE_REGISTERS_OFFSET</td><td>0x20000</td></tr>
-<tr><td>VCE_SEMA_CLEAR_OFFSET</td><td>0x40024</td></tr>
-<tr><td>VCE_SEMA_COUNT</td><td>8</td></tr>
-<tr><td>VCE_SEMA_SET_OFFSET</td><td>0x40028</td></tr>
-<tr><td>VCE_SIM_DEBUG_OPTIONS_OFFSET</td><td>0x40100</td></tr>
-<tr><td>VCE_STATUS_BUSYBITS_MASK</td><td>0xffff</td></tr>
-<tr><td>VCE_STATUS_INTERRUPT_POS</td><td>31</td></tr>
-<tr><td>VCE_STATUS_NANOFLAG_POS</td><td>25</td></tr>
-<tr><td>VCE_STATUS_OFFSET</td><td>0x40000</td></tr>
-<tr><td>VCE_STATUS_REASON_MASK</td><td>0x1f</td></tr>
-<tr><td>VCE_STATUS_REASON_POS</td><td>16</td></tr>
-<tr><td>VCE_STATUS_RUNNING_POS</td><td>24</td></tr>
-<tr><td>VCE_VERSION_OFFSET</td><td>0x40004</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;VCE_BAD_ADDR_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40030</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_BUSY_BKPT&nbsp;</td><td align=center>&nbsp;<pre>0x00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_BUSY_DMAIN&nbsp;</td><td align=center>&nbsp;<pre>0x08</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_BUSY_DMAOUT&nbsp;</td><td align=center>&nbsp;<pre>0x09</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_BUSY_MEMSYNC&nbsp;</td><td align=center>&nbsp;<pre>0x0a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_BUSY_SLEEP&nbsp;</td><td align=center>&nbsp;<pre>0x0b</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_BUSY_USER&nbsp;</td><td align=center>&nbsp;<pre>0x01</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_CONTROL_CLEAR_RUN&nbsp;</td><td align=center>&nbsp;<pre>0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_CONTROL_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40020</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_CONTROL_SET_RUN&nbsp;</td><td align=center>&nbsp;<pre>1</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_CONTROL_SINGLE_STEP&nbsp;</td><td align=center>&nbsp;<pre>3</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_DATA_MEM_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_DATA_MEM_SIZE&nbsp;</td><td align=center>&nbsp;<pre>0x2000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_EX0_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40014</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_IF0_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x4000c</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_PF0_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40008</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PC_RD0_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40010</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PROGRAM_MEM_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x10000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_PROGRAM_MEM_SIZE&nbsp;</td><td align=center>&nbsp;<pre>0x4000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_REASON_RESET&nbsp;</td><td align=center>&nbsp;<pre>0x12</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_REASON_RUNNING&nbsp;</td><td align=center>&nbsp;<pre>0x11</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_REASON_SINGLE&nbsp;</td><td align=center>&nbsp;<pre>0x13</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_REASON_STOPPED&nbsp;</td><td align=center>&nbsp;<pre>0x10</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_REGISTERS_COUNT&nbsp;</td><td align=center>&nbsp;<pre>63</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_REGISTERS_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x20000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_SEMA_CLEAR_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40024</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_SEMA_COUNT&nbsp;</td><td align=center>&nbsp;<pre>8</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_SEMA_SET_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40028</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_SIM_DEBUG_OPTIONS_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS_BUSYBITS_MASK&nbsp;</td><td align=center>&nbsp;<pre>0xffff</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS_INTERRUPT_POS&nbsp;</td><td align=center>&nbsp;<pre>31</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS_NANOFLAG_POS&nbsp;</td><td align=center>&nbsp;<pre>25</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS_REASON_MASK&nbsp;</td><td align=center>&nbsp;<pre>0x1f</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS_REASON_POS&nbsp;</td><td align=center>&nbsp;<pre>16</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_STATUS_RUNNING_POS&nbsp;</td><td align=center>&nbsp;<pre>24</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;VCE_VERSION_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x40004</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

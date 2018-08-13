@@ -1,100 +1,102 @@
 <html>
 <head>
 <title>AVE_OUT - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: AVE_OUT (base: 0x7e240000</h1>
+<h1>Register Region: AVE_OUT (0x7e240000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e240000</td></tr>
-<tr><td>id</td><td>0x61766538</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e240000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x61766538</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#ave_out_ctrl'>AVE_OUT_CTRL</a></td><td>0x7e240000</td><td>RW</td><td>32</td><td>0xc0fff13f</td><td>0x40000100</td></tr>
-<tr><td><a hre='#ave_out_status'>AVE_OUT_STATUS</a></td><td>0x7e240004</td><td>RW</td><td>10</td><td>0x000003f7</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_out_offset'>AVE_OUT_OFFSET</a></td><td>0x7e240008</td><td>RW</td><td>32</td><td>0x80ffffff</td><td>0x80109090</td></tr>
-<tr><td><a hre='#ave_out_y_coeff'>AVE_OUT_Y_COEFF</a></td><td>0x7e24000c</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0x0994b43a</td></tr>
-<tr><td><a hre='#ave_out_cb_coeff'>AVE_OUT_CB_COEFF</a></td><td>0x7e240010</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0x3a9d5900</td></tr>
-<tr><td><a hre='#ave_out_cr_coeff'>AVE_OUT_CR_COEFF</a></td><td>0x7e240014</td><td>RW</td><td>30</td><td>0x3fffffff</td><td>0x100ca7d6</td></tr>
-<tr><td>AVE_OUT_BLOCK_ID</td><td>0x7e240060</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x61766538</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#ave_out_ctrl'>AVE_OUT_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e240000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0fff13f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x40000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_out_status'>AVE_OUT_STATUS</a>&nbsp;</td><td>&nbsp;<pre>0x7e240004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003f7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_out_offset'>AVE_OUT_OFFSET</a>&nbsp;</td><td>&nbsp;<pre>0x7e240008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x80ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x80109090</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_out_y_coeff'>AVE_OUT_Y_COEFF</a>&nbsp;</td><td>&nbsp;<pre>0x7e24000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0994b43a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_out_cb_coeff'>AVE_OUT_CB_COEFF</a>&nbsp;</td><td>&nbsp;<pre>0x7e240010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x3a9d5900</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_out_cr_coeff'>AVE_OUT_CR_COEFF</a>&nbsp;</td><td>&nbsp;<pre>0x7e240014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x100ca7d6</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_BLOCK_ID&nbsp;</td><td>&nbsp;<pre>0x7e240060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x61766538</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='AVE_OUT_CTRL'>AVE_OUT_CTRL</a></h3>
 <h4>Address: 0x7e240000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_OUT_CTRL_ERROR_IRQ_EN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_COEFF_IRQ_EN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_REFRESH_RATE</td><td>2</td><td>3</td><td>0x0000000c</td><td>0xfffffff3</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_MODE</td><td>4</td><td>5</td><td>0x00000030</td><td>0xffffffcf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_OUT_CTRL_PRIV_ACCESS</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>missing definiton</td><td>9</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_OUT_CTRL_INTERLEAVE</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_NTSC_PAL_IDENT</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_INVERT_HSYNC</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_INVERT_VSYNC</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_INVERT_EVEN_FIELD</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_INVERT_CSYNC</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_INVERT_DSYNC</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_CTRL_BYTE_SWAP</td><td>19</td><td>23</td><td>0x00f80000</td><td>0xff07ffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>24</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_OUT_CTRL_SOFT_RESET</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x1</td></tr>
-<tr><td>AVE_OUT_CTRL_ENABLE</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_OUT_CTRL_ERROR_IRQ_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_COEFF_IRQ_EN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_REFRESH_RATE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000c</pre></td><td>&nbsp;<pre>0xfffffff3</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_MODE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000030</pre></td><td>&nbsp;<pre>0xffffffcf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_PRIV_ACCESS&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_INTERLEAVE&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_NTSC_PAL_IDENT&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_INVERT_HSYNC&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_INVERT_VSYNC&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_INVERT_EVEN_FIELD&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_INVERT_CSYNC&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_INVERT_DSYNC&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x00040000</pre></td><td>&nbsp;<pre>0xfffbffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_BYTE_SWAP&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00f80000</pre></td><td>&nbsp;<pre>0xff07ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_SOFT_RESET&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CTRL_ENABLE&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_OUT_STATUS'>AVE_OUT_STATUS</a></h3>
 <h4>Address: 0x7e240004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_OUT_STATUS_PXL_FORMAT_ERROR</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_STATUS_PXL_OUTPUT_ERROR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_STATUS_COEFF_ERROR</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_OUT_STATUS_HFRONT_PORCH</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_STATUS_HBACK_PORCH</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_STATUS_HSYNC</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_STATUS_VFRONT_PORCH</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_STATUS_VBACK_PORCH</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>AVE_OUT_STATUS_VSYNC</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_OUT_STATUS_PXL_FORMAT_ERROR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_PXL_OUTPUT_ERROR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_COEFF_ERROR&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_HFRONT_PORCH&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_HBACK_PORCH&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_HSYNC&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_VFRONT_PORCH&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_VBACK_PORCH&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_STATUS_VSYNC&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_OUT_OFFSET'>AVE_OUT_OFFSET</a></h3>
 <h4>Address: 0x7e240008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_OUT_OFFSET_BLUE_OFFSET</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x90</td></tr>
-<tr><td>AVE_OUT_OFFSET_GREEN_OFFSET</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x90</td></tr>
-<tr><td>AVE_OUT_OFFSET_RED_OFFSET</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td>0x10</td></tr>
-<tr><td>missing definiton</td><td>24</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_OUT_OFFSET_EN_YCBCR_CLAMPING</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;AVE_OUT_OFFSET_BLUE_OFFSET&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x90&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_OFFSET_GREEN_OFFSET&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ff00</pre></td><td>&nbsp;<pre>0xffff00ff</pre>&nbsp;</td><td align=center>&nbsp;0x90&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_OFFSET_RED_OFFSET&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ff0000</pre></td><td>&nbsp;<pre>0xff00ffff</pre>&nbsp;</td><td align=center>&nbsp;0x10&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_OFFSET_EN_YCBCR_CLAMPING&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_OUT_Y_COEFF'>AVE_OUT_Y_COEFF</a></h3>
 <h4>Address: 0x7e24000c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_OUT_Y_COEFF_BLUE_COEFF</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x3a</td></tr>
-<tr><td>AVE_OUT_Y_COEFF_GREEN_COEFF</td><td>10</td><td>19</td><td>0x000ffc00</td><td>0xfff003ff</td><td>0x12d</td></tr>
-<tr><td>AVE_OUT_Y_COEFF_RED_COEFF</td><td>20</td><td>29</td><td>0x3ff00000</td><td>0xc00fffff</td><td>0x99</td></tr>
-</table>
+<tr><td>&nbsp;AVE_OUT_Y_COEFF_BLUE_COEFF&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x3a&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_Y_COEFF_GREEN_COEFF&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000ffc00</pre></td><td>&nbsp;<pre>0xfff003ff</pre>&nbsp;</td><td align=center>&nbsp;0x12d&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_Y_COEFF_RED_COEFF&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3ff00000</pre></td><td>&nbsp;<pre>0xc00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x99&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_OUT_CB_COEFF'>AVE_OUT_CB_COEFF</a></h3>
 <h4>Address: 0x7e240010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_OUT_CB_COEFF_BLUE_COEFF</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x100</td></tr>
-<tr><td>AVE_OUT_CB_COEFF_GREEN_COEFF</td><td>10</td><td>19</td><td>0x000ffc00</td><td>0xfff003ff</td><td>0x356</td></tr>
-<tr><td>AVE_OUT_CB_COEFF_RED_COEFF</td><td>20</td><td>29</td><td>0x3ff00000</td><td>0xc00fffff</td><td>0x3a9</td></tr>
-</table>
+<tr><td>&nbsp;AVE_OUT_CB_COEFF_BLUE_COEFF&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x100&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CB_COEFF_GREEN_COEFF&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000ffc00</pre></td><td>&nbsp;<pre>0xfff003ff</pre>&nbsp;</td><td align=center>&nbsp;0x356&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CB_COEFF_RED_COEFF&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3ff00000</pre></td><td>&nbsp;<pre>0xc00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x3a9&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_OUT_CR_COEFF'>AVE_OUT_CR_COEFF</a></h3>
 <h4>Address: 0x7e240014</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_OUT_CR_COEFF_BLUE_COEFF</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x3d6</td></tr>
-<tr><td>AVE_OUT_CR_COEFF_GREEN_COEFF</td><td>10</td><td>19</td><td>0x000ffc00</td><td>0xfff003ff</td><td>0x329</td></tr>
-<tr><td>AVE_OUT_CR_COEFF_RED_COEFF</td><td>20</td><td>29</td><td>0x3ff00000</td><td>0xc00fffff</td><td>0x100</td></tr>
-</table>
+<tr><td>&nbsp;AVE_OUT_CR_COEFF_BLUE_COEFF&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x3d6&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CR_COEFF_GREEN_COEFF&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000ffc00</pre></td><td>&nbsp;<pre>0xfff003ff</pre>&nbsp;</td><td align=center>&nbsp;0x329&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_OUT_CR_COEFF_RED_COEFF&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3ff00000</pre></td><td>&nbsp;<pre>0xc00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x100&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

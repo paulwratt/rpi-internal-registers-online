@@ -1,115 +1,117 @@
 <html>
 <head>
 <title>DMA9 - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: DMA9 (base: 0x7e007900</h1>
+<h1>Register Region: DMA9 (0x7e007900)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e007900</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e007900</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#dma9_cs'>DMA9_CS</a></td><td>0x7e007900</td><td>RW</td><td>32</td><td>0xf0ff017f</td><td>0000000000</td></tr>
-<tr><td><a hre='#dma9_conblk_ad'>DMA9_CONBLK_AD</a></td><td>0x7e007904</td><td>RW</td><td>32</td><td>0xffffffe0</td><td>0000000000</td></tr>
-<tr><td><a hre='#dma9_ti'>DMA9_TI</a></td><td>0x7e007908</td><td>RO</td><td>26</td><td>0x03fffff9</td><td></td></tr>
-<tr><td><a hre='#dma9_source_ad'>DMA9_SOURCE_AD</a></td><td>0x7e00790c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#dma9_dest_ad'>DMA9_DEST_AD</a></td><td>0x7e007910</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#dma9_txfr_len'>DMA9_TXFR_LEN</a></td><td>0x7e007914</td><td>RO</td><td>16</td><td>0x0000ffff</td><td></td></tr>
-<tr><td><a hre='#dma9_nextconbk'>DMA9_NEXTCONBK</a></td><td>0x7e00791c</td><td>RO</td><td>32</td><td>0xffffffe0</td><td></td></tr>
-<tr><td><a hre='#dma9_debug'>DMA9_DEBUG</a></td><td>0x7e007920</td><td>RW</td><td>29</td><td>0x1ffffff7</td><td>0000000000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#dma9_cs'>DMA9_CS</a>&nbsp;</td><td>&nbsp;<pre>0x7e007900</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xf0ff017f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma9_conblk_ad'>DMA9_CONBLK_AD</a>&nbsp;</td><td>&nbsp;<pre>0x7e007904</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma9_ti'>DMA9_TI</a>&nbsp;</td><td>&nbsp;<pre>0x7e007908</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x03fffff9</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma9_source_ad'>DMA9_SOURCE_AD</a>&nbsp;</td><td>&nbsp;<pre>0x7e00790c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma9_dest_ad'>DMA9_DEST_AD</a>&nbsp;</td><td>&nbsp;<pre>0x7e007910</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma9_txfr_len'>DMA9_TXFR_LEN</a>&nbsp;</td><td>&nbsp;<pre>0x7e007914</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma9_nextconbk'>DMA9_NEXTCONBK</a>&nbsp;</td><td>&nbsp;<pre>0x7e00791c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma9_debug'>DMA9_DEBUG</a>&nbsp;</td><td>&nbsp;<pre>0x7e007920</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x1ffffff7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='DMA9_CS'>DMA9_CS</a></h3>
 <h4>Address: 0x7e007900</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>DMA9_CS_ACTIVE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_END</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_INT</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_DREQ</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_PAUSED</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_DREQ_STOPS_DMA</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_WAITING_FOR_OUTSTANDING_WRITES</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>DMA9_CS_ERROR</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>9</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>DMA9_CS_PRIORITY</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_PANIC_PRIORITY</td><td>20</td><td>23</td><td>0x00f00000</td><td>0xff0fffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>24</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>DMA9_CS_WAIT_FOR_OUTSTANDING_WRITES</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_DISDEBUG</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_ABORT</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
-<tr><td>DMA9_CS_RESET</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;DMA9_CS_ACTIVE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_END&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_INT&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_DREQ&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_PAUSED&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_DREQ_STOPS_DMA&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_WAITING_FOR_OUTSTANDING_WRITES&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_ERROR&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_PRIORITY&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_PANIC_PRIORITY&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00f00000</pre></td><td>&nbsp;<pre>0xff0fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_WAIT_FOR_OUTSTANDING_WRITES&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_DISDEBUG&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_ABORT&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CS_RESET&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='DMA9_CONBLK_AD'>DMA9_CONBLK_AD</a></h3>
 <h4>Address: 0x7e007904</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>missing definiton</td><td>0</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>DMA9_CONBLK_AD_SCB_ADDR</td><td>5</td><td>31</td><td>0xffffffe0</td><td>0x0000001f</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_CONBLK_AD_SCB_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre></td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='DMA9_TI'>DMA9_TI</a></h3>
 <h4>Address: 0x7e007908</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>DMA9_TI_INTEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-<tr><td>missing definiton</td><td>1</td><td>2</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>DMA9_TI_WAIT_RESP</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td></td></tr>
-<tr><td>DMA9_TI_DEST_INC</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td></td></tr>
-<tr><td>DMA9_TI_DEST_WIDTH</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td></td></tr>
-<tr><td>DMA9_TI_DEST_DREQ</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td></td></tr>
-<tr><td>DMA9_TI_DEST_IGNORE</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td></td></tr>
-<tr><td>DMA9_TI_SRC_INC</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td></td></tr>
-<tr><td>DMA9_TI_SRC_WIDTH</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td></td></tr>
-<tr><td>DMA9_TI_SRC_DREQ</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td></td></tr>
-<tr><td>DMA9_TI_SRC_IGNORE</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td></td></tr>
-<tr><td>DMA9_TI_BURST_LENGTH</td><td>12</td><td>15</td><td>0x0000f000</td><td>0xffff0fff</td><td></td></tr>
-<tr><td>DMA9_TI_PERMAP</td><td>16</td><td>20</td><td>0x001f0000</td><td>0xffe0ffff</td><td></td></tr>
-<tr><td>DMA9_TI_WAITS</td><td>21</td><td>25</td><td>0x03e00000</td><td>0xfc1fffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;DMA9_TI_INTEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_WAIT_RESP&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_DEST_INC&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_DEST_WIDTH&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_DEST_DREQ&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_DEST_IGNORE&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_SRC_INC&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_SRC_WIDTH&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_SRC_DREQ&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_SRC_IGNORE&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_BURST_LENGTH&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000f000</pre></td><td>&nbsp;<pre>0xffff0fff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_PERMAP&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001f0000</pre></td><td>&nbsp;<pre>0xffe0ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_TI_WAITS&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>0x03e00000</pre></td><td>&nbsp;<pre>0xfc1fffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='DMA9_SOURCE_AD'>DMA9_SOURCE_AD</a></h3>
 <h4>Address: 0x7e00790c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>DMA9_SOURCE_AD_S_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td></td></tr>
-</table>
+<tr><td>&nbsp;DMA9_SOURCE_AD_S_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='DMA9_DEST_AD'>DMA9_DEST_AD</a></h3>
 <h4>Address: 0x7e007910</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>DMA9_DEST_AD_D_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td></td></tr>
-</table>
+<tr><td>&nbsp;DMA9_DEST_AD_D_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='DMA9_TXFR_LEN'>DMA9_TXFR_LEN</a></h3>
 <h4>Address: 0x7e007914</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>DMA9_TXFR_LEN_XLENGTH</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td></td></tr>
-</table>
+<tr><td>&nbsp;DMA9_TXFR_LEN_XLENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='DMA9_NEXTCONBK'>DMA9_NEXTCONBK</a></h3>
 <h4>Address: 0x7e00791c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>missing definiton</td><td>0</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>DMA9_NEXTCONBK_ADDR</td><td>5</td><td>31</td><td>0xffffffe0</td><td>0x0000001f</td><td></td></tr>
-</table>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_NEXTCONBK_ADDR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre></td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='DMA9_DEBUG'>DMA9_DEBUG</a></h3>
 <h4>Address: 0x7e007920</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>DMA9_DEBUG_READ_LAST_NOT_SET_ERROR</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>DMA9_DEBUG_FIFO_ERROR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>DMA9_DEBUG_READ_ERROR</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>DMA9_DEBUG_OUTSTANDING_WRITES</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
-<tr><td>DMA9_DEBUG_DMA_ID</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x0</td></tr>
-<tr><td>DMA9_DEBUG_DMA_STATE</td><td>16</td><td>24</td><td>0x01ff0000</td><td>0xfe00ffff</td><td>0x0</td></tr>
-<tr><td>DMA9_DEBUG_VERSION</td><td>25</td><td>27</td><td>0x0e000000</td><td>0xf1ffffff</td><td>0x0</td></tr>
-<tr><td>DMA9_DEBUG_LITE</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;DMA9_DEBUG_READ_LAST_NOT_SET_ERROR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_DEBUG_FIFO_ERROR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_DEBUG_READ_ERROR&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_DEBUG_OUTSTANDING_WRITES&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_DEBUG_DMA_ID&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ff00</pre></td><td>&nbsp;<pre>0xffff00ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_DEBUG_DMA_STATE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x01ff0000</pre></td><td>&nbsp;<pre>0xfe00ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_DEBUG_VERSION&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0e000000</pre></td><td>&nbsp;<pre>0xf1ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA9_DEBUG_LITE&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

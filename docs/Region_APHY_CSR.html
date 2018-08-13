@@ -1,58 +1,60 @@
 <html>
 <head>
 <title>APHY_CSR - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: APHY_CSR (base: 0x7ee06000</h1>
+<h1>Register Region: APHY_CSR (0x7ee06000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>description</td><td>SDRAM Adress (pin) control</td></tr>
-<tr><td>base</td><td>0x7ee06000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;description&nbsp;</td><td>&nbsp;<pre>SDRAM Adress (pin) control</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7ee06000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>APHY_CSR_ADDR_REV_ID</td><td>0x7ee06000</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_GLBL_ADDR_DLL_RESET</td><td>0x7ee06004</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_GLBL_ADDR_DLL_RECAL</td><td>0x7ee06008</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_GLBL_ADDR_DLL_CNTRL</td><td>0x7ee0600c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_GLBL_ADDR_DLL_PH_LD_VAL</td><td>0x7ee06010</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_MASTER_DLL_OUTPUT</td><td>0x7ee06014</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_SLAVE_DLL_OFFSET</td><td>0x7ee06018</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_GLBL_ADR_MSTR_DLL_BYPEN</td><td>0x7ee0601c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_GLBL_ADR_DLL_LOCK_STAT</td><td>0x7ee06020</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_GLOBAL_RESET</td><td>0x7ee06024</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_POST_DIV_RESET</td><td>0x7ee06028</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_VCO_FREQ_CNTRL0</td><td>0x7ee0602c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_VCO_FREQ_CNTRL1</td><td>0x7ee06030</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_MDIV_VALUE</td><td>0x7ee06034</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_CONFIG_CNTRL</td><td>0x7ee06038</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_MISC_CNTRL</td><td>0x7ee0603c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_SPRDSPECT_CTRL0</td><td>0x7ee06040</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_SPRDSPECT_CTRL1</td><td>0x7ee06044</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_LOCK_STATUS</td><td>0x7ee06048</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_HOLD_CH</td><td>0x7ee0604c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_ENABLE_CH</td><td>0x7ee06050</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_BYPASS</td><td>0x7ee06054</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_PWRDWN</td><td>0x7ee06058</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_CH0_DESKEW_CTRL</td><td>0x7ee0605c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_CH1_DESKEW_CTRL</td><td>0x7ee06060</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_DDR_PLL_DESKEW_STATUS</td><td>0x7ee06064</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_PAD_DRV_SLEW_CTRL</td><td>0x7ee06068</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_PAD_MISC_CTRL</td><td>0x7ee0606c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_PVT_COMP_CTRL</td><td>0x7ee06070</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_PVT_COMP_OVRD_CTRL</td><td>0x7ee06074</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_PVT_COMP_STATUS</td><td>0x7ee06078</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_PVT_COMP_DEBUG</td><td>0x7ee0607c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_PHY_BIST_CNTRL_SPR</td><td>0x7ee06080</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_PHY_BIST_CA_CRC_SPR</td><td>0x7ee06084</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_SPR0_RW</td><td>0x7ee06088</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_SPR1_RO</td><td>0x7ee0608c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>APHY_CSR_ADDR_SPR_RO</td><td>0x7ee06090</td><td>RW</td><td></td><td></td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_REV_ID&nbsp;</td><td>&nbsp;<pre>0x7ee06000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_GLBL_ADDR_DLL_RESET&nbsp;</td><td>&nbsp;<pre>0x7ee06004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_GLBL_ADDR_DLL_RECAL&nbsp;</td><td>&nbsp;<pre>0x7ee06008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_GLBL_ADDR_DLL_CNTRL&nbsp;</td><td>&nbsp;<pre>0x7ee0600c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_GLBL_ADDR_DLL_PH_LD_VAL&nbsp;</td><td>&nbsp;<pre>0x7ee06010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_MASTER_DLL_OUTPUT&nbsp;</td><td>&nbsp;<pre>0x7ee06014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_SLAVE_DLL_OFFSET&nbsp;</td><td>&nbsp;<pre>0x7ee06018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_GLBL_ADR_MSTR_DLL_BYPEN&nbsp;</td><td>&nbsp;<pre>0x7ee0601c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_GLBL_ADR_DLL_LOCK_STAT&nbsp;</td><td>&nbsp;<pre>0x7ee06020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_GLOBAL_RESET&nbsp;</td><td>&nbsp;<pre>0x7ee06024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_POST_DIV_RESET&nbsp;</td><td>&nbsp;<pre>0x7ee06028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_VCO_FREQ_CNTRL0&nbsp;</td><td>&nbsp;<pre>0x7ee0602c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_VCO_FREQ_CNTRL1&nbsp;</td><td>&nbsp;<pre>0x7ee06030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_MDIV_VALUE&nbsp;</td><td>&nbsp;<pre>0x7ee06034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_CONFIG_CNTRL&nbsp;</td><td>&nbsp;<pre>0x7ee06038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_MISC_CNTRL&nbsp;</td><td>&nbsp;<pre>0x7ee0603c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_SPRDSPECT_CTRL0&nbsp;</td><td>&nbsp;<pre>0x7ee06040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_SPRDSPECT_CTRL1&nbsp;</td><td>&nbsp;<pre>0x7ee06044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_LOCK_STATUS&nbsp;</td><td>&nbsp;<pre>0x7ee06048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_HOLD_CH&nbsp;</td><td>&nbsp;<pre>0x7ee0604c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_ENABLE_CH&nbsp;</td><td>&nbsp;<pre>0x7ee06050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_BYPASS&nbsp;</td><td>&nbsp;<pre>0x7ee06054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_PWRDWN&nbsp;</td><td>&nbsp;<pre>0x7ee06058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_CH0_DESKEW_CTRL&nbsp;</td><td>&nbsp;<pre>0x7ee0605c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_CH1_DESKEW_CTRL&nbsp;</td><td>&nbsp;<pre>0x7ee06060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_DDR_PLL_DESKEW_STATUS&nbsp;</td><td>&nbsp;<pre>0x7ee06064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_PAD_DRV_SLEW_CTRL&nbsp;</td><td>&nbsp;<pre>0x7ee06068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_PAD_MISC_CTRL&nbsp;</td><td>&nbsp;<pre>0x7ee0606c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_PVT_COMP_CTRL&nbsp;</td><td>&nbsp;<pre>0x7ee06070</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_PVT_COMP_OVRD_CTRL&nbsp;</td><td>&nbsp;<pre>0x7ee06074</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_PVT_COMP_STATUS&nbsp;</td><td>&nbsp;<pre>0x7ee06078</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_PVT_COMP_DEBUG&nbsp;</td><td>&nbsp;<pre>0x7ee0607c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_PHY_BIST_CNTRL_SPR&nbsp;</td><td>&nbsp;<pre>0x7ee06080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_PHY_BIST_CA_CRC_SPR&nbsp;</td><td>&nbsp;<pre>0x7ee06084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_SPR0_RW&nbsp;</td><td>&nbsp;<pre>0x7ee06088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_SPR1_RO&nbsp;</td><td>&nbsp;<pre>0x7ee0608c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;APHY_CSR_ADDR_SPR_RO&nbsp;</td><td>&nbsp;<pre>0x7ee06090</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

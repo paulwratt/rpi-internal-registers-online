@@ -1,70 +1,72 @@
 <html>
 <head>
 <title>TXP - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: TXP (base: 0x7e004000</h1>
+<h1>Register Region: TXP (0x7e004000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e004000</td></tr>
-<tr><td>id</td><td>0x20763374</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x20763374</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>TXP_DST_PTR</td><td>0x7e004000</td><td>RW</td><td>32</td><td>0xfffffffe</td><td></td></tr>
-<tr><td>TXP_DST_PITCH</td><td>0x7e004004</td><td>RW</td><td>32</td><td>0xfffffff0</td><td></td></tr>
-<tr><td><a hre='#txp_dim'>TXP_DIM</a></td><td>0x7e004008</td><td>RW</td><td>28</td><td>0x0fff0fff</td><td></td></tr>
-<tr><td><a hre='#txp_ctrl'>TXP_CTRL</a></td><td>0x7e00400c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#txp_progress'>TXP_PROGRESS</a></td><td>0x7e004010</td><td>RO</td><td>12</td><td>0x00000fff</td><td></td></tr>
-<tr><td><a hre='#txp_xtra'>TXP_XTRA</a></td><td>0x7e004018</td><td>RW</td><td>1</td><td>0x00000001</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;TXP_DST_PTR&nbsp;</td><td>&nbsp;<pre>0x7e004000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_DST_PITCH&nbsp;</td><td>&nbsp;<pre>0x7e004004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#txp_dim'>TXP_DIM</a>&nbsp;</td><td>&nbsp;<pre>0x7e004008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x0fff0fff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#txp_ctrl'>TXP_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e00400c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#txp_progress'>TXP_PROGRESS</a>&nbsp;</td><td>&nbsp;<pre>0x7e004010</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#txp_xtra'>TXP_XTRA</a>&nbsp;</td><td>&nbsp;<pre>0x7e004018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='TXP_DIM'>TXP_DIM</a></h3>
 <h4>Address: 0x7e004008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TXP_DIM_WIDTH</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>12</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>TXP_DIM_HEIGHT</td><td>16</td><td>27</td><td>0x0fff0000</td><td>0xf000ffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;TXP_DIM_WIDTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_DIM_HEIGHT&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0fff0000</pre></td><td>&nbsp;<pre>0xf000ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TXP_CTRL'>TXP_CTRL</a></h3>
 <h4>Address: 0x7e00400c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TXP_CTRL_GO</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-<tr><td>TXP_CTRL_BUSY</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td></td></tr>
-<tr><td>TXP_CTRL_EI</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td></td></tr>
-<tr><td>TXP_CTRL_FIELD</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td></td></tr>
-<tr><td>TXP_CTRL_TEST_MODE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td></td></tr>
-<tr><td>TXP_CTRL_TFORMAT</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td></td></tr>
-<tr><td>TXP_CTRL_TRANSPOSE</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td></td></tr>
-<tr><td>TXP_CTRL_LINEAR_UTILE</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td></td></tr>
-<tr><td>TXP_CTRL_FORMAT</td><td>8</td><td>11</td><td>0x00000f00</td><td>0xfffff0ff</td><td></td></tr>
-<tr><td>TXP_CTRL_ALPHA_INVERT</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td></td></tr>
-<tr><td>TXP_CTRL_DITHER</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td></td></tr>
-<tr><td>TXP_CTRL_ABORT</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td></td></tr>
-<tr><td>TXP_CTRL_VSTART_AT_EOF</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td></td></tr>
-<tr><td>TXP_CTRL_BWE</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0xf</td></tr>
-<tr><td>TXP_CTRL_ALPHA_ENABLE</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td></td></tr>
-<tr><td>TXP_CTRL_POWERDOWN</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
-<tr><td>TXP_CTRL_VERSION</td><td>22</td><td>23</td><td>0x00c00000</td><td>0xff3fffff</td><td>0x1</td></tr>
-<tr><td>TXP_CTRL_PILOT</td><td>24</td><td>31</td><td>0xff000000</td><td>0x00ffffff</td><td>0x54</td></tr>
-</table>
+<tr><td>&nbsp;TXP_CTRL_GO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_BUSY&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_EI&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_FIELD&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_TEST_MODE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_TFORMAT&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_TRANSPOSE&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_LINEAR_UTILE&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_FORMAT&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000f00</pre></td><td>&nbsp;<pre>0xfffff0ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_ALPHA_INVERT&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_DITHER&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_ABORT&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_VSTART_AT_EOF&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_BWE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0xf&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_ALPHA_ENABLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_POWERDOWN&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00200000</pre></td><td>&nbsp;<pre>0xffdfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_VERSION&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00c00000</pre></td><td>&nbsp;<pre>0xff3fffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;TXP_CTRL_PILOT&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xff000000</pre></td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x54&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TXP_PROGRESS'>TXP_PROGRESS</a></h3>
 <h4>Address: 0x7e004010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TXP_PROGRESS_LINES</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TXP_PROGRESS_LINES&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TXP_XTRA'>TXP_XTRA</a></h3>
 <h4>Address: 0x7e004018</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TXP_XTRA_NOSTBY</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-</table>
+<tr><td>&nbsp;TXP_XTRA_NOSTBY&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

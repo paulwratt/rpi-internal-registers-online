@@ -1,192 +1,194 @@
 <html>
 <head>
 <title>I2C_SPI_SLV - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: I2C_SPI_SLV (base: 0x7e214000</h1>
+<h1>Register Region: I2C_SPI_SLV (0x7e214000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e214000</td></tr>
-<tr><td>id</td><td>0x73506783</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e214000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x73506783</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#i2c_spi_slv_dr'>I2C_SPI_SLV_DR</a></td><td>0x7e214000</td><td>RW</td><td>32</td><td>0xffff3fff</td><td>0x00120000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_rsr'>I2C_SPI_SLV_RSR</a></td><td>0x7e214004</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_slv'>I2C_SPI_SLV_SLV</a></td><td>0x7e214008</td><td>RW</td><td>7</td><td>0x0000007f</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_cr'>I2C_SPI_SLV_CR</a></td><td>0x7e21400c</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_fr'>I2C_SPI_SLV_FR</a></td><td>0x7e214010</td><td>RW</td><td>16</td><td>0x0000ffff</td><td>0x00000012</td></tr>
-<tr><td><a hre='#i2c_spi_slv_ifls'>I2C_SPI_SLV_IFLS</a></td><td>0x7e214014</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0x00000492</td></tr>
-<tr><td><a hre='#i2c_spi_slv_imsc'>I2C_SPI_SLV_IMSC</a></td><td>0x7e214018</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_ris'>I2C_SPI_SLV_RIS</a></td><td>0x7e21401c</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0x00000002</td></tr>
-<tr><td><a hre='#i2c_spi_slv_mis'>I2C_SPI_SLV_MIS</a></td><td>0x7e214020</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_icr'>I2C_SPI_SLV_ICR</a></td><td>0x7e214024</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_dmacr'>I2C_SPI_SLV_DMACR</a></td><td>0x7e214028</td><td>RW</td><td>3</td><td>0x00000007</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_tdr'>I2C_SPI_SLV_TDR</a></td><td>0x7e21402c</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_vcstat'>I2C_SPI_SLV_VCSTAT</a></td><td>0x7e214030</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_hctrl'>I2C_SPI_SLV_HCTRL</a></td><td>0x7e214034</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
-<tr><td><a hre='#i2c_spi_slv_debug1'>I2C_SPI_SLV_DEBUG1</a></td><td>0x7e214038</td><td>RW</td><td>26</td><td>0x03ffffff</td><td>0x0000000e</td></tr>
-<tr><td><a hre='#i2c_spi_slv_debug2'>I2C_SPI_SLV_DEBUG2</a></td><td>0x7e21403c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00400000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_dr'>I2C_SPI_SLV_DR</a>&nbsp;</td><td>&nbsp;<pre>0x7e214000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff3fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00120000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_rsr'>I2C_SPI_SLV_RSR</a>&nbsp;</td><td>&nbsp;<pre>0x7e214004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_slv'>I2C_SPI_SLV_SLV</a>&nbsp;</td><td>&nbsp;<pre>0x7e214008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_cr'>I2C_SPI_SLV_CR</a>&nbsp;</td><td>&nbsp;<pre>0x7e21400c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_fr'>I2C_SPI_SLV_FR</a>&nbsp;</td><td>&nbsp;<pre>0x7e214010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000012</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_ifls'>I2C_SPI_SLV_IFLS</a>&nbsp;</td><td>&nbsp;<pre>0x7e214014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000492</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_imsc'>I2C_SPI_SLV_IMSC</a>&nbsp;</td><td>&nbsp;<pre>0x7e214018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_ris'>I2C_SPI_SLV_RIS</a>&nbsp;</td><td>&nbsp;<pre>0x7e21401c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_mis'>I2C_SPI_SLV_MIS</a>&nbsp;</td><td>&nbsp;<pre>0x7e214020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_icr'>I2C_SPI_SLV_ICR</a>&nbsp;</td><td>&nbsp;<pre>0x7e214024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_dmacr'>I2C_SPI_SLV_DMACR</a>&nbsp;</td><td>&nbsp;<pre>0x7e214028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000007</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_tdr'>I2C_SPI_SLV_TDR</a>&nbsp;</td><td>&nbsp;<pre>0x7e21402c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_vcstat'>I2C_SPI_SLV_VCSTAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e214030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_hctrl'>I2C_SPI_SLV_HCTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e214034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_debug1'>I2C_SPI_SLV_DEBUG1</a>&nbsp;</td><td>&nbsp;<pre>0x7e214038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x03ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000000e</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#i2c_spi_slv_debug2'>I2C_SPI_SLV_DEBUG2</a>&nbsp;</td><td>&nbsp;<pre>0x7e21403c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00400000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='I2C_SPI_SLV_DR'>I2C_SPI_SLV_DR</a></h3>
 <h4>Address: 0x7e214000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_DR_DATA</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_OE</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_UE</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_TXDMAPREQ</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_TXDMABREQ</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_RXDMAPREQ</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_RXDMABREQ</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>14</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>I2C_SPI_SLV_DR_TXBUSY</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_RXFE</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x1</td></tr>
-<tr><td>I2C_SPI_SLV_DR_TXFF</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_RXFF</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_TXFE</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x1</td></tr>
-<tr><td>I2C_SPI_SLV_DR_RXBUSY</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_TXFLEVEL</td><td>22</td><td>26</td><td>0x07c00000</td><td>0xf83fffff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DR_RXFLEVEL</td><td>27</td><td>31</td><td>0xf8000000</td><td>0x07ffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_OE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_UE&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_TXDMAPREQ&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_TXDMABREQ&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_RXDMAPREQ&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_RXDMABREQ&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_TXBUSY&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_RXFE&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_TXFF&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x00040000</pre></td><td>&nbsp;<pre>0xfffbffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_RXFF&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x00080000</pre></td><td>&nbsp;<pre>0xfff7ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_TXFE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_RXBUSY&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00200000</pre></td><td>&nbsp;<pre>0xffdfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_TXFLEVEL&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07c00000</pre></td><td>&nbsp;<pre>0xf83fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DR_RXFLEVEL&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xf8000000</pre></td><td>&nbsp;<pre>0x07ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_RSR'>I2C_SPI_SLV_RSR</a></h3>
 <h4>Address: 0x7e214004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_RSR_OE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_RSR_UE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_RSR_TXDMAPREQ</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_RSR_TXDMABREQ</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_RSR_RXDMAPREQ</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_RSR_RXDMABREQ</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_RSR_OE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RSR_UE&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RSR_TXDMAPREQ&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RSR_TXDMABREQ&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RSR_RXDMAPREQ&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RSR_RXDMABREQ&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_SLV'>I2C_SPI_SLV_SLV</a></h3>
 <h4>Address: 0x7e214008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_SLV_ADDR</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_SLV_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_CR'>I2C_SPI_SLV_CR</a></h3>
 <h4>Address: 0x7e21400c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_CR_EN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_SPI</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_I2C</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_CPHA</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_CPOL</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_ENSTAT</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_ENCTRL</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_BRK</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_TXE</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_RXE</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_INV_RXF</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_TESTFIFO</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_HOSTCTRLEN</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_CR_INV_TXF</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_SPI&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_I2C&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_CPHA&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_CPOL&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_ENSTAT&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_ENCTRL&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_BRK&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_TXE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_RXE&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_INV_RXF&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_TESTFIFO&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_HOSTCTRLEN&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_CR_INV_TXF&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_FR'>I2C_SPI_SLV_FR</a></h3>
 <h4>Address: 0x7e214010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_FR_TXBUSY</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_FR_RXFE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x1</td></tr>
-<tr><td>I2C_SPI_SLV_FR_TXFF</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_FR_RXFF</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_FR_TXFE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
-<tr><td>I2C_SPI_SLV_FR_RXBUSY</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>9</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>10</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>I2C_SPI_SLV_FR_TXFLEVEL</td><td>10</td><td>6</td><td>0x00000000000</td><td>0xffffffff111</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_FR_RXFLEVEL</td><td>11</td><td>15</td><td>0x0000f800</td><td>0xffff07ff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_TXBUSY&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_RXFE&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_TXFF&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_RXFF&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_TXFE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_RXBUSY&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_TXFLEVEL&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000000000</pre></td><td>&nbsp;<pre>0xffffffff111</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_FR_RXFLEVEL&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000f800</pre></td><td>&nbsp;<pre>0xffff07ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_IFLS'>I2C_SPI_SLV_IFLS</a></h3>
 <h4>Address: 0x7e214014</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_IFLS_TXIFLSEL</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x2</td></tr>
-<tr><td>I2C_SPI_SLV_IFLS_RXIFLSEL</td><td>3</td><td>5</td><td>0x00000038</td><td>0xffffffc7</td><td>0x2</td></tr>
-<tr><td>I2C_SPI_SLV_IFLS_TXIFPSEL</td><td>6</td><td>8</td><td>0x000001c0</td><td>0xfffffe3f</td><td>0x2</td></tr>
-<tr><td>I2C_SPI_SLV_IFLS_RXIFPSEL</td><td>9</td><td>11</td><td>0x00000e00</td><td>0xfffff1ff</td><td>0x2</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_IFLS_TXIFLSEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_IFLS_RXIFLSEL&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_IFLS_TXIFPSEL&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_IFLS_RXIFPSEL&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_IMSC'>I2C_SPI_SLV_IMSC</a></h3>
 <h4>Address: 0x7e214018</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_IMSC_RXIM</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_IMSC_TXIM</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_IMSC_BEIM</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_IMSC_OEIM</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_IMSC_RXIM&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_IMSC_TXIM&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_IMSC_BEIM&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_IMSC_OEIM&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_RIS'>I2C_SPI_SLV_RIS</a></h3>
 <h4>Address: 0x7e21401c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_RIS_RXRIS</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_RIS_TXRIS</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x1</td></tr>
-<tr><td>I2C_SPI_SLV_RIS_BERIS</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_RIS_OERIS</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_RIS_RXRIS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RIS_TXRIS&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RIS_BERIS&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_RIS_OERIS&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_MIS'>I2C_SPI_SLV_MIS</a></h3>
 <h4>Address: 0x7e214020</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_MIS_RXMIS</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_MIS_TXMIS</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_MIS_BEMIS</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_MIS_OEMIS</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_MIS_RXMIS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_MIS_TXMIS&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_MIS_BEMIS&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_MIS_OEMIS&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_ICR'>I2C_SPI_SLV_ICR</a></h3>
 <h4>Address: 0x7e214024</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_ICR_RXIC</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_ICR_TXIC</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_ICR_BEIC</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_ICR_OEIC</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_ICR_RXIC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_ICR_TXIC&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_ICR_BEIC&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_ICR_OEIC&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_DMACR'>I2C_SPI_SLV_DMACR</a></h3>
 <h4>Address: 0x7e214028</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_DMACR_RXDMAE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DMACR_TXDMAE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>I2C_SPI_SLV_DMACR_DMAONERR</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_DMACR_RXDMAE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DMACR_TXDMAE&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;I2C_SPI_SLV_DMACR_DMAONERR&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_TDR'>I2C_SPI_SLV_TDR</a></h3>
 <h4>Address: 0x7e21402c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_TDR_DATA</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_TDR_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_VCSTAT'>I2C_SPI_SLV_VCSTAT</a></h3>
 <h4>Address: 0x7e214030</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_VCSTAT_DATA</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_VCSTAT_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_HCTRL'>I2C_SPI_SLV_HCTRL</a></h3>
 <h4>Address: 0x7e214034</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_HCTRL_DATA</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_HCTRL_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_DEBUG1'>I2C_SPI_SLV_DEBUG1</a></h3>
 <h4>Address: 0x7e214038</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_DEBUG1_DATA</td><td>0</td><td>25</td><td>0x03ffffff</td><td>0xfc000000</td><td>0xe</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_DEBUG1_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>0x03ffffff</pre></td><td>&nbsp;<pre>0xfc000000</pre>&nbsp;</td><td align=center>&nbsp;0xe&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='I2C_SPI_SLV_DEBUG2'>I2C_SPI_SLV_DEBUG2</a></h3>
 <h4>Address: 0x7e21403c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>I2C_SPI_SLV_DEBUG2_DATA</td><td>0</td><td>23</td><td>0x00ffffff</td><td>0xff000000</td><td>0x400000</td></tr>
-</table>
+<tr><td>&nbsp;I2C_SPI_SLV_DEBUG2_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre></td><td>&nbsp;<pre>0xff000000</pre>&nbsp;</td><td align=center>&nbsp;0x400000&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

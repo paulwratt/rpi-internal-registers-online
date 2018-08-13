@@ -1,874 +1,876 @@
 <html>
 <head>
 <title>A2W - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: A2W (base: 0x7e102000</h1>
+<h1>Register Region: A2W (0x7e102000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>description</td><td>Clock manager PLL control</td></tr>
-<tr><td>base</td><td>0x7e102000</td></tr>
-<tr><td>id</td><td>0x00613277</td></tr>
-<tr><td>password</td><td>0x5a000000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;description&nbsp;</td><td>&nbsp;<pre>Clock manager PLL control</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e102000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x00613277</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;password&nbsp;</td><td>&nbsp;<pre>0x5a000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_DIG0</td><td>0x7e102000</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_DIG1</td><td>0x7e102004</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLA_DIG2</td><td>0x7e102008</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLA_DIG3</td><td>0x7e10200c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLA_ANA0</td><td>0x7e102010</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_ANA1</td><td>0x7e102014</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLA_ANA2</td><td>0x7e102018</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_ANA3</td><td>0x7e10201c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td>A2W_PLLC_DIG0</td><td>0x7e102020</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_DIG1</td><td>0x7e102024</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLC_DIG2</td><td>0x7e102028</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLC_DIG3</td><td>0x7e10202c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLC_ANA0</td><td>0x7e102030</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_ANA1</td><td>0x7e102034</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLC_ANA2</td><td>0x7e102038</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_ANA3</td><td>0x7e10203c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td>A2W_PLLD_DIG0</td><td>0x7e102040</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_DIG1</td><td>0x7e102044</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLD_DIG2</td><td>0x7e102048</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLD_DIG3</td><td>0x7e10204c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLD_ANA0</td><td>0x7e102050</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_ANA1</td><td>0x7e102054</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLD_ANA2</td><td>0x7e102058</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_ANA3</td><td>0x7e10205c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td>A2W_PLLH_DIG0</td><td>0x7e102060</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_DIG1</td><td>0x7e102064</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_DIG2</td><td>0x7e102068</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x000000aa</td></tr>
-<tr><td>A2W_PLLH_DIG3</td><td>0x7e10206c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_ANA0</td><td>0x7e102070</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00d80000</td></tr>
-<tr><td>A2W_PLLH_ANA1</td><td>0x7e102074</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000014</td></tr>
-<tr><td>A2W_PLLH_ANA2</td><td>0x7e102078</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_ANA3</td><td>0x7e10207c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_HDMI_CTL0</td><td>0x7e102080</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00470238</td></tr>
-<tr><td>A2W_HDMI_CTL1</td><td>0x7e102084</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00011c00</td></tr>
-<tr><td>A2W_HDMI_CTL2</td><td>0x7e102088</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x0018048e</td></tr>
-<tr><td>A2W_HDMI_CTL3</td><td>0x7e10208c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000040</td></tr>
-<tr><td>A2W_XOSC0</td><td>0x7e102090</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00820080</td></tr>
-<tr><td>A2W_XOSC1</td><td>0x7e102094</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000006</td></tr>
-<tr><td>A2W_SMPS_CTLA0</td><td>0x7e1020a0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLA1</td><td>0x7e1020a4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLA2</td><td>0x7e1020a8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLB0</td><td>0x7e1020b0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLB1</td><td>0x7e1020b4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLB2</td><td>0x7e1020b8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC0</td><td>0x7e1020c0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC1</td><td>0x7e1020c4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC2</td><td>0x7e1020c8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC3</td><td>0x7e1020cc</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_LDO0</td><td>0x7e1020d0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_LDO1</td><td>0x7e1020d4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_DIG0</td><td>0x7e1020e0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_DIG1</td><td>0x7e1020e4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLB_DIG2</td><td>0x7e1020e8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLB_DIG3</td><td>0x7e1020ec</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLB_ANA0</td><td>0x7e1020f0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_ANA1</td><td>0x7e1020f4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLB_ANA2</td><td>0x7e1020f8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_ANA3</td><td>0x7e1020fc</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td><a hre='#a2w_plla_ctrl'>A2W_PLLA_CTRL</a></td><td>0x7e102100</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td><a hre='#a2w_plla_ana_sscs'>A2W_PLLA_ANA_SSCS</a></td><td>0x7e102110</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllc_ctrl'>A2W_PLLC_CTRL</a></td><td>0x7e102120</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td><a hre='#a2w_pllc_ana_sscs'>A2W_PLLC_ANA_SSCS</a></td><td>0x7e102130</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plld_ctrl'>A2W_PLLD_CTRL</a></td><td>0x7e102140</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td><a hre='#a2w_plld_ana_sscs'>A2W_PLLD_ANA_SSCS</a></td><td>0x7e102150</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllh_ctrl'>A2W_PLLH_CTRL</a></td><td>0x7e102160</td><td>RW</td><td>18</td><td>0x000370ff</td><td>0x00010000</td></tr>
-<tr><td><a hre='#a2w_hdmi_ctl_rcal'>A2W_HDMI_CTL_RCAL</a></td><td>0x7e102180</td><td>RW</td><td>17</td><td>0x00011f33</td><td>0x00010000</td></tr>
-<tr><td><a hre='#a2w_xosc_ctrl'>A2W_XOSC_CTRL</a></td><td>0x7e102190</td><td>RW</td><td>20</td><td>0x000ff0ff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_a_mode'>A2W_SMPS_A_MODE</a></td><td>0x7e1021a0</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_b_stat'>A2W_SMPS_B_STAT</a></td><td>0x7e1021b0</td><td>RW</td><td>13</td><td>0x0000111f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_c_clk'>A2W_SMPS_C_CLK</a></td><td>0x7e1021c0</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_l_spv'>A2W_SMPS_L_SPV</a></td><td>0x7e1021d0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllb_ctrl'>A2W_PLLB_CTRL</a></td><td>0x7e1021e0</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td><a hre='#a2w_pllb_ana_sscs'>A2W_PLLB_ANA_SSCS</a></td><td>0x7e1021f0</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plla_frac'>A2W_PLLA_FRAC</a></td><td>0x7e102200</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plla_ana_sscl'>A2W_PLLA_ANA_SSCL</a></td><td>0x7e102210</td><td>RW</td><td>22</td><td>0x003fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllc_frac'>A2W_PLLC_FRAC</a></td><td>0x7e102220</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_ANA_SSCL</td><td>0x7e102230</td><td>RW</td><td>22</td><td>0x003fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plld_frac'>A2W_PLLD_FRAC</a></td><td>0x7e102240</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_ANA_SSCL</td><td>0x7e102250</td><td>RW</td><td>22</td><td>0x003fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllh_frac'>A2W_PLLH_FRAC</a></td><td>0x7e102260</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_hdmi_ctl_hfen'>A2W_HDMI_CTL_HFEN</a></td><td>0x7e102280</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_xosc_cpr'>A2W_XOSC_CPR</a></td><td>0x7e102290</td><td>RW</td><td>5</td><td>0x00000013</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_a_volts'>A2W_SMPS_A_VOLTS</a></td><td>0x7e1022a0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_c_ctl'>A2W_SMPS_C_CTL</a></td><td>0x7e1022c0</td><td>RW</td><td>2</td><td>0x00000003</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_l_spa'>A2W_SMPS_L_SPA</a></td><td>0x7e1022d0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllb_frac'>A2W_PLLB_FRAC</a></td><td>0x7e1022e0</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllb_ana_sscl'>A2W_PLLB_ANA_SSCL</a></td><td>0x7e1022f0</td><td>RW</td><td>22</td><td>0x003fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plla_dsi0'>A2W_PLLA_DSI0</a></td><td>0x7e102300</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plla_ana_kaip'>A2W_PLLA_ANA_KAIP</a></td><td>0x7e102310</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td><a hre='#a2w_pllc_core2'>A2W_PLLC_CORE2</a></td><td>0x7e102320</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllc_ana_kaip'>A2W_PLLC_ANA_KAIP</a></td><td>0x7e102330</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td><a hre='#a2w_plld_dsi0'>A2W_PLLD_DSI0</a></td><td>0x7e102340</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plld_ana_kaip'>A2W_PLLD_ANA_KAIP</a></td><td>0x7e102350</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td><a hre='#a2w_pllh_aux'>A2W_PLLH_AUX</a></td><td>0x7e102360</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllh_ana_kaip'>A2W_PLLH_ANA_KAIP</a></td><td>0x7e102370</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td><a hre='#a2w_xosc_bias'>A2W_XOSC_BIAS</a></td><td>0x7e102390</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0x00000018</td></tr>
-<tr><td><a hre='#a2w_smps_a_gain'>A2W_SMPS_A_GAIN</a></td><td>0x7e1023a0</td><td>RW</td><td>3</td><td>0x00000007</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_l_scv'>A2W_SMPS_L_SCV</a></td><td>0x7e1023d0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllb_arm'>A2W_PLLB_ARM</a></td><td>0x7e1023e0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllb_ana_kaip'>A2W_PLLB_ANA_KAIP</a></td><td>0x7e1023f0</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td><a hre='#a2w_plla_core'>A2W_PLLA_CORE</a></td><td>0x7e102400</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plla_ana_stat'>A2W_PLLA_ANA_STAT</a></td><td>0x7e102410</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllc_core1'>A2W_PLLC_CORE1</a></td><td>0x7e102420</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllc_ana_stat'>A2W_PLLC_ANA_STAT</a></td><td>0x7e102430</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plld_core'>A2W_PLLD_CORE</a></td><td>0x7e102440</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plld_ana_stat'>A2W_PLLD_ANA_STAT</a></td><td>0x7e102450</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllh_rcal'>A2W_PLLH_RCAL</a></td><td>0x7e102460</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_xosc_pwr'>A2W_XOSC_PWR</a></td><td>0x7e102490</td><td>RW</td><td>3</td><td>0x00000007</td><td>0x00000004</td></tr>
-<tr><td><a hre='#a2w_smps_l_sca'>A2W_SMPS_L_SCA</a></td><td>0x7e1024d0</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllb_sp0'>A2W_PLLB_SP0</a></td><td>0x7e1024e0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllb_ana_stat'>A2W_PLLB_ANA_STAT</a></td><td>0x7e1024f0</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plla_per'>A2W_PLLA_PER</a></td><td>0x7e102500</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plla_ana_sctl'>A2W_PLLA_ANA_SCTL</a></td><td>0x7e102510</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllc_per'>A2W_PLLC_PER</a></td><td>0x7e102520</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllc_ana_sctl'>A2W_PLLC_ANA_SCTL</a></td><td>0x7e102530</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plld_per'>A2W_PLLD_PER</a></td><td>0x7e102540</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plld_ana_sctl'>A2W_PLLD_ANA_SCTL</a></td><td>0x7e102550</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllh_pix'>A2W_PLLH_PIX</a></td><td>0x7e102560</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllh_ana_sctl'>A2W_PLLH_ANA_SCTL</a></td><td>0x7e102570</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_l_siv'>A2W_SMPS_L_SIV</a></td><td>0x7e1025d0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllb_sp1'>A2W_PLLB_SP1</a></td><td>0x7e1025e0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllb_ana_sctl'>A2W_PLLB_ANA_SCTL</a></td><td>0x7e1025f0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plla_ccp2'>A2W_PLLA_CCP2</a></td><td>0x7e102600</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plla_ana_vco'>A2W_PLLA_ANA_VCO</a></td><td>0x7e102610</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllc_core0'>A2W_PLLC_CORE0</a></td><td>0x7e102620</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllc_ana_vco'>A2W_PLLC_ANA_VCO</a></td><td>0x7e102630</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_plld_dsi1'>A2W_PLLD_DSI1</a></td><td>0x7e102640</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_plld_ana_vco'>A2W_PLLD_ANA_VCO</a></td><td>0x7e102650</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllh_ana_stat'>A2W_PLLH_ANA_STAT</a></td><td>0x7e102660</td><td>RW</td><td>21</td><td>0x001f1fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllh_ana_vco'>A2W_PLLH_ANA_VCO</a></td><td>0x7e102670</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_smps_l_sia'>A2W_SMPS_L_SIA</a></td><td>0x7e1026d0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0000000000</td></tr>
-<tr><td><a hre='#a2w_pllb_sp2'>A2W_PLLB_SP2</a></td><td>0x7e1026e0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td><a hre='#a2w_pllb_ana_vco'>A2W_PLLB_ANA_VCO</a></td><td>0x7e1026f0</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_DIG0R</td><td>0x7e102800</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_DIG1R</td><td>0x7e102804</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLA_DIG2R</td><td>0x7e102808</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLA_DIG3R</td><td>0x7e10280c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLA_ANA0R</td><td>0x7e102810</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_ANA1R</td><td>0x7e102814</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLA_ANA2R</td><td>0x7e102818</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_ANA3R</td><td>0x7e10281c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td>A2W_PLLC_DIG0R</td><td>0x7e102820</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_DIG1R</td><td>0x7e102824</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLC_DIG2R</td><td>0x7e102828</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLC_DIG3R</td><td>0x7e10282c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLC_ANA0R</td><td>0x7e102830</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_ANA1R</td><td>0x7e102834</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLC_ANA2R</td><td>0x7e102838</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_ANA3R</td><td>0x7e10283c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td>A2W_PLLD_DIG0R</td><td>0x7e102840</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_DIG1R</td><td>0x7e102844</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLD_DIG2R</td><td>0x7e102848</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLD_DIG3R</td><td>0x7e10284c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLD_ANA0R</td><td>0x7e102850</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_ANA1R</td><td>0x7e102854</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLD_ANA2R</td><td>0x7e102858</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_ANA3R</td><td>0x7e10285c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td>A2W_PLLH_DIG0R</td><td>0x7e102860</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_DIG1R</td><td>0x7e102864</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_DIG2R</td><td>0x7e102868</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x000000aa</td></tr>
-<tr><td>A2W_PLLH_DIG3R</td><td>0x7e10286c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_ANA0R</td><td>0x7e102870</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00d80000</td></tr>
-<tr><td>A2W_PLLH_ANA1R</td><td>0x7e102874</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000014</td></tr>
-<tr><td>A2W_PLLH_ANA2R</td><td>0x7e102878</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_ANA3R</td><td>0x7e10287c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_HDMI_CTL0R</td><td>0x7e102880</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00470238</td></tr>
-<tr><td>A2W_HDMI_CTL1R</td><td>0x7e102884</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00011c00</td></tr>
-<tr><td>A2W_HDMI_CTL2R</td><td>0x7e102888</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x0018048e</td></tr>
-<tr><td>A2W_HDMI_CTL3R</td><td>0x7e10288c</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000040</td></tr>
-<tr><td>A2W_XOSC0R</td><td>0x7e102890</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00820080</td></tr>
-<tr><td>A2W_XOSC1R</td><td>0x7e102894</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000006</td></tr>
-<tr><td>A2W_SMPS_CTLA0R</td><td>0x7e1028a0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLA1R</td><td>0x7e1028a4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLA2R</td><td>0x7e1028a8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLB0R</td><td>0x7e1028b0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLB1R</td><td>0x7e1028b4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLB2R</td><td>0x7e1028b8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC0R</td><td>0x7e1028c0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC1R</td><td>0x7e1028c4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC2R</td><td>0x7e1028c8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_CTLC3R</td><td>0x7e1028cc</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_LDO0R</td><td>0x7e1028d0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_LDO1R</td><td>0x7e1028d4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_DIG0R</td><td>0x7e1028e0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_DIG1R</td><td>0x7e1028e4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00004000</td></tr>
-<tr><td>A2W_PLLB_DIG2R</td><td>0x7e1028e8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00100401</td></tr>
-<tr><td>A2W_PLLB_DIG3R</td><td>0x7e1028ec</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000004</td></tr>
-<tr><td>A2W_PLLB_ANA0R</td><td>0x7e1028f0</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_ANA1R</td><td>0x7e1028f4</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x001d0000</td></tr>
-<tr><td>A2W_PLLB_ANA2R</td><td>0x7e1028f8</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_ANA3R</td><td>0x7e1028fc</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0x00000180</td></tr>
-<tr><td>A2W_PLLA_CTRLR</td><td>0x7e102900</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td>A2W_PLLA_ANA_SSCSR</td><td>0x7e102910</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_CTRLR</td><td>0x7e102920</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td>A2W_PLLC_ANA_SSCSR</td><td>0x7e102930</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_CTRLR</td><td>0x7e102940</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td>A2W_PLLD_ANA_SSCSR</td><td>0x7e102950</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_CTRLR</td><td>0x7e102960</td><td>RW</td><td>18</td><td>0x000370ff</td><td>0x00010000</td></tr>
-<tr><td>A2W_HDMI_CTL_RCALR</td><td>0x7e102980</td><td>RW</td><td>17</td><td>0x00011f33</td><td>0x00010000</td></tr>
-<tr><td>A2W_XOSC_CTRLR</td><td>0x7e102990</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_A_MODER</td><td>0x7e1029a0</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_B_STATR</td><td>0x7e1029b0</td><td>RW</td><td>13</td><td>0x0000111f</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_C_CLKR</td><td>0x7e1029c0</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_L_SPVR</td><td>0x7e1029d0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_CTRLR</td><td>0x7e1029e0</td><td>RW</td><td>18</td><td>0x000373ff</td><td>0x00010000</td></tr>
-<tr><td>A2W_PLLB_ANA_SSCSR</td><td>0x7e1029f0</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_FRACR</td><td>0x7e102a00</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_ANA_SSCLR</td><td>0x7e102a10</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_FRACR</td><td>0x7e102a20</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_ANA_SSCLR</td><td>0x7e102a30</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_FRACR</td><td>0x7e102a40</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_ANA_SSCLR</td><td>0x7e102a50</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_FRACR</td><td>0x7e102a60</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>A2W_HDMI_CTL_HFENR</td><td>0x7e102a80</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_XOSC_CPRR</td><td>0x7e102a90</td><td>RW</td><td>5</td><td>0x00000013</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_A_VOLTSR</td><td>0x7e102aa0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_C_CTLR</td><td>0x7e102ac0</td><td>RW</td><td>2</td><td>0x00000003</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_L_SPAR</td><td>0x7e102ad0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_FRACR</td><td>0x7e102ae0</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_ANA_SSCLR</td><td>0x7e102af0</td><td>RW</td><td>17</td><td>0x0001ffff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_DSI0R</td><td>0x7e102b00</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLA_ANA_KAIPR</td><td>0x7e102b10</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td>A2W_PLLC_CORE2R</td><td>0x7e102b20</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLC_ANA_KAIPR</td><td>0x7e102b30</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td>A2W_PLLD_DSI0R</td><td>0x7e102b40</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLD_ANA_KAIPR</td><td>0x7e102b50</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td>A2W_PLLH_AUXR</td><td>0x7e102b60</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLH_ANA_KAIPR</td><td>0x7e102b70</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td>A2W_XOSC_BIASR</td><td>0x7e102b90</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0x00000018</td></tr>
-<tr><td>A2W_SMPS_A_GAINR</td><td>0x7e102ba0</td><td>RW</td><td>3</td><td>0x00000007</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_L_SCVR</td><td>0x7e102bd0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_ARMR</td><td>0x7e102be0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLB_ANA_KAIPR</td><td>0x7e102bf0</td><td>RW</td><td>11</td><td>0x0000077f</td><td>0x0000033a</td></tr>
-<tr><td>A2W_PLLA_CORER</td><td>0x7e102c00</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLA_ANA_STATR</td><td>0x7e102c10</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_CORE1R</td><td>0x7e102c20</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLC_ANA_STATR</td><td>0x7e102c30</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_CORER</td><td>0x7e102c40</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLD_ANA_STATR</td><td>0x7e102c50</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_RCALR</td><td>0x7e102c60</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_XOSC_PWRR</td><td>0x7e102c90</td><td>RW</td><td>3</td><td>0x00000007</td><td>0x00000004</td></tr>
-<tr><td>A2W_SMPS_L_SCAR</td><td>0x7e102cd0</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_SP0R</td><td>0x7e102ce0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLB_ANA_STATR</td><td>0x7e102cf0</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_PERR</td><td>0x7e102d00</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLA_ANA_SCTLR</td><td>0x7e102d10</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_PERR</td><td>0x7e102d20</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLC_ANA_SCTLR</td><td>0x7e102d30</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_PERR</td><td>0x7e102d40</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLD_ANA_SCTLR</td><td>0x7e102d50</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_PIXR</td><td>0x7e102d60</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLH_ANA_SCTLR</td><td>0x7e102d70</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_L_SIVR</td><td>0x7e102dd0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_SP1R</td><td>0x7e102de0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLB_ANA_SCTLR</td><td>0x7e102df0</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_CCP2R</td><td>0x7e102e00</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLA_ANA_VCOR</td><td>0x7e102e10</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_CORE0R</td><td>0x7e102e20</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLC_ANA_VCOR</td><td>0x7e102e30</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_DSI1R</td><td>0x7e102e40</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLD_ANA_VCOR</td><td>0x7e102e50</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_ANA_STATR</td><td>0x7e102e60</td><td>RW</td><td>21</td><td>0x001f1fff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_ANA_VCOR</td><td>0x7e102e70</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_L_SIAR</td><td>0x7e102ed0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_SP2R</td><td>0x7e102ee0</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0x00000100</td></tr>
-<tr><td>A2W_PLLB_ANA_VCOR</td><td>0x7e102ef0</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_MULTI</td><td>0x7e102f00</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLA_ANA_MULTI</td><td>0x7e102f10</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_MULTI</td><td>0x7e102f20</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLC_ANA_MULTI</td><td>0x7e102f30</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_MULTI</td><td>0x7e102f40</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLD_ANA_MULTI</td><td>0x7e102f50</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_MULTI</td><td>0x7e102f60</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLH_ANA_MULTI</td><td>0x7e102f70</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_HDMI_CTL_MULTI</td><td>0x7e102f80</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_XOSC_MULTI</td><td>0x7e102f90</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_A_MULTI</td><td>0x7e102fa0</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_B_MULTI</td><td>0x7e102fb0</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_C_MULTI</td><td>0x7e102fc0</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_SMPS_L_MULTI</td><td>0x7e102fd0</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_MULTI</td><td>0x7e102fe0</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
-<tr><td>A2W_PLLB_ANA_MULTI</td><td>0x7e102ff0</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG0&nbsp;</td><td>&nbsp;<pre>0x7e102000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG1&nbsp;</td><td>&nbsp;<pre>0x7e102004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG2&nbsp;</td><td>&nbsp;<pre>0x7e102008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG3&nbsp;</td><td>&nbsp;<pre>0x7e10200c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA0&nbsp;</td><td>&nbsp;<pre>0x7e102010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA1&nbsp;</td><td>&nbsp;<pre>0x7e102014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA2&nbsp;</td><td>&nbsp;<pre>0x7e102018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA3&nbsp;</td><td>&nbsp;<pre>0x7e10201c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG0&nbsp;</td><td>&nbsp;<pre>0x7e102020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG1&nbsp;</td><td>&nbsp;<pre>0x7e102024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG2&nbsp;</td><td>&nbsp;<pre>0x7e102028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG3&nbsp;</td><td>&nbsp;<pre>0x7e10202c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA0&nbsp;</td><td>&nbsp;<pre>0x7e102030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA1&nbsp;</td><td>&nbsp;<pre>0x7e102034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA2&nbsp;</td><td>&nbsp;<pre>0x7e102038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA3&nbsp;</td><td>&nbsp;<pre>0x7e10203c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG0&nbsp;</td><td>&nbsp;<pre>0x7e102040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG1&nbsp;</td><td>&nbsp;<pre>0x7e102044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG2&nbsp;</td><td>&nbsp;<pre>0x7e102048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG3&nbsp;</td><td>&nbsp;<pre>0x7e10204c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA0&nbsp;</td><td>&nbsp;<pre>0x7e102050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA1&nbsp;</td><td>&nbsp;<pre>0x7e102054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA2&nbsp;</td><td>&nbsp;<pre>0x7e102058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA3&nbsp;</td><td>&nbsp;<pre>0x7e10205c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG0&nbsp;</td><td>&nbsp;<pre>0x7e102060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG1&nbsp;</td><td>&nbsp;<pre>0x7e102064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG2&nbsp;</td><td>&nbsp;<pre>0x7e102068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000000aa</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG3&nbsp;</td><td>&nbsp;<pre>0x7e10206c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA0&nbsp;</td><td>&nbsp;<pre>0x7e102070</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00d80000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA1&nbsp;</td><td>&nbsp;<pre>0x7e102074</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000014</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA2&nbsp;</td><td>&nbsp;<pre>0x7e102078</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA3&nbsp;</td><td>&nbsp;<pre>0x7e10207c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL0&nbsp;</td><td>&nbsp;<pre>0x7e102080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00470238</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL1&nbsp;</td><td>&nbsp;<pre>0x7e102084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00011c00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL2&nbsp;</td><td>&nbsp;<pre>0x7e102088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0018048e</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL3&nbsp;</td><td>&nbsp;<pre>0x7e10208c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000040</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC0&nbsp;</td><td>&nbsp;<pre>0x7e102090</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00820080</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC1&nbsp;</td><td>&nbsp;<pre>0x7e102094</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000006</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLA0&nbsp;</td><td>&nbsp;<pre>0x7e1020a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLA1&nbsp;</td><td>&nbsp;<pre>0x7e1020a4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLA2&nbsp;</td><td>&nbsp;<pre>0x7e1020a8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLB0&nbsp;</td><td>&nbsp;<pre>0x7e1020b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLB1&nbsp;</td><td>&nbsp;<pre>0x7e1020b4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLB2&nbsp;</td><td>&nbsp;<pre>0x7e1020b8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC0&nbsp;</td><td>&nbsp;<pre>0x7e1020c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC1&nbsp;</td><td>&nbsp;<pre>0x7e1020c4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC2&nbsp;</td><td>&nbsp;<pre>0x7e1020c8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC3&nbsp;</td><td>&nbsp;<pre>0x7e1020cc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_LDO0&nbsp;</td><td>&nbsp;<pre>0x7e1020d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_LDO1&nbsp;</td><td>&nbsp;<pre>0x7e1020d4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG0&nbsp;</td><td>&nbsp;<pre>0x7e1020e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG1&nbsp;</td><td>&nbsp;<pre>0x7e1020e4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG2&nbsp;</td><td>&nbsp;<pre>0x7e1020e8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG3&nbsp;</td><td>&nbsp;<pre>0x7e1020ec</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA0&nbsp;</td><td>&nbsp;<pre>0x7e1020f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA1&nbsp;</td><td>&nbsp;<pre>0x7e1020f4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA2&nbsp;</td><td>&nbsp;<pre>0x7e1020f8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA3&nbsp;</td><td>&nbsp;<pre>0x7e1020fc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ctrl'>A2W_PLLA_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ana_sscs'>A2W_PLLA_ANA_SSCS</a>&nbsp;</td><td>&nbsp;<pre>0x7e102110</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_ctrl'>A2W_PLLC_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102120</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_ana_sscs'>A2W_PLLC_ANA_SSCS</a>&nbsp;</td><td>&nbsp;<pre>0x7e102130</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_ctrl'>A2W_PLLD_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102140</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_ana_sscs'>A2W_PLLD_ANA_SSCS</a>&nbsp;</td><td>&nbsp;<pre>0x7e102150</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_ctrl'>A2W_PLLH_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102160</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000370ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_hdmi_ctl_rcal'>A2W_HDMI_CTL_RCAL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102180</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00011f33</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_xosc_ctrl'>A2W_XOSC_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102190</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000ff0ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_a_mode'>A2W_SMPS_A_MODE</a>&nbsp;</td><td>&nbsp;<pre>0x7e1021a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_b_stat'>A2W_SMPS_B_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e1021b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x0000111f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_c_clk'>A2W_SMPS_C_CLK</a>&nbsp;</td><td>&nbsp;<pre>0x7e1021c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_l_spv'>A2W_SMPS_L_SPV</a>&nbsp;</td><td>&nbsp;<pre>0x7e1021d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_ctrl'>A2W_PLLB_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e1021e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_ana_sscs'>A2W_PLLB_ANA_SSCS</a>&nbsp;</td><td>&nbsp;<pre>0x7e1021f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_frac'>A2W_PLLA_FRAC</a>&nbsp;</td><td>&nbsp;<pre>0x7e102200</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ana_sscl'>A2W_PLLA_ANA_SSCL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102210</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_frac'>A2W_PLLC_FRAC</a>&nbsp;</td><td>&nbsp;<pre>0x7e102220</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_SSCL&nbsp;</td><td>&nbsp;<pre>0x7e102230</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_frac'>A2W_PLLD_FRAC</a>&nbsp;</td><td>&nbsp;<pre>0x7e102240</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_SSCL&nbsp;</td><td>&nbsp;<pre>0x7e102250</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_frac'>A2W_PLLH_FRAC</a>&nbsp;</td><td>&nbsp;<pre>0x7e102260</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_hdmi_ctl_hfen'>A2W_HDMI_CTL_HFEN</a>&nbsp;</td><td>&nbsp;<pre>0x7e102280</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_xosc_cpr'>A2W_XOSC_CPR</a>&nbsp;</td><td>&nbsp;<pre>0x7e102290</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000013</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_a_volts'>A2W_SMPS_A_VOLTS</a>&nbsp;</td><td>&nbsp;<pre>0x7e1022a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_c_ctl'>A2W_SMPS_C_CTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e1022c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_l_spa'>A2W_SMPS_L_SPA</a>&nbsp;</td><td>&nbsp;<pre>0x7e1022d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_frac'>A2W_PLLB_FRAC</a>&nbsp;</td><td>&nbsp;<pre>0x7e1022e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_ana_sscl'>A2W_PLLB_ANA_SSCL</a>&nbsp;</td><td>&nbsp;<pre>0x7e1022f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_dsi0'>A2W_PLLA_DSI0</a>&nbsp;</td><td>&nbsp;<pre>0x7e102300</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ana_kaip'>A2W_PLLA_ANA_KAIP</a>&nbsp;</td><td>&nbsp;<pre>0x7e102310</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_core2'>A2W_PLLC_CORE2</a>&nbsp;</td><td>&nbsp;<pre>0x7e102320</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_ana_kaip'>A2W_PLLC_ANA_KAIP</a>&nbsp;</td><td>&nbsp;<pre>0x7e102330</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_dsi0'>A2W_PLLD_DSI0</a>&nbsp;</td><td>&nbsp;<pre>0x7e102340</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_ana_kaip'>A2W_PLLD_ANA_KAIP</a>&nbsp;</td><td>&nbsp;<pre>0x7e102350</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_aux'>A2W_PLLH_AUX</a>&nbsp;</td><td>&nbsp;<pre>0x7e102360</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_ana_kaip'>A2W_PLLH_ANA_KAIP</a>&nbsp;</td><td>&nbsp;<pre>0x7e102370</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_xosc_bias'>A2W_XOSC_BIAS</a>&nbsp;</td><td>&nbsp;<pre>0x7e102390</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000018</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_a_gain'>A2W_SMPS_A_GAIN</a>&nbsp;</td><td>&nbsp;<pre>0x7e1023a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000007</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_l_scv'>A2W_SMPS_L_SCV</a>&nbsp;</td><td>&nbsp;<pre>0x7e1023d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_arm'>A2W_PLLB_ARM</a>&nbsp;</td><td>&nbsp;<pre>0x7e1023e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_ana_kaip'>A2W_PLLB_ANA_KAIP</a>&nbsp;</td><td>&nbsp;<pre>0x7e1023f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_core'>A2W_PLLA_CORE</a>&nbsp;</td><td>&nbsp;<pre>0x7e102400</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ana_stat'>A2W_PLLA_ANA_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e102410</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_core1'>A2W_PLLC_CORE1</a>&nbsp;</td><td>&nbsp;<pre>0x7e102420</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_ana_stat'>A2W_PLLC_ANA_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e102430</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_core'>A2W_PLLD_CORE</a>&nbsp;</td><td>&nbsp;<pre>0x7e102440</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_ana_stat'>A2W_PLLD_ANA_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e102450</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_rcal'>A2W_PLLH_RCAL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102460</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_xosc_pwr'>A2W_XOSC_PWR</a>&nbsp;</td><td>&nbsp;<pre>0x7e102490</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000007</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_l_sca'>A2W_SMPS_L_SCA</a>&nbsp;</td><td>&nbsp;<pre>0x7e1024d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_sp0'>A2W_PLLB_SP0</a>&nbsp;</td><td>&nbsp;<pre>0x7e1024e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_ana_stat'>A2W_PLLB_ANA_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e1024f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_per'>A2W_PLLA_PER</a>&nbsp;</td><td>&nbsp;<pre>0x7e102500</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ana_sctl'>A2W_PLLA_ANA_SCTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102510</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_per'>A2W_PLLC_PER</a>&nbsp;</td><td>&nbsp;<pre>0x7e102520</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_ana_sctl'>A2W_PLLC_ANA_SCTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102530</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_per'>A2W_PLLD_PER</a>&nbsp;</td><td>&nbsp;<pre>0x7e102540</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_ana_sctl'>A2W_PLLD_ANA_SCTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102550</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_pix'>A2W_PLLH_PIX</a>&nbsp;</td><td>&nbsp;<pre>0x7e102560</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_ana_sctl'>A2W_PLLH_ANA_SCTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e102570</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_l_siv'>A2W_SMPS_L_SIV</a>&nbsp;</td><td>&nbsp;<pre>0x7e1025d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_sp1'>A2W_PLLB_SP1</a>&nbsp;</td><td>&nbsp;<pre>0x7e1025e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_ana_sctl'>A2W_PLLB_ANA_SCTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e1025f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ccp2'>A2W_PLLA_CCP2</a>&nbsp;</td><td>&nbsp;<pre>0x7e102600</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plla_ana_vco'>A2W_PLLA_ANA_VCO</a>&nbsp;</td><td>&nbsp;<pre>0x7e102610</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_core0'>A2W_PLLC_CORE0</a>&nbsp;</td><td>&nbsp;<pre>0x7e102620</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllc_ana_vco'>A2W_PLLC_ANA_VCO</a>&nbsp;</td><td>&nbsp;<pre>0x7e102630</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_dsi1'>A2W_PLLD_DSI1</a>&nbsp;</td><td>&nbsp;<pre>0x7e102640</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_plld_ana_vco'>A2W_PLLD_ANA_VCO</a>&nbsp;</td><td>&nbsp;<pre>0x7e102650</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_ana_stat'>A2W_PLLH_ANA_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e102660</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x001f1fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllh_ana_vco'>A2W_PLLH_ANA_VCO</a>&nbsp;</td><td>&nbsp;<pre>0x7e102670</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_smps_l_sia'>A2W_SMPS_L_SIA</a>&nbsp;</td><td>&nbsp;<pre>0x7e1026d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_sp2'>A2W_PLLB_SP2</a>&nbsp;</td><td>&nbsp;<pre>0x7e1026e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#a2w_pllb_ana_vco'>A2W_PLLB_ANA_VCO</a>&nbsp;</td><td>&nbsp;<pre>0x7e1026f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG0R&nbsp;</td><td>&nbsp;<pre>0x7e102800</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG1R&nbsp;</td><td>&nbsp;<pre>0x7e102804</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG2R&nbsp;</td><td>&nbsp;<pre>0x7e102808</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DIG3R&nbsp;</td><td>&nbsp;<pre>0x7e10280c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA0R&nbsp;</td><td>&nbsp;<pre>0x7e102810</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA1R&nbsp;</td><td>&nbsp;<pre>0x7e102814</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA2R&nbsp;</td><td>&nbsp;<pre>0x7e102818</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA3R&nbsp;</td><td>&nbsp;<pre>0x7e10281c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG0R&nbsp;</td><td>&nbsp;<pre>0x7e102820</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG1R&nbsp;</td><td>&nbsp;<pre>0x7e102824</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG2R&nbsp;</td><td>&nbsp;<pre>0x7e102828</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_DIG3R&nbsp;</td><td>&nbsp;<pre>0x7e10282c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA0R&nbsp;</td><td>&nbsp;<pre>0x7e102830</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA1R&nbsp;</td><td>&nbsp;<pre>0x7e102834</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA2R&nbsp;</td><td>&nbsp;<pre>0x7e102838</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA3R&nbsp;</td><td>&nbsp;<pre>0x7e10283c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG0R&nbsp;</td><td>&nbsp;<pre>0x7e102840</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG1R&nbsp;</td><td>&nbsp;<pre>0x7e102844</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG2R&nbsp;</td><td>&nbsp;<pre>0x7e102848</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DIG3R&nbsp;</td><td>&nbsp;<pre>0x7e10284c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA0R&nbsp;</td><td>&nbsp;<pre>0x7e102850</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA1R&nbsp;</td><td>&nbsp;<pre>0x7e102854</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA2R&nbsp;</td><td>&nbsp;<pre>0x7e102858</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA3R&nbsp;</td><td>&nbsp;<pre>0x7e10285c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG0R&nbsp;</td><td>&nbsp;<pre>0x7e102860</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG1R&nbsp;</td><td>&nbsp;<pre>0x7e102864</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG2R&nbsp;</td><td>&nbsp;<pre>0x7e102868</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000000aa</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_DIG3R&nbsp;</td><td>&nbsp;<pre>0x7e10286c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA0R&nbsp;</td><td>&nbsp;<pre>0x7e102870</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00d80000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA1R&nbsp;</td><td>&nbsp;<pre>0x7e102874</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000014</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA2R&nbsp;</td><td>&nbsp;<pre>0x7e102878</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA3R&nbsp;</td><td>&nbsp;<pre>0x7e10287c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL0R&nbsp;</td><td>&nbsp;<pre>0x7e102880</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00470238</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL1R&nbsp;</td><td>&nbsp;<pre>0x7e102884</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00011c00</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL2R&nbsp;</td><td>&nbsp;<pre>0x7e102888</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0018048e</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL3R&nbsp;</td><td>&nbsp;<pre>0x7e10288c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000040</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC0R&nbsp;</td><td>&nbsp;<pre>0x7e102890</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00820080</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC1R&nbsp;</td><td>&nbsp;<pre>0x7e102894</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000006</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLA0R&nbsp;</td><td>&nbsp;<pre>0x7e1028a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLA1R&nbsp;</td><td>&nbsp;<pre>0x7e1028a4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLA2R&nbsp;</td><td>&nbsp;<pre>0x7e1028a8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLB0R&nbsp;</td><td>&nbsp;<pre>0x7e1028b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLB1R&nbsp;</td><td>&nbsp;<pre>0x7e1028b4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLB2R&nbsp;</td><td>&nbsp;<pre>0x7e1028b8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC0R&nbsp;</td><td>&nbsp;<pre>0x7e1028c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC1R&nbsp;</td><td>&nbsp;<pre>0x7e1028c4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC2R&nbsp;</td><td>&nbsp;<pre>0x7e1028c8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_CTLC3R&nbsp;</td><td>&nbsp;<pre>0x7e1028cc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_LDO0R&nbsp;</td><td>&nbsp;<pre>0x7e1028d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_LDO1R&nbsp;</td><td>&nbsp;<pre>0x7e1028d4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG0R&nbsp;</td><td>&nbsp;<pre>0x7e1028e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG1R&nbsp;</td><td>&nbsp;<pre>0x7e1028e4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00004000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG2R&nbsp;</td><td>&nbsp;<pre>0x7e1028e8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00100401</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_DIG3R&nbsp;</td><td>&nbsp;<pre>0x7e1028ec</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA0R&nbsp;</td><td>&nbsp;<pre>0x7e1028f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA1R&nbsp;</td><td>&nbsp;<pre>0x7e1028f4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x001d0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA2R&nbsp;</td><td>&nbsp;<pre>0x7e1028f8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA3R&nbsp;</td><td>&nbsp;<pre>0x7e1028fc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000180</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CTRLR&nbsp;</td><td>&nbsp;<pre>0x7e102900</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_SSCSR&nbsp;</td><td>&nbsp;<pre>0x7e102910</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CTRLR&nbsp;</td><td>&nbsp;<pre>0x7e102920</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_SSCSR&nbsp;</td><td>&nbsp;<pre>0x7e102930</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_CTRLR&nbsp;</td><td>&nbsp;<pre>0x7e102940</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_SSCSR&nbsp;</td><td>&nbsp;<pre>0x7e102950</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_CTRLR&nbsp;</td><td>&nbsp;<pre>0x7e102960</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000370ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL_RCALR&nbsp;</td><td>&nbsp;<pre>0x7e102980</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00011f33</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRLR&nbsp;</td><td>&nbsp;<pre>0x7e102990</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_A_MODER&nbsp;</td><td>&nbsp;<pre>0x7e1029a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_B_STATR&nbsp;</td><td>&nbsp;<pre>0x7e1029b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x0000111f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_C_CLKR&nbsp;</td><td>&nbsp;<pre>0x7e1029c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_L_SPVR&nbsp;</td><td>&nbsp;<pre>0x7e1029d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_CTRLR&nbsp;</td><td>&nbsp;<pre>0x7e1029e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x000373ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00010000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_SSCSR&nbsp;</td><td>&nbsp;<pre>0x7e1029f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_FRACR&nbsp;</td><td>&nbsp;<pre>0x7e102a00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_SSCLR&nbsp;</td><td>&nbsp;<pre>0x7e102a10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_FRACR&nbsp;</td><td>&nbsp;<pre>0x7e102a20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_SSCLR&nbsp;</td><td>&nbsp;<pre>0x7e102a30</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_FRACR&nbsp;</td><td>&nbsp;<pre>0x7e102a40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_SSCLR&nbsp;</td><td>&nbsp;<pre>0x7e102a50</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_FRACR&nbsp;</td><td>&nbsp;<pre>0x7e102a60</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL_HFENR&nbsp;</td><td>&nbsp;<pre>0x7e102a80</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CPRR&nbsp;</td><td>&nbsp;<pre>0x7e102a90</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000013</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_A_VOLTSR&nbsp;</td><td>&nbsp;<pre>0x7e102aa0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_C_CTLR&nbsp;</td><td>&nbsp;<pre>0x7e102ac0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_L_SPAR&nbsp;</td><td>&nbsp;<pre>0x7e102ad0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_FRACR&nbsp;</td><td>&nbsp;<pre>0x7e102ae0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_SSCLR&nbsp;</td><td>&nbsp;<pre>0x7e102af0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DSI0R&nbsp;</td><td>&nbsp;<pre>0x7e102b00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_KAIPR&nbsp;</td><td>&nbsp;<pre>0x7e102b10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE2R&nbsp;</td><td>&nbsp;<pre>0x7e102b20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_KAIPR&nbsp;</td><td>&nbsp;<pre>0x7e102b30</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DSI0R&nbsp;</td><td>&nbsp;<pre>0x7e102b40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_KAIPR&nbsp;</td><td>&nbsp;<pre>0x7e102b50</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_AUXR&nbsp;</td><td>&nbsp;<pre>0x7e102b60</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_KAIPR&nbsp;</td><td>&nbsp;<pre>0x7e102b70</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_BIASR&nbsp;</td><td>&nbsp;<pre>0x7e102b90</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000018</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_A_GAINR&nbsp;</td><td>&nbsp;<pre>0x7e102ba0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000007</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_L_SCVR&nbsp;</td><td>&nbsp;<pre>0x7e102bd0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ARMR&nbsp;</td><td>&nbsp;<pre>0x7e102be0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_KAIPR&nbsp;</td><td>&nbsp;<pre>0x7e102bf0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000077f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000033a</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CORER&nbsp;</td><td>&nbsp;<pre>0x7e102c00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_STATR&nbsp;</td><td>&nbsp;<pre>0x7e102c10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE1R&nbsp;</td><td>&nbsp;<pre>0x7e102c20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_STATR&nbsp;</td><td>&nbsp;<pre>0x7e102c30</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_CORER&nbsp;</td><td>&nbsp;<pre>0x7e102c40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_STATR&nbsp;</td><td>&nbsp;<pre>0x7e102c50</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_RCALR&nbsp;</td><td>&nbsp;<pre>0x7e102c60</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_PWRR&nbsp;</td><td>&nbsp;<pre>0x7e102c90</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000007</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000004</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_L_SCAR&nbsp;</td><td>&nbsp;<pre>0x7e102cd0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP0R&nbsp;</td><td>&nbsp;<pre>0x7e102ce0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_STATR&nbsp;</td><td>&nbsp;<pre>0x7e102cf0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_PERR&nbsp;</td><td>&nbsp;<pre>0x7e102d00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_SCTLR&nbsp;</td><td>&nbsp;<pre>0x7e102d10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_PERR&nbsp;</td><td>&nbsp;<pre>0x7e102d20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_SCTLR&nbsp;</td><td>&nbsp;<pre>0x7e102d30</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_PERR&nbsp;</td><td>&nbsp;<pre>0x7e102d40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_SCTLR&nbsp;</td><td>&nbsp;<pre>0x7e102d50</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_PIXR&nbsp;</td><td>&nbsp;<pre>0x7e102d60</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_SCTLR&nbsp;</td><td>&nbsp;<pre>0x7e102d70</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_L_SIVR&nbsp;</td><td>&nbsp;<pre>0x7e102dd0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP1R&nbsp;</td><td>&nbsp;<pre>0x7e102de0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_SCTLR&nbsp;</td><td>&nbsp;<pre>0x7e102df0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CCP2R&nbsp;</td><td>&nbsp;<pre>0x7e102e00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_VCOR&nbsp;</td><td>&nbsp;<pre>0x7e102e10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE0R&nbsp;</td><td>&nbsp;<pre>0x7e102e20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_VCOR&nbsp;</td><td>&nbsp;<pre>0x7e102e30</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DSI1R&nbsp;</td><td>&nbsp;<pre>0x7e102e40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_VCOR&nbsp;</td><td>&nbsp;<pre>0x7e102e50</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_STATR&nbsp;</td><td>&nbsp;<pre>0x7e102e60</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x001f1fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_VCOR&nbsp;</td><td>&nbsp;<pre>0x7e102e70</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_L_SIAR&nbsp;</td><td>&nbsp;<pre>0x7e102ed0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP2R&nbsp;</td><td>&nbsp;<pre>0x7e102ee0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000100</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_VCOR&nbsp;</td><td>&nbsp;<pre>0x7e102ef0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f30</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f40</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f50</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f60</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f70</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f80</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102f90</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_A_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102fa0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_B_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102fb0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_C_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102fc0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_L_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102fd0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102fe0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_MULTI&nbsp;</td><td>&nbsp;<pre>0x7e102ff0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0000000000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='A2W_PLLA_CTRL'>A2W_PLLA_CTRL</a></h3>
 <h4>Address: 0x7e102100</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_CTRL_NDIV</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>10</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLA_CTRL_PDIV</td><td>12</td><td>14</td><td>0x00007000</td><td>0xffff8fff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLA_CTRL_PWRDN</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLA_CTRL_PRSTN</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_CTRL_NDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CTRL_PDIV&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CTRL_PWRDN&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CTRL_PRSTN&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_ANA_SSCS'>A2W_PLLA_ANA_SSCS</a></h3>
 <h4>Address: 0x7e102110</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_ANA_SSCS_STEP</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
-<tr><td>A2W_PLLA_ANA_SSCS_MODE</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_ANA_SSCS_STEP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_SSCS_MODE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_CTRL'>A2W_PLLC_CTRL</a></h3>
 <h4>Address: 0x7e102120</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_CTRL_NDIV</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>10</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLC_CTRL_PDIV</td><td>12</td><td>14</td><td>0x00007000</td><td>0xffff8fff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLC_CTRL_PWRDN</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLC_CTRL_PRSTN</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_CTRL_NDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CTRL_PDIV&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CTRL_PWRDN&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CTRL_PRSTN&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_ANA_SSCS'>A2W_PLLC_ANA_SSCS</a></h3>
 <h4>Address: 0x7e102130</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_ANA_SSCS_STEP</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
-<tr><td>A2W_PLLC_ANA_SSCS_MODE</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_ANA_SSCS_STEP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_SSCS_MODE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_CTRL'>A2W_PLLD_CTRL</a></h3>
 <h4>Address: 0x7e102140</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_CTRL_NDIV</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>10</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLD_CTRL_PDIV</td><td>12</td><td>14</td><td>0x00007000</td><td>0xffff8fff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLD_CTRL_PWRDN</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLD_CTRL_PRSTN</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_CTRL_NDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_CTRL_PDIV&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_CTRL_PWRDN&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_CTRL_PRSTN&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_ANA_SSCS'>A2W_PLLD_ANA_SSCS</a></h3>
 <h4>Address: 0x7e102150</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_ANA_SSCS_STEP</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
-<tr><td>A2W_PLLD_ANA_SSCS_MODE</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_ANA_SSCS_STEP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_SSCS_MODE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_CTRL'>A2W_PLLH_CTRL</a></h3>
 <h4>Address: 0x7e102160</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_CTRL_NDIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>8</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLH_CTRL_PDIV</td><td>12</td><td>14</td><td>0x00007000</td><td>0xffff8fff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLH_CTRL_PWRDN</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLH_CTRL_PRSTN</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_CTRL_NDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_CTRL_PDIV&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_CTRL_PWRDN&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_CTRL_PRSTN&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_HDMI_CTL_RCAL'>A2W_HDMI_CTL_RCAL</a></h3>
 <h4>Address: 0x7e102180</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_HDMI_CTL_RCAL_SELAVG</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>2</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_HDMI_CTL_RCAL_SELDIV</td><td>4</td><td>5</td><td>0x00000030</td><td>0xffffffcf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_HDMI_CTL_RCAL_MANR</td><td>8</td><td>11</td><td>0x00000f00</td><td>0xfffff0ff</td><td>0x0</td></tr>
-<tr><td>A2W_HDMI_CTL_RCAL_MANREN</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_HDMI_CTL_RCAL_RSTB</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;A2W_HDMI_CTL_RCAL_SELAVG&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL_RCAL_SELDIV&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000030</pre></td><td>&nbsp;<pre>0xffffffcf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL_RCAL_MANR&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000f00</pre></td><td>&nbsp;<pre>0xfffff0ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL_RCAL_MANREN&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_HDMI_CTL_RCAL_RSTB&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_XOSC_CTRL'>A2W_XOSC_CTRL</a></h3>
 <h4>Address: 0x7e102190</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_XOSC_CTRL_PLLCEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_HDMIEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_USBEN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_SMPSEN</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_DDREN</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_PLLDEN</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_PLLAEN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_PLLBEN</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>8</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_XOSC_CTRL_PLLCOK</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_HDMIOK</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_USBOK</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_SMPSOK</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_DDROK</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_PLLDOK</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_PLLAOK</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_CTRL_PLLBOK</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLCEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_HDMIEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_USBEN&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_SMPSEN&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_DDREN&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLDEN&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLAEN&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLBEN&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLCOK&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_HDMIOK&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_USBOK&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_SMPSOK&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_DDROK&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLDOK&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLAOK&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x00040000</pre></td><td>&nbsp;<pre>0xfffbffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CTRL_PLLBOK&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x00080000</pre></td><td>&nbsp;<pre>0xfff7ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_A_MODE'>A2W_SMPS_A_MODE</a></h3>
 <h4>Address: 0x7e1021a0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_A_MODE_BSTPWMB</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_A_MODE_BSTPWMB&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_B_STAT'>A2W_SMPS_B_STAT</a></h3>
 <h4>Address: 0x7e1021b0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_B_STAT_VOLTS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_SMPS_B_STAT_BSTPWMB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>9</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_SMPS_B_STAT_POK</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_B_STAT_VOLTS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_B_STAT_BSTPWMB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_B_STAT_POK&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_C_CLK'>A2W_SMPS_C_CLK</a></h3>
 <h4>Address: 0x7e1021c0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_C_CLK_OSCDIV</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
-<tr><td>A2W_SMPS_C_CLK_USEOSC</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>A2W_SMPS_C_CLK_TDEN</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_C_CLK_OSCDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_C_CLK_USEOSC&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_C_CLK_TDEN&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_L_SPV'>A2W_SMPS_L_SPV</a></h3>
 <h4>Address: 0x7e1021d0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_L_SPV_VOLTS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_L_SPV_VOLTS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_CTRL'>A2W_PLLB_CTRL</a></h3>
 <h4>Address: 0x7e1021e0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_CTRL_NDIV</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>10</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLB_CTRL_PDIV</td><td>12</td><td>14</td><td>0x00007000</td><td>0xffff8fff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLB_CTRL_PWRDN</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLB_CTRL_PRSTN</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_CTRL_NDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_CTRL_PDIV&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_CTRL_PWRDN&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_CTRL_PRSTN&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_ANA_SSCS'>A2W_PLLB_ANA_SSCS</a></h3>
 <h4>Address: 0x7e1021f0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_ANA_SSCS_STEP</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
-<tr><td>A2W_PLLB_ANA_SSCS_MODE</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_ANA_SSCS_STEP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_SSCS_MODE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_FRAC'>A2W_PLLA_FRAC</a></h3>
 <h4>Address: 0x7e102200</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_FRAC_FRAC</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_FRAC_FRAC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_ANA_SSCL'>A2W_PLLA_ANA_SSCL</a></h3>
 <h4>Address: 0x7e102210</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_ANA_SSCL_LIMIT</td><td>0</td><td>21</td><td>0x003fffff</td><td>0xffc00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_ANA_SSCL_LIMIT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre></td><td>&nbsp;<pre>0xffc00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_FRAC'>A2W_PLLC_FRAC</a></h3>
 <h4>Address: 0x7e102220</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_FRAC_FRAC</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_FRAC_FRAC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_FRAC'>A2W_PLLD_FRAC</a></h3>
 <h4>Address: 0x7e102240</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_FRAC_FRAC</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_FRAC_FRAC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_FRAC'>A2W_PLLH_FRAC</a></h3>
 <h4>Address: 0x7e102260</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_FRAC_FRAC</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_FRAC_FRAC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_HDMI_CTL_HFEN'>A2W_HDMI_CTL_HFEN</a></h3>
 <h4>Address: 0x7e102280</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_HDMI_CTL_HFEN_HFEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_HDMI_CTL_HFEN_HFEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_XOSC_CPR'>A2W_XOSC_CPR</a></h3>
 <h4>Address: 0x7e102290</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_XOSC_CPR_DIV</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>2</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_XOSC_CPR_CPR1</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_XOSC_CPR_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_CPR_CPR1&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_A_VOLTS'>A2W_SMPS_A_VOLTS</a></h3>
 <h4>Address: 0x7e1022a0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_A_VOLTS_VOLTS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_A_VOLTS_VOLTS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_C_CTL'>A2W_SMPS_C_CTL</a></h3>
 <h4>Address: 0x7e1022c0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_C_CTL_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>A2W_SMPS_C_CTL_UPEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_C_CTL_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_SMPS_C_CTL_UPEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_L_SPA'>A2W_SMPS_L_SPA</a></h3>
 <h4>Address: 0x7e1022d0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_L_SPA_ANA</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_L_SPA_ANA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_FRAC'>A2W_PLLB_FRAC</a></h3>
 <h4>Address: 0x7e1022e0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_FRAC_FRAC</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_FRAC_FRAC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_ANA_SSCL'>A2W_PLLB_ANA_SSCL</a></h3>
 <h4>Address: 0x7e1022f0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_ANA_SSCL_LIMIT</td><td>0</td><td>21</td><td>0x003fffff</td><td>0xffc00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_ANA_SSCL_LIMIT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre></td><td>&nbsp;<pre>0xffc00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_DSI0'>A2W_PLLA_DSI0</a></h3>
 <h4>Address: 0x7e102300</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_DSI0_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLA_DSI0_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLA_DSI0_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_DSI0_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DSI0_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_DSI0_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_ANA_KAIP'>A2W_PLLA_ANA_KAIP</a></h3>
 <h4>Address: 0x7e102310</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_ANA_KAIP_KP</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0xa</td></tr>
-<tr><td>A2W_PLLA_ANA_KAIP_KI</td><td>4</td><td>6</td><td>0x00000070</td><td>0xffffff8f</td><td>0x3</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLA_ANA_KAIP_KA</td><td>8</td><td>10</td><td>0x00000700</td><td>0xfffff8ff</td><td>0x3</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_ANA_KAIP_KP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0xa&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_KAIP_KI&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000070</pre></td><td>&nbsp;<pre>0xffffff8f</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_KAIP_KA&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000700</pre></td><td>&nbsp;<pre>0xfffff8ff</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_CORE2'>A2W_PLLC_CORE2</a></h3>
 <h4>Address: 0x7e102320</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_CORE2_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLC_CORE2_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLC_CORE2_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_CORE2_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE2_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE2_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_ANA_KAIP'>A2W_PLLC_ANA_KAIP</a></h3>
 <h4>Address: 0x7e102330</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_ANA_KAIP_KP</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0xa</td></tr>
-<tr><td>A2W_PLLC_ANA_KAIP_KI</td><td>4</td><td>6</td><td>0x00000070</td><td>0xffffff8f</td><td>0x3</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLC_ANA_KAIP_KA</td><td>8</td><td>10</td><td>0x00000700</td><td>0xfffff8ff</td><td>0x3</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_ANA_KAIP_KP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0xa&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_KAIP_KI&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000070</pre></td><td>&nbsp;<pre>0xffffff8f</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_KAIP_KA&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000700</pre></td><td>&nbsp;<pre>0xfffff8ff</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_DSI0'>A2W_PLLD_DSI0</a></h3>
 <h4>Address: 0x7e102340</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_DSI0_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLD_DSI0_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLD_DSI0_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_DSI0_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DSI0_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DSI0_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_ANA_KAIP'>A2W_PLLD_ANA_KAIP</a></h3>
 <h4>Address: 0x7e102350</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_ANA_KAIP_KP</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0xa</td></tr>
-<tr><td>A2W_PLLD_ANA_KAIP_KI</td><td>4</td><td>6</td><td>0x00000070</td><td>0xffffff8f</td><td>0x3</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLD_ANA_KAIP_KA</td><td>8</td><td>10</td><td>0x00000700</td><td>0xfffff8ff</td><td>0x3</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_ANA_KAIP_KP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0xa&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_KAIP_KI&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000070</pre></td><td>&nbsp;<pre>0xffffff8f</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_KAIP_KA&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000700</pre></td><td>&nbsp;<pre>0xfffff8ff</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_AUX'>A2W_PLLH_AUX</a></h3>
 <h4>Address: 0x7e102360</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_AUX_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLH_AUX_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLH_AUX_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_AUX_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_AUX_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_AUX_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_ANA_KAIP'>A2W_PLLH_ANA_KAIP</a></h3>
 <h4>Address: 0x7e102370</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_ANA_KAIP_KP</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0xa</td></tr>
-<tr><td>A2W_PLLH_ANA_KAIP_KI</td><td>4</td><td>6</td><td>0x00000070</td><td>0xffffff8f</td><td>0x3</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLH_ANA_KAIP_KA</td><td>8</td><td>10</td><td>0x00000700</td><td>0xfffff8ff</td><td>0x3</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_ANA_KAIP_KP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0xa&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_KAIP_KI&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000070</pre></td><td>&nbsp;<pre>0xffffff8f</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_KAIP_KA&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000700</pre></td><td>&nbsp;<pre>0xfffff8ff</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_XOSC_BIAS'>A2W_XOSC_BIAS</a></h3>
 <h4>Address: 0x7e102390</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_XOSC_BIAS_BIAS</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x8</td></tr>
-<tr><td>A2W_XOSC_BIAS_HIGHP</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;A2W_XOSC_BIAS_BIAS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x8&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_BIAS_HIGHP&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_A_GAIN'>A2W_SMPS_A_GAIN</a></h3>
 <h4>Address: 0x7e1023a0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_A_GAIN_DIGGAIN</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_A_GAIN_DIGGAIN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_L_SCV'>A2W_SMPS_L_SCV</a></h3>
 <h4>Address: 0x7e1023d0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_L_SCV_VOLTS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_L_SCV_VOLTS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_ARM'>A2W_PLLB_ARM</a></h3>
 <h4>Address: 0x7e1023e0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_ARM_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLB_ARM_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLB_ARM_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_ARM_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ARM_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ARM_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_ANA_KAIP'>A2W_PLLB_ANA_KAIP</a></h3>
 <h4>Address: 0x7e1023f0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_ANA_KAIP_KP</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0xa</td></tr>
-<tr><td>A2W_PLLB_ANA_KAIP_KI</td><td>4</td><td>6</td><td>0x00000070</td><td>0xffffff8f</td><td>0x3</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLB_ANA_KAIP_KA</td><td>8</td><td>10</td><td>0x00000700</td><td>0xfffff8ff</td><td>0x3</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_ANA_KAIP_KP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0xa&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_KAIP_KI&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000070</pre></td><td>&nbsp;<pre>0xffffff8f</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_KAIP_KA&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000700</pre></td><td>&nbsp;<pre>0xfffff8ff</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_CORE'>A2W_PLLA_CORE</a></h3>
 <h4>Address: 0x7e102400</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_CORE_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLA_CORE_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLA_CORE_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_CORE_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CORE_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CORE_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_ANA_STAT'>A2W_PLLA_ANA_STAT</a></h3>
 <h4>Address: 0x7e102410</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_ANA_STAT_DATA</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_ANA_STAT_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_CORE1'>A2W_PLLC_CORE1</a></h3>
 <h4>Address: 0x7e102420</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_CORE1_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLC_CORE1_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLC_CORE1_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_CORE1_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE1_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE1_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_ANA_STAT'>A2W_PLLC_ANA_STAT</a></h3>
 <h4>Address: 0x7e102430</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_ANA_STAT_DATA</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_ANA_STAT_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_CORE'>A2W_PLLD_CORE</a></h3>
 <h4>Address: 0x7e102440</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_CORE_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLD_CORE_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLD_CORE_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_CORE_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_CORE_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_CORE_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_ANA_STAT'>A2W_PLLD_ANA_STAT</a></h3>
 <h4>Address: 0x7e102450</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_ANA_STAT_DATA</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_ANA_STAT_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_RCAL'>A2W_PLLH_RCAL</a></h3>
 <h4>Address: 0x7e102460</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_RCAL_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLH_RCAL_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLH_RCAL_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_RCAL_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_RCAL_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_RCAL_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_XOSC_PWR'>A2W_XOSC_PWR</a></h3>
 <h4>Address: 0x7e102490</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_XOSC_PWR_BYPASS</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_PWR_PWRDN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>A2W_XOSC_PWR_RSTB</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;A2W_XOSC_PWR_BYPASS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_PWR_PWRDN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_XOSC_PWR_RSTB&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_L_SCA'>A2W_SMPS_L_SCA</a></h3>
 <h4>Address: 0x7e1024d0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_L_SCA_ANA</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_L_SCA_ANA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_SP0'>A2W_PLLB_SP0</a></h3>
 <h4>Address: 0x7e1024e0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_SP0_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLB_SP0_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLB_SP0_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_SP0_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP0_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP0_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_ANA_STAT'>A2W_PLLB_ANA_STAT</a></h3>
 <h4>Address: 0x7e1024f0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_ANA_STAT_DATA</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_ANA_STAT_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_PER'>A2W_PLLA_PER</a></h3>
 <h4>Address: 0x7e102500</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_PER_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLA_PER_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLA_PER_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_PER_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_PER_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_PER_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_ANA_SCTL'>A2W_PLLA_ANA_SCTL</a></h3>
 <h4>Address: 0x7e102510</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_ANA_SCTL_SEL</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
-<tr><td>A2W_PLLA_ANA_SCTL_UPDATE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>A2W_PLLA_ANA_SCTL_RESET</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_ANA_SCTL_SEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_SCTL_UPDATE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_ANA_SCTL_RESET&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_PER'>A2W_PLLC_PER</a></h3>
 <h4>Address: 0x7e102520</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_PER_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLC_PER_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLC_PER_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_PER_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_PER_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_PER_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_ANA_SCTL'>A2W_PLLC_ANA_SCTL</a></h3>
 <h4>Address: 0x7e102530</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_ANA_SCTL_SEL</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
-<tr><td>A2W_PLLC_ANA_SCTL_UPDATE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>A2W_PLLC_ANA_SCTL_RESET</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_ANA_SCTL_SEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_SCTL_UPDATE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_ANA_SCTL_RESET&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_PER'>A2W_PLLD_PER</a></h3>
 <h4>Address: 0x7e102540</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_PER_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLD_PER_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLD_PER_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_PER_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_PER_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_PER_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_ANA_SCTL'>A2W_PLLD_ANA_SCTL</a></h3>
 <h4>Address: 0x7e102550</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_ANA_SCTL_SEL</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
-<tr><td>A2W_PLLD_ANA_SCTL_UPDATE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>A2W_PLLD_ANA_SCTL_RESET</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_ANA_SCTL_SEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_SCTL_UPDATE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_ANA_SCTL_RESET&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_PIX'>A2W_PLLH_PIX</a></h3>
 <h4>Address: 0x7e102560</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_PIX_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLH_PIX_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLH_PIX_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_PIX_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_PIX_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_PIX_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_ANA_SCTL'>A2W_PLLH_ANA_SCTL</a></h3>
 <h4>Address: 0x7e102570</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_ANA_SCTL_SEL</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
-<tr><td>A2W_PLLH_ANA_SCTL_UPDATE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>A2W_PLLH_ANA_SCTL_RESET</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_ANA_SCTL_SEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_SCTL_UPDATE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_SCTL_RESET&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_L_SIV'>A2W_SMPS_L_SIV</a></h3>
 <h4>Address: 0x7e1025d0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_L_SIV_VOLTS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_L_SIV_VOLTS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_SP1'>A2W_PLLB_SP1</a></h3>
 <h4>Address: 0x7e1025e0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_SP1_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLB_SP1_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLB_SP1_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_SP1_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP1_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP1_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_ANA_SCTL'>A2W_PLLB_ANA_SCTL</a></h3>
 <h4>Address: 0x7e1025f0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_ANA_SCTL_SEL</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
-<tr><td>A2W_PLLB_ANA_SCTL_UPDATE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>A2W_PLLB_ANA_SCTL_RESET</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_ANA_SCTL_SEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_SCTL_UPDATE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_ANA_SCTL_RESET&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_CCP2'>A2W_PLLA_CCP2</a></h3>
 <h4>Address: 0x7e102600</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_CCP2_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLA_CCP2_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLA_CCP2_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_CCP2_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CCP2_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLA_CCP2_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLA_ANA_VCO'>A2W_PLLA_ANA_VCO</a></h3>
 <h4>Address: 0x7e102610</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLA_ANA_VCO_RANGE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLA_ANA_VCO_RANGE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_CORE0'>A2W_PLLC_CORE0</a></h3>
 <h4>Address: 0x7e102620</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_CORE0_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLC_CORE0_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLC_CORE0_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_CORE0_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE0_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLC_CORE0_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLC_ANA_VCO'>A2W_PLLC_ANA_VCO</a></h3>
 <h4>Address: 0x7e102630</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLC_ANA_VCO_RANGE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLC_ANA_VCO_RANGE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_DSI1'>A2W_PLLD_DSI1</a></h3>
 <h4>Address: 0x7e102640</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_DSI1_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLD_DSI1_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLD_DSI1_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_DSI1_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DSI1_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLD_DSI1_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLD_ANA_VCO'>A2W_PLLD_ANA_VCO</a></h3>
 <h4>Address: 0x7e102650</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLD_ANA_VCO_RANGE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLD_ANA_VCO_RANGE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_ANA_STAT'>A2W_PLLH_ANA_STAT</a></h3>
 <h4>Address: 0x7e102660</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_ANA_STAT_DATA</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-<tr><td>A2W_PLLH_ANA_STAT_RCALDONE</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>A2W_PLLH_ANA_STAT_RCALCODE</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
-<tr><td>A2W_PLLH_ANA_STAT_CNTLENB</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_ANA_STAT_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_STAT_RCALDONE&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_STAT_RCALCODE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLH_ANA_STAT_CNTLENB&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLH_ANA_VCO'>A2W_PLLH_ANA_VCO</a></h3>
 <h4>Address: 0x7e102670</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLH_ANA_VCO_RANGE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLH_ANA_VCO_RANGE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_SMPS_L_SIA'>A2W_SMPS_L_SIA</a></h3>
 <h4>Address: 0x7e1026d0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_SMPS_L_SIA_ANA</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_SMPS_L_SIA_ANA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_SP2'>A2W_PLLB_SP2</a></h3>
 <h4>Address: 0x7e1026e0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_SP2_DIV</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
-<tr><td>A2W_PLLB_SP2_CHENB</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x1</td></tr>
-<tr><td>A2W_PLLB_SP2_BYPEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_SP2_DIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP2_CHENB&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;A2W_PLLB_SP2_BYPEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='A2W_PLLB_ANA_VCO'>A2W_PLLB_ANA_VCO</a></h3>
 <h4>Address: 0x7e1026f0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>A2W_PLLB_ANA_VCO_RANGE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;A2W_PLLB_ANA_VCO_RANGE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

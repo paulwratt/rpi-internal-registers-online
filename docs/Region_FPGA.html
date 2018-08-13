@@ -1,119 +1,121 @@
 <html>
 <head>
 <title>FPGA - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: FPGA (base: 0x7e20b600</h1>
+<h1>Register Region: FPGA (0x7e20b600)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e20b600</td></tr>
-<tr><td>id</td><td>0x66706761</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e20b600</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x66706761</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>FPGA_VERSION</td><td>0x7e20b600</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_SCRATCH</td><td>0x7e20b604</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#fpga_ctrl0'>FPGA_CTRL0</a></td><td>0x7e20b608</td><td>RW</td><td>36</td><td>0xfffff3fff</td><td></td></tr>
-<tr><td><a hre='#fpga_status0'>FPGA_STATUS0</a></td><td>0x7e20b60c</td><td>RO</td><td>32</td><td>0xfff800ff</td><td></td></tr>
-<tr><td><a hre='#fpga_dcm_wr_data'>FPGA_DCM_WR_DATA</a></td><td>0x7e20b610</td><td>RW</td><td>24</td><td>0x00ffffff</td><td></td></tr>
-<tr><td><a hre='#fpga_dcm_ctrl'>FPGA_DCM_CTRL</a></td><td>0x7e20b614</td><td>RW</td><td>32</td><td>0xff0fffff</td><td></td></tr>
-<tr><td><a hre='#fpga_dcm_rd_data'>FPGA_DCM_RD_DATA</a></td><td>0x7e20b618</td><td>RO</td><td>16</td><td>0x0000ffff</td><td></td></tr>
-<tr><td>FPGA_MB_XSYS_BUILD_NUM</td><td>0x7e20b700</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XC0_BUILD_NUM</td><td>0x7e20b704</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XC1_BUILD_NUM</td><td>0x7e20b708</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XPERI_BUILD_NUM</td><td>0x7e20b70c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XH264_BUILD_NUM</td><td>0x7e20b710</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XV3D_BUILD_NUM</td><td>0x7e20b714</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XSLC1_BUILD_NUM</td><td>0x7e20b718</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XSLC2_BUILD_NUM</td><td>0x7e20b71c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_XSLC3_BUILD_NUM</td><td>0x7e20b720</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_CORE_CLK_FREQ</td><td>0x7e20b724</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_SDC_CLK_FREQ</td><td>0x7e20b728</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_SDC_H264_FREQ</td><td>0x7e20b72c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_SDC_V3D_FREQ</td><td>0x7e20b730</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>FPGA_MB_SDC_ISP_FREQ</td><td>0x7e20b734</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;FPGA_VERSION&nbsp;</td><td>&nbsp;<pre>0x7e20b600</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_SCRATCH&nbsp;</td><td>&nbsp;<pre>0x7e20b604</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#fpga_ctrl0'>FPGA_CTRL0</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b608</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;36&nbsp;</td><td>&nbsp;<pre>0xfffff3fff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#fpga_status0'>FPGA_STATUS0</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b60c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xfff800ff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#fpga_dcm_wr_data'>FPGA_DCM_WR_DATA</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b610</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#fpga_dcm_ctrl'>FPGA_DCM_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b614</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xff0fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#fpga_dcm_rd_data'>FPGA_DCM_RD_DATA</a>&nbsp;</td><td>&nbsp;<pre>0x7e20b618</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XSYS_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b700</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XC0_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b704</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XC1_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b708</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XPERI_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b70c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XH264_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b710</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XV3D_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b714</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XSLC1_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b718</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XSLC2_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b71c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_XSLC3_BUILD_NUM&nbsp;</td><td>&nbsp;<pre>0x7e20b720</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_CORE_CLK_FREQ&nbsp;</td><td>&nbsp;<pre>0x7e20b724</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_SDC_CLK_FREQ&nbsp;</td><td>&nbsp;<pre>0x7e20b728</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_SDC_H264_FREQ&nbsp;</td><td>&nbsp;<pre>0x7e20b72c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_SDC_V3D_FREQ&nbsp;</td><td>&nbsp;<pre>0x7e20b730</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_SDC_ISP_FREQ&nbsp;</td><td>&nbsp;<pre>0x7e20b734</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>FPGA_A0_BASE</td><td>0x7e213000</td></tr>
-<tr><td>FPGA_B0_BASE</td><td>0x7e214000</td></tr>
-<tr><td>FPGA_CTRL0_OFFSET</td><td>0x08</td></tr>
-<tr><td>FPGA_MB_BASE</td><td>0x7e20b700</td></tr>
-<tr><td>FPGA_STATUS0_OFFSET</td><td>0x0C</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;FPGA_A0_BASE&nbsp;</td><td align=center>&nbsp;<pre>0x7e213000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_B0_BASE&nbsp;</td><td align=center>&nbsp;<pre>0x7e214000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x08</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_MB_BASE&nbsp;</td><td align=center>&nbsp;<pre>0x7e20b700</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_STATUS0_OFFSET&nbsp;</td><td align=center>&nbsp;<pre>0x0C</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='FPGA_CTRL0'>FPGA_CTRL0</a></h3>
 <h4>Address: 0x7e20b608</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>FPGA_CTRL0_DIS_CTL0</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-<tr><td>FPGA_CTRL0_CAM_CTL0</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-<tr><td>missing definiton</td><td>1</td><td>-1</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_CTRL0_DIS_BL</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td></td></tr>
-<tr><td>FPGA_CTRL0_CAM_CTL1</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td></td></tr>
-<tr><td>FPGA_CTRL0_DIS_CTL2</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td></td></tr>
-<tr><td>missing definiton</td><td>2</td><td>0</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_CTRL0_CAM_CTL2</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td></td></tr>
-<tr><td>FPGA_CTRL0_DIS_RST</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td></td></tr>
-<tr><td>missing definiton</td><td>3</td><td>1</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_CTRL0_SD_PSU_EN</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td></td></tr>
-<tr><td>FPGA_CTRL0_DIS_SW_SPI</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td></td></tr>
-<tr><td>FPGA_CTRL0_SW_SPI_SCL</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td></td></tr>
-<tr><td>FPGA_CTRL0_SW_SPI_SDA_O</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td></td></tr>
-<tr><td>FPGA_CTRL0_SW_SPI_CS</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_SPI0_SEL_A</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_SPI1_SEL</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_DISP_BUFFER</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_SPI0_SEL_B</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_TV_ACTIVITY</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td></td></tr>
-<tr><td>missing definiton</td><td>14</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_CTRL0_TERMEN_DO</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_TERMEN_CLK</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_LV_SPARE_OUT</td><td>18</td><td>19</td><td>0x000c0000</td><td>0xfff3ffff</td><td></td></tr>
-<tr><td>FPGA_CTRL0_SPARE_OUT</td><td>20</td><td>31</td><td>0xfff00000</td><td>0x000fffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;FPGA_CTRL0_DIS_CTL0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_CAM_CTL0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_DIS_BL&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;-1&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_CAM_CTL1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_CAM_CTL2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_DIS_CTL2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_DIS_RST&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SD_PSU_EN&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_DIS_SW_SPI&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SW_SPI_SCL&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SW_SPI_SDA_O&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SW_SPI_CS&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SPI0_SEL_A&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SPI1_SEL&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_DISP_BUFFER&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SPI0_SEL_B&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_TV_ACTIVITY&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_TERMEN_DO&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_TERMEN_CLK&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_LV_SPARE_OUT&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000c0000</pre></td><td>&nbsp;<pre>0xfff3ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_CTRL0_SPARE_OUT&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfff00000</pre></td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='FPGA_STATUS0'>FPGA_STATUS0</a></h3>
 <h4>Address: 0x7e20b60c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>FPGA_STATUS0_HW_ID</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td></td></tr>
-<tr><td>FPGA_STATUS0_SD_WP</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td></td></tr>
-<tr><td>FPGA_STATUS0_SD_CD</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td></td></tr>
-<tr><td>FPGA_STATUS0_NAND_RNB</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td></td></tr>
-<tr><td>FPGA_STATUS0_SW_SPI_SPI_IN</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td></td></tr>
-<tr><td>missing definiton</td><td>8</td><td>18</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_STATUS0_SPARE_IN</td><td>19</td><td>31</td><td>0xfff80000</td><td>0x0007ffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;FPGA_STATUS0_HW_ID&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_STATUS0_SD_WP&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_STATUS0_SD_CD&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_STATUS0_NAND_RNB&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_STATUS0_SW_SPI_SPI_IN&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_STATUS0_SPARE_IN&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfff80000</pre></td><td>&nbsp;<pre>0x0007ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='FPGA_DCM_WR_DATA'>FPGA_DCM_WR_DATA</a></h3>
 <h4>Address: 0x7e20b610</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>FPGA_DCM_WR_DATA_DATA</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td></td></tr>
-<tr><td>FPGA_DCM_WR_DATA_ADDRESS</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;FPGA_DCM_WR_DATA_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_DCM_WR_DATA_ADDRESS&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ff0000</pre></td><td>&nbsp;<pre>0xff00ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='FPGA_DCM_CTRL'>FPGA_DCM_CTRL</a></h3>
 <h4>Address: 0x7e20b614</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>FPGA_DCM_CTRL_REMOTE_RST</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td></td></tr>
-<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_DCM_CTRL_REMOTE_EN</td><td>8</td><td>12</td><td>0x00001f00</td><td>0xffffe0ff</td><td></td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_DCM_CTRL_PERI_RST</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>20</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>FPGA_DCM_CTRL_PERI_EN</td><td>24</td><td>27</td><td>0x0f000000</td><td>0xf0ffffff</td><td></td></tr>
-<tr><td>FPGA_DCM_CTRL_PERI_WR_EN</td><td>28</td><td>31</td><td>0xf0000000</td><td>0x0fffffff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;FPGA_DCM_CTRL_REMOTE_RST&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre></td><td>&nbsp;<pre>0xffffffe0</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_DCM_CTRL_REMOTE_EN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001f00</pre></td><td>&nbsp;<pre>0xffffe0ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_DCM_CTRL_PERI_RST&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_DCM_CTRL_PERI_EN&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0f000000</pre></td><td>&nbsp;<pre>0xf0ffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;FPGA_DCM_CTRL_PERI_WR_EN&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xf0000000</pre></td><td>&nbsp;<pre>0x0fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='FPGA_DCM_RD_DATA'>FPGA_DCM_RD_DATA</a></h3>
 <h4>Address: 0x7e20b618</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>FPGA_DCM_RD_DATA_DATA</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td></td></tr>
-</table>
+<tr><td>&nbsp;FPGA_DCM_RD_DATA_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

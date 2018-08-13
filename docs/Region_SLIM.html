@@ -1,112 +1,114 @@
 <html>
 <head>
 <title>SLIM - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: SLIM (base: 0x7e210000</h1>
+<h1>Register Region: SLIM (0x7e210000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e210000</td></tr>
-<tr><td>id</td><td>0x736c696d</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e210000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x736c696d</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>SLIM_CON</td><td>0x7e210000</td><td>RW</td><td>32</td><td>0xfffff0ff</td><td>0x000000c1</td></tr>
-<tr><td>SLIM_CON2</td><td>0x7e210004</td><td>RW</td><td>32</td><td>0xff008001</td><td>0000000000</td></tr>
-<tr><td>SLIM_STAT</td><td>0x7e210008</td><td>RW</td><td>26</td><td>0x03ffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_FS</td><td>0x7e21000c</td><td>RW</td><td>14</td><td>0x00003fff</td><td>0000000000</td></tr>
-<tr><td>SLIM_EA0</td><td>0x7e210010</td><td>RW</td><td>32</td><td>0xffff00ff</td><td>0000000000</td></tr>
-<tr><td>SLIM_EA1</td><td>0x7e210014</td><td>RW</td><td>32</td><td>0x8000ffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_MC_RX</td><td>0x7e210020</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_MC_TX</td><td>0x7e210024</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC0</td><td>0x7e210030</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC1</td><td>0x7e210034</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC2</td><td>0x7e210038</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC3</td><td>0x7e21003c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC4</td><td>0x7e210040</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC5</td><td>0x7e210044</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC6</td><td>0x7e210048</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC7</td><td>0x7e21004c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC8</td><td>0x7e210050</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC9</td><td>0x7e210054</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_MC_CON</td><td>0x7e210080</td><td>RW</td><td>2</td><td>0x00000003</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC_CON</td><td>0x7e210084</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_MC_STAT</td><td>0x7e210088</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC_STAT_0</td><td>0x7e21008c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>SLIM_DMA_DC_STAT_1</td><td>0x7e210090</td><td>RW</td><td>20</td><td>0x000f000f</td><td>0000000000</td></tr>
-<tr><td>SLIM_MC_IN_CON</td><td>0x7e210100</td><td>RW</td><td>12</td><td>0x00000f1d</td><td>0000000000</td></tr>
-<tr><td>SLIM_MC_IN_STAT</td><td>0x7e210104</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td>SLIM_MC_OUT_CON</td><td>0x7e210120</td><td>RW</td><td>7</td><td>0x00000048</td><td>0000000000</td></tr>
-<tr><td>SLIM_MC_OUT_STAT</td><td>0x7e210124</td><td>RW</td><td>4</td><td>0x00000008</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC0_PA0</td><td>0x7e210200</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC0_PA1</td><td>0x7e210204</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC0_CON</td><td>0x7e210208</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC0_STAT</td><td>0x7e21020c</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC0_PROT</td><td>0x7e210210</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC1_PA0</td><td>0x7e210220</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC1_PA1</td><td>0x7e210224</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC1_CON</td><td>0x7e210228</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC1_STAT</td><td>0x7e21022c</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC1_PROT</td><td>0x7e210230</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC2_PA0</td><td>0x7e210240</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC2_PA1</td><td>0x7e210244</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC2_CON</td><td>0x7e210248</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC2_STAT</td><td>0x7e21024c</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC2_PROT</td><td>0x7e210250</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC3_PA0</td><td>0x7e210260</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC3_PA1</td><td>0x7e210264</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC3_CON</td><td>0x7e210268</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC3_STAT</td><td>0x7e21026c</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC3_PROT</td><td>0x7e210270</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC4_PA0</td><td>0x7e210280</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC4_PA1</td><td>0x7e210284</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC4_CON</td><td>0x7e210288</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC4_STAT</td><td>0x7e21028c</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC4_PROT</td><td>0x7e210290</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC5_PA0</td><td>0x7e2102a0</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC5_PA1</td><td>0x7e2102a4</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC5_CON</td><td>0x7e2102a8</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC5_STAT</td><td>0x7e2102ac</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC5_PROT</td><td>0x7e2102b0</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC6_PA0</td><td>0x7e2102c0</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC6_PA1</td><td>0x7e2102c4</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC6_CON</td><td>0x7e2102c8</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC6_STAT</td><td>0x7e2102cc</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC6_PROT</td><td>0x7e2102d0</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC7_PA0</td><td>0x7e2102e0</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC7_PA1</td><td>0x7e2102e4</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC7_CON</td><td>0x7e2102e8</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC7_STAT</td><td>0x7e2102ec</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC7_PROT</td><td>0x7e2102f0</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC8_PA0</td><td>0x7e210300</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC8_PA1</td><td>0x7e210304</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC8_CON</td><td>0x7e210308</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC8_STAT</td><td>0x7e21030c</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC8_PROT</td><td>0x7e210310</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
-<tr><td>SLIM_DCC9_PA0</td><td>0x7e210320</td><td>RW</td><td>24</td><td>0x00ffff1f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC9_PA1</td><td>0x7e210324</td><td>RW</td><td>24</td><td>0x00ffff3f</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC9_CON</td><td>0x7e210328</td><td>RW</td><td>32</td><td>0xffff0070</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC9_STAT</td><td>0x7e21032c</td><td>RW</td><td>32</td><td>0xc0ff00c7</td><td>0000000000</td></tr>
-<tr><td>SLIM_DCC9_PROT</td><td>0x7e210330</td><td>RW</td><td>32</td><td>0xc001ffff</td><td>0x000093a0</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;SLIM_CON&nbsp;</td><td>&nbsp;<pre>0x7e210000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xfffff0ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000000c1</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_CON2&nbsp;</td><td>&nbsp;<pre>0x7e210004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xff008001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_STAT&nbsp;</td><td>&nbsp;<pre>0x7e210008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x03ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_FS&nbsp;</td><td>&nbsp;<pre>0x7e21000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00003fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_EA0&nbsp;</td><td>&nbsp;<pre>0x7e210010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff00ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_EA1&nbsp;</td><td>&nbsp;<pre>0x7e210014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x8000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_MC_RX&nbsp;</td><td>&nbsp;<pre>0x7e210020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_MC_TX&nbsp;</td><td>&nbsp;<pre>0x7e210024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC0&nbsp;</td><td>&nbsp;<pre>0x7e210030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC1&nbsp;</td><td>&nbsp;<pre>0x7e210034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC2&nbsp;</td><td>&nbsp;<pre>0x7e210038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC3&nbsp;</td><td>&nbsp;<pre>0x7e21003c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC4&nbsp;</td><td>&nbsp;<pre>0x7e210040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC5&nbsp;</td><td>&nbsp;<pre>0x7e210044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC6&nbsp;</td><td>&nbsp;<pre>0x7e210048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC7&nbsp;</td><td>&nbsp;<pre>0x7e21004c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC8&nbsp;</td><td>&nbsp;<pre>0x7e210050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC9&nbsp;</td><td>&nbsp;<pre>0x7e210054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_MC_CON&nbsp;</td><td>&nbsp;<pre>0x7e210080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC_CON&nbsp;</td><td>&nbsp;<pre>0x7e210084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_MC_STAT&nbsp;</td><td>&nbsp;<pre>0x7e210088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC_STAT_0&nbsp;</td><td>&nbsp;<pre>0x7e21008c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DMA_DC_STAT_1&nbsp;</td><td>&nbsp;<pre>0x7e210090</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000f000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_MC_IN_CON&nbsp;</td><td>&nbsp;<pre>0x7e210100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000f1d</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_MC_IN_STAT&nbsp;</td><td>&nbsp;<pre>0x7e210104</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_MC_OUT_CON&nbsp;</td><td>&nbsp;<pre>0x7e210120</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000048</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_MC_OUT_STAT&nbsp;</td><td>&nbsp;<pre>0x7e210124</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000008</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC0_PA0&nbsp;</td><td>&nbsp;<pre>0x7e210200</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC0_PA1&nbsp;</td><td>&nbsp;<pre>0x7e210204</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC0_CON&nbsp;</td><td>&nbsp;<pre>0x7e210208</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC0_STAT&nbsp;</td><td>&nbsp;<pre>0x7e21020c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC0_PROT&nbsp;</td><td>&nbsp;<pre>0x7e210210</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC1_PA0&nbsp;</td><td>&nbsp;<pre>0x7e210220</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC1_PA1&nbsp;</td><td>&nbsp;<pre>0x7e210224</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC1_CON&nbsp;</td><td>&nbsp;<pre>0x7e210228</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC1_STAT&nbsp;</td><td>&nbsp;<pre>0x7e21022c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC1_PROT&nbsp;</td><td>&nbsp;<pre>0x7e210230</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC2_PA0&nbsp;</td><td>&nbsp;<pre>0x7e210240</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC2_PA1&nbsp;</td><td>&nbsp;<pre>0x7e210244</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC2_CON&nbsp;</td><td>&nbsp;<pre>0x7e210248</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC2_STAT&nbsp;</td><td>&nbsp;<pre>0x7e21024c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC2_PROT&nbsp;</td><td>&nbsp;<pre>0x7e210250</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC3_PA0&nbsp;</td><td>&nbsp;<pre>0x7e210260</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC3_PA1&nbsp;</td><td>&nbsp;<pre>0x7e210264</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC3_CON&nbsp;</td><td>&nbsp;<pre>0x7e210268</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC3_STAT&nbsp;</td><td>&nbsp;<pre>0x7e21026c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC3_PROT&nbsp;</td><td>&nbsp;<pre>0x7e210270</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC4_PA0&nbsp;</td><td>&nbsp;<pre>0x7e210280</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC4_PA1&nbsp;</td><td>&nbsp;<pre>0x7e210284</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC4_CON&nbsp;</td><td>&nbsp;<pre>0x7e210288</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC4_STAT&nbsp;</td><td>&nbsp;<pre>0x7e21028c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC4_PROT&nbsp;</td><td>&nbsp;<pre>0x7e210290</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC5_PA0&nbsp;</td><td>&nbsp;<pre>0x7e2102a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC5_PA1&nbsp;</td><td>&nbsp;<pre>0x7e2102a4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC5_CON&nbsp;</td><td>&nbsp;<pre>0x7e2102a8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC5_STAT&nbsp;</td><td>&nbsp;<pre>0x7e2102ac</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC5_PROT&nbsp;</td><td>&nbsp;<pre>0x7e2102b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC6_PA0&nbsp;</td><td>&nbsp;<pre>0x7e2102c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC6_PA1&nbsp;</td><td>&nbsp;<pre>0x7e2102c4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC6_CON&nbsp;</td><td>&nbsp;<pre>0x7e2102c8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC6_STAT&nbsp;</td><td>&nbsp;<pre>0x7e2102cc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC6_PROT&nbsp;</td><td>&nbsp;<pre>0x7e2102d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC7_PA0&nbsp;</td><td>&nbsp;<pre>0x7e2102e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC7_PA1&nbsp;</td><td>&nbsp;<pre>0x7e2102e4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC7_CON&nbsp;</td><td>&nbsp;<pre>0x7e2102e8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC7_STAT&nbsp;</td><td>&nbsp;<pre>0x7e2102ec</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC7_PROT&nbsp;</td><td>&nbsp;<pre>0x7e2102f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC8_PA0&nbsp;</td><td>&nbsp;<pre>0x7e210300</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC8_PA1&nbsp;</td><td>&nbsp;<pre>0x7e210304</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC8_CON&nbsp;</td><td>&nbsp;<pre>0x7e210308</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC8_STAT&nbsp;</td><td>&nbsp;<pre>0x7e21030c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC8_PROT&nbsp;</td><td>&nbsp;<pre>0x7e210310</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC9_PA0&nbsp;</td><td>&nbsp;<pre>0x7e210320</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff1f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC9_PA1&nbsp;</td><td>&nbsp;<pre>0x7e210324</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffff3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC9_CON&nbsp;</td><td>&nbsp;<pre>0x7e210328</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0070</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC9_STAT&nbsp;</td><td>&nbsp;<pre>0x7e21032c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc0ff00c7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC9_PROT&nbsp;</td><td>&nbsp;<pre>0x7e210330</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xc001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000093a0</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>SLIM_CRX_DMA</td><td>0xb0000</td></tr>
-<tr><td>SLIM_CTX_DMA</td><td>0xa0000</td></tr>
-<tr><td>SLIM_DCC_BASE(n)</td><td>MACRO</td></tr>
-<tr><td>SLIM_DCC_CON(n)</td><td>MACRO</td></tr>
-<tr><td>SLIM_DCC_PA0(n)</td><td>MACRO</td></tr>
-<tr><td>SLIM_DCC_PA1(n)</td><td>MACRO</td></tr>
-<tr><td>SLIM_DCC_STAT(n)</td><td>MACRO</td></tr>
-<tr><td>SLIM_DRX_DMA</td><td>0x90000</td></tr>
-<tr><td>SLIM_DTX_DMA</td><td>0x80000</td></tr>
-<tr><td>SLIM_NUM_DCC</td><td>10</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;SLIM_CRX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0xb0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_CTX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0xa0000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC_BASE(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC_CON(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC_PA0(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC_PA1(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DCC_STAT(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DRX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x90000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_DTX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x80000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SLIM_NUM_DCC&nbsp;</td><td align=center>&nbsp;<pre>10</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

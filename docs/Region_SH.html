@@ -1,154 +1,156 @@
 <html>
 <head>
 <title>SH - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: SH (base: 0x7e202000</h1>
+<h1>Register Region: SH (0x7e202000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e202000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e202000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#sh_cmd'>SH_CMD</a></td><td>0x7e202000</td><td>RW</td><td>16</td><td>0x0000cfff</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_arg'>SH_ARG</a></td><td>0x7e202004</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_tout'>SH_TOUT</a></td><td>0x7e202008</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x00a00000</td></tr>
-<tr><td><a hre='#sh_cdiv'>SH_CDIV</a></td><td>0x7e20200c</td><td>RW</td><td>11</td><td>0x000007ff</td><td>0x000001fb</td></tr>
-<tr><td><a hre='#sh_rsp0'>SH_RSP0</a></td><td>0x7e202010</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#sh_rsp1'>SH_RSP1</a></td><td>0x7e202014</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_rsp2'>SH_RSP2</a></td><td>0x7e202018</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_rsp3'>SH_RSP3</a></td><td>0x7e20201c</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_hsts'>SH_HSTS</a></td><td>0x7e202020</td><td>RW</td><td>11</td><td>0x000007f9</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_vdd'>SH_VDD</a></td><td>0x7e202030</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_edm'>SH_EDM</a></td><td>0x7e202034</td><td>RW</td><td>19</td><td>0x0007ffff</td><td></td></tr>
-<tr><td><a hre='#sh_hcfg'>SH_HCFG</a></td><td>0x7e202038</td><td>RW</td><td>11</td><td>0x0000073f</td><td>0000000000</td></tr>
-<tr><td><a hre='#sh_hbct'>SH_HBCT</a></td><td>0x7e20203c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x00000400</td></tr>
-<tr><td><a hre='#sh_data'>SH_DATA</a></td><td>0x7e202040</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#sh_hblc'>SH_HBLC</a></td><td>0x7e202050</td><td>RW</td><td>16</td><td>0x0000ffff</td><td>0000000000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#sh_cmd'>SH_CMD</a>&nbsp;</td><td>&nbsp;<pre>0x7e202000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000cfff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_arg'>SH_ARG</a>&nbsp;</td><td>&nbsp;<pre>0x7e202004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_tout'>SH_TOUT</a>&nbsp;</td><td>&nbsp;<pre>0x7e202008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00a00000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_cdiv'>SH_CDIV</a>&nbsp;</td><td>&nbsp;<pre>0x7e20200c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x000007ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000001fb</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_rsp0'>SH_RSP0</a>&nbsp;</td><td>&nbsp;<pre>0x7e202010</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_rsp1'>SH_RSP1</a>&nbsp;</td><td>&nbsp;<pre>0x7e202014</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_rsp2'>SH_RSP2</a>&nbsp;</td><td>&nbsp;<pre>0x7e202018</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_rsp3'>SH_RSP3</a>&nbsp;</td><td>&nbsp;<pre>0x7e20201c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_hsts'>SH_HSTS</a>&nbsp;</td><td>&nbsp;<pre>0x7e202020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x000007f9</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_vdd'>SH_VDD</a>&nbsp;</td><td>&nbsp;<pre>0x7e202030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_edm'>SH_EDM</a>&nbsp;</td><td>&nbsp;<pre>0x7e202034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x0007ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_hcfg'>SH_HCFG</a>&nbsp;</td><td>&nbsp;<pre>0x7e202038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x0000073f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_hbct'>SH_HBCT</a>&nbsp;</td><td>&nbsp;<pre>0x7e20203c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000400</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_data'>SH_DATA</a>&nbsp;</td><td>&nbsp;<pre>0x7e202040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#sh_hblc'>SH_HBLC</a>&nbsp;</td><td>&nbsp;<pre>0x7e202050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='SH_CMD'>SH_CMD</a></h3>
 <h4>Address: 0x7e202000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_CMD_COMMAND</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x0</td></tr>
-<tr><td>SH_CMD_READ_CMD</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>SH_CMD_WRITE_CMD</td><td>7</td><td>8</td><td>0x00000180</td><td>0xfffffe7f</td><td>0x0</td></tr>
-<tr><td>SH_CMD_LONG_RESPONSE</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-<tr><td>SH_CMD_NO_RESPONSE</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-<tr><td>SH_CMD_BUSY_CMD</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>12</td><td>13</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SH_CMD_FAIL_FLAG</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
-<tr><td>SH_CMD_NEW_FLAG</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_CMD_COMMAND&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_CMD_READ_CMD&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_CMD_WRITE_CMD&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000180</pre></td><td>&nbsp;<pre>0xfffffe7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_CMD_LONG_RESPONSE&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_CMD_NO_RESPONSE&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_CMD_BUSY_CMD&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SH_CMD_FAIL_FLAG&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_CMD_NEW_FLAG&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_ARG'>SH_ARG</a></h3>
 <h4>Address: 0x7e202004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_ARG_ARGUMENT</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_ARG_ARGUMENT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_TOUT'>SH_TOUT</a></h3>
 <h4>Address: 0x7e202008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_TOUT_TIME_OUT</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0xa00000</td></tr>
-</table>
+<tr><td>&nbsp;SH_TOUT_TIME_OUT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0xa00000&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_CDIV'>SH_CDIV</a></h3>
 <h4>Address: 0x7e20200c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_CDIV_CLOCKDIV</td><td>0</td><td>10</td><td>0x000007ff</td><td>0xfffff800</td><td>0x1fb</td></tr>
-</table>
+<tr><td>&nbsp;SH_CDIV_CLOCKDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000007ff</pre></td><td>&nbsp;<pre>0xfffff800</pre>&nbsp;</td><td align=center>&nbsp;0x1fb&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_RSP0'>SH_RSP0</a></h3>
 <h4>Address: 0x7e202010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_RSP0_CARD_STATUS</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td></td></tr>
-</table>
+<tr><td>&nbsp;SH_RSP0_CARD_STATUS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_RSP1'>SH_RSP1</a></h3>
 <h4>Address: 0x7e202014</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_RSP1_CID_CSD</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_RSP1_CID_CSD&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_RSP2'>SH_RSP2</a></h3>
 <h4>Address: 0x7e202018</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_RSP2_CID_CSD</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_RSP2_CID_CSD&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_RSP3'>SH_RSP3</a></h3>
 <h4>Address: 0x7e20201c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_RSP3_CID_CSD</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_RSP3_CID_CSD&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_HSTS'>SH_HSTS</a></h3>
 <h4>Address: 0x7e202020</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_HSTS_DATA_FLAG</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>1</td><td>2</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SH_HSTS_FIFO_ERROR</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>SH_HSTS_CRC7_ERROR</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>SH_HSTS_CRC16_ERROR</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>SH_HSTS_CMD_TIME_OUT</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>SH_HSTS_REW_TIME_OUT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>SH_HSTS_SDIO_IRPT</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>SH_HSTS_BLOCK_IRPT</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-<tr><td>SH_HSTS_BUSY_IRPT</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_HSTS_DATA_FLAG&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_FIFO_ERROR&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_CRC7_ERROR&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_CRC16_ERROR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_CMD_TIME_OUT&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_REW_TIME_OUT&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_SDIO_IRPT&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_BLOCK_IRPT&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HSTS_BUSY_IRPT&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_VDD'>SH_VDD</a></h3>
 <h4>Address: 0x7e202030</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_VDD_POWER_ON</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_VDD_POWER_ON&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_EDM'>SH_EDM</a></h3>
 <h4>Address: 0x7e202034</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_EDM_STATE_MACHINE</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td></td></tr>
-<tr><td>SH_EDM_FIFO_COUNT</td><td>4</td><td>8</td><td>0x000001f0</td><td>0xfffffe0f</td><td></td></tr>
-<tr><td>SH_EDM_WRITE_THRESHOLD</td><td>9</td><td>13</td><td>0x00003e00</td><td>0xffffc1ff</td><td></td></tr>
-<tr><td>SH_EDM_READ_THRESHOLD</td><td>14</td><td>18</td><td>0x0007c000</td><td>0xfff83fff</td><td></td></tr>
-</table>
+<tr><td>&nbsp;SH_EDM_STATE_MACHINE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SH_EDM_FIFO_COUNT&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001f0</pre></td><td>&nbsp;<pre>0xfffffe0f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SH_EDM_WRITE_THRESHOLD&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003e00</pre></td><td>&nbsp;<pre>0xffffc1ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SH_EDM_READ_THRESHOLD&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x0007c000</pre></td><td>&nbsp;<pre>0xfff83fff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_HCFG'>SH_HCFG</a></h3>
 <h4>Address: 0x7e202038</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_HCFG_REL_CMD_LINE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>SH_HCFG_WIDE_INT_BUS</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>SH_HCFG_WIDE_EXT_BUS</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>SH_HCFG_SLOW_CARD</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>SH_HCFG_DATA_IRPT_EN</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>SH_HCFG_SDIO_IRPT_EN</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SH_HCFG_BLOCK_IRPT_EN</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>9</td><td>9</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SH_HCFG_BUSY_IRPT_EN</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_HCFG_REL_CMD_LINE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HCFG_WIDE_INT_BUS&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HCFG_WIDE_EXT_BUS&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HCFG_SLOW_CARD&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HCFG_DATA_IRPT_EN&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HCFG_SDIO_IRPT_EN&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HCFG_BLOCK_IRPT_EN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SH_HCFG_BUSY_IRPT_EN&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_HBCT'>SH_HBCT</a></h3>
 <h4>Address: 0x7e20203c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_HBCT_BYTECOUNT</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x400</td></tr>
-</table>
+<tr><td>&nbsp;SH_HBCT_BYTECOUNT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x400&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_DATA'>SH_DATA</a></h3>
 <h4>Address: 0x7e202040</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_DATA_DATA</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td></td></tr>
-</table>
+<tr><td>&nbsp;SH_DATA_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SH_HBLC'>SH_HBLC</a></h3>
 <h4>Address: 0x7e202050</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SH_HBLC_BLOCKCOUNT</td><td>0</td><td>8</td><td>0x000001ff</td><td>0xfffffe00</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;SH_HBLC_BLOCKCOUNT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001ff</pre></td><td>&nbsp;<pre>0xfffffe00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

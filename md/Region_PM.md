@@ -2,6 +2,7 @@
 
 
 ## Info
+
 | Name | value |
 | --- | --- |
 | description | Power manager |

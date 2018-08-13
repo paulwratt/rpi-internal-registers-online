@@ -1,45 +1,47 @@
 <html>
 <head>
 <title>TS - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: TS (base: 0x7e212000</h1>
+<h1>Register Region: TS (0x7e212000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e212000</td></tr>
-<tr><td>id</td><td>0x7473656e</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e212000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x7473656e</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#ts_tsensctl'>TS_TSENSCTL</a></td><td>0x7e212000</td><td>RW</td><td>27</td><td>0x07ffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ts_tsensstat'>TS_TSENSSTAT</a></td><td>0x7e212004</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#ts_tsensctl'>TS_TSENSCTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e212000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x07ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ts_tsensstat'>TS_TSENSSTAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e212004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='TS_TSENSCTL'>TS_TSENSCTL</a></h3>
 <h4>Address: 0x7e212000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TS_TSENSCTL_PRWDW</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_RSTB</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_CTRL</td><td>2</td><td>4</td><td>0x0000001c</td><td>0xffffffe3</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_EN_INT</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_DIRECT</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_CLR_INT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_THOLD</td><td>8</td><td>17</td><td>0x0003ff00</td><td>0xfffc00ff</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_RSTDELAY</td><td>18</td><td>25</td><td>0x03fc0000</td><td>0xfc03ffff</td><td>0x0</td></tr>
-<tr><td>TS_TSENSCTL_REGULEN</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;TS_TSENSCTL_PRWDW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_RSTB&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_CTRL&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000001c</pre></td><td>&nbsp;<pre>0xffffffe3</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_EN_INT&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_DIRECT&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_CLR_INT&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_THOLD&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0003ff00</pre></td><td>&nbsp;<pre>0xfffc00ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_RSTDELAY&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>0x03fc0000</pre></td><td>&nbsp;<pre>0xfc03ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSCTL_REGULEN&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x04000000</pre></td><td>&nbsp;<pre>0xfbffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='TS_TSENSSTAT'>TS_TSENSSTAT</a></h3>
 <h4>Address: 0x7e212004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>TS_TSENSSTAT_DATA</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
-<tr><td>TS_TSENSSTAT_VALID</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-<tr><td>TS_TSENSSTAT_INTERUPT</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;TS_TSENSSTAT_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSSTAT_VALID&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;TS_TSENSSTAT_INTERUPT&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

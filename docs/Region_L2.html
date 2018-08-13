@@ -1,52 +1,54 @@
 <html>
 <head>
 <title>L2 - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: L2 (base: 0x7ee01000</h1>
+<h1>Register Region: L2 (0x7ee01000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>description</td><td>VC4-L2 control</td></tr>
-<tr><td>base</td><td>0x7ee01000</td></tr>
-<tr><td>id</td><td>0x4c324343</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;description&nbsp;</td><td>&nbsp;<pre>VC4-L2 control</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7ee01000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x4c324343</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#l2_cont_off'>L2_CONT_OFF</a></td><td>0x7ee01000</td><td>RW</td><td>24</td><td>0x00ff0c3f</td><td>0000000000</td></tr>
-<tr><td>L2_FLUSH_STA</td><td>0x7ee01004</td><td>RW</td><td>28</td><td>0x0fffffe0</td><td>0000000000</td></tr>
-<tr><td>L2_FLUSH_END</td><td>0x7ee01008</td><td>RW</td><td>28</td><td>0x0fffffe0</td><td>0x0fffffe0</td></tr>
-<tr><td>L2_L2_ALIAS_EXCEPTION</td><td>0x7ee01080</td><td>RW</td><td></td><td></td><td>0000000000</td></tr>
-<tr><td>L2_L2_ALIAS_EXCEPTION_ID</td><td>0x7ee01084</td><td>RO</td><td></td><td></td><td>0000000000</td></tr>
-<tr><td>L2_L2_ALIAS_EXCEPTION_ADDR</td><td>0x7ee01088</td><td>RO</td><td></td><td></td><td>0000000000</td></tr>
-<tr><td>L2_RD_HITS</td><td>0x7ee01100</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>L2_RD_MISSES</td><td>0x7ee01104</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>L2_WR_HITS</td><td>0x7ee01108</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>L2_WR_MISSES</td><td>0x7ee0110c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>L2_WR_BACKS</td><td>0x7ee01110</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>L2_IN_FLIGHT</td><td>0x7ee01114</td><td>RO</td><td>4</td><td>0x0000000f</td><td></td></tr>
-<tr><td>L2_STALLS</td><td>0x7ee0111c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>L2_TAG_STALLS</td><td>0x7ee01120</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>L2_SD_STALLS</td><td>0x7ee01124</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#l2_cont_off'>L2_CONT_OFF</a>&nbsp;</td><td>&nbsp;<pre>0x7ee01000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ff0c3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_FLUSH_STA&nbsp;</td><td>&nbsp;<pre>0x7ee01004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x0fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_FLUSH_END&nbsp;</td><td>&nbsp;<pre>0x7ee01008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x0fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0fffffe0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION&nbsp;</td><td>&nbsp;<pre>0x7ee01080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION_ID&nbsp;</td><td>&nbsp;<pre>0x7ee01084</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION_ADDR&nbsp;</td><td>&nbsp;<pre>0x7ee01088</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_RD_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee01100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_RD_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee01104</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_WR_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee01108</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_WR_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee0110c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_WR_BACKS&nbsp;</td><td>&nbsp;<pre>0x7ee01110</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_IN_FLIGHT&nbsp;</td><td>&nbsp;<pre>0x7ee01114</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_STALLS&nbsp;</td><td>&nbsp;<pre>0x7ee0111c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_TAG_STALLS&nbsp;</td><td>&nbsp;<pre>0x7ee01120</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;L2_SD_STALLS&nbsp;</td><td>&nbsp;<pre>0x7ee01124</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='L2_CONT_OFF'>L2_CONT_OFF</a></h3>
 <h4>Address: 0x7ee01000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>L2_CONT_OFF_l2_disable</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>L2_CONT_OFF_l2_no_wr_allocate</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>L2_CONT_OFF_l2_flush</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>L2_CONT_OFF_l2_flush_mode</td><td>3</td><td>4</td><td>0x00000018</td><td>0xffffffe7</td><td>0x0</td></tr>
-<tr><td>L2_CONT_OFF_l2_enable_stats</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>9</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L2_CONT_OFF_l2_standby</td><td>10</td><td>11</td><td>0x00000c00</td><td>0xfffff3ff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>12</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>L2_CONT_OFF_l2_flush_flush_limit</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
-<tr><td>L2_CONT_OFF_l2_flush_core_limit</td><td>20</td><td>23</td><td>0x00f00000</td><td>0xff0fffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;L2_CONT_OFF_l2_disable&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_no_wr_allocate&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush_mode&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000018</pre></td><td>&nbsp;<pre>0xffffffe7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_enable_stats&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_standby&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000c00</pre></td><td>&nbsp;<pre>0xfffff3ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush_flush_limit&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush_core_limit&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00f00000</pre></td><td>&nbsp;<pre>0xff0fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

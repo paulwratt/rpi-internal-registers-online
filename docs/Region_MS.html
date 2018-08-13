@@ -1,376 +1,378 @@
 <html>
 <head>
 <title>MS - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: MS (base: 0x7e000000</h1>
+<h1>Register Region: MS (0x7e000000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e000000</td></tr>
-<tr><td>id</td><td>0x4d554c54</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x4d554c54</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#ms_sema_0'>MS_SEMA_0</a></td><td>0x7e000000</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_1'>MS_SEMA_1</a></td><td>0x7e000004</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_2'>MS_SEMA_2</a></td><td>0x7e000008</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_3'>MS_SEMA_3</a></td><td>0x7e00000c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_4'>MS_SEMA_4</a></td><td>0x7e000010</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_5'>MS_SEMA_5</a></td><td>0x7e000014</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_6'>MS_SEMA_6</a></td><td>0x7e000018</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_7'>MS_SEMA_7</a></td><td>0x7e00001c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_8'>MS_SEMA_8</a></td><td>0x7e000020</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_9'>MS_SEMA_9</a></td><td>0x7e000024</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_10'>MS_SEMA_10</a></td><td>0x7e000028</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_11'>MS_SEMA_11</a></td><td>0x7e00002c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_12'>MS_SEMA_12</a></td><td>0x7e000030</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_13'>MS_SEMA_13</a></td><td>0x7e000034</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_14'>MS_SEMA_14</a></td><td>0x7e000038</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_15'>MS_SEMA_15</a></td><td>0x7e00003c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_16'>MS_SEMA_16</a></td><td>0x7e000040</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_17'>MS_SEMA_17</a></td><td>0x7e000044</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_18'>MS_SEMA_18</a></td><td>0x7e000048</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_19'>MS_SEMA_19</a></td><td>0x7e00004c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_20'>MS_SEMA_20</a></td><td>0x7e000050</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_21'>MS_SEMA_21</a></td><td>0x7e000054</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_22'>MS_SEMA_22</a></td><td>0x7e000058</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_23'>MS_SEMA_23</a></td><td>0x7e00005c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_24'>MS_SEMA_24</a></td><td>0x7e000060</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_25'>MS_SEMA_25</a></td><td>0x7e000064</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_26'>MS_SEMA_26</a></td><td>0x7e000068</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_27'>MS_SEMA_27</a></td><td>0x7e00006c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_28'>MS_SEMA_28</a></td><td>0x7e000070</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_29'>MS_SEMA_29</a></td><td>0x7e000074</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_30'>MS_SEMA_30</a></td><td>0x7e000078</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_sema_31'>MS_SEMA_31</a></td><td>0x7e00007c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_status'>MS_STATUS</a></td><td>0x7e000080</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_ireq_0'>MS_IREQ_0</a></td><td>0x7e000084</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_ireq_1'>MS_IREQ_1</a></td><td>0x7e000088</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_icset_0'>MS_ICSET_0</a></td><td>0x7e000090</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_icset_1'>MS_ICSET_1</a></td><td>0x7e000094</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_icclr_0'>MS_ICCLR_0</a></td><td>0x7e000098</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_icclr_1'>MS_ICCLR_1</a></td><td>0x7e00009c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_0'>MS_MBOX_0</a></td><td>0x7e0000a0</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_1'>MS_MBOX_1</a></td><td>0x7e0000a4</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_2'>MS_MBOX_2</a></td><td>0x7e0000a8</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_3'>MS_MBOX_3</a></td><td>0x7e0000ac</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_4'>MS_MBOX_4</a></td><td>0x7e0000b0</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_5'>MS_MBOX_5</a></td><td>0x7e0000b4</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_6'>MS_MBOX_6</a></td><td>0x7e0000b8</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_mbox_7'>MS_MBOX_7</a></td><td>0x7e0000bc</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ms_vpusema_0'>MS_VPUSEMA_0</a></td><td>0x7e0000c0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td><a hre='#ms_vpusema_1'>MS_VPUSEMA_1</a></td><td>0x7e0000c4</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td><a hre='#ms_vpu_stat'>MS_VPU_STAT</a></td><td>0x7e0000c8</td><td>RO</td><td>24</td><td>0x00ff00ff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#ms_sema_0'>MS_SEMA_0</a>&nbsp;</td><td>&nbsp;<pre>0x7e000000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_1'>MS_SEMA_1</a>&nbsp;</td><td>&nbsp;<pre>0x7e000004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_2'>MS_SEMA_2</a>&nbsp;</td><td>&nbsp;<pre>0x7e000008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_3'>MS_SEMA_3</a>&nbsp;</td><td>&nbsp;<pre>0x7e00000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_4'>MS_SEMA_4</a>&nbsp;</td><td>&nbsp;<pre>0x7e000010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_5'>MS_SEMA_5</a>&nbsp;</td><td>&nbsp;<pre>0x7e000014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_6'>MS_SEMA_6</a>&nbsp;</td><td>&nbsp;<pre>0x7e000018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_7'>MS_SEMA_7</a>&nbsp;</td><td>&nbsp;<pre>0x7e00001c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_8'>MS_SEMA_8</a>&nbsp;</td><td>&nbsp;<pre>0x7e000020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_9'>MS_SEMA_9</a>&nbsp;</td><td>&nbsp;<pre>0x7e000024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_10'>MS_SEMA_10</a>&nbsp;</td><td>&nbsp;<pre>0x7e000028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_11'>MS_SEMA_11</a>&nbsp;</td><td>&nbsp;<pre>0x7e00002c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_12'>MS_SEMA_12</a>&nbsp;</td><td>&nbsp;<pre>0x7e000030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_13'>MS_SEMA_13</a>&nbsp;</td><td>&nbsp;<pre>0x7e000034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_14'>MS_SEMA_14</a>&nbsp;</td><td>&nbsp;<pre>0x7e000038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_15'>MS_SEMA_15</a>&nbsp;</td><td>&nbsp;<pre>0x7e00003c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_16'>MS_SEMA_16</a>&nbsp;</td><td>&nbsp;<pre>0x7e000040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_17'>MS_SEMA_17</a>&nbsp;</td><td>&nbsp;<pre>0x7e000044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_18'>MS_SEMA_18</a>&nbsp;</td><td>&nbsp;<pre>0x7e000048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_19'>MS_SEMA_19</a>&nbsp;</td><td>&nbsp;<pre>0x7e00004c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_20'>MS_SEMA_20</a>&nbsp;</td><td>&nbsp;<pre>0x7e000050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_21'>MS_SEMA_21</a>&nbsp;</td><td>&nbsp;<pre>0x7e000054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_22'>MS_SEMA_22</a>&nbsp;</td><td>&nbsp;<pre>0x7e000058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_23'>MS_SEMA_23</a>&nbsp;</td><td>&nbsp;<pre>0x7e00005c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_24'>MS_SEMA_24</a>&nbsp;</td><td>&nbsp;<pre>0x7e000060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_25'>MS_SEMA_25</a>&nbsp;</td><td>&nbsp;<pre>0x7e000064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_26'>MS_SEMA_26</a>&nbsp;</td><td>&nbsp;<pre>0x7e000068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_27'>MS_SEMA_27</a>&nbsp;</td><td>&nbsp;<pre>0x7e00006c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_28'>MS_SEMA_28</a>&nbsp;</td><td>&nbsp;<pre>0x7e000070</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_29'>MS_SEMA_29</a>&nbsp;</td><td>&nbsp;<pre>0x7e000074</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_30'>MS_SEMA_30</a>&nbsp;</td><td>&nbsp;<pre>0x7e000078</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_sema_31'>MS_SEMA_31</a>&nbsp;</td><td>&nbsp;<pre>0x7e00007c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_status'>MS_STATUS</a>&nbsp;</td><td>&nbsp;<pre>0x7e000080</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_ireq_0'>MS_IREQ_0</a>&nbsp;</td><td>&nbsp;<pre>0x7e000084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_ireq_1'>MS_IREQ_1</a>&nbsp;</td><td>&nbsp;<pre>0x7e000088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_icset_0'>MS_ICSET_0</a>&nbsp;</td><td>&nbsp;<pre>0x7e000090</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_icset_1'>MS_ICSET_1</a>&nbsp;</td><td>&nbsp;<pre>0x7e000094</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_icclr_0'>MS_ICCLR_0</a>&nbsp;</td><td>&nbsp;<pre>0x7e000098</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_icclr_1'>MS_ICCLR_1</a>&nbsp;</td><td>&nbsp;<pre>0x7e00009c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_0'>MS_MBOX_0</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_1'>MS_MBOX_1</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000a4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_2'>MS_MBOX_2</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000a8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_3'>MS_MBOX_3</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000ac</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_4'>MS_MBOX_4</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_5'>MS_MBOX_5</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000b4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_6'>MS_MBOX_6</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000b8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_mbox_7'>MS_MBOX_7</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000bc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_vpusema_0'>MS_VPUSEMA_0</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_vpusema_1'>MS_VPUSEMA_1</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000c4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ms_vpu_stat'>MS_VPU_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e0000c8</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ff00ff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>MS_DMA</td><td>0</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;MS_DMA&nbsp;</td><td align=center>&nbsp;<pre>0</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='MS_SEMA_0'>MS_SEMA_0</a></h3>
 <h4>Address: 0x7e000000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_0_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_0_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_1'>MS_SEMA_1</a></h3>
 <h4>Address: 0x7e000004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_1_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_1_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_2'>MS_SEMA_2</a></h3>
 <h4>Address: 0x7e000008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_2_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_2_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_3'>MS_SEMA_3</a></h3>
 <h4>Address: 0x7e00000c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_3_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_3_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_4'>MS_SEMA_4</a></h3>
 <h4>Address: 0x7e000010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_4_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_4_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_5'>MS_SEMA_5</a></h3>
 <h4>Address: 0x7e000014</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_5_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_5_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_6'>MS_SEMA_6</a></h3>
 <h4>Address: 0x7e000018</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_6_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_6_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_7'>MS_SEMA_7</a></h3>
 <h4>Address: 0x7e00001c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_7_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_7_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_8'>MS_SEMA_8</a></h3>
 <h4>Address: 0x7e000020</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_8_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_8_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_9'>MS_SEMA_9</a></h3>
 <h4>Address: 0x7e000024</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_9_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_9_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_10'>MS_SEMA_10</a></h3>
 <h4>Address: 0x7e000028</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_10_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_10_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_11'>MS_SEMA_11</a></h3>
 <h4>Address: 0x7e00002c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_11_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_11_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_12'>MS_SEMA_12</a></h3>
 <h4>Address: 0x7e000030</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_12_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_12_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_13'>MS_SEMA_13</a></h3>
 <h4>Address: 0x7e000034</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_13_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_13_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_14'>MS_SEMA_14</a></h3>
 <h4>Address: 0x7e000038</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_14_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_14_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_15'>MS_SEMA_15</a></h3>
 <h4>Address: 0x7e00003c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_15_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_15_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_16'>MS_SEMA_16</a></h3>
 <h4>Address: 0x7e000040</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_16_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_16_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_17'>MS_SEMA_17</a></h3>
 <h4>Address: 0x7e000044</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_17_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_17_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_18'>MS_SEMA_18</a></h3>
 <h4>Address: 0x7e000048</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_18_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_18_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_19'>MS_SEMA_19</a></h3>
 <h4>Address: 0x7e00004c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_19_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_19_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_20'>MS_SEMA_20</a></h3>
 <h4>Address: 0x7e000050</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_20_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_20_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_21'>MS_SEMA_21</a></h3>
 <h4>Address: 0x7e000054</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_21_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_21_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_22'>MS_SEMA_22</a></h3>
 <h4>Address: 0x7e000058</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_22_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_22_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_23'>MS_SEMA_23</a></h3>
 <h4>Address: 0x7e00005c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_23_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_23_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_24'>MS_SEMA_24</a></h3>
 <h4>Address: 0x7e000060</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_24_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_24_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_25'>MS_SEMA_25</a></h3>
 <h4>Address: 0x7e000064</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_25_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_25_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_26'>MS_SEMA_26</a></h3>
 <h4>Address: 0x7e000068</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_26_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_26_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_27'>MS_SEMA_27</a></h3>
 <h4>Address: 0x7e00006c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_27_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_27_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_28'>MS_SEMA_28</a></h3>
 <h4>Address: 0x7e000070</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_28_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_28_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_29'>MS_SEMA_29</a></h3>
 <h4>Address: 0x7e000074</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_29_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_29_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_30'>MS_SEMA_30</a></h3>
 <h4>Address: 0x7e000078</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_30_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_30_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_SEMA_31'>MS_SEMA_31</a></h3>
 <h4>Address: 0x7e00007c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_SEMA_31_MASK</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_SEMA_31_MASK&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_STATUS'>MS_STATUS</a></h3>
 <h4>Address: 0x7e000080</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_STATUS_STATUS</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_STATUS_STATUS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_IREQ_0'>MS_IREQ_0</a></h3>
 <h4>Address: 0x7e000084</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_IREQ_0_IREQ_0</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_IREQ_0_IREQ_0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_IREQ_1'>MS_IREQ_1</a></h3>
 <h4>Address: 0x7e000088</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_IREQ_1_IREQ_1</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_IREQ_1_IREQ_1&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_ICSET_0'>MS_ICSET_0</a></h3>
 <h4>Address: 0x7e000090</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_ICSET_0_ICSET_0</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_ICSET_0_ICSET_0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_ICSET_1'>MS_ICSET_1</a></h3>
 <h4>Address: 0x7e000094</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_ICSET_1_ICSET_1</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_ICSET_1_ICSET_1&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_ICCLR_0'>MS_ICCLR_0</a></h3>
 <h4>Address: 0x7e000098</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_ICCLR_0_ICCLR_0</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_ICCLR_0_ICCLR_0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_ICCLR_1'>MS_ICCLR_1</a></h3>
 <h4>Address: 0x7e00009c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_ICCLR_1_ICCLR_1</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_ICCLR_1_ICCLR_1&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_0'>MS_MBOX_0</a></h3>
 <h4>Address: 0x7e0000a0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_0_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_0_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_1'>MS_MBOX_1</a></h3>
 <h4>Address: 0x7e0000a4</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_1_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_1_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_2'>MS_MBOX_2</a></h3>
 <h4>Address: 0x7e0000a8</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_2_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_2_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_3'>MS_MBOX_3</a></h3>
 <h4>Address: 0x7e0000ac</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_3_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_3_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_4'>MS_MBOX_4</a></h3>
 <h4>Address: 0x7e0000b0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_4_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_4_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_5'>MS_MBOX_5</a></h3>
 <h4>Address: 0x7e0000b4</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_5_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_5_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_6'>MS_MBOX_6</a></h3>
 <h4>Address: 0x7e0000b8</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_6_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_6_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_MBOX_7'>MS_MBOX_7</a></h3>
 <h4>Address: 0x7e0000bc</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_MBOX_7_MBOX</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;MS_MBOX_7_MBOX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_VPUSEMA_0'>MS_VPUSEMA_0</a></h3>
 <h4>Address: 0x7e0000c0</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_VPUSEMA_0_VPUSEMA_0</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-</table>
+<tr><td>&nbsp;MS_VPUSEMA_0_VPUSEMA_0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_VPUSEMA_1'>MS_VPUSEMA_1</a></h3>
 <h4>Address: 0x7e0000c4</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_VPUSEMA_1_VPUSEMA_1</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-</table>
+<tr><td>&nbsp;MS_VPUSEMA_1_VPUSEMA_1&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='MS_VPU_STAT'>MS_VPU_STAT</a></h3>
 <h4>Address: 0x7e0000c8</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>MS_VPU_STAT_VPU_STAT</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
-</table>
+<tr><td>&nbsp;MS_VPU_STAT_VPU_STAT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

@@ -1,123 +1,125 @@
 <html>
 <head>
 <title>V3D - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: V3D (base: 0x7ec00000</h1>
+<h1>Register Region: V3D (0x7ec00000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7ec00000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7ec00000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>V3D_IDENT0</td><td>0x7ec00000</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_IDENT1</td><td>0x7ec00004</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_IDENT2</td><td>0x7ec00008</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_IDENT3</td><td>0x7ec0000c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_SCRATCH</td><td>0x7ec00010</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_L2CACTL</td><td>0x7ec00020</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_SLCACTL</td><td>0x7ec00024</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_INTCTL</td><td>0x7ec00030</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_INTENA</td><td>0x7ec00034</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_INTDIS</td><td>0x7ec00038</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT0CS</td><td>0x7ec00100</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT1CS</td><td>0x7ec00104</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT0EA</td><td>0x7ec00108</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT1EA</td><td>0x7ec0010c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT0CA</td><td>0x7ec00110</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT1CA</td><td>0x7ec00114</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT00RA0</td><td>0x7ec00118</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT01RA0</td><td>0x7ec0011c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT0LC</td><td>0x7ec00120</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT1LC</td><td>0x7ec00124</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT0PC</td><td>0x7ec00128</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_CT1PC</td><td>0x7ec0012c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCS</td><td>0x7ec00130</td><td>RW</td><td>9</td><td>0x0000013f</td><td></td></tr>
-<tr><td>V3D_BFC</td><td>0x7ec00134</td><td>RW</td><td>8</td><td>0x000000ff</td><td></td></tr>
-<tr><td>V3D_RFC</td><td>0x7ec00138</td><td>RW</td><td>8</td><td>0x000000ff</td><td></td></tr>
-<tr><td>V3D_BPCA</td><td>0x7ec00300</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_BPCS</td><td>0x7ec00304</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_BPOA</td><td>0x7ec00308</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_BPOS</td><td>0x7ec0030c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_BXCF</td><td>0x7ec00310</td><td>RW</td><td>2</td><td>0x00000003</td><td></td></tr>
-<tr><td>V3D_SQRSV0</td><td>0x7ec00410</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_SQRSV1</td><td>0x7ec00414</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_SQCNTL</td><td>0x7ec00418</td><td>RW</td><td>4</td><td>0x0000000f</td><td></td></tr>
-<tr><td>V3D_SQCSTAT</td><td>0x7ec0041c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_SRQPC</td><td>0x7ec00430</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_SRQUA</td><td>0x7ec00434</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_SRQUL</td><td>0x7ec00438</td><td>RW</td><td>12</td><td>0x00000fff</td><td></td></tr>
-<tr><td>V3D_SRQCS</td><td>0x7ec0043c</td><td>RW</td><td>24</td><td>0x00ffffbf</td><td></td></tr>
-<tr><td>V3D_VPACNTL</td><td>0x7ec00500</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_VPMBASE</td><td>0x7ec00504</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRC</td><td>0x7ec00670</td><td>RW</td><td>16</td><td>0x0000ffff</td><td></td></tr>
-<tr><td>V3D_PCTRE</td><td>0x7ec00674</td><td>RW</td><td>32</td><td>0x8000ffff</td><td></td></tr>
-<tr><td>V3D_PCTR0</td><td>0x7ec00680</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS0</td><td>0x7ec00684</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR1</td><td>0x7ec00688</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS1</td><td>0x7ec0068c</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR2</td><td>0x7ec00690</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS2</td><td>0x7ec00694</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR3</td><td>0x7ec00698</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS3</td><td>0x7ec0069c</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR4</td><td>0x7ec006a0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS4</td><td>0x7ec006a4</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR5</td><td>0x7ec006a8</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS5</td><td>0x7ec006ac</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR6</td><td>0x7ec006b0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS6</td><td>0x7ec006b4</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR7</td><td>0x7ec006b8</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS7</td><td>0x7ec006bc</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR8</td><td>0x7ec006c0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS8</td><td>0x7ec006c4</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR9</td><td>0x7ec006c8</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS9</td><td>0x7ec006cc</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR10</td><td>0x7ec006d0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS10</td><td>0x7ec006d4</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR11</td><td>0x7ec006d8</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS11</td><td>0x7ec006dc</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR12</td><td>0x7ec006e0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS12</td><td>0x7ec006e4</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR13</td><td>0x7ec006e8</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS13</td><td>0x7ec006ec</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR14</td><td>0x7ec006f0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS14</td><td>0x7ec006f4</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_PCTR15</td><td>0x7ec006f8</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_PCTRS15</td><td>0x7ec006fc</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
-<tr><td>V3D_DBCFG</td><td>0x7ec00e00</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBSCS</td><td>0x7ec00e04</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBSCFG</td><td>0x7ec00e08</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBSSR</td><td>0x7ec00e0c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBSDR0</td><td>0x7ec00e10</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBSDR1</td><td>0x7ec00e14</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBSDR2</td><td>0x7ec00e18</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBSDR3</td><td>0x7ec00e1c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQRUN</td><td>0x7ec00e20</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQHLT</td><td>0x7ec00e24</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQSTP</td><td>0x7ec00e28</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQITE</td><td>0x7ec00e2c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQITC</td><td>0x7ec00e30</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQGHC</td><td>0x7ec00e34</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQGHG</td><td>0x7ec00e38</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBQGHH</td><td>0x7ec00e3c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_DBGE</td><td>0x7ec00f00</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_FDBG0</td><td>0x7ec00f04</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_FDBGB</td><td>0x7ec00f08</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_FDBGR</td><td>0x7ec00f0c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_FDBGS</td><td>0x7ec00f10</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>V3D_ERRSTAT</td><td>0x7ec00f20</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;V3D_IDENT0&nbsp;</td><td>&nbsp;<pre>0x7ec00000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_IDENT1&nbsp;</td><td>&nbsp;<pre>0x7ec00004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_IDENT2&nbsp;</td><td>&nbsp;<pre>0x7ec00008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_IDENT3&nbsp;</td><td>&nbsp;<pre>0x7ec0000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SCRATCH&nbsp;</td><td>&nbsp;<pre>0x7ec00010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_L2CACTL&nbsp;</td><td>&nbsp;<pre>0x7ec00020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SLCACTL&nbsp;</td><td>&nbsp;<pre>0x7ec00024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_INTCTL&nbsp;</td><td>&nbsp;<pre>0x7ec00030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_INTENA&nbsp;</td><td>&nbsp;<pre>0x7ec00034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_INTDIS&nbsp;</td><td>&nbsp;<pre>0x7ec00038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT0CS&nbsp;</td><td>&nbsp;<pre>0x7ec00100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT1CS&nbsp;</td><td>&nbsp;<pre>0x7ec00104</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT0EA&nbsp;</td><td>&nbsp;<pre>0x7ec00108</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT1EA&nbsp;</td><td>&nbsp;<pre>0x7ec0010c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT0CA&nbsp;</td><td>&nbsp;<pre>0x7ec00110</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT1CA&nbsp;</td><td>&nbsp;<pre>0x7ec00114</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT00RA0&nbsp;</td><td>&nbsp;<pre>0x7ec00118</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT01RA0&nbsp;</td><td>&nbsp;<pre>0x7ec0011c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT0LC&nbsp;</td><td>&nbsp;<pre>0x7ec00120</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT1LC&nbsp;</td><td>&nbsp;<pre>0x7ec00124</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT0PC&nbsp;</td><td>&nbsp;<pre>0x7ec00128</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_CT1PC&nbsp;</td><td>&nbsp;<pre>0x7ec0012c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCS&nbsp;</td><td>&nbsp;<pre>0x7ec00130</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x0000013f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_BFC&nbsp;</td><td>&nbsp;<pre>0x7ec00134</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_RFC&nbsp;</td><td>&nbsp;<pre>0x7ec00138</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_BPCA&nbsp;</td><td>&nbsp;<pre>0x7ec00300</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_BPCS&nbsp;</td><td>&nbsp;<pre>0x7ec00304</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_BPOA&nbsp;</td><td>&nbsp;<pre>0x7ec00308</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_BPOS&nbsp;</td><td>&nbsp;<pre>0x7ec0030c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_BXCF&nbsp;</td><td>&nbsp;<pre>0x7ec00310</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SQRSV0&nbsp;</td><td>&nbsp;<pre>0x7ec00410</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SQRSV1&nbsp;</td><td>&nbsp;<pre>0x7ec00414</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SQCNTL&nbsp;</td><td>&nbsp;<pre>0x7ec00418</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SQCSTAT&nbsp;</td><td>&nbsp;<pre>0x7ec0041c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SRQPC&nbsp;</td><td>&nbsp;<pre>0x7ec00430</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SRQUA&nbsp;</td><td>&nbsp;<pre>0x7ec00434</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SRQUL&nbsp;</td><td>&nbsp;<pre>0x7ec00438</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_SRQCS&nbsp;</td><td>&nbsp;<pre>0x7ec0043c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffbf</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_VPACNTL&nbsp;</td><td>&nbsp;<pre>0x7ec00500</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_VPMBASE&nbsp;</td><td>&nbsp;<pre>0x7ec00504</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRC&nbsp;</td><td>&nbsp;<pre>0x7ec00670</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRE&nbsp;</td><td>&nbsp;<pre>0x7ec00674</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x8000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR0&nbsp;</td><td>&nbsp;<pre>0x7ec00680</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS0&nbsp;</td><td>&nbsp;<pre>0x7ec00684</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR1&nbsp;</td><td>&nbsp;<pre>0x7ec00688</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS1&nbsp;</td><td>&nbsp;<pre>0x7ec0068c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR2&nbsp;</td><td>&nbsp;<pre>0x7ec00690</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS2&nbsp;</td><td>&nbsp;<pre>0x7ec00694</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR3&nbsp;</td><td>&nbsp;<pre>0x7ec00698</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS3&nbsp;</td><td>&nbsp;<pre>0x7ec0069c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR4&nbsp;</td><td>&nbsp;<pre>0x7ec006a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS4&nbsp;</td><td>&nbsp;<pre>0x7ec006a4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR5&nbsp;</td><td>&nbsp;<pre>0x7ec006a8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS5&nbsp;</td><td>&nbsp;<pre>0x7ec006ac</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR6&nbsp;</td><td>&nbsp;<pre>0x7ec006b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS6&nbsp;</td><td>&nbsp;<pre>0x7ec006b4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR7&nbsp;</td><td>&nbsp;<pre>0x7ec006b8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS7&nbsp;</td><td>&nbsp;<pre>0x7ec006bc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR8&nbsp;</td><td>&nbsp;<pre>0x7ec006c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS8&nbsp;</td><td>&nbsp;<pre>0x7ec006c4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR9&nbsp;</td><td>&nbsp;<pre>0x7ec006c8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS9&nbsp;</td><td>&nbsp;<pre>0x7ec006cc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR10&nbsp;</td><td>&nbsp;<pre>0x7ec006d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS10&nbsp;</td><td>&nbsp;<pre>0x7ec006d4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR11&nbsp;</td><td>&nbsp;<pre>0x7ec006d8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS11&nbsp;</td><td>&nbsp;<pre>0x7ec006dc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR12&nbsp;</td><td>&nbsp;<pre>0x7ec006e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS12&nbsp;</td><td>&nbsp;<pre>0x7ec006e4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR13&nbsp;</td><td>&nbsp;<pre>0x7ec006e8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS13&nbsp;</td><td>&nbsp;<pre>0x7ec006ec</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR14&nbsp;</td><td>&nbsp;<pre>0x7ec006f0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS14&nbsp;</td><td>&nbsp;<pre>0x7ec006f4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTR15&nbsp;</td><td>&nbsp;<pre>0x7ec006f8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_PCTRS15&nbsp;</td><td>&nbsp;<pre>0x7ec006fc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBCFG&nbsp;</td><td>&nbsp;<pre>0x7ec00e00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBSCS&nbsp;</td><td>&nbsp;<pre>0x7ec00e04</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBSCFG&nbsp;</td><td>&nbsp;<pre>0x7ec00e08</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBSSR&nbsp;</td><td>&nbsp;<pre>0x7ec00e0c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBSDR0&nbsp;</td><td>&nbsp;<pre>0x7ec00e10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBSDR1&nbsp;</td><td>&nbsp;<pre>0x7ec00e14</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBSDR2&nbsp;</td><td>&nbsp;<pre>0x7ec00e18</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBSDR3&nbsp;</td><td>&nbsp;<pre>0x7ec00e1c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQRUN&nbsp;</td><td>&nbsp;<pre>0x7ec00e20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQHLT&nbsp;</td><td>&nbsp;<pre>0x7ec00e24</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQSTP&nbsp;</td><td>&nbsp;<pre>0x7ec00e28</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQITE&nbsp;</td><td>&nbsp;<pre>0x7ec00e2c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQITC&nbsp;</td><td>&nbsp;<pre>0x7ec00e30</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQGHC&nbsp;</td><td>&nbsp;<pre>0x7ec00e34</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQGHG&nbsp;</td><td>&nbsp;<pre>0x7ec00e38</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBQGHH&nbsp;</td><td>&nbsp;<pre>0x7ec00e3c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_DBGE&nbsp;</td><td>&nbsp;<pre>0x7ec00f00</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_FDBG0&nbsp;</td><td>&nbsp;<pre>0x7ec00f04</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_FDBGB&nbsp;</td><td>&nbsp;<pre>0x7ec00f08</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_FDBGR&nbsp;</td><td>&nbsp;<pre>0x7ec00f0c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_FDBGS&nbsp;</td><td>&nbsp;<pre>0x7ec00f10</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_ERRSTAT&nbsp;</td><td>&nbsp;<pre>0x7ec00f20</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>V3D_BASE_ADDRESS</td><td>0x1A005000</td></tr>
-<tr><td>V3D_MEM1_BASE_ADDRESS</td><td>0x1A00B000</td></tr>
-<tr><td>V3D_MEM2_BASE_ADDRESS</td><td>0x1A00C000</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;V3D_BASE_ADDRESS&nbsp;</td><td align=center>&nbsp;<pre>0x1A005000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_MEM1_BASE_ADDRESS&nbsp;</td><td align=center>&nbsp;<pre>0x1A00B000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;V3D_MEM2_BASE_ADDRESS&nbsp;</td><td align=center>&nbsp;<pre>0x1A00C000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

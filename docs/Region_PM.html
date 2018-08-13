@@ -1,379 +1,381 @@
 <html>
 <head>
 <title>PM - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: PM (base: 0x7e100000</h1>
+<h1>Register Region: PM (0x7e100000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>description</td><td>Power manager</td></tr>
-<tr><td>base</td><td>0x7e100000</td></tr>
-<tr><td>id</td><td>0x0000706d</td></tr>
-<tr><td>password</td><td>0x5a000000</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;description&nbsp;</td><td>&nbsp;<pre>Power manager</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e100000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x0000706d</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;password&nbsp;</td><td>&nbsp;<pre>0x5a000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#pm_gnric'>PM_GNRIC</a></td><td>0x7e100000</td><td>RW</td><td>23</td><td>0x007f1fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_audio'>PM_AUDIO</a></td><td>0x7e100004</td><td>RW</td><td>22</td><td>0x003fffff</td><td>0x003000ff</td></tr>
-<tr><td>PM_STATUS</td><td>0x7e100018</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_rstc'>PM_RSTC</a></td><td>0x7e10001c</td><td>RW</td><td>22</td><td>0x00333333</td><td>0x00000102</td></tr>
-<tr><td><a hre='#pm_rsts'>PM_RSTS</a></td><td>0x7e100020</td><td>RW</td><td>13</td><td>0x00001777</td><td>0x00001000</td></tr>
-<tr><td><a hre='#pm_wdog'>PM_WDOG</a></td><td>0x7e100024</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_pads0'>PM_PADS0</a></td><td>0x7e100028</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0x0000001b</td></tr>
-<tr><td><a hre='#pm_pads2'>PM_PADS2</a></td><td>0x7e10002c</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0x0000001b</td></tr>
-<tr><td><a hre='#pm_pads3'>PM_PADS3</a></td><td>0x7e100030</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0x0000001b</td></tr>
-<tr><td><a hre='#pm_pads4'>PM_PADS4</a></td><td>0x7e100034</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0x0000001b</td></tr>
-<tr><td><a hre='#pm_pads5'>PM_PADS5</a></td><td>0x7e100038</td><td>RW</td><td>7</td><td>0x0000007f</td><td>0x0000001b</td></tr>
-<tr><td><a hre='#pm_pads6'>PM_PADS6</a></td><td>0x7e10003c</td><td>RW</td><td>9</td><td>0x00000123</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_cam0'>PM_CAM0</a></td><td>0x7e100044</td><td>RW</td><td>21</td><td>0x001fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_cam1'>PM_CAM1</a></td><td>0x7e100048</td><td>RW</td><td>21</td><td>0x001fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_ccp2tx'>PM_CCP2TX</a></td><td>0x7e10004c</td><td>RW</td><td>19</td><td>0x0007ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_dsi0'>PM_DSI0</a></td><td>0x7e100050</td><td>RW</td><td>21</td><td>0x001fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_dsi1'>PM_DSI1</a></td><td>0x7e100054</td><td>RW</td><td>21</td><td>0x001fffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_hdmi'>PM_HDMI</a></td><td>0x7e100058</td><td>RW</td><td>20</td><td>0x000fffff</td><td>0x00080002</td></tr>
-<tr><td><a hre='#pm_usb'>PM_USB</a></td><td>0x7e10005c</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_pxldo'>PM_PXLDO</a></td><td>0x7e100060</td><td>RW</td><td>18</td><td>0x0003ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_pxbg'>PM_PXBG</a></td><td>0x7e100064</td><td>RW</td><td>16</td><td>0x0000ffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_dft'>PM_DFT</a></td><td>0x7e100068</td><td>RW</td><td>2</td><td>0x00000003</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_smps'>PM_SMPS</a></td><td>0x7e10006c</td><td>RW</td><td>3</td><td>0x00000007</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_xosc'>PM_XOSC</a></td><td>0x7e100070</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_sparew'>PM_SPAREW</a></td><td>0x7e100074</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_sparer'>PM_SPARER</a></td><td>0x7e100078</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_avs_rstdr'>PM_AVS_RSTDR</a></td><td>0x7e10007c</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_avs_stat'>PM_AVS_STAT</a></td><td>0x7e100080</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_avs_event'>PM_AVS_EVENT</a></td><td>0x7e100084</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_avs_inten'>PM_AVS_INTEN</a></td><td>0x7e100088</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
-<tr><td><a hre='#pm_dummy'>PM_DUMMY</a></td><td>0x7e1000fc</td><td>RO</td><td>1</td><td>0x00000001</td><td>0x00000001</td></tr>
-<tr><td><a hre='#pm_image'>PM_IMAGE</a></td><td>0x7e100108</td><td>RW</td><td>23</td><td>0x007f11ff</td><td>0x00001000</td></tr>
-<tr><td><a hre='#pm_grafx'>PM_GRAFX</a></td><td>0x7e10010c</td><td>RW</td><td>23</td><td>0x007f107f</td><td>0x00001000</td></tr>
-<tr><td><a hre='#pm_proc'>PM_PROC</a></td><td>0x7e100110</td><td>RW</td><td>23</td><td>0x007f107f</td><td>0000000000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#pm_gnric'>PM_GNRIC</a>&nbsp;</td><td>&nbsp;<pre>0x7e100000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x007f1fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_audio'>PM_AUDIO</a>&nbsp;</td><td>&nbsp;<pre>0x7e100004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x003000ff</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;PM_STATUS&nbsp;</td><td>&nbsp;<pre>0x7e100018</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_rstc'>PM_RSTC</a>&nbsp;</td><td>&nbsp;<pre>0x7e10001c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00333333</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000102</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_rsts'>PM_RSTS</a>&nbsp;</td><td>&nbsp;<pre>0x7e100020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00001777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00001000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_wdog'>PM_WDOG</a>&nbsp;</td><td>&nbsp;<pre>0x7e100024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pads0'>PM_PADS0</a>&nbsp;</td><td>&nbsp;<pre>0x7e100028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000001b</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pads2'>PM_PADS2</a>&nbsp;</td><td>&nbsp;<pre>0x7e10002c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000001b</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pads3'>PM_PADS3</a>&nbsp;</td><td>&nbsp;<pre>0x7e100030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000001b</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pads4'>PM_PADS4</a>&nbsp;</td><td>&nbsp;<pre>0x7e100034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000001b</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pads5'>PM_PADS5</a>&nbsp;</td><td>&nbsp;<pre>0x7e100038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0000001b</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pads6'>PM_PADS6</a>&nbsp;</td><td>&nbsp;<pre>0x7e10003c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000123</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_cam0'>PM_CAM0</a>&nbsp;</td><td>&nbsp;<pre>0x7e100044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_cam1'>PM_CAM1</a>&nbsp;</td><td>&nbsp;<pre>0x7e100048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_ccp2tx'>PM_CCP2TX</a>&nbsp;</td><td>&nbsp;<pre>0x7e10004c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x0007ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_dsi0'>PM_DSI0</a>&nbsp;</td><td>&nbsp;<pre>0x7e100050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_dsi1'>PM_DSI1</a>&nbsp;</td><td>&nbsp;<pre>0x7e100054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_hdmi'>PM_HDMI</a>&nbsp;</td><td>&nbsp;<pre>0x7e100058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00080002</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_usb'>PM_USB</a>&nbsp;</td><td>&nbsp;<pre>0x7e10005c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pxldo'>PM_PXLDO</a>&nbsp;</td><td>&nbsp;<pre>0x7e100060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x0003ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_pxbg'>PM_PXBG</a>&nbsp;</td><td>&nbsp;<pre>0x7e100064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_dft'>PM_DFT</a>&nbsp;</td><td>&nbsp;<pre>0x7e100068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_smps'>PM_SMPS</a>&nbsp;</td><td>&nbsp;<pre>0x7e10006c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000007</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_xosc'>PM_XOSC</a>&nbsp;</td><td>&nbsp;<pre>0x7e100070</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_sparew'>PM_SPAREW</a>&nbsp;</td><td>&nbsp;<pre>0x7e100074</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_sparer'>PM_SPARER</a>&nbsp;</td><td>&nbsp;<pre>0x7e100078</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_avs_rstdr'>PM_AVS_RSTDR</a>&nbsp;</td><td>&nbsp;<pre>0x7e10007c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_avs_stat'>PM_AVS_STAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e100080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_avs_event'>PM_AVS_EVENT</a>&nbsp;</td><td>&nbsp;<pre>0x7e100084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_avs_inten'>PM_AVS_INTEN</a>&nbsp;</td><td>&nbsp;<pre>0x7e100088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_dummy'>PM_DUMMY</a>&nbsp;</td><td>&nbsp;<pre>0x7e1000fc</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_image'>PM_IMAGE</a>&nbsp;</td><td>&nbsp;<pre>0x7e100108</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x007f11ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00001000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_grafx'>PM_GRAFX</a>&nbsp;</td><td>&nbsp;<pre>0x7e10010c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x007f107f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00001000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pm_proc'>PM_PROC</a>&nbsp;</td><td>&nbsp;<pre>0x7e100110</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x007f107f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='PM_GNRIC'>PM_GNRIC</a></h3>
 <h4>Address: 0x7e100000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_GNRIC_POWUP</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_GNRIC_POWOK</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_GNRIC_ISPOW</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_GNRIC_MEMREP</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_GNRIC_MRDONE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>PM_GNRIC_ISFUNC</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>PM_GNRIC_RSTN</td><td>6</td><td>11</td><td>0x00000fc0</td><td>0xfffff03f</td><td>0x0</td></tr>
-<tr><td>PM_GNRIC_ENAB</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_GNRIC_CFG</td><td>16</td><td>22</td><td>0x007f0000</td><td>0xff80ffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_GNRIC_POWUP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_POWOK&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_ISPOW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_MEMREP&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_MRDONE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_ISFUNC&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_RSTN&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fc0</pre></td><td>&nbsp;<pre>0xfffff03f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_ENAB&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GNRIC_CFG&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x007f0000</pre></td><td>&nbsp;<pre>0xff80ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_AUDIO'>PM_AUDIO</a></h3>
 <h4>Address: 0x7e100004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_AUDIO_APSM</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0xff</td></tr>
-<tr><td>PM_AUDIO_CTRLEN</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x1</td></tr>
-<tr><td>PM_AUDIO_RSTN</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;PM_AUDIO_APSM&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0xff&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AUDIO_CTRLEN&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AUDIO_RSTN&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00200000</pre></td><td>&nbsp;<pre>0xffdfffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_RSTC'>PM_RSTC</a></h3>
 <h4>Address: 0x7e10001c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_RSTC_DRCFG</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x2</td></tr>
-<tr><td>missing definiton</td><td>2</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTC_WRCFG</td><td>4</td><td>5</td><td>0x00000030</td><td>0xffffffcf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTC_SRCFG</td><td>8</td><td>9</td><td>0x00000300</td><td>0xfffffcff</td><td>0x1</td></tr>
-<tr><td>missing definiton</td><td>10</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTC_QRCFG</td><td>12</td><td>13</td><td>0x00003000</td><td>0xffffcfff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>14</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTC_FRCFG</td><td>16</td><td>17</td><td>0x00030000</td><td>0xfffcffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>18</td><td>19</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTC_HRCFG</td><td>20</td><td>21</td><td>0x00300000</td><td>0xffcfffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_RSTC_DRCFG&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTC_WRCFG&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000030</pre></td><td>&nbsp;<pre>0xffffffcf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTC_SRCFG&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000300</pre></td><td>&nbsp;<pre>0xfffffcff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTC_QRCFG&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003000</pre></td><td>&nbsp;<pre>0xffffcfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTC_FRCFG&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00030000</pre></td><td>&nbsp;<pre>0xfffcffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTC_HRCFG&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00300000</pre></td><td>&nbsp;<pre>0xffcfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_RSTS'>PM_RSTS</a></h3>
 <h4>Address: 0x7e100020</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_RSTS_HADDRQ</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_RSTS_HADDRF</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_RSTS_HADDRH</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTS_HADWRQ</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>PM_RSTS_HADWRF</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>PM_RSTS_HADWRH</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTS_HADSRQ</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>PM_RSTS_HADSRF</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
-<tr><td>PM_RSTS_HADSRH</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>11</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_RSTS_HADPOR</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;PM_RSTS_HADDRQ&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADDRF&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADDRH&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADWRQ&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADWRF&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADWRH&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADSRQ&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADSRF&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADSRH&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_RSTS_HADPOR&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_WDOG'>PM_WDOG</a></h3>
 <h4>Address: 0x7e100024</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_WDOG_TIME</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_WDOG_TIME&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PADS0'>PM_PADS0</a></h3>
 <h4>Address: 0x7e100028</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PADS0_DRIVE</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x3</td></tr>
-<tr><td>PM_PADS0_HYST</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x1</td></tr>
-<tr><td>PM_PADS0_SLEW</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
-<tr><td>PM_PADS0_POWOK</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PADS0_DRIVE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS0_HYST&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS0_SLEW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS0_POWOK&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PADS2'>PM_PADS2</a></h3>
 <h4>Address: 0x7e10002c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PADS2_DRIVE</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x3</td></tr>
-<tr><td>PM_PADS2_HYST</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x1</td></tr>
-<tr><td>PM_PADS2_SLEW</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
-<tr><td>PM_PADS2_POWOK</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PADS2_DRIVE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS2_HYST&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS2_SLEW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS2_POWOK&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PADS3'>PM_PADS3</a></h3>
 <h4>Address: 0x7e100030</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PADS3_DRIVE</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x3</td></tr>
-<tr><td>PM_PADS3_HYST</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x1</td></tr>
-<tr><td>PM_PADS3_SLEW</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
-<tr><td>PM_PADS3_POWOK</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PADS3_DRIVE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS3_HYST&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS3_SLEW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS3_POWOK&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PADS4'>PM_PADS4</a></h3>
 <h4>Address: 0x7e100034</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PADS4_DRIVE</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x3</td></tr>
-<tr><td>PM_PADS4_HYST</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x1</td></tr>
-<tr><td>PM_PADS4_SPARE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
-<tr><td>PM_PADS4_POWOK</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PADS4_DRIVE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS4_HYST&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS4_SPARE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS4_POWOK&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PADS5'>PM_PADS5</a></h3>
 <h4>Address: 0x7e100038</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PADS5_DRIVE</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x3</td></tr>
-<tr><td>PM_PADS5_HYST</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x1</td></tr>
-<tr><td>PM_PADS5_SLEW</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
-<tr><td>PM_PADS5_POWOK</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>PM_PADS5_I2CMODE</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PADS5_DRIVE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS5_HYST&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS5_SLEW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS5_POWOK&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS5_I2CMODE&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PADS6'>PM_PADS6</a></h3>
 <h4>Address: 0x7e10003c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PADS6_DRIVE</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>2</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_PADS6_POWOK</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_PADS6_PD</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PADS6_DRIVE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS6_POWOK&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PADS6_PD&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_CAM0'>PM_CAM0</a></h3>
 <h4>Address: 0x7e100044</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_CAM0_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_CAM0_LDOLPEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_CAM0_LDOHPEN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_CAM0_LDOCTRL</td><td>3</td><td>20</td><td>0x001ffff8</td><td>0xffe00007</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_CAM0_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CAM0_LDOLPEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CAM0_LDOHPEN&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CAM0_LDOCTRL&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001ffff8</pre></td><td>&nbsp;<pre>0xffe00007</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_CAM1'>PM_CAM1</a></h3>
 <h4>Address: 0x7e100048</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_CAM1_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_CAM1_LDOLPEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_CAM1_LDOHPEN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_CAM1_LDOCTRL</td><td>3</td><td>20</td><td>0x001ffff8</td><td>0xffe00007</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_CAM1_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CAM1_LDOLPEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CAM1_LDOHPEN&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CAM1_LDOCTRL&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001ffff8</pre></td><td>&nbsp;<pre>0xffe00007</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_CCP2TX'>PM_CCP2TX</a></h3>
 <h4>Address: 0x7e10004c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_CCP2TX_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_CCP2TX_LDOEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_CCP2TX_LDOCTRL</td><td>2</td><td>18</td><td>0x0007fffc</td><td>0xfff80003</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_CCP2TX_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CCP2TX_LDOEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_CCP2TX_LDOCTRL&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x0007fffc</pre></td><td>&nbsp;<pre>0xfff80003</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_DSI0'>PM_DSI0</a></h3>
 <h4>Address: 0x7e100050</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_DSI0_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_DSI0_LDOLPEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_DSI0_LDOHPEN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_DSI0_LDOCTRL</td><td>3</td><td>20</td><td>0x001ffff8</td><td>0xffe00007</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_DSI0_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_DSI0_LDOLPEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_DSI0_LDOHPEN&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_DSI0_LDOCTRL&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001ffff8</pre></td><td>&nbsp;<pre>0xffe00007</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_DSI1'>PM_DSI1</a></h3>
 <h4>Address: 0x7e100054</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_DSI1_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_DSI1_LDOLPEN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_DSI1_LDOHPEN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_DSI1_LDOCTRL</td><td>3</td><td>20</td><td>0x001ffff8</td><td>0xffe00007</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_DSI1_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_DSI1_LDOLPEN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_DSI1_LDOHPEN&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_DSI1_LDOCTRL&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001ffff8</pre></td><td>&nbsp;<pre>0xffe00007</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_HDMI'>PM_HDMI</a></h3>
 <h4>Address: 0x7e100058</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_HDMI_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_HDMI_LDOPD</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x1</td></tr>
-<tr><td>PM_HDMI_LDOCTRL</td><td>2</td><td>18</td><td>0x0007fffc</td><td>0xfff80003</td><td>0x0</td></tr>
-<tr><td>PM_HDMI_RSTDR</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;PM_HDMI_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_HDMI_LDOPD&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;PM_HDMI_LDOCTRL&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x0007fffc</pre></td><td>&nbsp;<pre>0xfff80003</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_HDMI_RSTDR&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x00080000</pre></td><td>&nbsp;<pre>0xfff7ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_USB'>PM_USB</a></h3>
 <h4>Address: 0x7e10005c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_USB_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_USB_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PXLDO'>PM_PXLDO</a></h3>
 <h4>Address: 0x7e100060</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PXLDO_CTRL</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
-<tr><td>PM_PXLDO_RSTOSCDR</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-<tr><td>PM_PXLDO_RSTPLLDR</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PXLDO_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PXLDO_RSTOSCDR&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PXLDO_RSTPLLDR&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PXBG'>PM_PXBG</a></h3>
 <h4>Address: 0x7e100064</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PXBG_CTRL</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PXBG_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_DFT'>PM_DFT</a></h3>
 <h4>Address: 0x7e100068</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_DFT_ALLOWAUDIOCKSTOP</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_DFT_STOPALLCLOCKS</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_DFT_ALLOWAUDIOCKSTOP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_DFT_STOPALLCLOCKS&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_SMPS'>PM_SMPS</a></h3>
 <h4>Address: 0x7e10006c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_SMPS_CTRLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_SMPS_RSTDR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_SMPS_UPEN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_SMPS_CTRLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_SMPS_RSTDR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_SMPS_UPEN&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_XOSC'>PM_XOSC</a></h3>
 <h4>Address: 0x7e100070</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_XOSC_USESEC</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_XOSC_USESEC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_SPAREW'>PM_SPAREW</a></h3>
 <h4>Address: 0x7e100074</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_SPAREW_SPARE</td><td>0</td><td>23</td><td>0x00ffffff</td><td>0xff000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_SPAREW_SPARE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre></td><td>&nbsp;<pre>0xff000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_SPARER'>PM_SPARER</a></h3>
 <h4>Address: 0x7e100078</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_SPARER_SPARE</td><td>0</td><td>23</td><td>0x00ffffff</td><td>0xff000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_SPARER_SPARE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00ffffff</pre></td><td>&nbsp;<pre>0xff000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_AVS_RSTDR'>PM_AVS_RSTDR</a></h3>
 <h4>Address: 0x7e10007c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_AVS_RSTDR_PERI_A</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_AVS_RSTDR_SYSTEM_A</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_AVS_RSTDR_H264_I</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_AVS_RSTDR_V3D_G</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_AVS_RSTDR_ARM_P</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>PM_AVS_RSTDR_ROSC</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_AVS_RSTDR_PERI_A&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_RSTDR_SYSTEM_A&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_RSTDR_H264_I&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_RSTDR_V3D_G&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_RSTDR_ARM_P&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_RSTDR_ROSC&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_AVS_STAT'>PM_AVS_STAT</a></h3>
 <h4>Address: 0x7e100080</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_AVS_STAT_ALERT_PERI_A</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_AVS_STAT_ALERT_SYSTEM_A</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_AVS_STAT_ALERT_H264_I</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_AVS_STAT_ALERT_V3D_G</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_AVS_STAT_ALERT_ARM_P</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_AVS_STAT_ALERT_PERI_A&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_STAT_ALERT_SYSTEM_A&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_STAT_ALERT_H264_I&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_STAT_ALERT_V3D_G&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_STAT_ALERT_ARM_P&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_AVS_EVENT'>PM_AVS_EVENT</a></h3>
 <h4>Address: 0x7e100084</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_AVS_EVENT_ALERT_PERI_A</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_AVS_EVENT_ALERT_SYSTEM_A</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_AVS_EVENT_ALERT_H264_I</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_AVS_EVENT_ALERT_V3D_G</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_AVS_EVENT_ALERT_ARM_P</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_AVS_EVENT_ALERT_PERI_A&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_EVENT_ALERT_SYSTEM_A&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_EVENT_ALERT_H264_I&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_EVENT_ALERT_V3D_G&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_EVENT_ALERT_ARM_P&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_AVS_INTEN'>PM_AVS_INTEN</a></h3>
 <h4>Address: 0x7e100088</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_AVS_INTEN_ALERT_PERI_A</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_AVS_INTEN_ALERT_SYSTEM_A</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_AVS_INTEN_ALERT_H264_I</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_AVS_INTEN_ALERT_V3D_G</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_AVS_INTEN_ALERT_ARM_P</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_AVS_INTEN_ALERT_PERI_A&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_INTEN_ALERT_SYSTEM_A&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_INTEN_ALERT_H264_I&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_INTEN_ALERT_V3D_G&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_AVS_INTEN_ALERT_ARM_P&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_DUMMY'>PM_DUMMY</a></h3>
 <h4>Address: 0x7e1000fc</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_DUMMY_ONE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x1</td></tr>
-</table>
+<tr><td>&nbsp;PM_DUMMY_ONE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_IMAGE'>PM_IMAGE</a></h3>
 <h4>Address: 0x7e100108</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_IMAGE_POWUP</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_POWOK</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_ISPOW</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_MEMREP</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_MRDONE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_ISFUNC</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_PERIRSTN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_H264RSTN</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
-<tr><td>PM_IMAGE_ISPRSTN</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>9</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_IMAGE_ENAB</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x1</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_IMAGE_CFG</td><td>16</td><td>22</td><td>0x007f0000</td><td>0xff80ffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_IMAGE_POWUP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_POWOK&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_ISPOW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_MEMREP&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_MRDONE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_ISFUNC&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_PERIRSTN&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_H264RSTN&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_ISPRSTN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_ENAB&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_IMAGE_CFG&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x007f0000</pre></td><td>&nbsp;<pre>0xff80ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_GRAFX'>PM_GRAFX</a></h3>
 <h4>Address: 0x7e10010c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_GRAFX_POWUP</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_GRAFX_POWOK</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_GRAFX_ISPOW</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_GRAFX_MEMREP</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_GRAFX_MRDONE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>PM_GRAFX_ISFUNC</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>PM_GRAFX_V3DRSTN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_GRAFX_ENAB</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x1</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_GRAFX_CFG</td><td>16</td><td>22</td><td>0x007f0000</td><td>0xff80ffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_GRAFX_POWUP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_POWOK&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_ISPOW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_MEMREP&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_MRDONE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_ISFUNC&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_V3DRSTN&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_ENAB&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_GRAFX_CFG&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x007f0000</pre></td><td>&nbsp;<pre>0xff80ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='PM_PROC'>PM_PROC</a></h3>
 <h4>Address: 0x7e100110</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>PM_PROC_POWUP</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>PM_PROC_POWOK</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>PM_PROC_ISPOW</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>PM_PROC_MEMREP</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>PM_PROC_MRDONE</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>PM_PROC_ISFUNC</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>PM_PROC_ARMRSTN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_PROC_ENAB</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>PM_PROC_CFG</td><td>16</td><td>22</td><td>0x007f0000</td><td>0xff80ffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;PM_PROC_POWUP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_POWOK&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_ISPOW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_MEMREP&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_MRDONE&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_ISFUNC&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_ARMRSTN&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_ENAB&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;PM_PROC_CFG&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x007f0000</pre></td><td>&nbsp;<pre>0xff80ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

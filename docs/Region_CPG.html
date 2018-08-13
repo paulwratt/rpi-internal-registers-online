@@ -1,32 +1,34 @@
 <html>
 <head>
 <title>CPG - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: CPG (base: 0x7e211000</h1>
+<h1>Register Region: CPG (0x7e211000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e211000</td></tr>
-<tr><td>id</td><td>0x67706320</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e211000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x67706320</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>CPG_Config</td><td>0x7e211000</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_IntStatus</td><td>0x7e211004</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Trigger</td><td>0x7e211008</td><td>RW</td><td>2</td><td>0x00000003</td><td></td></tr>
-<tr><td>CPG_Param0</td><td>0x7e211010</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Param1</td><td>0x7e211014</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Param2</td><td>0x7e211018</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Param3</td><td>0x7e21101c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Debug0</td><td>0x7e211040</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Debug1</td><td>0x7e211044</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Debug2</td><td>0x7e211048</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>CPG_Debug3</td><td>0x7e21104c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;CPG_Config&nbsp;</td><td>&nbsp;<pre>0x7e211000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_IntStatus&nbsp;</td><td>&nbsp;<pre>0x7e211004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Trigger&nbsp;</td><td>&nbsp;<pre>0x7e211008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Param0&nbsp;</td><td>&nbsp;<pre>0x7e211010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Param1&nbsp;</td><td>&nbsp;<pre>0x7e211014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Param2&nbsp;</td><td>&nbsp;<pre>0x7e211018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Param3&nbsp;</td><td>&nbsp;<pre>0x7e21101c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Debug0&nbsp;</td><td>&nbsp;<pre>0x7e211040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Debug1&nbsp;</td><td>&nbsp;<pre>0x7e211044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Debug2&nbsp;</td><td>&nbsp;<pre>0x7e211048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;CPG_Debug3&nbsp;</td><td>&nbsp;<pre>0x7e21104c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

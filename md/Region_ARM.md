@@ -2,6 +2,7 @@
 
 
 ## Info
+
 | Name | value |
 | --- | --- |
 | base | 0x7E00B000 |
@@ -36,8 +37,8 @@
 | ARM_STATUS | 0x7e00b444 | RW |  |  |  |
 | ARM_ERRHALT | 0x7e00b448 | RW |  |  |  |
 | ARM_ID | 0x7e00b44c | RW |  |  |  |
-| ARM_0_SEMS | 0x7e00b800 | RW |  |  |  |
 | ARM_0_SEM0 | 0x7e00b800 | RW |  |  |  |
+| ARM_0_SEMS | 0x7e00b800 | RW |  |  |  |
 | ARM_0_SEM1 | 0x7e00b804 | RW |  |  |  |
 | ARM_0_SEM2 | 0x7e00b808 | RW |  |  |  |
 | ARM_0_SEM3 | 0x7e00b80c | RW |  |  |  |
@@ -49,8 +50,8 @@
 | ARM_0_BELL1 | 0x7e00b844 | RW |  |  |  |
 | ARM_0_BELL2 | 0x7e00b848 | RW |  |  |  |
 | ARM_0_BELL3 | 0x7e00b84c | RW |  |  |  |
-| ARM_0_MAIL0_RD | 0x7e00b880 | RW |  |  |  |
 | ARM_0_MAIL0_WRT | 0x7e00b880 | RW |  |  |  |
+| ARM_0_MAIL0_RD | 0x7e00b880 | RW |  |  |  |
 | ARM_0_MAIL0_POL | 0x7e00b890 | RW |  |  |  |
 | ARM_0_MAIL0_SND | 0x7e00b894 | RW |  |  |  |
 | ARM_0_MAIL0_STA | 0x7e00b898 | RW |  |  |  |
@@ -61,8 +62,8 @@
 | ARM_0_BELLCLRDBG | 0x7e00b8e4 | RW |  |  |  |
 | ARM_0_ALL_IRQS | 0x7e00b8f8 | RW |  |  |  |
 | ARM_0_MY_IRQS | 0x7e00b8fc | RW |  |  |  |
-| ARM_1_SEM0 | 0x7e00b900 | RW |  |  |  |
 | ARM_1_SEMS | 0x7e00b900 | RW |  |  |  |
+| ARM_1_SEM0 | 0x7e00b900 | RW |  |  |  |
 | ARM_1_SEM1 | 0x7e00b904 | RW |  |  |  |
 | ARM_1_SEM2 | 0x7e00b908 | RW |  |  |  |
 | ARM_1_SEM3 | 0x7e00b90c | RW |  |  |  |

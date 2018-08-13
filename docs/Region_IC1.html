@@ -1,42 +1,44 @@
 <html>
 <head>
 <title>IC1 - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: IC1 (base: 0x7e002800</h1>
+<h1>Register Region: IC1 (0x7e002800)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e002800</td></tr>
-<tr><td>id</td><td>0x494e5445</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e002800</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x494e5445</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>IC1_C</td><td>0x7e002800</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
-<tr><td>IC1_S</td><td>0x7e002804</td><td>RO</td><td>27</td><td>0x073f073f</td><td></td></tr>
-<tr><td>IC1_SRC0</td><td>0x7e002808</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>IC1_SRC1</td><td>0x7e00280c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>IC1_MASK0</td><td>0x7e002810</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_MASK1</td><td>0x7e002814</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_MASK2</td><td>0x7e002818</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_MASK3</td><td>0x7e00281c</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_MASK4</td><td>0x7e002820</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_MASK5</td><td>0x7e002824</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_MASK6</td><td>0x7e002828</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_MASK7</td><td>0x7e00282c</td><td>RW</td><td>31</td><td>0x77777777</td><td>0000000000</td></tr>
-<tr><td>IC1_VADDR</td><td>0x7e002830</td><td>RW</td><td>32</td><td>0xfffffe00</td><td>0000000000</td></tr>
-<tr><td>IC1_WAKEUP</td><td>0x7e002834</td><td>RW</td><td>32</td><td>0xfffffffe</td><td>0x10000000</td></tr>
-<tr><td>IC1_PROFILE</td><td>0x7e002838</td><td>RW</td><td>16</td><td>0x0000ffff</td><td></td></tr>
-<tr><td>IC1_FORCE0</td><td>0x7e002840</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>IC1_FORCE1</td><td>0x7e002844</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>IC1_FORCE0_SET</td><td>0x7e002848</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>IC1_FORCE1_SET</td><td>0x7e00284c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>IC1_FORCE0_CLR</td><td>0x7e002850</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td>IC1_FORCE1_CLR</td><td>0x7e002854</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;IC1_C&nbsp;</td><td>&nbsp;<pre>0x7e002800</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_S&nbsp;</td><td>&nbsp;<pre>0x7e002804</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x073f073f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_SRC0&nbsp;</td><td>&nbsp;<pre>0x7e002808</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_SRC1&nbsp;</td><td>&nbsp;<pre>0x7e00280c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK0&nbsp;</td><td>&nbsp;<pre>0x7e002810</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK1&nbsp;</td><td>&nbsp;<pre>0x7e002814</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK2&nbsp;</td><td>&nbsp;<pre>0x7e002818</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK3&nbsp;</td><td>&nbsp;<pre>0x7e00281c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK4&nbsp;</td><td>&nbsp;<pre>0x7e002820</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK5&nbsp;</td><td>&nbsp;<pre>0x7e002824</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK6&nbsp;</td><td>&nbsp;<pre>0x7e002828</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_MASK7&nbsp;</td><td>&nbsp;<pre>0x7e00282c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x77777777</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_VADDR&nbsp;</td><td>&nbsp;<pre>0x7e002830</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xfffffe00</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_WAKEUP&nbsp;</td><td>&nbsp;<pre>0x7e002834</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x10000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_PROFILE&nbsp;</td><td>&nbsp;<pre>0x7e002838</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_FORCE0&nbsp;</td><td>&nbsp;<pre>0x7e002840</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_FORCE1&nbsp;</td><td>&nbsp;<pre>0x7e002844</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_FORCE0_SET&nbsp;</td><td>&nbsp;<pre>0x7e002848</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_FORCE1_SET&nbsp;</td><td>&nbsp;<pre>0x7e00284c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_FORCE0_CLR&nbsp;</td><td>&nbsp;<pre>0x7e002850</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;IC1_FORCE1_CLR&nbsp;</td><td>&nbsp;<pre>0x7e002854</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

@@ -1,170 +1,172 @@
 <html>
 <head>
 <title>AVE_IN - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: AVE_IN (base: 0x7e910000</h1>
+<h1>Register Region: AVE_IN (0x7e910000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e910000</td></tr>
-<tr><td>id</td><td>0x61766530</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e910000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x61766530</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td><a hre='#ave_in_ctrl'>AVE_IN_CTRL</a></td><td>0x7e910000</td><td>RW</td><td>32</td><td>0x87ffffff</td><td>0x08000080</td></tr>
-<tr><td><a hre='#ave_in_status'>AVE_IN_STATUS</a></td><td>0x7e910004</td><td>RW</td><td>32</td><td>0x9f733f7f</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_buf0_address'>AVE_IN_BUF0_ADDRESS</a></td><td>0x7e910008</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_buf1_address'>AVE_IN_BUF1_ADDRESS</a></td><td>0x7e91000c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_max_transfer'>AVE_IN_MAX_TRANSFER</a></td><td>0x7e910010</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_line_length'>AVE_IN_LINE_LENGTH</a></td><td>0x7e910014</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_current_address'>AVE_IN_CURRENT_ADDRESS</a></td><td>0x7e910018</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_current_line_buf0'>AVE_IN_CURRENT_LINE_BUF0</a></td><td>0x7e91001c</td><td>RW</td><td>32</td><td>0x80000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_current_line_buf1'>AVE_IN_CURRENT_LINE_BUF1</a></td><td>0x7e910020</td><td>RW</td><td>32</td><td>0x80000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_current_line_num'>AVE_IN_CURRENT_LINE_NUM</a></td><td>0x7e910024</td><td>RW</td><td>32</td><td>0xe0000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_overrun_address'>AVE_IN_OVERRUN_ADDRESS</a></td><td>0x7e910028</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_line_num_int'>AVE_IN_LINE_NUM_INT</a></td><td>0x7e91002c</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_calc_line_step'>AVE_IN_CALC_LINE_STEP</a></td><td>0x7e910030</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td>AVE_IN_OUTSTANDING_BUFF0</td><td>0x7e910034</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
-<tr><td>AVE_IN_OUTSTANDING_BUFF1</td><td>0x7e910038</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
-<tr><td>AVE_IN_CHAR_CTRL</td><td>0x7e91003c</td><td>RW</td><td>32</td><td>0x8000000f</td><td>0000000000</td></tr>
-<tr><td>AVE_IN_SYNC_CTRL</td><td>0x7e910040</td><td>RW</td><td>8</td><td>0x0000008f</td><td>0000000000</td></tr>
-<tr><td><a hre='#ave_in_frame_num'>AVE_IN_FRAME_NUM</a></td><td>0x7e910044</td><td>RW</td><td>12</td><td>0x00000fff</td><td>0000000000</td></tr>
-<tr><td>AVE_IN_BLOCK_ID</td><td>0x7e910060</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x61766530</td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;<a href='#ave_in_ctrl'>AVE_IN_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e910000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x87ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x08000080</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_status'>AVE_IN_STATUS</a>&nbsp;</td><td>&nbsp;<pre>0x7e910004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x9f733f7f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_buf0_address'>AVE_IN_BUF0_ADDRESS</a>&nbsp;</td><td>&nbsp;<pre>0x7e910008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_buf1_address'>AVE_IN_BUF1_ADDRESS</a>&nbsp;</td><td>&nbsp;<pre>0x7e91000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_max_transfer'>AVE_IN_MAX_TRANSFER</a>&nbsp;</td><td>&nbsp;<pre>0x7e910010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_line_length'>AVE_IN_LINE_LENGTH</a>&nbsp;</td><td>&nbsp;<pre>0x7e910014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_current_address'>AVE_IN_CURRENT_ADDRESS</a>&nbsp;</td><td>&nbsp;<pre>0x7e910018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_current_line_buf0'>AVE_IN_CURRENT_LINE_BUF0</a>&nbsp;</td><td>&nbsp;<pre>0x7e91001c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x80000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_current_line_buf1'>AVE_IN_CURRENT_LINE_BUF1</a>&nbsp;</td><td>&nbsp;<pre>0x7e910020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x80000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_current_line_num'>AVE_IN_CURRENT_LINE_NUM</a>&nbsp;</td><td>&nbsp;<pre>0x7e910024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xe0000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_overrun_address'>AVE_IN_OVERRUN_ADDRESS</a>&nbsp;</td><td>&nbsp;<pre>0x7e910028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_line_num_int'>AVE_IN_LINE_NUM_INT</a>&nbsp;</td><td>&nbsp;<pre>0x7e91002c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_calc_line_step'>AVE_IN_CALC_LINE_STEP</a>&nbsp;</td><td>&nbsp;<pre>0x7e910030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_OUTSTANDING_BUFF0&nbsp;</td><td>&nbsp;<pre>0x7e910034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_OUTSTANDING_BUFF1&nbsp;</td><td>&nbsp;<pre>0x7e910038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CHAR_CTRL&nbsp;</td><td>&nbsp;<pre>0x7e91003c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x8000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_SYNC_CTRL&nbsp;</td><td>&nbsp;<pre>0x7e910040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x0000008f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#ave_in_frame_num'>AVE_IN_FRAME_NUM</a>&nbsp;</td><td>&nbsp;<pre>0x7e910044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_BLOCK_ID&nbsp;</td><td>&nbsp;<pre>0x7e910060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x61766530</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='AVE_IN_CTRL'>AVE_IN_CTRL</a></h3>
 <h4>Address: 0x7e910000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_CTRL_OVERRUN_IRQ_EN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_BUF0_IRQ_EN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_BUF1_IRQ_EN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_BUF_SER_IRQ_EN</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_LINE_IRQ_EN</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_HSYNC_IRQ_EN</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_FRAME_RATE_IRQ_EN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_PRIV_MODE</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x1</td></tr>
-<tr><td>AVE_IN_CTRL_LENGTH_IN_PXLS</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_FRAME_MODE</td><td>9</td><td>10</td><td>0x00000600</td><td>0xfffff9ff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_BYTE_ORDER</td><td>11</td><td>13</td><td>0x00003800</td><td>0xffffc7ff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_EN_TRANSFER_MAX_ABORT</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_EN_OVERRUN_ABORT</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_LOW_PRIORITY</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_HIGH_PRIORITY</td><td>20</td><td>23</td><td>0x00f00000</td><td>0xff0fffff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CTRL_PRIORITY_LIMIT</td><td>24</td><td>26</td><td>0x07000000</td><td>0xf8ffffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>27</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_CTRL_ENABLE</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_CTRL_OVERRUN_IRQ_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_BUF0_IRQ_EN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_BUF1_IRQ_EN&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_BUF_SER_IRQ_EN&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_LINE_IRQ_EN&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_HSYNC_IRQ_EN&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_FRAME_RATE_IRQ_EN&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_PRIV_MODE&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_LENGTH_IN_PXLS&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_FRAME_MODE&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000600</pre></td><td>&nbsp;<pre>0xfffff9ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_BYTE_ORDER&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003800</pre></td><td>&nbsp;<pre>0xffffc7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_EN_TRANSFER_MAX_ABORT&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_EN_OVERRUN_ABORT&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_LOW_PRIORITY&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_HIGH_PRIORITY&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00f00000</pre></td><td>&nbsp;<pre>0xff0fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_PRIORITY_LIMIT&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CTRL_ENABLE&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_STATUS'>AVE_IN_STATUS</a></h3>
 <h4>Address: 0x7e910004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_STATUS_OVERRUN_DET</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_BUF0_COMPL</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_BUF1_COMPL</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_BUF_NOT_SERV</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_LINE_NUM_HIT</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_HSYNC_DET</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_FRAME_RATE_DET</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_STATUS_FRAME_RATE</td><td>8</td><td>9</td><td>0x00000300</td><td>0xfffffcff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_INTERLACED</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_EVEN_FIELD</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_VFORM_FIELD</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_CSYNC_FIELD</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>14</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_STATUS_MAX_HIT</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_STATUS_CURRENT_BUF</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>18</td><td>19</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_STATUS_AXI_STATE</td><td>20</td><td>22</td><td>0x00700000</td><td>0xff8fffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>23</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_STATUS_OVERRUN_CNT</td><td>24</td><td>28</td><td>0x1f000000</td><td>0xe0ffffff</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>29</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_STATUS_CAPTURING</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_STATUS_OVERRUN_DET&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_BUF0_COMPL&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_BUF1_COMPL&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_BUF_NOT_SERV&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_LINE_NUM_HIT&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_HSYNC_DET&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_FRAME_RATE_DET&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_FRAME_RATE&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000300</pre></td><td>&nbsp;<pre>0xfffffcff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_INTERLACED&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_EVEN_FIELD&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_VFORM_FIELD&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_CSYNC_FIELD&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_MAX_HIT&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_CURRENT_BUF&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_AXI_STATE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00700000</pre></td><td>&nbsp;<pre>0xff8fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_OVERRUN_CNT&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x1f000000</pre></td><td>&nbsp;<pre>0xe0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_STATUS_CAPTURING&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_BUF0_ADDRESS'>AVE_IN_BUF0_ADDRESS</a></h3>
 <h4>Address: 0x7e910008</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_BUF0_ADDRESS_BUF0_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_BUF0_ADDRESS_BUF0_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_BUF1_ADDRESS'>AVE_IN_BUF1_ADDRESS</a></h3>
 <h4>Address: 0x7e91000c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_BUF1_ADDRESS_BUF1_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_BUF1_ADDRESS_BUF1_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_MAX_TRANSFER'>AVE_IN_MAX_TRANSFER</a></h3>
 <h4>Address: 0x7e910010</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_MAX_TRANSFER_MAX_TRANSFER</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_MAX_TRANSFER_MAX_TRANSFER&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_LINE_LENGTH'>AVE_IN_LINE_LENGTH</a></h3>
 <h4>Address: 0x7e910014</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_LINE_LENGTH_LINE_LENGTH</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_LINE_LENGTH_LINE_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_CURRENT_ADDRESS'>AVE_IN_CURRENT_ADDRESS</a></h3>
 <h4>Address: 0x7e910018</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_CURRENT_ADDRESS_CUR_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_CURRENT_ADDRESS_CUR_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_CURRENT_LINE_BUF0'>AVE_IN_CURRENT_LINE_BUF0</a></h3>
 <h4>Address: 0x7e91001c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_CURRENT_LINE_BUF0_CURRENT_LINE</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>12</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_CURRENT_LINE_BUF0_EVEN_FIELD</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_BUF0_CURRENT_LINE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_BUF0_EVEN_FIELD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_CURRENT_LINE_BUF1'>AVE_IN_CURRENT_LINE_BUF1</a></h3>
 <h4>Address: 0x7e910020</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_CURRENT_LINE_BUF1_CURRENT_LINE</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>12</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_CURRENT_LINE_BUF1_EVEN_FIELD</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_BUF1_CURRENT_LINE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_BUF1_EVEN_FIELD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_CURRENT_LINE_NUM'>AVE_IN_CURRENT_LINE_NUM</a></h3>
 <h4>Address: 0x7e910024</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_CURRENT_LINE_NUM_CURRENT_LINE</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-<tr><td>missing definiton</td><td>12</td><td>28</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>AVE_IN_CURRENT_LINE_NUM_BUFFER_POINTER</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CURRENT_LINE_NUM_INTERLACED</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
-<tr><td>AVE_IN_CURRENT_LINE_NUM_EVEN_FIELD</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_NUM_CURRENT_LINE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_NUM_BUFFER_POINTER&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_NUM_INTERLACED&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;AVE_IN_CURRENT_LINE_NUM_EVEN_FIELD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_OVERRUN_ADDRESS'>AVE_IN_OVERRUN_ADDRESS</a></h3>
 <h4>Address: 0x7e910028</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_OVERRUN_ADDRESS_OVERRUN_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_OVERRUN_ADDRESS_OVERRUN_ADDR&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_LINE_NUM_INT'>AVE_IN_LINE_NUM_INT</a></h3>
 <h4>Address: 0x7e91002c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_LINE_NUM_INT_LINE_NUM_INT</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_LINE_NUM_INT_LINE_NUM_INT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_CALC_LINE_STEP'>AVE_IN_CALC_LINE_STEP</a></h3>
 <h4>Address: 0x7e910030</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_CALC_LINE_STEP_CALC_LINE_STEP</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_CALC_LINE_STEP_CALC_LINE_STEP&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='AVE_IN_FRAME_NUM'>AVE_IN_FRAME_NUM</a></h3>
 <h4>Address: 0x7e910044</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>AVE_IN_FRAME_NUM_FRAME_NUM</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
-</table>
+<tr><td>&nbsp;AVE_IN_FRAME_NUM_FRAME_NUM&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000fff</pre></td><td>&nbsp;<pre>0xfffff000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

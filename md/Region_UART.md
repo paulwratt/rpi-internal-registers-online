@@ -2,6 +2,7 @@
 
 
 ## Info
+
 | Name | value |
 | --- | --- |
 | base | 0x7e201000 |
@@ -34,18 +35,18 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
-| UART_LCR_WLS | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
 | UART_LCR_DTR | 0 | 0 | 0x00000001 | 0xfffffffe | 0x0 |
-| UART_LCR_RTS | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
+| UART_LCR_WLS | 0 | 1 | 0x00000003 | 0xfffffffc | 0x0 |
 | missing definiton | 1 | -1 | NA | NA | NA |
+| UART_LCR_RTS | 1 | 1 | 0x00000002 | 0xfffffffd | 0x0 |
 | missing definiton | 2 | 0 | NA | NA | NA |
 | UART_LCR_OUT1 | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | UART_LCR_STB | 2 | 2 | 0x00000004 | 0xfffffffb | 0x0 |
 | UART_LCR_OUT2 | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
 | missing definiton | 3 | 1 | NA | NA | NA |
 | UART_LCR_PEN | 3 | 3 | 0x00000008 | 0xfffffff7 | 0x0 |
-| UART_LCR_EPS | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | UART_LCR_LOOP | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
+| UART_LCR_EPS | 4 | 4 | 0x00000010 | 0xffffffef | 0x0 |
 | missing definiton | 4 | 2 | NA | NA | NA |
 | missing definiton | 5 | 3 | NA | NA | NA |
 | UART_LCR_SP | 5 | 5 | 0x00000020 | 0xffffffdf | 0x0 |

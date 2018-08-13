@@ -2,6 +2,7 @@
 
 
 ## Info
+
 | Name | value |
 | --- | --- |
 | base | 0x7e20b600 |
@@ -51,14 +52,14 @@
 
 | field_name | start_bit | end_bit | set | clear | reset |
 | --- | --- | --- | --- | --- | --- |
-| FPGA_CTRL0_CAM_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
 | FPGA_CTRL0_DIS_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
+| FPGA_CTRL0_CAM_CTL0 | 0 | 0 | 0x00000001 | 0xfffffffe |  |
 | missing definiton | 1 | -1 | NA | NA | NA |
 | FPGA_CTRL0_DIS_BL | 1 | 1 | 0x00000002 | 0xfffffffd |  |
 | FPGA_CTRL0_CAM_CTL1 | 1 | 1 | 0x00000002 | 0xfffffffd |  |
-| FPGA_CTRL0_CAM_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
 | missing definiton | 2 | 0 | NA | NA | NA |
 | FPGA_CTRL0_DIS_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
+| FPGA_CTRL0_CAM_CTL2 | 2 | 2 | 0x00000004 | 0xfffffffb |  |
 | missing definiton | 3 | 1 | NA | NA | NA |
 | FPGA_CTRL0_DIS_RST | 3 | 3 | 0x00000008 | 0xfffffff7 |  |
 | FPGA_CTRL0_SD_PSU_EN | 4 | 4 | 0x00000010 | 0xffffffef |  |

@@ -1,171 +1,173 @@
 <html>
 <head>
 <title>SCALER - RPi Registers</title>
+<style>table,td { border: 1px solid black; }</style>
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: SCALER (base: 0x7e400000</h1>
+<h1>Register Region: SCALER (0x7e400000)</h1>
 <h2>Info</h2>
-<table border=1><tr><th>Name</th><th>Value</th></tr>
-<tr><td>base</td><td>0x7e400000</td></tr>
-<tr><td>id</td><td>0x64647276</td></tr>
+<table><tr><th>Name</th><th>Value</th></tr>
+<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e400000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x64647276</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Registers</h2>
-<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>SCALER_INPUT_CONTROL</td><td>0x7e400000</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td><a hre='#scaler_dispctrl'>SCALER_DISPCTRL</a></td><td>0x7e400000</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td><a hre='#scaler_dispstat'>SCALER_DISPSTAT</a></td><td>0x7e400004</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_IRQ_STATUS</td><td>0x7e400004</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_ID</td><td>0x7e400008</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPID</td><td>0x7e400008</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x64647276</td></tr>
-<tr><td>SCALER_ALT_CONTROL</td><td>0x7e40000c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td><a hre='#scaler_dispectrl'>SCALER_DISPECTRL</a></td><td>0x7e40000c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_PROFILE</td><td>0x7e400010</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPPROF</td><td>0x7e400010</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DITHER</td><td>0x7e400014</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPDITHER</td><td>0x7e400014</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPEOLN</td><td>0x7e400018</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISP_LIST_0</td><td>0x7e400020</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPLIST0</td><td>0x7e400020</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPLIST1</td><td>0x7e400024</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISP_LIST_1</td><td>0x7e400024</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISP_LIST_2</td><td>0x7e400028</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPLIST2</td><td>0x7e400028</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISP_LIST_STATUS</td><td>0x7e40002c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPLSTAT</td><td>0x7e40002c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPLACT0</td><td>0x7e400030</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPLACT1</td><td>0x7e400034</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPLACT2</td><td>0x7e400038</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTL_0</td><td>0x7e400040</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPCTRL0</td><td>0x7e400040</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPBKGND_0</td><td>0x7e400044</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPBKGND0</td><td>0x7e400044</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT0</td><td>0x7e400048</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_0</td><td>0x7e400048</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPBASE0</td><td>0x7e40004c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTRL1</td><td>0x7e400050</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTL_1</td><td>0x7e400050</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPBKGND1</td><td>0x7e400054</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPBKGND_1</td><td>0x7e400054</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPSTAT1</td><td>0x7e400058</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_1</td><td>0x7e400058</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPBASE_1</td><td>0x7e40005c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPBASE1</td><td>0x7e40005c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTL_2</td><td>0x7e400060</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPCTRL2</td><td>0x7e400060</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPBKGND_2</td><td>0x7e400064</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPBKGND2</td><td>0x7e400064</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_2</td><td>0x7e400068</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPSTAT2</td><td>0x7e400068</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPBASE2</td><td>0x7e40006c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPBASE_2</td><td>0x7e40006c</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPALPHA2</td><td>0x7e400070</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_GAM_ADDRESS</td><td>0x7e400078</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPGAMADR</td><td>0x7e400078</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_OLEDOFFS</td><td>0x7e400080</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_OLEDCOEF0</td><td>0x7e400084</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_OLEDCOEF1</td><td>0x7e400088</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_OLEDCOEF2</td><td>0x7e40008c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPSLAVE0</td><td>0x7e4000c0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPSLAVE1</td><td>0x7e4000c8</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_DISPSLAVE2</td><td>0x7e4000d0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
-<tr><td>SCALER_GAM_DATA</td><td>0x7e4000e0</td><td>RW</td><td></td><td></td><td></td></tr>
-<tr><td>SCALER_DISPGAMDAT</td><td>0x7e4000e0</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>&nbsp;SCALER_INPUT_CONTROL&nbsp;</td><td>&nbsp;<pre>0x7e400000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#scaler_dispctrl'>SCALER_DISPCTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e400000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#scaler_dispstat'>SCALER_DISPSTAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e400004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_IRQ_STATUS&nbsp;</td><td>&nbsp;<pre>0x7e400004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPID&nbsp;</td><td>&nbsp;<pre>0x7e400008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x64647276</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_ID&nbsp;</td><td>&nbsp;<pre>0x7e400008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_ALT_CONTROL&nbsp;</td><td>&nbsp;<pre>0x7e40000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#scaler_dispectrl'>SCALER_DISPECTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e40000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_PROFILE&nbsp;</td><td>&nbsp;<pre>0x7e400010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPPROF&nbsp;</td><td>&nbsp;<pre>0x7e400010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPDITHER&nbsp;</td><td>&nbsp;<pre>0x7e400014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DITHER&nbsp;</td><td>&nbsp;<pre>0x7e400014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPEOLN&nbsp;</td><td>&nbsp;<pre>0x7e400018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISP_LIST_0&nbsp;</td><td>&nbsp;<pre>0x7e400020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPLIST0&nbsp;</td><td>&nbsp;<pre>0x7e400020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISP_LIST_1&nbsp;</td><td>&nbsp;<pre>0x7e400024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPLIST1&nbsp;</td><td>&nbsp;<pre>0x7e400024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISP_LIST_2&nbsp;</td><td>&nbsp;<pre>0x7e400028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPLIST2&nbsp;</td><td>&nbsp;<pre>0x7e400028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISP_LIST_STATUS&nbsp;</td><td>&nbsp;<pre>0x7e40002c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPLSTAT&nbsp;</td><td>&nbsp;<pre>0x7e40002c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPLACT0&nbsp;</td><td>&nbsp;<pre>0x7e400030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPLACT1&nbsp;</td><td>&nbsp;<pre>0x7e400034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPLACT2&nbsp;</td><td>&nbsp;<pre>0x7e400038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTL_0&nbsp;</td><td>&nbsp;<pre>0x7e400040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL0&nbsp;</td><td>&nbsp;<pre>0x7e400040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBKGND_0&nbsp;</td><td>&nbsp;<pre>0x7e400044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBKGND0&nbsp;</td><td>&nbsp;<pre>0x7e400044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT0&nbsp;</td><td>&nbsp;<pre>0x7e400048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_0&nbsp;</td><td>&nbsp;<pre>0x7e400048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBASE0&nbsp;</td><td>&nbsp;<pre>0x7e40004c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL1&nbsp;</td><td>&nbsp;<pre>0x7e400050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTL_1&nbsp;</td><td>&nbsp;<pre>0x7e400050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBKGND_1&nbsp;</td><td>&nbsp;<pre>0x7e400054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBKGND1&nbsp;</td><td>&nbsp;<pre>0x7e400054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_1&nbsp;</td><td>&nbsp;<pre>0x7e400058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT1&nbsp;</td><td>&nbsp;<pre>0x7e400058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBASE_1&nbsp;</td><td>&nbsp;<pre>0x7e40005c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBASE1&nbsp;</td><td>&nbsp;<pre>0x7e40005c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTL_2&nbsp;</td><td>&nbsp;<pre>0x7e400060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL2&nbsp;</td><td>&nbsp;<pre>0x7e400060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBKGND_2&nbsp;</td><td>&nbsp;<pre>0x7e400064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBKGND2&nbsp;</td><td>&nbsp;<pre>0x7e400064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_2&nbsp;</td><td>&nbsp;<pre>0x7e400068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT2&nbsp;</td><td>&nbsp;<pre>0x7e400068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBASE2&nbsp;</td><td>&nbsp;<pre>0x7e40006c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPBASE_2&nbsp;</td><td>&nbsp;<pre>0x7e40006c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPALPHA2&nbsp;</td><td>&nbsp;<pre>0x7e400070</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_GAM_ADDRESS&nbsp;</td><td>&nbsp;<pre>0x7e400078</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPGAMADR&nbsp;</td><td>&nbsp;<pre>0x7e400078</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_OLEDOFFS&nbsp;</td><td>&nbsp;<pre>0x7e400080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_OLEDCOEF0&nbsp;</td><td>&nbsp;<pre>0x7e400084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_OLEDCOEF1&nbsp;</td><td>&nbsp;<pre>0x7e400088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_OLEDCOEF2&nbsp;</td><td>&nbsp;<pre>0x7e40008c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSLAVE0&nbsp;</td><td>&nbsp;<pre>0x7e4000c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSLAVE1&nbsp;</td><td>&nbsp;<pre>0x7e4000c8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSLAVE2&nbsp;</td><td>&nbsp;<pre>0x7e4000d0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPGAMDAT&nbsp;</td><td>&nbsp;<pre>0x7e4000e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_GAM_DATA&nbsp;</td><td>&nbsp;<pre>0x7e4000e0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
-<table border=1><tr><th>Define</th><th>Value</th></tr>
-<tr><td>SCALER_0_DMA</td><td>0x150000</td></tr>
-<tr><td>SCALER_1_DMA</td><td>0x160000</td></tr>
-<tr><td>SCALER_2_DMA</td><td>0x170000</td></tr>
-<tr><td>SCALER_BASE_ADDRESS</td><td>0x7e400000</td></tr>
-<tr><td>SCALER_COB_FIFO_SIZE</td><td>(0x4000)</td></tr>
-<tr><td>SCALER_CONTEXT_MEMORY_START</td><td>0x7e402000</td></tr>
-<tr><td>SCALER_CONTEXT_MEM_SIZE</td><td>( 1024 * 16 )</td></tr>
-<tr><td>SCALER_LINE_BUFFER_MEM_SIZE</td><td>( 1024 * 64 )</td></tr>
+<table><tr><th>Define</th><th>Value</th></tr>
+<tr><td>&nbsp;SCALER_0_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x150000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_1_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x160000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_2_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x170000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_BASE_ADDRESS&nbsp;</td><td align=center>&nbsp;<pre>0x7e400000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_COB_FIFO_SIZE&nbsp;</td><td align=center>&nbsp;<pre>(0x4000)</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_CONTEXT_MEMORY_START&nbsp;</td><td align=center>&nbsp;<pre>0x7e402000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_CONTEXT_MEM_SIZE&nbsp;</td><td align=center>&nbsp;<pre>( 1024 * 16 )</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_LINE_BUFFER_MEM_SIZE&nbsp;</td><td align=center>&nbsp;<pre>( 1024 * 64 )</pre>&nbsp;</td></tr>
 </table>
 
 <h2>Register info</h2>
 <h3><a name='SCALER_DISPCTRL'>SCALER_DISPCTRL</a></h3>
 <h4>Address: 0x7e400000</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SCALER_DISPCTRL_IRQ_EN</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td></td></tr>
-<tr><td>missing definiton</td><td>7</td><td>8</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SCALER_DISPCTRL_DSP1_IRQ_CTRL</td><td>9</td><td>10</td><td>0x00000600</td><td>0xfffff9ff</td><td></td></tr>
-<tr><td>SCALER_DISPCTRL_DSP2_IRQ_CTRL</td><td>11</td><td>12</td><td>0x00001800</td><td>0xffffe7ff</td><td></td></tr>
-<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SCALER_DISPCTRL_TILE_WID</td><td>16</td><td>17</td><td>0x00030000</td><td>0xfffcffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTRL_DSP3_MUX</td><td>18</td><td>19</td><td>0x000c0000</td><td>0xfff3ffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>20</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SCALER_DISPCTRL_DSP0_PANIC</td><td>24</td><td>25</td><td>0x03000000</td><td>0xfcffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTRL_DSP1_PANIC</td><td>26</td><td>27</td><td>0x0c000000</td><td>0xf3ffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTRL_DSP2_PANIC</td><td>28</td><td>29</td><td>0x30000000</td><td>0xcfffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTRL_VSCL_DIS</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td></td></tr>
-<tr><td>SCALER_DISPCTRL_HVS_EN</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>32</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-</table>
+<tr><td>&nbsp;SCALER_DISPCTRL_IRQ_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_DSP1_IRQ_CTRL&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000600</pre></td><td>&nbsp;<pre>0xfffff9ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_DSP2_IRQ_CTRL&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001800</pre></td><td>&nbsp;<pre>0xffffe7ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_TILE_WID&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00030000</pre></td><td>&nbsp;<pre>0xfffcffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_DSP3_MUX&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000c0000</pre></td><td>&nbsp;<pre>0xfff3ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_DSP0_PANIC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>0x03000000</pre></td><td>&nbsp;<pre>0xfcffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_DSP1_PANIC&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0c000000</pre></td><td>&nbsp;<pre>0xf3ffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_DSP2_PANIC&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x30000000</pre></td><td>&nbsp;<pre>0xcfffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_VSCL_DIS&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPCTRL_HVS_EN&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SCALER_DISPSTAT'>SCALER_DISPSTAT</a></h3>
 <h4>Address: 0x7e400004</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SCALER_DISPSTAT_PROF_IRQ</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DSP0_IRQ</td><td>1</td><td>31</td><td>0xfffffffe</td><td>0x00000001</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DSP1_IRQ</td><td>2</td><td>31</td><td>0xfffffffc</td><td>0x00000003</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DSP2_IRQ</td><td>3</td><td>31</td><td>0xfffffff8</td><td>0x00000007</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DMA_IRQ</td><td>4</td><td>31</td><td>0xfffffff0</td><td>0x0000000f</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_WR_IRQ</td><td>5</td><td>31</td><td>0xffffffe0</td><td>0x0000001f</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_RD_IRQ</td><td>6</td><td>31</td><td>0xffffffc0</td><td>0x0000003f</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DMA_ERR_BIT2</td><td>7</td><td>31</td><td>0xffffff80</td><td>0x0000007f</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DSP0_STATUS</td><td>8</td><td>13</td><td>0x00003f00</td><td>0xffffc0ff</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DMA_ERR_BIT0</td><td>14</td><td>31</td><td>0xffffc000</td><td>0x00003fff</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DMA_ERR_BIT1</td><td>15</td><td>31</td><td>0xffff8000</td><td>0x00007fff</td><td></td></tr>
-<tr><td>SCALER_DISPSTAT_DSP1_STATUS</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>22</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SCALER_DISPSTAT_DSP2_STATUS</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>32</td><td>2</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>6</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>14</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>5</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>0</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>1</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-</table>
+<tr><td>&nbsp;SCALER_DISPSTAT_PROF_IRQ&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DSP0_IRQ&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfffffffe</pre></td><td>&nbsp;<pre>0x00000001</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DSP1_IRQ&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfffffffc</pre></td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DSP2_IRQ&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfffffff8</pre></td><td>&nbsp;<pre>0x00000007</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DMA_IRQ&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfffffff0</pre></td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_WR_IRQ&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffe0</pre></td><td>&nbsp;<pre>0x0000001f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_RD_IRQ&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffc0</pre></td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DMA_ERR_BIT2&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffff80</pre></td><td>&nbsp;<pre>0x0000007f</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DSP0_STATUS&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003f00</pre></td><td>&nbsp;<pre>0xffffc0ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DMA_ERR_BIT0&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffc000</pre></td><td>&nbsp;<pre>0x00003fff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DMA_ERR_BIT1&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffff8000</pre></td><td>&nbsp;<pre>0x00007fff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DSP1_STATUS&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPSTAT_DSP2_STATUS&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+</table><br>
 
 <h3><a name='SCALER_DISPECTRL'>SCALER_DISPECTRL</a></h3>
 <h4>Address: 0x7e40000c</h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>SCALER_DISPECTRL_PANIC_CTRL</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td></td></tr>
-<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SCALER_DISPECTRL_BUSY_STATUS</td><td>8</td><td>31</td><td>0xffffff00</td><td>0x000000ff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_Y_BUSY</td><td>9</td><td>31</td><td>0xfffffe00</td><td>0x000001ff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_CB_BUSY</td><td>10</td><td>31</td><td>0xfffffc00</td><td>0x000003ff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_CR_BUSY</td><td>11</td><td>31</td><td>0xfffff800</td><td>0x000007ff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_POSTED_STATUS</td><td>12</td><td>14</td><td>0x00007000</td><td>0xffff8fff</td><td></td></tr>
-<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SCALER_DISPECTRL_POSTED_CTRL</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>22</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>SCALER_DISPECTRL_GT8_BURST</td><td>24</td><td>31</td><td>0xff000000</td><td>0x00ffffff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_TWOD_SINGLE</td><td>25</td><td>31</td><td>0xfe000000</td><td>0x01ffffff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_PROF_TYPE</td><td>26</td><td>27</td><td>0x0c000000</td><td>0xf3ffffff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_Y_NE_CTRL</td><td>28</td><td>31</td><td>0xf0000000</td><td>0x0fffffff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_CB_NE_CTRL</td><td>29</td><td>31</td><td>0xe0000000</td><td>0x1fffffff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_CR_NE_CTRL</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td></td></tr>
-<tr><td>SCALER_DISPECTRL_SECURE_MODE</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td></td></tr>
-<tr><td>missing definiton</td><td>32</td><td>9</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>28</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>10</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>25</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>8</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
-<tr><td>missing definiton</td><td>32</td><td>24</td><td>NA</td><td>NA</td><td>NA</td></tr>
-</table>
+<tr><td>&nbsp;SCALER_DISPECTRL_PANIC_CTRL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_BUSY_STATUS&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffff00</pre></td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_Y_BUSY&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfffffe00</pre></td><td>&nbsp;<pre>0x000001ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_CB_BUSY&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfffffc00</pre></td><td>&nbsp;<pre>0x000003ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_CR_BUSY&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfffff800</pre></td><td>&nbsp;<pre>0x000007ff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_POSTED_STATUS&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_POSTED_CTRL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_GT8_BURST&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xff000000</pre></td><td>&nbsp;<pre>0x00ffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_TWOD_SINGLE&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xfe000000</pre></td><td>&nbsp;<pre>0x01ffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_PROF_TYPE&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0c000000</pre></td><td>&nbsp;<pre>0xf3ffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_Y_NE_CTRL&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xf0000000</pre></td><td>&nbsp;<pre>0x0fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_CB_NE_CTRL&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xe0000000</pre></td><td>&nbsp;<pre>0x1fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_CR_NE_CTRL&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xc0000000</pre></td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;SCALER_DISPECTRL_SECURE_MODE&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
+</table><br>
 
+<br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>
 </font>
 </body>
 </html>

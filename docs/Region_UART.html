@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>UART - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: UART (base: 0x7e201000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e201000</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>UART_RBRTHRDLL</td><td>0x7e201000</td><td>RW</td><td></td><td></td><td></td></tr>
+<tr><td>UART_IERDLM</td><td>0x7e201004</td><td>RW</td><td></td><td></td><td></td></tr>
+<tr><td>UART_IIR_FCR</td><td>0x7e201008</td><td>RW</td><td></td><td></td><td></td></tr>
+<tr><td><a hre='#uart_lcr'>UART_LCR</a></td><td>0x7e20100c</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>UART_MCR</td><td>0x7e201010</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
+<tr><td><a hre='#uart_lsr'>UART_LSR</a></td><td>0x7e201014</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td><a hre='#uart_msr'>UART_MSR</a></td><td>0x7e201018</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>UART_SCR</td><td>0x7e20101c</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>UART_EN</td><td>0x7e201020</td><td>RW</td><td>2</td><td>0x00000002</td><td>0000000000</td></tr>
+</table>
+
+<h2>Unsupported Defines</h2>
+<table border=1><tr><th>Define</th><th>Value</th></tr>
+<tr><td>UART_BASE_ADDRESS</td><td>0x7e201000</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='UART_LCR'>UART_LCR</a></h3>
+<h4>Address: 0x7e20100c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>UART_LCR_DTR</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>UART_LCR_WLS</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>1</td><td>-1</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>UART_LCR_RTS</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>2</td><td>0</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>UART_LCR_STB</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>UART_LCR_OUT1</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>UART_LCR_PEN</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>UART_LCR_OUT2</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>1</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>UART_LCR_LOOP</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>UART_LCR_EPS</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>4</td><td>2</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>UART_LCR_SP</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>UART_LCR_SBC</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>UART_LCR_DLAB</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='UART_LSR'>UART_LSR</a></h3>
+<h4>Address: 0x7e201014</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>UART_LSR_DR</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>UART_LSR_OE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>UART_LSR_PE</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>UART_LSR_FE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>UART_LSR_BI</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>UART_LSR_THRE</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>UART_LSR_TEMT</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>UART_LSR_RFE</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='UART_MSR'>UART_MSR</a></h3>
+<h4>Address: 0x7e201018</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>UART_MSR_DCTS</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>UART_MSR_DDSR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>UART_MSR_TERI</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>UART_MSR_DDCD</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>UART_MSR_CTS</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>UART_MSR_DSR</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>UART_MSR_RI</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>UART_MSR_DCD</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

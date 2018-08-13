@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>OTP - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: OTP (base: 0x7e20f000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>description</td><td>One Time programmable</td></tr>
+<tr><td>base</td><td>0x7e20f000</td></tr>
+<tr><td>id</td><td>0x206f7470</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>OTP_BOOTMODE_REG</td><td>0x7e20f000</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>OTP_CONFIG_REG</td><td>0x7e20f004</td><td>RW</td><td>3</td><td>0x00000007</td><td></td></tr>
+<tr><td>OTP_CTRL_LO_REG</td><td>0x7e20f008</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>OTP_CTRL_HI_REG</td><td>0x7e20f00c</td><td>RW</td><td>16</td><td>0x0000ffff</td><td></td></tr>
+<tr><td>OTP_STATUS_REG</td><td>0x7e20f010</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>OTP_BITSEL_REG</td><td>0x7e20f014</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
+<tr><td>OTP_DATA_REG</td><td>0x7e20f018</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
+<tr><td>OTP_ADDR_REG</td><td>0x7e20f01c</td><td>RW</td><td>5</td><td>0x0000001f</td><td></td></tr>
+<tr><td>OTP_WRITE_DATA_READ_REG</td><td>0x7e20f020</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>OTP_INIT_STATUS_REG</td><td>0x7e20f024</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+</table>
+
+<h2>Unsupported Defines</h2>
+<table border=1><tr><th>Define</th><th>Value</th></tr>
+<tr><td>OTP_ARM_DISABLE_BIT</td><td>24</td></tr>
+<tr><td>OTP_ARM_DISABLE_REDUNDANT_BIT</td><td>25</td></tr>
+<tr><td>OTP_BASE_ADDRESS</td><td>0x7e20f000</td></tr>
+<tr><td>OTP_BOOT_EXTRAS_ROW</td><td>67</td></tr>
+<tr><td>OTP_BOOT_EXTRAS_ROW_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_BOOT_ROM_ROW</td><td>17</td></tr>
+<tr><td>OTP_BOOT_ROM_ROW_REDUNDANT</td><td>18</td></tr>
+<tr><td>OTP_BOOT_ROM_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_BOOT_SIGNING_KEY_ROW</td><td>19</td></tr>
+<tr><td>OTP_BOOT_SIGNING_KEY_ROW_REDUNDANT</td><td>23</td></tr>
+<tr><td>OTP_BOOT_SIGNING_KEY_SIZE_IN_ROWS</td><td>4</td></tr>
+<tr><td>OTP_BOOT_SIGNING_PARITY_ROW</td><td>27</td></tr>
+<tr><td>OTP_BOOT_SIGNING_PARITY_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_BYTES_PER_ROW</td><td>4</td></tr>
+<tr><td>OTP_CODE_SIGNING_FLAG_ROW</td><td>64</td></tr>
+<tr><td>OTP_CODE_SIGNING_FLAG_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_CODE_SIGNING_KEY_ROW</td><td>28</td></tr>
+<tr><td>OTP_CODE_SIGNING_KEY_ROW_REDUNDANT</td><td>32</td></tr>
+<tr><td>OTP_CODE_SIGNING_KEY_SIZE_IN_ROWS</td><td>4</td></tr>
+<tr><td>OTP_CODE_SIGNING_PARITY_ROW</td><td>36</td></tr>
+<tr><td>OTP_CODE_SIGNING_PARITY_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_CONTROL_ROW</td><td>16</td></tr>
+<tr><td>OTP_CONTROL_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_DECRYPTION_ENABLE_FOR_DEBUG</td><td>22</td></tr>
+<tr><td>OTP_HDCP_AES_KEY_ROW</td><td>37</td></tr>
+<tr><td>OTP_HDCP_AES_KEY_ROW_REDUNDANT</td><td>41</td></tr>
+<tr><td>OTP_HDCP_AES_KEY_SIZE_IN_ROWS</td><td>4</td></tr>
+<tr><td>OTP_HDCP_AES_PARITY_ROW</td><td>45</td></tr>
+<tr><td>OTP_HDCP_AES_PARITY_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_JTAG_DEBUG_KEY_PARITY_START_BIT</td><td>0</td></tr>
+<tr><td>OTP_JTAG_DEBUG_KEY_ROW</td><td>8</td></tr>
+<tr><td>OTP_JTAG_DEBUG_KEY_ROW_REDUNDANT</td><td>68</td></tr>
+<tr><td>OTP_JTAG_DEBUG_KEY_SIZE_IN_ROWS</td><td>4</td></tr>
+<tr><td>OTP_JTAG_DISABLE_BIT</td><td>16</td></tr>
+<tr><td>OTP_JTAG_DISABLE_REDUNDANT_BIT</td><td>17</td></tr>
+<tr><td>OTP_JTAG_PARITY_MASK</td><td>0xFF</td></tr>
+<tr><td>OTP_JTAG_VPU_PARITY_REDUNDANT</td><td>76</td></tr>
+<tr><td>OTP_MACROVISION_REDUNDANT_START_BIT</td><td>20</td></tr>
+<tr><td>OTP_MACROVISION_START_BIT</td><td>18</td></tr>
+<tr><td>OTP_MAX_ROW</td><td>65</td></tr>
+<tr><td>OTP_MIN_ROW</td><td>8</td></tr>
+<tr><td>OTP_PRIVATE_KEY_ROW</td><td>55</td></tr>
+<tr><td>OTP_PRIVATE_KEY_ROW_REDUNDANT</td><td>59</td></tr>
+<tr><td>OTP_PRIVATE_KEY_SIZE_IN_ROWS</td><td>4</td></tr>
+<tr><td>OTP_PRIVATE_PARITY_ROW</td><td>63</td></tr>
+<tr><td>OTP_PRIVATE_PARITY_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_PUBLIC_KEY_ROW</td><td>46</td></tr>
+<tr><td>OTP_PUBLIC_KEY_ROW_REDUNDANT</td><td>50</td></tr>
+<tr><td>OTP_PUBLIC_KEY_SIZE_IN_ROWS</td><td>4</td></tr>
+<tr><td>OTP_PUBLIC_PARITY_ROW</td><td>54</td></tr>
+<tr><td>OTP_PUBLIC_PARITY_SIZE_IN_ROWS</td><td>1</td></tr>
+<tr><td>OTP_SUSPEND_SECURE_RAM_KEY</td><td>65</td></tr>
+<tr><td>OTP_SUSPEND_SECURE_RAM_KEY_SIZE_IN_ROWS</td><td>2</td></tr>
+<tr><td>OTP_VPU_CACHE_KEY_PARITY_START_BIT</td><td>8</td></tr>
+<tr><td>OTP_VPU_CACHE_KEY_ROW</td><td>12</td></tr>
+<tr><td>OTP_VPU_CACHE_KEY_ROW_REDUNDANT</td><td>72</td></tr>
+<tr><td>OTP_VPU_CACHE_KEY_SIZE_IN_ROWS</td><td>4</td></tr>
+<tr><td>OTP_VPU_CACHE_PARITY_MASK</td><td>0xFF</td></tr>
+</table>
+
+<h2>Register info</h2>
+</font>
+</body>
+</html>

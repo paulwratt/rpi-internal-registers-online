@@ -1,0 +1,429 @@
+<html>
+<head>
+<title>EMMC - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: EMMC (base: 0x7e300000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e300000</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td>EMMC_ARG2</td><td>0x7e300000</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_blksizecnt'>EMMC_BLKSIZECNT</a></td><td>0x7e300004</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>EMMC_ARG1</td><td>0x7e300008</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_cmdtm'>EMMC_CMDTM</a></td><td>0x7e30000c</td><td>RW</td><td>30</td><td>0x3ffb003f</td><td>0000000000</td></tr>
+<tr><td>EMMC_RESP0</td><td>0x7e300010</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>EMMC_RESP1</td><td>0x7e300014</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>EMMC_RESP2</td><td>0x7e300018</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>EMMC_RESP3</td><td>0x7e30001c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>EMMC_DATA</td><td>0x7e300020</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_status'>EMMC_STATUS</a></td><td>0x7e300024</td><td>RW</td><td>29</td><td>0x1fff0f0f</td><td>0x1ff00000</td></tr>
+<tr><td><a hre='#emmc_control0'>EMMC_CONTROL0</a></td><td>0x7e300028</td><td>RW</td><td>27</td><td>0x07ff1fff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_control1'>EMMC_CONTROL1</a></td><td>0x7e30002c</td><td>RW</td><td>27</td><td>0x070fffe7</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_interrupt'>EMMC_INTERRUPT</a></td><td>0x7e300030</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_irpt_mask'>EMMC_IRPT_MASK</a></td><td>0x7e300034</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_irpt_en'>EMMC_IRPT_EN</a></td><td>0x7e300038</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_control2'>EMMC_CONTROL2</a></td><td>0x7e30003c</td><td>RW</td><td>32</td><td>0xc0ff009f</td><td>0x00080000</td></tr>
+<tr><td><a hre='#emmc_hwcap0'>EMMC_HWCAP0</a></td><td>0x7e300040</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_hwcap1'>EMMC_HWCAP1</a></td><td>0x7e300044</td><td>RW</td><td>26</td><td>0x03ffef77</td><td>0x03000777</td></tr>
+<tr><td><a hre='#emmc_hwmaxamp0'>EMMC_HWMAXAMP0</a></td><td>0x7e300048</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_force_irpt'>EMMC_FORCE_IRPT</a></td><td>0x7e300050</td><td>RW</td><td>32</td><td>0xffff00ff</td><td>0x00000001</td></tr>
+<tr><td><a hre='#emmc_dma_status'>EMMC_DMA_STATUS</a></td><td>0x7e300054</td><td>RW</td><td>32</td><td>0xffff00ff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_boot_timeout'>EMMC_BOOT_TIMEOUT</a></td><td>0x7e300070</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_dbg_sel'>EMMC_DBG_SEL</a></td><td>0x7e300074</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_exrdfifo_cfg'>EMMC_EXRDFIFO_CFG</a></td><td>0x7e300080</td><td>RW</td><td>3</td><td>0x00000007</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_exrdfifo_en'>EMMC_EXRDFIFO_EN</a></td><td>0x7e300084</td><td>RW</td><td>1</td><td>0x00000001</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_tune_step'>EMMC_TUNE_STEP</a></td><td>0x7e300088</td><td>RW</td><td>3</td><td>0x00000007</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_tune_steps_std'>EMMC_TUNE_STEPS_STD</a></td><td>0x7e30008c</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_tune_steps_ddr'>EMMC_TUNE_STEPS_DDR</a></td><td>0x7e300090</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_bus_ctrl'>EMMC_BUS_CTRL</a></td><td>0x7e3000e0</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_spi_int_spt'>EMMC_SPI_INT_SPT</a></td><td>0x7e3000f0</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td><a hre='#emmc_slotisr_ver'>EMMC_SLOTISR_VER</a></td><td>0x7e3000fc</td><td>RW</td><td>32</td><td>0xffff00ff</td><td>0x99020000</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='EMMC_BLKSIZECNT'>EMMC_BLKSIZECNT</a></h3>
+<h4>Address: 0x7e300004</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_BLKSIZECNT_BLKSIZE</td><td>0</td><td>11</td><td>0x00000fff</td><td>0xfffff000</td><td>0x0</td></tr>
+<tr><td>EMMC_BLKSIZECNT_SDMA_BLKSIZE</td><td>12</td><td>14</td><td>0x00007000</td><td>0xffff8fff</td><td>0x0</td></tr>
+<tr><td>EMMC_BLKSIZECNT_BLKSIZE_MS1</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
+<tr><td>EMMC_BLKSIZECNT_BLKCNT</td><td>16</td><td>31</td><td>0xffff0000</td><td>0x0000ffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_CMDTM'>EMMC_CMDTM</a></h3>
+<h4>Address: 0x7e30000c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_CMDTM_TM_DMA_EN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_TM_BLKCNT_EN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_TM_AUTO_CMD_EN</td><td>2</td><td>3</td><td>0x0000000c</td><td>0xfffffff3</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_TM_DAT_DIR</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_TM_MULTI_BLOCK</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>6</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CMDTM_CMD_RSPNS_TYPE</td><td>16</td><td>17</td><td>0x00030000</td><td>0xfffcffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>18</td><td>18</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CMDTM_CMD_CRCCHK_EN</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_CMD_IXCHK_EN</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_CMD_ISDATA</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_CMD_TYPE</td><td>22</td><td>23</td><td>0x00c00000</td><td>0xff3fffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CMDTM_CMD_INDEX</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_STATUS'>EMMC_STATUS</a></h3>
+<h4>Address: 0x7e300024</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_STATUS_CMD_INHIBIT</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_DAT_INHIBIT</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_DAT_ACTIVE</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_RETUNING_REQ</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>4</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_STATUS_WRITE_TRANSFER</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_READ_TRANSFER</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_NEW_WRITE_DATA</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_NEW_READ_DATA</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>12</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_STATUS_CARD_INSERT</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_CARD_STABLE</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_CARD_DETECT</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_WRT_PROTECT</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_STATUS_DAT_LEVEL0</td><td>20</td><td>23</td><td>0x00f00000</td><td>0xff0fffff</td><td>0xf</td></tr>
+<tr><td>EMMC_STATUS_CMD_LEVEL</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x1</td></tr>
+<tr><td>EMMC_STATUS_DAT_LEVEL1</td><td>25</td><td>28</td><td>0x1e000000</td><td>0xe1ffffff</td><td>0xf</td></tr>
+</table>
+
+<h3><a name='EMMC_CONTROL0'>EMMC_CONTROL0</a></h3>
+<h4>Address: 0x7e300028</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_CONTROL0_HCTL_LED</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_HCTL_DWIDTH</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_HCTL_HS_EN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_HCTL_DMA</td><td>3</td><td>4</td><td>0x00000018</td><td>0xffffffe7</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_HCTL_8BIT</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_HCTL_CRDDET</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_HCTL_CRDDET_S</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_PWCTL_ON</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_PWCTL_SDVOLTS</td><td>9</td><td>11</td><td>0x00000e00</td><td>0xfffff1ff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_PWCTL_HWRST</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CONTROL0_GAP_STOP</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_GAP_RESTART</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_READWAIT_EN</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_GAP_IEN</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_SPI_MODE</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_BOOT_EN</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_ALT_BOOT_EN</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>23</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CONTROL0_WAKE_ONINT_EN</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_WAKE_ONINS_EN</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL0_WAKE_ONREM_EN</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_CONTROL1'>EMMC_CONTROL1</a></h3>
+<h4>Address: 0x7e30002c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_CONTROL1_CLK_INTLEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL1_CLK_STABLE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL1_CLK_EN</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CONTROL1_CLK_GENSEL</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL1_CLK_FREQ_MS2</td><td>6</td><td>7</td><td>0x000000c0</td><td>0xffffff3f</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL1_CLK_FREQ8</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL1_DATA_TOUNIT</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>20</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CONTROL1_SRST_HC</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL1_SRST_CMD</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL1_SRST_DATA</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_INTERRUPT'>EMMC_INTERRUPT</a></h3>
+<h4>Address: 0x7e300030</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_INTERRUPT_CMD_DONE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_DATA_DONE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_BLOCK_GAP</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_DMA</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_WRITE_RDY</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_READ_RDY</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_CARD_IN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_CARD_OUT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_CARD</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_INT_A</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_INT_B</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_INT_C</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_RETUNE</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_BOOTACK</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_ENDBOOT</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_ERR</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_CTO_ERR</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_CCRC_ERR</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_CEND_ERR</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_CBAD_ERR</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_DTO_ERR</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_DCRC_ERR</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_DEND_ERR</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_SDOFF_ERR</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_ACMD_ERR</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_ADMA_ERR</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_TUNE_ERR</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>27</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_INTERRUPT_DMA_ERR</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_ATA_ERR</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_INTERRUPT_OEM_ERR</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_IRPT_MASK'>EMMC_IRPT_MASK</a></h3>
+<h4>Address: 0x7e300034</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_IRPT_MASK_CMD_DONE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_DATA_DONE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_BLOCK_GAP</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_DMA</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_WRITE_RDY</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_READ_RDY</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_CARD_IN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_CARD_OUT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_CARD</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_INT_A</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_INT_B</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_INT_C</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_RETUNE</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_BOOTACK</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_ENDBOOT</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_IRPT_MASK_CTO_ERR</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_CCRC_ERR</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_CEND_ERR</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_CBAD_ERR</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_DTO_ERR</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_DCRC_ERR</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_DEND_ERR</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_SDOFF_ERR</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_ACMD_ERR</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_ADMA_ERR</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>26</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_IRPT_MASK_DMA_ERR</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_ATA_ERR</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_MASK_OEM_ERR</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_IRPT_EN'>EMMC_IRPT_EN</a></h3>
+<h4>Address: 0x7e300038</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_IRPT_EN_CMD_DONE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_DATA_DONE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_BLOCK_GAP</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_DMA</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_WRITE_RDY</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_READ_RDY</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_CARD_IN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_CARD_OUT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_CARD</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_INT_A</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_INT_B</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_INT_C</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_RETUNE</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_BOOTACK</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_ENDBOOT</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_IRPT_EN_CTO_ERR</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_CCRC_ERR</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_CEND_ERR</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_CBAD_ERR</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_DTO_ERR</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_DCRC_ERR</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_DEND_ERR</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_SDOFF_ERR</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_ACMD_ERR</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_ADMA_ERR</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_TUNE_ERR</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>27</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_IRPT_EN_DMA_ERR</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_ATA_ERR</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_IRPT_EN_OEM_ERR</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_CONTROL2'>EMMC_CONTROL2</a></h3>
+<h4>Address: 0x7e30003c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_CONTROL2_ACNOX_ERR</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_ACTO_ERR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_ACCRC_ERR</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_ACEND_ERR</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_ACBAD_ERR</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>6</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CONTROL2_NOTC12_ERR</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>8</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CONTROL2_UHSMODE</td><td>16</td><td>18</td><td>0x00070000</td><td>0xfff8ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_SIGTYPE</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x1</td></tr>
+<tr><td>EMMC_CONTROL2_DRVTYPE</td><td>20</td><td>21</td><td>0x00300000</td><td>0xffcfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_TUNEON</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_TUNED</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>24</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_CONTROL2_EN_AINT</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_CONTROL2_EN_PSV</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_HWCAP0'>EMMC_HWCAP0</a></h3>
+<h4>Address: 0x7e300040</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_HWCAP0_TCLKFREQ</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>6</td><td>6</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_HWCAP0_TCLKUNIT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_BASEMHZ</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_MAXLEN</td><td>16</td><td>17</td><td>0x00030000</td><td>0xfffcffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_XMEDBUS</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_ADMA2</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>20</td><td>20</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_HWCAP0_HS</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_SDMA</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_RESUME</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_V3_3</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_V3_0</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_V1_8</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>27</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_HWCAP0_BUS64</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_AINT</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP0_SLOT_TYPE</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_HWCAP1'>EMMC_HWCAP1</a></h3>
+<h4>Address: 0x7e300044</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_HWCAP1_SDR50</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x1</td></tr>
+<tr><td>EMMC_HWCAP1_SDR104</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x1</td></tr>
+<tr><td>EMMC_HWCAP1_DDR50</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x1</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_HWCAP1_DRV18_TYPEA</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x1</td></tr>
+<tr><td>EMMC_HWCAP1_DRV18_TYPEC</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x1</td></tr>
+<tr><td>EMMC_HWCAP1_DRV18_TYPED</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x1</td></tr>
+<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_HWCAP1_RETUNE_TMR</td><td>8</td><td>11</td><td>0x00000f00</td><td>0xfffff0ff</td><td>0x7</td></tr>
+<tr><td>missing definiton</td><td>12</td><td>12</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_HWCAP1_SDR50_TUNE</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP1_DATA_RETUNE</td><td>14</td><td>15</td><td>0x0000c000</td><td>0xffff3fff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP1_MULTIPLIER</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWCAP1_SPI_MODE</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x1</td></tr>
+<tr><td>EMMC_HWCAP1_SPI_BLOCKMODE</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x1</td></tr>
+</table>
+
+<h3><a name='EMMC_HWMAXAMP0'>EMMC_HWMAXAMP0</a></h3>
+<h4>Address: 0x7e300048</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_HWMAXAMP0_AMP_33V</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
+<tr><td>EMMC_HWMAXAMP0_AMP_30V</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x0</td></tr>
+<tr><td>EMMC_HWMAXAMP0_AMP_18V</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_FORCE_IRPT'>EMMC_FORCE_IRPT</a></h3>
+<h4>Address: 0x7e300050</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_FORCE_IRPT_CMD_DONE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x1</td></tr>
+<tr><td>EMMC_FORCE_IRPT_DATA_DONE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_BLOCK_GAP</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_DMA</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_WRITE_RDY</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_READ_RDY</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_CARD_IN</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_CARD_OUT</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>8</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_FORCE_IRPT_CTO_ERR</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_CCRC_ERR</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_CEND_ERR</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_CBAD_ERR</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_DTO_ERR</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_DCRC_ERR</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_DEND_ERR</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_SDOFF_ERR</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_ACMD_ERR</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_ADMA_ERR</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_TUNE_ERR</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>27</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_FORCE_IRPT_DMA_ERR</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_ATA_ERR</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>EMMC_FORCE_IRPT_OEM_ERR</td><td>30</td><td>31</td><td>0xc0000000</td><td>0x3fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_DMA_STATUS'>EMMC_DMA_STATUS</a></h3>
+<h4>Address: 0x7e300054</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_DMA_STATUS_ERR_AT</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
+<tr><td>EMMC_DMA_STATUS_LEN_NOMATCH</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_BOOT_TIMEOUT'>EMMC_BOOT_TIMEOUT</a></h3>
+<h4>Address: 0x7e300070</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_BOOT_TIMEOUT_TIMEOUT</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_DBG_SEL'>EMMC_DBG_SEL</a></h3>
+<h4>Address: 0x7e300074</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_DBG_SEL_SELECT</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_EXRDFIFO_CFG'>EMMC_EXRDFIFO_CFG</a></h3>
+<h4>Address: 0x7e300080</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_EXRDFIFO_CFG_RD_THRSH</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_EXRDFIFO_EN'>EMMC_EXRDFIFO_EN</a></h3>
+<h4>Address: 0x7e300084</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_EXRDFIFO_EN_ENABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_TUNE_STEP'>EMMC_TUNE_STEP</a></h3>
+<h4>Address: 0x7e300088</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_TUNE_STEP_DELAY</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_TUNE_STEPS_STD'>EMMC_TUNE_STEPS_STD</a></h3>
+<h4>Address: 0x7e30008c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_TUNE_STEPS_STD_STEPS</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_TUNE_STEPS_DDR'>EMMC_TUNE_STEPS_DDR</a></h3>
+<h4>Address: 0x7e300090</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_TUNE_STEPS_DDR_STEPS</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_BUS_CTRL'>EMMC_BUS_CTRL</a></h3>
+<h4>Address: 0x7e3000e0</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_BUS_CTRL_CLK_PINS</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x0</td></tr>
+<tr><td>EMMC_BUS_CTRL_IRQ_PINS</td><td>3</td><td>5</td><td>0x00000038</td><td>0xffffffc7</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_BUS_CTRL_BUS_WIDTH</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>15</td><td>19</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_BUS_CTRL_IRQSEL</td><td>20</td><td>22</td><td>0x00700000</td><td>0xff8fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>23</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_BUS_CTRL_BE_PWR</td><td>24</td><td>30</td><td>0x7f000000</td><td>0x80ffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_SPI_INT_SPT'>EMMC_SPI_INT_SPT</a></h3>
+<h4>Address: 0x7e3000f0</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_SPI_INT_SPT_SELECT</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='EMMC_SLOTISR_VER'>EMMC_SLOTISR_VER</a></h3>
+<h4>Address: 0x7e3000fc</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>EMMC_SLOTISR_VER_SLOT_STATUS</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>8</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>EMMC_SLOTISR_VER_SDVERSION</td><td>16</td><td>23</td><td>0x00ff0000</td><td>0xff00ffff</td><td>0x2</td></tr>
+<tr><td>EMMC_SLOTISR_VER_VENDOR</td><td>24</td><td>31</td><td>0xff000000</td><td>0x00ffffff</td><td>0x99</td></tr>
+</table>
+
+</font>
+</body>
+</html>

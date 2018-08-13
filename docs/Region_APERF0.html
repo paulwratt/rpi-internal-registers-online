@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>APERF0 - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: APERF0 (base: 0x7e009800</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e009800</td></tr>
+<tr><td>id</td><td>0x41584950</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#aperf0_gen_ctrl'>APERF0_GEN_CTRL</a></td><td>0x7e009800</td><td>RW</td><td>2</td><td>0x00000003</td><td>0000000000</td></tr>
+<tr><td><a hre='#aperf0_bw0_ctrl'>APERF0_BW0_CTRL</a></td><td>0x7e009840</td><td>RW</td><td>32</td><td>0xf0001f1f</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_ATRANS</td><td>0x7e009844</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_ATWAIT</td><td>0x7e009848</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_AMAX</td><td>0x7e00984c</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_WTRANS</td><td>0x7e009850</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_WTWAIT</td><td>0x7e009854</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_WMAX</td><td>0x7e009858</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_RTRANS</td><td>0x7e00985c</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_RTWAIT</td><td>0x7e009860</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_RMAX</td><td>0x7e009864</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW0_RPEND</td><td>0x7e009868</td><td>RO</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_RPEND</td><td>0x7e009868</td><td>RO</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_RPEND</td><td>0x7e009868</td><td>RO</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td><a hre='#aperf0_bw1_ctrl'>APERF0_BW1_CTRL</a></td><td>0x7e009880</td><td>RW</td><td>32</td><td>0xf0001f1f</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_ATRANS</td><td>0x7e009884</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_ATWAIT</td><td>0x7e009888</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_AMAX</td><td>0x7e00988c</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_WTRANS</td><td>0x7e009890</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_WTWAIT</td><td>0x7e009894</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_WMAX</td><td>0x7e009898</td><td>RO</td><td>16</td><td>0x0000ffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_RTRANS</td><td>0x7e00989c</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_RTWAIT</td><td>0x7e0098a0</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW1_RMAX</td><td>0x7e0098a4</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#aperf0_bw2_ctrl'>APERF0_BW2_CTRL</a></td><td>0x7e0098c0</td><td>RW</td><td>32</td><td>0xf0001f1f</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_ATRANS</td><td>0x7e0098c4</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_ATWAIT</td><td>0x7e0098c8</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_AMAX</td><td>0x7e0098cc</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_WTRANS</td><td>0x7e0098d0</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_WTWAIT</td><td>0x7e0098d4</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_WMAX</td><td>0x7e0098d8</td><td>RO</td><td>28</td><td>0x0ff0ffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_RTRANS</td><td>0x7e0098dc</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_RTWAIT</td><td>0x7e0098e0</td><td>RO</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>APERF0_BW2_RMAX</td><td>0x7e0098e4</td><td>RO</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='APERF0_GEN_CTRL'>APERF0_GEN_CTRL</a></h3>
+<h4>Address: 0x7e009800</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>APERF0_GEN_CTRL_ENABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>APERF0_GEN_CTRL_RESET</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='APERF0_BW0_CTRL'>APERF0_BW0_CTRL</a></h3>
+<h4>Address: 0x7e009840</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>APERF0_BW0_CTRL_BUS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>APERF0_BW0_CTRL_ID</td><td>8</td><td>12</td><td>0x00001f00</td><td>0xffffe0ff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>13</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>APERF0_BW0_CTRL_LATHALT</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW0_CTRL_ID_EN</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW0_CTRL_EN</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW0_CTRL_RESET</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='APERF0_BW1_CTRL'>APERF0_BW1_CTRL</a></h3>
+<h4>Address: 0x7e009880</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>APERF0_BW1_CTRL_BUS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>APERF0_BW1_CTRL_ID</td><td>8</td><td>12</td><td>0x00001f00</td><td>0xffffe0ff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>13</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>APERF0_BW1_CTRL_LATHALT</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW1_CTRL_ID_EN</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW1_CTRL_EN</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW1_CTRL_RESET</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='APERF0_BW2_CTRL'>APERF0_BW2_CTRL</a></h3>
+<h4>Address: 0x7e0098c0</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>APERF0_BW2_CTRL_BUS</td><td>0</td><td>4</td><td>0x0000001f</td><td>0xffffffe0</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>APERF0_BW2_CTRL_ID</td><td>8</td><td>12</td><td>0x00001f00</td><td>0xffffe0ff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>13</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>APERF0_BW2_CTRL_LATHALT</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW2_CTRL_ID_EN</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW2_CTRL_EN</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>APERF0_BW2_CTRL_RESET</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

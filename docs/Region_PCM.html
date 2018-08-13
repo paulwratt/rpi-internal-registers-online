@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>PCM - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: PCM (base: 0x7e203000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e203000</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#pcm_cs_a'>PCM_CS_A</a></td><td>0x7e203000</td><td>RW</td><td>26</td><td>0x03ffe3ff</td><td>0000000000</td></tr>
+<tr><td>PCM_FIFO_A</td><td>0x7e203004</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#pcm_mode_a'>PCM_MODE_A</a></td><td>0x7e203008</td><td>RW</td><td>29</td><td>0x1fffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#pcm_rxc_a'>PCM_RXC_A</a></td><td>0x7e20300c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#pcm_txc_a'>PCM_TXC_A</a></td><td>0x7e203010</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#pcm_dreq_a'>PCM_DREQ_A</a></td><td>0x7e203014</td><td>RW</td><td>31</td><td>0x7f7f7f7f</td><td>0x10303020</td></tr>
+<tr><td><a hre='#pcm_inten_a'>PCM_INTEN_A</a></td><td>0x7e203018</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
+<tr><td><a hre='#pcm_intstc_a'>PCM_INTSTC_A</a></td><td>0x7e20301c</td><td>RW</td><td>4</td><td>0x0000000f</td><td>0000000000</td></tr>
+<tr><td><a hre='#pcm_gray'>PCM_GRAY</a></td><td>0x7e203020</td><td>RW</td><td>22</td><td>0x003ffff7</td><td>0000000000</td></tr>
+</table>
+
+<h2>Unsupported Defines</h2>
+<table border=1><tr><th>Define</th><th>Value</th></tr>
+<tr><td>PCM_CH1EN</td><td>0x40000000</td></tr>
+<tr><td>PCM_CH1POS_LSB</td><td>20</td></tr>
+<tr><td>PCM_CH1WEX</td><td>0x80000000</td></tr>
+<tr><td>PCM_CH1WID_LSB</td><td>16</td></tr>
+<tr><td>PCM_CH2EN</td><td>0x4000</td></tr>
+<tr><td>PCM_CH2POS_LSB</td><td>4</td></tr>
+<tr><td>PCM_CH2WEX</td><td>0x8000</td></tr>
+<tr><td>PCM_CH2WID_LSB</td><td>0</td></tr>
+<tr><td>PCM_FIFO_DEPTH</td><td>64</td></tr>
+<tr><td>PCM_POS1(x)</td><td>MACRO</td></tr>
+<tr><td>PCM_POS2(x)</td><td>MACRO</td></tr>
+<tr><td>PCM_RX_DMA</td><td>0x30000</td></tr>
+<tr><td>PCM_TX_DMA</td><td>0x20000</td></tr>
+<tr><td>PCM_WID1(x)</td><td>MACRO</td></tr>
+<tr><td>PCM_WID2(x)</td><td>MACRO</td></tr>
+<tr><td>PCM_WIDTH1(x)</td><td>MACRO</td></tr>
+<tr><td>PCM_WIDTH2(x)</td><td>MACRO</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='PCM_CS_A'>PCM_CS_A</a></h3>
+<h4>Address: 0x7e203000</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_CS_A_EN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXON</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_TXON</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_TXCLR</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXCLR</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_TXTHR</td><td>5</td><td>6</td><td>0x00000060</td><td>0xffffff9f</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXTHR</td><td>7</td><td>8</td><td>0x00000180</td><td>0xfffffe7f</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_DMAEN</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>10</td><td>12</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PCM_CS_A_TXSYNC</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXSYNC</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_TXERR</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXERR</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_TXW</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXR</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_TXD</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXD</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_TXE</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXF</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_RXSEX</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_SYNC</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>PCM_CS_A_STBY</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PCM_MODE_A'>PCM_MODE_A</a></h3>
+<h4>Address: 0x7e203008</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_MODE_A_FSLEN</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_FLEN</td><td>10</td><td>19</td><td>0x000ffc00</td><td>0xfff003ff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_FSI</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_FSM</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_CLKI</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_CLKM</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_FTXP</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_FRXP</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_PDME</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_PDMN</td><td>27</td><td>27</td><td>0x08000000</td><td>0xf7ffffff</td><td>0x0</td></tr>
+<tr><td>PCM_MODE_A_CLK_DIS</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PCM_RXC_A'>PCM_RXC_A</a></h3>
+<h4>Address: 0x7e20300c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_RXC_A_CH2WID</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
+<tr><td>PCM_RXC_A_CH2POS</td><td>4</td><td>13</td><td>0x00003ff0</td><td>0xffffc00f</td><td>0x0</td></tr>
+<tr><td>PCM_RXC_A_CH2EN</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
+<tr><td>PCM_RXC_A_CH2WEX</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
+<tr><td>PCM_RXC_A_CH1WID</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
+<tr><td>PCM_RXC_A_CH1POS</td><td>20</td><td>29</td><td>0x3ff00000</td><td>0xc00fffff</td><td>0x0</td></tr>
+<tr><td>PCM_RXC_A_CH1EN</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>PCM_RXC_A_CH1WEX</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PCM_TXC_A'>PCM_TXC_A</a></h3>
+<h4>Address: 0x7e203010</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_TXC_A_CH2WID</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
+<tr><td>PCM_TXC_A_CH2POS</td><td>4</td><td>13</td><td>0x00003ff0</td><td>0xffffc00f</td><td>0x0</td></tr>
+<tr><td>PCM_TXC_A_CH2EN</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
+<tr><td>PCM_TXC_A_CH2WEX</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
+<tr><td>PCM_TXC_A_CH1WID</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
+<tr><td>PCM_TXC_A_CH1POS</td><td>20</td><td>29</td><td>0x3ff00000</td><td>0xc00fffff</td><td>0x0</td></tr>
+<tr><td>PCM_TXC_A_CH1EN</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>PCM_TXC_A_CH1WEX</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PCM_DREQ_A'>PCM_DREQ_A</a></h3>
+<h4>Address: 0x7e203014</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_DREQ_A_RX</td><td>0</td><td>6</td><td>0x0000007f</td><td>0xffffff80</td><td>0x20</td></tr>
+<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PCM_DREQ_A_TX</td><td>8</td><td>14</td><td>0x00007f00</td><td>0xffff80ff</td><td>0x30</td></tr>
+<tr><td>missing definiton</td><td>15</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PCM_DREQ_A_RX_PANIC</td><td>16</td><td>22</td><td>0x007f0000</td><td>0xff80ffff</td><td>0x30</td></tr>
+<tr><td>missing definiton</td><td>23</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PCM_DREQ_A_TX_PANIC</td><td>24</td><td>30</td><td>0x7f000000</td><td>0x80ffffff</td><td>0x10</td></tr>
+</table>
+
+<h3><a name='PCM_INTEN_A'>PCM_INTEN_A</a></h3>
+<h4>Address: 0x7e203018</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_INTEN_A_TXW</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>PCM_INTEN_A_RXR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>PCM_INTEN_A_TXERR</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>PCM_INTEN_A_RXERR</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PCM_INTSTC_A'>PCM_INTSTC_A</a></h3>
+<h4>Address: 0x7e20301c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_INTSTC_A_TXW</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>PCM_INTSTC_A_RXR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>PCM_INTSTC_A_TXERR</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>PCM_INTSTC_A_RXERR</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PCM_GRAY'>PCM_GRAY</a></h3>
+<h4>Address: 0x7e203020</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PCM_GRAY_EN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>PCM_GRAY_CLR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>PCM_GRAY_FLUSH</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PCM_GRAY_RXLEVEL</td><td>4</td><td>9</td><td>0x000003f0</td><td>0xfffffc0f</td><td>0x0</td></tr>
+<tr><td>PCM_GRAY_FLUSHED</td><td>10</td><td>15</td><td>0x0000fc00</td><td>0xffff03ff</td><td>0x0</td></tr>
+<tr><td>PCM_GRAY_RXFIFOLEVEL</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

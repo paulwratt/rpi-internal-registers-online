@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>PWM - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: PWM (base: 0x7e20c000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e20c000</td></tr>
+<tr><td>id</td><td>0x70776d30</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#pwm_ctl'>PWM_CTL</a></td><td>0x7e20c000</td><td>RW</td><td>32</td><td>0xbfbfbfff</td><td>0000000000</td></tr>
+<tr><td><a hre='#pwm_sta'>PWM_STA</a></td><td>0x7e20c004</td><td>RW</td><td>13</td><td>0x00001fff</td><td>0000000000</td></tr>
+<tr><td><a hre='#pwm_dmac'>PWM_DMAC</a></td><td>0x7e20c008</td><td>RW</td><td>32</td><td>0x8000ffff</td><td>0x00000707</td></tr>
+<tr><td>PWM_RNG1</td><td>0x7e20c010</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x00000020</td></tr>
+<tr><td>PWM_DAT1</td><td>0x7e20c014</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>PWM_FIF1</td><td>0x7e20c018</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>PWM_RNG2</td><td>0x7e20c020</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x00000020</td></tr>
+<tr><td>PWM_DAT2</td><td>0x7e20c024</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>PWM_RNG3</td><td>0x7e20c030</td><td>RW</td><td>0</td><td>0000000000</td><td>0x00000020</td></tr>
+<tr><td>PWM_DAT3</td><td>0x7e20c034</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
+<tr><td>PWM_RNG4</td><td>0x7e20c040</td><td>RW</td><td>0</td><td>0000000000</td><td>0x00000020</td></tr>
+<tr><td>PWM_DAT4</td><td>0x7e20c044</td><td>RW</td><td>0</td><td>0000000000</td><td>0000000000</td></tr>
+</table>
+
+<h2>Unsupported Defines</h2>
+<table border=1><tr><th>Define</th><th>Value</th></tr>
+<tr><td>PWM_BASE_ADDRESS</td><td>0x7e20c000</td></tr>
+<tr><td>PWM_DMA</td><td>0x50000</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='PWM_CTL'>PWM_CTL</a></h3>
+<h4>Address: 0x7e20c000</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PWM_CTL_PWEN1</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_MODE1</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_RPTL1</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_SBIT1</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_POLA1</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_USEF1</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_CLRF1</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_MSEN1</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_PWEN2</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_MODE2</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_RPTL2</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_SBIT2</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_POLA2</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_USEF2</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>14</td><td>14</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PWM_CTL_MSEN2</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_PWEN3</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_MODE3</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_RPTL3</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_SBIT3</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_POLA3</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_USEF3</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>22</td><td>22</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PWM_CTL_MSEN3</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_PWEN4</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_MODE4</td><td>25</td><td>25</td><td>0x02000000</td><td>0xfdffffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_RPTL4</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_SBIT4</td><td>27</td><td>27</td><td>0x08000000</td><td>0xf7ffffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_POLA4</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>PWM_CTL_USEF4</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>30</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PWM_CTL_MSEN4</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PWM_STA'>PWM_STA</a></h3>
+<h4>Address: 0x7e20c004</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PWM_STA_FULL1</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>PWM_STA_EMPT1</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>PWM_STA_WERR1</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>PWM_STA_RERR1</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>PWM_STA_GAPO1</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>PWM_STA_GAPO2</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>PWM_STA_GAPO3</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>PWM_STA_GAPO4</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td>0x0</td></tr>
+<tr><td>PWM_STA_BERR</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>PWM_STA_STA1</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>PWM_STA_STA2</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>PWM_STA_STA3</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
+<tr><td>PWM_STA_STA4</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='PWM_DMAC'>PWM_DMAC</a></h3>
+<h4>Address: 0x7e20c008</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>PWM_DMAC_DREQ</td><td>0</td><td>7</td><td>0x000000ff</td><td>0xffffff00</td><td>0x7</td></tr>
+<tr><td>PWM_DMAC_PANIC</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x7</td></tr>
+<tr><td>missing definiton</td><td>16</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>PWM_DMAC_ENAB</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

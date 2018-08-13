@@ -1,0 +1,318 @@
+<html>
+<head>
+<title>MPHI - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: MPHI (base: 0x7e006000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e006000</td></tr>
+<tr><td>id</td><td>0x6d706869</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#mphi_c0indda'>MPHI_C0INDDA</a></td><td>0x7e006000</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c0inddb'>MPHI_C0INDDB</a></td><td>0x7e006004</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c1indda'>MPHI_C1INDDA</a></td><td>0x7e006008</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c1inddb'>MPHI_C1INDDB</a></td><td>0x7e00600c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c0inds'>MPHI_C0INDS</a></td><td>0x7e006010</td><td>RW</td><td>32</td><td>0xdfffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c1inds'>MPHI_C1INDS</a></td><td>0x7e006014</td><td>RW</td><td>32</td><td>0xdfffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c0indcf'>MPHI_C0INDCF</a></td><td>0x7e006018</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c1indcf'>MPHI_C1INDCF</a></td><td>0x7e00601c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c0indfs'>MPHI_C0INDFS</a></td><td>0x7e006020</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_c1indfs'>MPHI_C1INDFS</a></td><td>0x7e006024</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_outdda'>MPHI_OUTDDA</a></td><td>0x7e006028</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_outddb'>MPHI_OUTDDB</a></td><td>0x7e00602c</td><td>RW</td><td>30</td><td>0x3fffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_outds'>MPHI_OUTDS</a></td><td>0x7e006030</td><td>RW</td><td>31</td><td>0x5fffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_outdfs'>MPHI_OUTDFS</a></td><td>0x7e006034</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_minfs'>MPHI_MINFS</a></td><td>0x7e006038</td><td>RW</td><td>32</td><td>0xbfffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_moutfs'>MPHI_MOUTFS</a></td><td>0x7e00603c</td><td>RW</td><td>32</td><td>0xbfffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_axipriv'>MPHI_AXIPRIV</a></td><td>0x7e006040</td><td>RW</td><td>9</td><td>0x00000177</td><td></td></tr>
+<tr><td><a hre='#mphi_rxaxicfg'>MPHI_RXAXICFG</a></td><td>0x7e006044</td><td>RW</td><td>17</td><td>0x0001ffff</td><td></td></tr>
+<tr><td><a hre='#mphi_txaxicfg'>MPHI_TXAXICFG</a></td><td>0x7e006048</td><td>RW</td><td>17</td><td>0x0001ffff</td><td></td></tr>
+<tr><td><a hre='#mphi_ctrl'>MPHI_CTRL</a></td><td>0x7e00604c</td><td>RW</td><td>32</td><td>0x88031111</td><td></td></tr>
+<tr><td><a hre='#mphi_intstat'>MPHI_INTSTAT</a></td><td>0x7e006050</td><td>RW</td><td>32</td><td>0xf9111111</td><td></td></tr>
+<tr><td>MPHI_VERSION</td><td>0x7e006054</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_intctrl'>MPHI_INTCTRL</a></td><td>0x7e006058</td><td>RW</td><td>21</td><td>0x00111111</td><td></td></tr>
+<tr><td><a hre='#mphi_hsindcf'>MPHI_HSINDCF</a></td><td>0x7e00605c</td><td>RW</td><td>32</td><td>0xdfffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_hsinds'>MPHI_HSINDS</a></td><td>0x7e006060</td><td>RW</td><td>32</td><td>0xdfffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_hsindda'>MPHI_HSINDDA</a></td><td>0x7e006064</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_hsinddb'>MPHI_HSINDDB</a></td><td>0x7e006068</td><td>RW</td><td>30</td><td>0x2fffffff</td><td></td></tr>
+<tr><td><a hre='#mphi_hsindfs'>MPHI_HSINDFS</a></td><td>0x7e00606c</td><td>RW</td><td>32</td><td>0xffff0001</td><td></td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='MPHI_C0INDDA'>MPHI_C0INDDA</a></h3>
+<h4>Address: 0x7e006000</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C0INDDA_START</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C0INDDB'>MPHI_C0INDDB</a></h3>
+<h4>Address: 0x7e006004</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C0INDDB_LENGTH</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDDB_HANDLE</td><td>20</td><td>27</td><td>0x0ff00000</td><td>0xf00fffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDDB_MTERM</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDDB_TENDINT</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDDB_MENDINT</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDDB_MORUN</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C1INDDA'>MPHI_C1INDDA</a></h3>
+<h4>Address: 0x7e006008</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C1INDDA_START</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C1INDDB'>MPHI_C1INDDB</a></h3>
+<h4>Address: 0x7e00600c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C1INDDB_LENGTH</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDDB_HANDLE</td><td>20</td><td>27</td><td>0x0ff00000</td><td>0xf00fffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDDB_MTERM</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDDB_TENDINT</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDDB_MENDINT</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDDB_MORUN</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C0INDS'>MPHI_C0INDS</a></h3>
+<h4>Address: 0x7e006010</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C0INDS_WORDS</td><td>0</td><td>20</td><td>0x001fffff</td><td>0xffe00000</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDS_HANDLE</td><td>21</td><td>28</td><td>0x1fe00000</td><td>0xe01fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>29</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_C0INDS_VALID</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDS_DISCARD</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C1INDS'>MPHI_C1INDS</a></h3>
+<h4>Address: 0x7e006014</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C1INDS_WORDS</td><td>0</td><td>20</td><td>0x001fffff</td><td>0xffe00000</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDS_HANDLE</td><td>21</td><td>28</td><td>0x1fe00000</td><td>0xe01fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>29</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_C1INDS_VALID</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDS_DISCARD</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C0INDCF'>MPHI_C0INDCF</a></h3>
+<h4>Address: 0x7e006018</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C0INDCF_LENGTH</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDCF_HANDLE</td><td>20</td><td>27</td><td>0x0ff00000</td><td>0xf00fffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDCF_MTERM</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDCF_ORUN</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDCF_LENERR</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDCF_EMPTY</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C1INDCF'>MPHI_C1INDCF</a></h3>
+<h4>Address: 0x7e00601c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C1INDCF_LENGTH</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDCF_HANDLE</td><td>20</td><td>27</td><td>0x0ff00000</td><td>0xf00fffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDCF_MTERM</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDCF_ORUN</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDCF_LENERR</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDCF_EMPTY</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C0INDFS'>MPHI_C0INDFS</a></h3>
+<h4>Address: 0x7e006020</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C0INDFS_DFIFOLVL</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
+<tr><td>MPHI_C0INDFS_CFIFOLVL</td><td>16</td><td>31</td><td>0xffff0000</td><td>0x0000ffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_C1INDFS'>MPHI_C1INDFS</a></h3>
+<h4>Address: 0x7e006024</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_C1INDFS_DFIFOLVL</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
+<tr><td>MPHI_C1INDFS_CFIFOLVL</td><td>16</td><td>31</td><td>0xffff0000</td><td>0x0000ffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_OUTDDA'>MPHI_OUTDDA</a></h3>
+<h4>Address: 0x7e006028</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_OUTDDA_START</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_OUTDDB'>MPHI_OUTDDB</a></h3>
+<h4>Address: 0x7e00602c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_OUTDDB_LENGTH</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
+<tr><td>MPHI_OUTDDB_HANDLE</td><td>20</td><td>27</td><td>0x0ff00000</td><td>0xf00fffff</td><td>0x0</td></tr>
+<tr><td>MPHI_OUTDDB_CHANNEL</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_OUTDDB_TENDINT</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_OUTDS'>MPHI_OUTDS</a></h3>
+<h4>Address: 0x7e006030</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_OUTDS_WORDS</td><td>0</td><td>20</td><td>0x001fffff</td><td>0xffe00000</td><td>0x0</td></tr>
+<tr><td>MPHI_OUTDS_HANDLE</td><td>21</td><td>28</td><td>0x1fe00000</td><td>0xe01fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>29</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_OUTDS_VALID</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_OUTDFS'>MPHI_OUTDFS</a></h3>
+<h4>Address: 0x7e006034</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_OUTDFS_DFIFOLVL</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_MINFS'>MPHI_MINFS</a></h3>
+<h4>Address: 0x7e006038</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_MINFS_LEVEL</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
+<tr><td>MPHI_MINFS_WPTR</td><td>10</td><td>19</td><td>0x000ffc00</td><td>0xfff003ff</td><td>0x0</td></tr>
+<tr><td>MPHI_MINFS_RPTR</td><td>20</td><td>29</td><td>0x3ff00000</td><td>0xc00fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>30</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_MINFS_OFLOW</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_MOUTFS'>MPHI_MOUTFS</a></h3>
+<h4>Address: 0x7e00603c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_MOUTFS_LEVEL</td><td>0</td><td>9</td><td>0x000003ff</td><td>0xfffffc00</td><td>0x0</td></tr>
+<tr><td>MPHI_MOUTFS_WPTR</td><td>10</td><td>19</td><td>0x000ffc00</td><td>0xfff003ff</td><td>0x0</td></tr>
+<tr><td>MPHI_MOUTFS_RPTR</td><td>20</td><td>29</td><td>0x3ff00000</td><td>0xc00fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>30</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_MOUTFS_UFLOW</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_AXIPRIV'>MPHI_AXIPRIV</a></h3>
+<h4>Address: 0x7e006040</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_AXIPRIV_TXPROT</td><td>0</td><td>2</td><td>0x00000007</td><td>0xfffffff8</td><td>0x2</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_AXIPRIV_RXPROT</td><td>4</td><td>6</td><td>0x00000070</td><td>0xffffff8f</td><td>0x2</td></tr>
+<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_AXIPRIV_HSPECEN</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_RXAXICFG'>MPHI_RXAXICFG</a></h3>
+<h4>Address: 0x7e006044</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_RXAXICFG_RXNPRIO</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
+<tr><td>MPHI_RXAXICFG_RXPPRIO</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
+<tr><td>MPHI_RXAXICFG_INTHRESH</td><td>8</td><td>16</td><td>0x0001ff00</td><td>0xfffe00ff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_TXAXICFG'>MPHI_TXAXICFG</a></h3>
+<h4>Address: 0x7e006048</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_TXAXICFG_TXNPRIO</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
+<tr><td>MPHI_TXAXICFG_TXPPRIO</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
+<tr><td>MPHI_TXAXICFG_INTHRESH</td><td>8</td><td>16</td><td>0x0001ff00</td><td>0xfffe00ff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_CTRL'>MPHI_CTRL</a></h3>
+<h4>Address: 0x7e00604c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_CTRL_HATVAL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>1</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_CTRL_DIRECT</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_CTRL_INVERT</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>9</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_CTRL_EIGHTBIT</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x1</td></tr>
+<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_CTRL_REQ_SOFT_RST</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>MPHI_CTRL_SOFT_RST_DNE</td><td>17</td><td>17</td><td>0x00020000</td><td>0xfffdffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>18</td><td>26</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_CTRL_STBY</td><td>27</td><td>27</td><td>0x08000000</td><td>0xf7ffffff</td><td>0x1</td></tr>
+<tr><td>missing definiton</td><td>28</td><td>30</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_CTRL_ENABLE</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_INTSTAT'>MPHI_INTSTAT</a></h3>
+<h4>Address: 0x7e006050</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_INTSTAT_RX0MEND</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>1</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTSTAT_RX0TEND</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTSTAT_RX1MEND</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>9</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTSTAT_RX1TEND</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTSTAT_TXEND</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>17</td><td>19</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTSTAT_RX0DISC</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>21</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTSTAT_RX1DISC</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>25</td><td>26</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTSTAT_HSDCFOFLW</td><td>27</td><td>27</td><td>0x08000000</td><td>0xf7ffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_INTSTAT_OMFUFLW</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_INTSTAT_IMFOFLW</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_INTSTAT_HSDISC</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_INTSTAT_HSTEND</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_INTCTRL'>MPHI_INTCTRL</a></h3>
+<h4>Address: 0x7e006058</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_INTCTRL_RX0DISC</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>1</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTCTRL_RX1DISC</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>5</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTCTRL_IMFOFLW</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>9</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTCTRL_OMFUFLW</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>13</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTCTRL_HSDISC</td><td>16</td><td>16</td><td>0x00010000</td><td>0xfffeffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>17</td><td>19</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_INTCTRL_HSDCOFLW</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_HSINDCF'>MPHI_HSINDCF</a></h3>
+<h4>Address: 0x7e00605c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_HSINDCF_LENGTH</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
+<tr><td>MPHI_HSINDCF_HANDLE</td><td>20</td><td>27</td><td>0x0ff00000</td><td>0xf00fffff</td><td>0x0</td></tr>
+<tr><td>MPHI_HSINDCF_MTERM</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>29</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_HSINDCF_LENERR</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_HSINDCF_EMPTY</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_HSINDS'>MPHI_HSINDS</a></h3>
+<h4>Address: 0x7e006060</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_HSINDS_WORDS</td><td>0</td><td>20</td><td>0x001fffff</td><td>0xffe00000</td><td>0x0</td></tr>
+<tr><td>MPHI_HSINDS_HANDLE</td><td>21</td><td>28</td><td>0x1fe00000</td><td>0xe01fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>29</td><td>29</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_HSINDS_VALID</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>MPHI_HSINDS_DISCARD</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_HSINDDA'>MPHI_HSINDDA</a></h3>
+<h4>Address: 0x7e006064</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_HSINDDA_START</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_HSINDDB'>MPHI_HSINDDB</a></h3>
+<h4>Address: 0x7e006068</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_HSINDDB_LENGTH</td><td>0</td><td>19</td><td>0x000fffff</td><td>0xfff00000</td><td>0x0</td></tr>
+<tr><td>MPHI_HSINDDB_HANDLE</td><td>20</td><td>27</td><td>0x0ff00000</td><td>0xf00fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>28</td><td>28</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_HSINDDB_TENDINT</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='MPHI_HSINDFS'>MPHI_HSINDFS</a></h3>
+<h4>Address: 0x7e00606c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>MPHI_HSINDFS_DFIFOLVL</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>1</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>MPHI_HSINDFS_CFIFOLVL</td><td>16</td><td>31</td><td>0xffff0000</td><td>0x0000ffff</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

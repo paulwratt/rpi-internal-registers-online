@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>DMA15 - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: DMA15 (base: 0x7ee05000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7ee05000</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#dma15_cs'>DMA15_CS</a></td><td>0x7ee05000</td><td>RW</td><td>32</td><td>0xf0ff017f</td><td>0000000000</td></tr>
+<tr><td><a hre='#dma15_conblk_ad'>DMA15_CONBLK_AD</a></td><td>0x7ee05004</td><td>RW</td><td>32</td><td>0xffffffe0</td><td>0000000000</td></tr>
+<tr><td><a hre='#dma15_ti'>DMA15_TI</a></td><td>0x7ee05008</td><td>RO</td><td>27</td><td>0x07fffffb</td><td></td></tr>
+<tr><td><a hre='#dma15_source_ad'>DMA15_SOURCE_AD</a></td><td>0x7ee0500c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#dma15_dest_ad'>DMA15_DEST_AD</a></td><td>0x7ee05010</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#dma15_txfr_len'>DMA15_TXFR_LEN</a></td><td>0x7ee05014</td><td>RO</td><td>30</td><td>0x3fffffff</td><td></td></tr>
+<tr><td><a hre='#dma15_stride'>DMA15_STRIDE</a></td><td>0x7ee05018</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td><a hre='#dma15_nextconbk'>DMA15_NEXTCONBK</a></td><td>0x7ee0501c</td><td>RO</td><td>32</td><td>0xffffffe0</td><td></td></tr>
+<tr><td><a hre='#dma15_debug'>DMA15_DEBUG</a></td><td>0x7ee05020</td><td>RW</td><td>29</td><td>0x1ffffff7</td><td>0000000000</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='DMA15_CS'>DMA15_CS</a></h3>
+<h4>Address: 0x7ee05000</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DMA15_CS_ACTIVE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_END</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_INT</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_DREQ</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_PAUSED</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_DREQ_STOPS_DMA</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_WAITING_FOR_OUTSTANDING_WRITES</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DMA15_CS_ERROR</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>9</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DMA15_CS_PRIORITY</td><td>16</td><td>19</td><td>0x000f0000</td><td>0xfff0ffff</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_PANIC_PRIORITY</td><td>20</td><td>23</td><td>0x00f00000</td><td>0xff0fffff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>24</td><td>27</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DMA15_CS_WAIT_FOR_OUTSTANDING_WRITES</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_DISDEBUG</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_ABORT</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>DMA15_CS_RESET</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='DMA15_CONBLK_AD'>DMA15_CONBLK_AD</a></h3>
+<h4>Address: 0x7ee05004</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>missing definiton</td><td>0</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DMA15_CONBLK_AD_SCB_ADDR</td><td>5</td><td>31</td><td>0xffffffe0</td><td>0x0000001f</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='DMA15_TI'>DMA15_TI</a></h3>
+<h4>Address: 0x7ee05008</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DMA15_TI_INTEN</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td></td></tr>
+<tr><td>DMA15_TI_TDMODE</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td></td></tr>
+<tr><td>missing definiton</td><td>2</td><td>2</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DMA15_TI_WAIT_RESP</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td></td></tr>
+<tr><td>DMA15_TI_DEST_INC</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td></td></tr>
+<tr><td>DMA15_TI_DEST_WIDTH</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td></td></tr>
+<tr><td>DMA15_TI_DEST_DREQ</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td></td></tr>
+<tr><td>DMA15_TI_DEST_IGNORE</td><td>7</td><td>7</td><td>0x00000080</td><td>0xffffff7f</td><td></td></tr>
+<tr><td>DMA15_TI_SRC_INC</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td></td></tr>
+<tr><td>DMA15_TI_SRC_WIDTH</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td></td></tr>
+<tr><td>DMA15_TI_SRC_DREQ</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td></td></tr>
+<tr><td>DMA15_TI_SRC_IGNORE</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td></td></tr>
+<tr><td>DMA15_TI_BURST_LENGTH</td><td>12</td><td>15</td><td>0x0000f000</td><td>0xffff0fff</td><td></td></tr>
+<tr><td>DMA15_TI_PERMAP</td><td>16</td><td>20</td><td>0x001f0000</td><td>0xffe0ffff</td><td></td></tr>
+<tr><td>DMA15_TI_WAITS</td><td>21</td><td>25</td><td>0x03e00000</td><td>0xfc1fffff</td><td></td></tr>
+<tr><td>DMA15_TI_NO_WIDE_BURSTS</td><td>26</td><td>26</td><td>0x04000000</td><td>0xfbffffff</td><td></td></tr>
+</table>
+
+<h3><a name='DMA15_SOURCE_AD'>DMA15_SOURCE_AD</a></h3>
+<h4>Address: 0x7ee0500c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DMA15_SOURCE_AD_S_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td></td></tr>
+</table>
+
+<h3><a name='DMA15_DEST_AD'>DMA15_DEST_AD</a></h3>
+<h4>Address: 0x7ee05010</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DMA15_DEST_AD_D_ADDR</td><td>0</td><td>31</td><td>0xffffffff</td><td>0x00000000</td><td></td></tr>
+</table>
+
+<h3><a name='DMA15_TXFR_LEN'>DMA15_TXFR_LEN</a></h3>
+<h4>Address: 0x7ee05014</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DMA15_TXFR_LEN_XLENGTH</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td></td></tr>
+<tr><td>DMA15_TXFR_LEN_YLENGTH</td><td>16</td><td>29</td><td>0x3fff0000</td><td>0xc000ffff</td><td></td></tr>
+</table>
+
+<h3><a name='DMA15_STRIDE'>DMA15_STRIDE</a></h3>
+<h4>Address: 0x7ee05018</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DMA15_STRIDE_S_STRIDE</td><td>0</td><td>15</td><td>0x0000ffff</td><td>0xffff0000</td><td></td></tr>
+<tr><td>DMA15_STRIDE_D_STRIDE</td><td>16</td><td>31</td><td>0xffff0000</td><td>0x0000ffff</td><td></td></tr>
+</table>
+
+<h3><a name='DMA15_NEXTCONBK'>DMA15_NEXTCONBK</a></h3>
+<h4>Address: 0x7ee0501c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>missing definiton</td><td>0</td><td>4</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DMA15_NEXTCONBK_ADDR</td><td>5</td><td>31</td><td>0xffffffe0</td><td>0x0000001f</td><td></td></tr>
+</table>
+
+<h3><a name='DMA15_DEBUG'>DMA15_DEBUG</a></h3>
+<h4>Address: 0x7ee05020</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DMA15_DEBUG_READ_LAST_NOT_SET_ERROR</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>DMA15_DEBUG_FIFO_ERROR</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>DMA15_DEBUG_READ_ERROR</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DMA15_DEBUG_OUTSTANDING_WRITES</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x0</td></tr>
+<tr><td>DMA15_DEBUG_DMA_ID</td><td>8</td><td>15</td><td>0x0000ff00</td><td>0xffff00ff</td><td>0x0</td></tr>
+<tr><td>DMA15_DEBUG_DMA_STATE</td><td>16</td><td>24</td><td>0x01ff0000</td><td>0xfe00ffff</td><td>0x0</td></tr>
+<tr><td>DMA15_DEBUG_VERSION</td><td>25</td><td>27</td><td>0x0e000000</td><td>0xf1ffffff</td><td>0x0</td></tr>
+<tr><td>DMA15_DEBUG_LITE</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

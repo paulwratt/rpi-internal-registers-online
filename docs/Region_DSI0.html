@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>DSI0 - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: DSI0 (base: 0x7e209000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e209000</td></tr>
+<tr><td>id</td><td>0x00647369</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#dsi0_ctrl'>DSI0_CTRL</a></td><td>0x7e209000</td><td>RW</td><td>3</td><td>0x00000007</td><td>0000000000</td></tr>
+<tr><td>DSI0_CMD_PKTC</td><td>0x7e209004</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_CMD_PKTH</td><td>0x7e209008</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_RX1_PKTH</td><td>0x7e20900c</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>DSI0_RX2_PKTH</td><td>0x7e209010</td><td>RO</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>DSI0_CMD_DATAF</td><td>0x7e209014</td><td>RW</td><td>8</td><td>0x000000ff</td><td></td></tr>
+<tr><td>DSI0_DISP0_CTR</td><td>0x7e209018</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_DISP1_CTR</td><td>0x7e20901c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_PIX_FIFO</td><td>0x7e209020</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>DSI0_INT_STAT</td><td>0x7e209024</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>DSI0_INT_EN</td><td>0x7e209028</td><td>RW</td><td>28</td><td>0x0fffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_STAT</td><td>0x7e20902c</td><td>RW</td><td>32</td><td>0xffffffff</td><td></td></tr>
+<tr><td>DSI0_HSTX_TO_C</td><td>0x7e209030</td><td>RW</td><td>24</td><td>0x00ffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_LPRX_TO_C</td><td>0x7e209034</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_TA_TO_CNT</td><td>0x7e209038</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_PR_TO_CNT</td><td>0x7e20903c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#dsi0_phyc'>DSI0_PHYC</a></td><td>0x7e209040</td><td>RW</td><td>18</td><td>0x0003f777</td><td>0000000000</td></tr>
+<tr><td>DSI0_HS_CLT0</td><td>0x7e209044</td><td>RW</td><td>32</td><td>0xfffffffc</td><td>0000000000</td></tr>
+<tr><td>DSI0_HS_CLT1</td><td>0x7e209048</td><td>RW</td><td>10</td><td>0x000003fc</td><td>0000000000</td></tr>
+<tr><td>DSI0_HS_CLT2</td><td>0x7e20904c</td><td>RW</td><td>10</td><td>0x000003fc</td><td>0000000000</td></tr>
+<tr><td>DSI0_HS_DLT3</td><td>0x7e209050</td><td>RW</td><td>10</td><td>0x000003fc</td><td>0000000000</td></tr>
+<tr><td>DSI0_HS_DLT4</td><td>0x7e209054</td><td>RW</td><td>10</td><td>0x000003fc</td><td>0000000000</td></tr>
+<tr><td>DSI0_HS_DLT5</td><td>0x7e209058</td><td>RW</td><td>10</td><td>0x000003fc</td><td>0000000000</td></tr>
+<tr><td>DSI0_LP_DLT6</td><td>0x7e20905c</td><td>RW</td><td>10</td><td>0x000003fc</td><td>0000000000</td></tr>
+<tr><td>DSI0_LP_DLT7</td><td>0x7e209060</td><td>RW</td><td>10</td><td>0x000003fc</td><td>0000000000</td></tr>
+<tr><td>DSI0_PHY_AFEC0</td><td>0x7e209064</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>DSI0_PHY_AFEC1</td><td>0x7e209068</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>DSI0_TST_SEL</td><td>0x7e20906c</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>DSI0_TST_MON</td><td>0x7e209070</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='DSI0_CTRL'>DSI0_CTRL</a></h3>
+<h4>Address: 0x7e209000</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DSI0_CTRL_CTRL0</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>DSI0_CTRL_CTRL1</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>DSI0_CTRL_CTRL2</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='DSI0_PHYC'>DSI0_PHYC</a></h3>
+<h4>Address: 0x7e209040</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>DSI0_PHYC_dlane_hsen_0_sync</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>DSI0_PHYC_txulpshs_0_sync</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>DSI0_PHYC_forcehsstop_sync</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DSI0_PHYC_unused</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>DSI0_PHYC_dlane_hsen_1_sync</td><td>5</td><td>5</td><td>0x00000020</td><td>0xffffffdf</td><td>0x0</td></tr>
+<tr><td>DSI0_PHYC_txulpshs_1_sync</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>7</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DSI0_PHYC_clane_hsen_sync</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>DSI0_PHYC_txulps_clk_sync</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>DSI0_PHYC_txhsclk_cont_sync</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>11</td><td>11</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>DSI0_PHYC_dsi_esc_lpdt</td><td>12</td><td>17</td><td>0x0003f000</td><td>0xfffc0fff</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

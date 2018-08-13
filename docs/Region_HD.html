@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>HD - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: HD (base: 0x7e808000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e808000</td></tr>
+<tr><td>id</td><td>0x48444d49</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#hd_hdm_ctl'>HD_HDM_CTL</a></td><td>0x7e80800c</td><td>RW</td><td>10</td><td>0x000003f7</td><td>0x000000f0</td></tr>
+<tr><td><a hre='#hd_mai_ctl'>HD_MAI_CTL</a></td><td>0x7e808014</td><td>RW</td><td>16</td><td>0x0000ffff</td><td>0x00000020</td></tr>
+<tr><td><a hre='#hd_mai_thr'>HD_MAI_THR</a></td><td>0x7e808018</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0x01010101</td></tr>
+<tr><td>HD_MAI_FMT</td><td>0x7e80801c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_MAI_DAT</td><td>0x7e808020</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_SPARE</td><td>0x7e808024</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_MAI_SMP</td><td>0x7e80802c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td><a hre='#hd_vid_ctl'>HD_VID_CTL</a></td><td>0x7e808038</td><td>RW</td><td>32</td><td>0xfffc0000</td><td>0x00040000</td></tr>
+<tr><td><a hre='#hd_csc_ctl'>HD_CSC_CTL</a></td><td>0x7e808040</td><td>RW</td><td>8</td><td>0x000000ff</td><td>0000000000</td></tr>
+<tr><td>HD_CSC_12_11</td><td>0x7e808044</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_CSC_14_13</td><td>0x7e808048</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_CSC_22_21</td><td>0x7e80804c</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_CSC_24_23</td><td>0x7e808050</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_CSC_32_31</td><td>0x7e808054</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_CSC_34_33</td><td>0x7e808058</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+<tr><td>HD_FRAME_CNT</td><td>0x7e808068</td><td>RW</td><td>32</td><td>0xffffffff</td><td>0000000000</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='HD_HDM_CTL'>HD_HDM_CTL</a></h3>
+<h4>Address: 0x7e80800c</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>HD_HDM_CTL_ENABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>HD_HDM_CTL_ENDIAN</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>HD_HDM_CTL_SW_RST</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>missing definiton</td><td>3</td><td>3</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>HD_HDM_CTL_PDSTBY</td><td>4</td><td>5</td><td>0x00000030</td><td>0xffffffcf</td><td>0x3</td></tr>
+<tr><td>HD_HDM_CTL_RFSTBY</td><td>6</td><td>7</td><td>0x000000c0</td><td>0xffffff3f</td><td>0x3</td></tr>
+<tr><td>HD_HDM_CTL_CECOVR</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>HD_HDM_CTL_CECRXD</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='HD_MAI_CTL'>HD_MAI_CTL</a></h3>
+<h4>Address: 0x7e808014</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>HD_MAI_CTL_RST_MAI</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_ERRORF</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_ERRORE</td><td>2</td><td>2</td><td>0x00000004</td><td>0xfffffffb</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_ENABLE</td><td>3</td><td>3</td><td>0x00000008</td><td>0xfffffff7</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_CHNUM</td><td>4</td><td>7</td><td>0x000000f0</td><td>0xffffff0f</td><td>0x2</td></tr>
+<tr><td>HD_MAI_CTL_PAREN</td><td>8</td><td>8</td><td>0x00000100</td><td>0xfffffeff</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_FLUSH</td><td>9</td><td>9</td><td>0x00000200</td><td>0xfffffdff</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_EMPTY</td><td>10</td><td>10</td><td>0x00000400</td><td>0xfffffbff</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_FULL</td><td>11</td><td>11</td><td>0x00000800</td><td>0xfffff7ff</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_WHOLSMP</td><td>12</td><td>12</td><td>0x00001000</td><td>0xffffefff</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_CHALIGN</td><td>13</td><td>13</td><td>0x00002000</td><td>0xffffdfff</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_BUSY</td><td>14</td><td>14</td><td>0x00004000</td><td>0xffffbfff</td><td>0x0</td></tr>
+<tr><td>HD_MAI_CTL_DLATE</td><td>15</td><td>15</td><td>0x00008000</td><td>0xffff7fff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='HD_MAI_THR'>HD_MAI_THR</a></h3>
+<h4>Address: 0x7e808018</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>HD_MAI_THR_DREQLOW</td><td>0</td><td>5</td><td>0x0000003f</td><td>0xffffffc0</td><td>0x1</td></tr>
+<tr><td>missing definiton</td><td>6</td><td>7</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>HD_MAI_THR_DREQHIGH</td><td>8</td><td>13</td><td>0x00003f00</td><td>0xffffc0ff</td><td>0x1</td></tr>
+<tr><td>missing definiton</td><td>14</td><td>15</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>HD_MAI_THR_PANICLOW</td><td>16</td><td>21</td><td>0x003f0000</td><td>0xffc0ffff</td><td>0x1</td></tr>
+<tr><td>missing definiton</td><td>22</td><td>23</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>HD_MAI_THR_PANICHIGH</td><td>24</td><td>29</td><td>0x3f000000</td><td>0xc0ffffff</td><td>0x1</td></tr>
+</table>
+
+<h3><a name='HD_VID_CTL'>HD_VID_CTL</a></h3>
+<h4>Address: 0x7e808038</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>missing definiton</td><td>0</td><td>17</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>HD_VID_CTL_BLANKPIX</td><td>18</td><td>18</td><td>0x00040000</td><td>0xfffbffff</td><td>0x1</td></tr>
+<tr><td>HD_VID_CTL_EMPRGB</td><td>19</td><td>19</td><td>0x00080000</td><td>0xfff7ffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_EMPSYNC</td><td>20</td><td>20</td><td>0x00100000</td><td>0xffefffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_FULRGB</td><td>21</td><td>21</td><td>0x00200000</td><td>0xffdfffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_FULSYNC</td><td>22</td><td>22</td><td>0x00400000</td><td>0xffbfffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_CLRRGB</td><td>23</td><td>23</td><td>0x00800000</td><td>0xff7fffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_CLRSYNC</td><td>24</td><td>24</td><td>0x01000000</td><td>0xfeffffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_ERROR</td><td>25</td><td>26</td><td>0x06000000</td><td>0xf9ffffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_HPOL</td><td>27</td><td>27</td><td>0x08000000</td><td>0xf7ffffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_VPOL</td><td>28</td><td>28</td><td>0x10000000</td><td>0xefffffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_RST_FRAMEC</td><td>29</td><td>29</td><td>0x20000000</td><td>0xdfffffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_UFEN</td><td>30</td><td>30</td><td>0x40000000</td><td>0xbfffffff</td><td>0x0</td></tr>
+<tr><td>HD_VID_CTL_ENABLE</td><td>31</td><td>31</td><td>0x80000000</td><td>0x7fffffff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='HD_CSC_CTL'>HD_CSC_CTL</a></h3>
+<h4>Address: 0x7e808040</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>HD_CSC_CTL_ENABLE</td><td>0</td><td>0</td><td>0x00000001</td><td>0xfffffffe</td><td>0x0</td></tr>
+<tr><td>HD_CSC_CTL_USERGB2YCC</td><td>1</td><td>1</td><td>0x00000002</td><td>0xfffffffd</td><td>0x0</td></tr>
+<tr><td>HD_CSC_CTL_MODE</td><td>2</td><td>3</td><td>0x0000000c</td><td>0xfffffff3</td><td>0x0</td></tr>
+<tr><td>HD_CSC_CTL_PADMSB</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+<tr><td>HD_CSC_CTL_COLORD</td><td>5</td><td>7</td><td>0x000000e0</td><td>0xffffff1f</td><td>0x0</td></tr>
+</table>
+
+</font>
+</body>
+</html>

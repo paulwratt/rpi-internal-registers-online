@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>CMI - RPi Registers</title>
+</head>
+<body>
+<font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
+<h1>Register Region: CMI (base: 0x7e802000</h1>
+<h2>Info</h2>
+<table border=1><tr><th>Name</th><th>Value</th></tr>
+<tr><td>base</td><td>0x7e802000</td></tr>
+<tr><td>id</td><td>0x00636d69</td></tr>
+<tr><td>password</td><td>0x5a000000</td></tr>
+</table>
+
+<h2>Registers</h2>
+<table border=1><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
+<tr><td><a hre='#cmi_cam0'>CMI_CAM0</a></td><td>0x7e802000</td><td>RW</td><td>6</td><td>0x0000003f</td><td>0000000000</td></tr>
+<tr><td><a hre='#cmi_cam1'>CMI_CAM1</a></td><td>0x7e802004</td><td>RW</td><td>10</td><td>0x000003ff</td><td>0000000000</td></tr>
+<tr><td><a hre='#cmi_camtest'>CMI_CAMTEST</a></td><td>0x7e802008</td><td>RW</td><td>5</td><td>0x0000001f</td><td>0000000000</td></tr>
+<tr><td><a hre='#cmi_usbctl'>CMI_USBCTL</a></td><td>0x7e802010</td><td>RW</td><td>7</td><td>0x00000040</td><td>0x00000040</td></tr>
+</table>
+
+<h2>Register info</h2>
+<h3><a name='CMI_CAM0'>CMI_CAM0</a></h3>
+<h4>Address: 0x7e802000</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>CMI_CAM0_HSSRC</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
+<tr><td>CMI_CAM0_RX0SRC</td><td>2</td><td>3</td><td>0x0000000c</td><td>0xfffffff3</td><td>0x0</td></tr>
+<tr><td>CMI_CAM0_RX1SRC</td><td>4</td><td>5</td><td>0x00000030</td><td>0xffffffcf</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='CMI_CAM1'>CMI_CAM1</a></h3>
+<h4>Address: 0x7e802004</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>CMI_CAM1_HSSRC</td><td>0</td><td>1</td><td>0x00000003</td><td>0xfffffffc</td><td>0x0</td></tr>
+<tr><td>CMI_CAM1_RX0SRC</td><td>2</td><td>3</td><td>0x0000000c</td><td>0xfffffff3</td><td>0x0</td></tr>
+<tr><td>CMI_CAM1_RX1SRC</td><td>4</td><td>5</td><td>0x00000030</td><td>0xffffffcf</td><td>0x0</td></tr>
+<tr><td>CMI_CAM1_RX2SRC</td><td>6</td><td>7</td><td>0x000000c0</td><td>0xffffff3f</td><td>0x0</td></tr>
+<tr><td>CMI_CAM1_RX3SRC</td><td>8</td><td>9</td><td>0x00000300</td><td>0xfffffcff</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='CMI_CAMTEST'>CMI_CAMTEST</a></h3>
+<h4>Address: 0x7e802008</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>CMI_CAMTEST_SRC</td><td>0</td><td>3</td><td>0x0000000f</td><td>0xfffffff0</td><td>0x0</td></tr>
+<tr><td>CMI_CAMTEST_ENAB</td><td>4</td><td>4</td><td>0x00000010</td><td>0xffffffef</td><td>0x0</td></tr>
+</table>
+
+<h3><a name='CMI_USBCTL'>CMI_USBCTL</a></h3>
+<h4>Address: 0x7e802010</h4>
+<table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
+<tr><td>missing definiton</td><td>0</td><td>5</td><td>NA</td><td>NA</td><td>NA</td></tr>
+<tr><td>CMI_USBCTL_GATE</td><td>6</td><td>6</td><td>0x00000040</td><td>0xffffffbf</td><td>0x1</td></tr>
+</table>
+
+</font>
+</body>
+</html>

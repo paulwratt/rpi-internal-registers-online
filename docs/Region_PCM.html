@@ -5,156 +5,156 @@
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: PCM (0x7e203000)</h1>
+<h1>Register Region: PCM (<code>0x7e203000</code>)</h1>
 <h2>Info</h2>
 <table><tr><th>Name</th><th>Value</th></tr>
-<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e203000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td><code>&nbsp;0x7e203000&nbsp;</code></td></tr>
 </table>
 
 <h2>Registers</h2>
 <table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>&nbsp;<a href='#pcm_cs_a'>PCM_CS_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e203000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x03ffe3ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_FIFO_A&nbsp;</td><td>&nbsp;<pre>0x7e203004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#pcm_mode_a'>PCM_MODE_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e203008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x1fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#pcm_rxc_a'>PCM_RXC_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e20300c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#pcm_txc_a'>PCM_TXC_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e203010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#pcm_dreq_a'>PCM_DREQ_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e203014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x7f7f7f7f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x10303020</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#pcm_inten_a'>PCM_INTEN_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e203018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#pcm_intstc_a'>PCM_INTSTC_A</a>&nbsp;</td><td>&nbsp;<pre>0x7e20301c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#pcm_gray'>PCM_GRAY</a>&nbsp;</td><td>&nbsp;<pre>0x7e203020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x003ffff7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#pcm_cs_a'>PCM_CS_A</a>&nbsp;</td><td><code>&nbsp;0x7e203000&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x03ffe3ff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_FIFO_A&nbsp;</td><td><code>&nbsp;0x7e203004&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#pcm_mode_a'>PCM_MODE_A</a>&nbsp;</td><td><code>&nbsp;0x7e203008&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x1fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#pcm_rxc_a'>PCM_RXC_A</a>&nbsp;</td><td><code>&nbsp;0x7e20300c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#pcm_txc_a'>PCM_TXC_A</a>&nbsp;</td><td><code>&nbsp;0x7e203010&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#pcm_dreq_a'>PCM_DREQ_A</a>&nbsp;</td><td><code>&nbsp;0x7e203014&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x7f7f7f7f&nbsp;</code></td><td align=center><code>&nbsp;0x10303020&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#pcm_inten_a'>PCM_INTEN_A</a>&nbsp;</td><td><code>&nbsp;0x7e203018&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#pcm_intstc_a'>PCM_INTSTC_A</a>&nbsp;</td><td><code>&nbsp;0x7e20301c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#pcm_gray'>PCM_GRAY</a>&nbsp;</td><td><code>&nbsp;0x7e203020&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td><code>&nbsp;0x003ffff7&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
 <table><tr><th>Define</th><th>Value</th></tr>
-<tr><td>&nbsp;PCM_CH1EN&nbsp;</td><td align=center>&nbsp;<pre>0x40000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CH1POS_LSB&nbsp;</td><td align=center>&nbsp;<pre>20</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CH1WEX&nbsp;</td><td align=center>&nbsp;<pre>0x80000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CH1WID_LSB&nbsp;</td><td align=center>&nbsp;<pre>16</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CH2EN&nbsp;</td><td align=center>&nbsp;<pre>0x4000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CH2POS_LSB&nbsp;</td><td align=center>&nbsp;<pre>4</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CH2WEX&nbsp;</td><td align=center>&nbsp;<pre>0x8000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CH2WID_LSB&nbsp;</td><td align=center>&nbsp;<pre>0</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_FIFO_DEPTH&nbsp;</td><td align=center>&nbsp;<pre>64</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_POS1(x)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_POS2(x)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x30000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x20000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_WID1(x)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_WID2(x)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_WIDTH1(x)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_WIDTH2(x)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_CH1EN&nbsp;</td><td align=center><code>&nbsp;0x40000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CH1POS_LSB&nbsp;</td><td align=center><code>&nbsp;20&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CH1WEX&nbsp;</td><td align=center><code>&nbsp;0x80000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CH1WID_LSB&nbsp;</td><td align=center><code>&nbsp;16&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CH2EN&nbsp;</td><td align=center><code>&nbsp;0x4000&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CH2POS_LSB&nbsp;</td><td align=center><code>&nbsp;4&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CH2WEX&nbsp;</td><td align=center><code>&nbsp;0x8000&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CH2WID_LSB&nbsp;</td><td align=center><code>&nbsp;0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_FIFO_DEPTH&nbsp;</td><td align=center><code>&nbsp;64&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_POS1(x)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_POS2(x)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RX_DMA&nbsp;</td><td align=center><code>&nbsp;0x30000&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TX_DMA&nbsp;</td><td align=center><code>&nbsp;0x20000&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_WID1(x)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_WID2(x)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_WIDTH1(x)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_WIDTH2(x)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
 </table>
 
 <h2>Register info</h2>
-<h3><a name='PCM_CS_A'>PCM_CS_A</a></h3>
-<h4>Address: 0x7e203000</h4>
+<h3><a name='pcm_cs_a'>PCM_CS_A</a></h3>
+<h4>Address: <code>0x7e203000</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_CS_A_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXON&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXON&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXCLR&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXCLR&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXTHR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000060</pre></td><td>&nbsp;<pre>0xffffff9f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXTHR&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000180</pre></td><td>&nbsp;<pre>0xfffffe7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_DMAEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXSYNC&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXSYNC&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXERR&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXERR&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXR&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x00040000</pre></td><td>&nbsp;<pre>0xfffbffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXD&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x00080000</pre></td><td>&nbsp;<pre>0xfff7ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXD&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_TXE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00200000</pre></td><td>&nbsp;<pre>0xffdfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXF&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_RXSEX&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_SYNC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x01000000</pre></td><td>&nbsp;<pre>0xfeffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_CS_A_STBY&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>0x02000000</pre></td><td>&nbsp;<pre>0xfdffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_CS_A_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXON&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXON&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXCLR&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x00000008&nbsp;</code></td><td><code>&nbsp;0xfffffff7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXCLR&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000010&nbsp;</code></td><td><code>&nbsp;0xffffffef&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXTHR&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x00000060&nbsp;</code></td><td><code>&nbsp;0xffffff9f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXTHR&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000180&nbsp;</code></td><td><code>&nbsp;0xfffffe7f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_DMAEN&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x00000200&nbsp;</code></td><td><code>&nbsp;0xfffffdff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXSYNC&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td><code>&nbsp;0x00002000&nbsp;</code></td><td><code>&nbsp;0xffffdfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXSYNC&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00004000&nbsp;</code></td><td><code>&nbsp;0xffffbfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXERR&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x00008000&nbsp;</code></td><td><code>&nbsp;0xffff7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXERR&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x00010000&nbsp;</code></td><td><code>&nbsp;0xfffeffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00020000&nbsp;</code></td><td><code>&nbsp;0xfffdffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXR&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td><code>&nbsp;0x00040000&nbsp;</code></td><td><code>&nbsp;0xfffbffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXD&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x00080000&nbsp;</code></td><td><code>&nbsp;0xfff7ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXD&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x00100000&nbsp;</code></td><td><code>&nbsp;0xffefffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_TXE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x00200000&nbsp;</code></td><td><code>&nbsp;0xffdfffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXF&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td><code>&nbsp;0x00400000&nbsp;</code></td><td><code>&nbsp;0xffbfffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_RXSEX&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00800000&nbsp;</code></td><td><code>&nbsp;0xff7fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_SYNC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td><code>&nbsp;0x01000000&nbsp;</code></td><td><code>&nbsp;0xfeffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_CS_A_STBY&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td><code>&nbsp;0x02000000&nbsp;</code></td><td><code>&nbsp;0xfdffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='PCM_MODE_A'>PCM_MODE_A</a></h3>
-<h4>Address: 0x7e203008</h4>
+<h3><a name='pcm_mode_a'>PCM_MODE_A</a></h3>
+<h4>Address: <code>0x7e203008</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_MODE_A_FSLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_FLEN&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000ffc00</pre></td><td>&nbsp;<pre>0xfff003ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_FSI&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_FSM&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00200000</pre></td><td>&nbsp;<pre>0xffdfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_CLKI&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_CLKM&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_FTXP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x01000000</pre></td><td>&nbsp;<pre>0xfeffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_FRXP&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td>&nbsp;<pre>0x02000000</pre></td><td>&nbsp;<pre>0xfdffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_PDME&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x04000000</pre></td><td>&nbsp;<pre>0xfbffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_PDMN&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x08000000</pre></td><td>&nbsp;<pre>0xf7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_MODE_A_CLK_DIS&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_MODE_A_FSLEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x000003ff&nbsp;</code></td><td><code>&nbsp;0xfffffc00&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_FLEN&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000ffc00&nbsp;</code></td><td><code>&nbsp;0xfff003ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_FSI&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x00100000&nbsp;</code></td><td><code>&nbsp;0xffefffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_FSM&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x00200000&nbsp;</code></td><td><code>&nbsp;0xffdfffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_CLKI&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td><code>&nbsp;0x00400000&nbsp;</code></td><td><code>&nbsp;0xffbfffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_CLKM&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00800000&nbsp;</code></td><td><code>&nbsp;0xff7fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_FTXP&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td><code>&nbsp;0x01000000&nbsp;</code></td><td><code>&nbsp;0xfeffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_FRXP&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td><code>&nbsp;0x02000000&nbsp;</code></td><td><code>&nbsp;0xfdffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_PDME&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x04000000&nbsp;</code></td><td><code>&nbsp;0xfbffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_PDMN&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x08000000&nbsp;</code></td><td><code>&nbsp;0xf7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_MODE_A_CLK_DIS&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='PCM_RXC_A'>PCM_RXC_A</a></h3>
-<h4>Address: 0x7e20300c</h4>
+<h3><a name='pcm_rxc_a'>PCM_RXC_A</a></h3>
+<h4>Address: <code>0x7e20300c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH2WID&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH2POS&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003ff0</pre></td><td>&nbsp;<pre>0xffffc00f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH2EN&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH2WEX&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH1WID&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH1POS&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3ff00000</pre></td><td>&nbsp;<pre>0xc00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH1EN&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_RXC_A_CH1WEX&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH2WID&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td><code>&nbsp;0xfffffff0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH2POS&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td><code>&nbsp;0x00003ff0&nbsp;</code></td><td><code>&nbsp;0xffffc00f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH2EN&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00004000&nbsp;</code></td><td><code>&nbsp;0xffffbfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH2WEX&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x00008000&nbsp;</code></td><td><code>&nbsp;0xffff7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH1WID&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000f0000&nbsp;</code></td><td><code>&nbsp;0xfff0ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH1POS&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x3ff00000&nbsp;</code></td><td><code>&nbsp;0xc00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH1EN&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_RXC_A_CH1WEX&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='PCM_TXC_A'>PCM_TXC_A</a></h3>
-<h4>Address: 0x7e203010</h4>
+<h3><a name='pcm_txc_a'>PCM_TXC_A</a></h3>
+<h4>Address: <code>0x7e203010</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH2WID&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH2POS&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003ff0</pre></td><td>&nbsp;<pre>0xffffc00f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH2EN&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH2WEX&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH1WID&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH1POS&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3ff00000</pre></td><td>&nbsp;<pre>0xc00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH1EN&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_TXC_A_CH1WEX&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH2WID&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td><code>&nbsp;0xfffffff0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH2POS&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td><code>&nbsp;0x00003ff0&nbsp;</code></td><td><code>&nbsp;0xffffc00f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH2EN&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00004000&nbsp;</code></td><td><code>&nbsp;0xffffbfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH2WEX&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x00008000&nbsp;</code></td><td><code>&nbsp;0xffff7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH1WID&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000f0000&nbsp;</code></td><td><code>&nbsp;0xfff0ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH1POS&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x3ff00000&nbsp;</code></td><td><code>&nbsp;0xc00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH1EN&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_TXC_A_CH1WEX&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='PCM_DREQ_A'>PCM_DREQ_A</a></h3>
-<h4>Address: 0x7e203014</h4>
+<h3><a name='pcm_dreq_a'>PCM_DREQ_A</a></h3>
+<h4>Address: <code>0x7e203014</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_DREQ_A_RX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000007f</pre></td><td>&nbsp;<pre>0xffffff80</pre>&nbsp;</td><td align=center>&nbsp;0x20&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_DREQ_A_TX&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007f00</pre></td><td>&nbsp;<pre>0xffff80ff</pre>&nbsp;</td><td align=center>&nbsp;0x30&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_DREQ_A_RX_PANIC&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x007f0000</pre></td><td>&nbsp;<pre>0xff80ffff</pre>&nbsp;</td><td align=center>&nbsp;0x30&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_DREQ_A_TX_PANIC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x7f000000</pre></td><td>&nbsp;<pre>0x80ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x10&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_DREQ_A_RX&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000007f&nbsp;</code></td><td><code>&nbsp;0xffffff80&nbsp;</code></td><td align=center><code>&nbsp;0x20&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_DREQ_A_TX&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007f00&nbsp;</code></td><td><code>&nbsp;0xffff80ff&nbsp;</code></td><td align=center><code>&nbsp;0x30&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_DREQ_A_RX_PANIC&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td><code>&nbsp;0x007f0000&nbsp;</code></td><td><code>&nbsp;0xff80ffff&nbsp;</code></td><td align=center><code>&nbsp;0x30&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_DREQ_A_TX_PANIC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x7f000000&nbsp;</code></td><td><code>&nbsp;0x80ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x10&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='PCM_INTEN_A'>PCM_INTEN_A</a></h3>
-<h4>Address: 0x7e203018</h4>
+<h3><a name='pcm_inten_a'>PCM_INTEN_A</a></h3>
+<h4>Address: <code>0x7e203018</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_INTEN_A_TXW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_INTEN_A_RXR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_INTEN_A_TXERR&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_INTEN_A_RXERR&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_INTEN_A_TXW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_INTEN_A_RXR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_INTEN_A_TXERR&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_INTEN_A_RXERR&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x00000008&nbsp;</code></td><td><code>&nbsp;0xfffffff7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='PCM_INTSTC_A'>PCM_INTSTC_A</a></h3>
-<h4>Address: 0x7e20301c</h4>
+<h3><a name='pcm_intstc_a'>PCM_INTSTC_A</a></h3>
+<h4>Address: <code>0x7e20301c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_INTSTC_A_TXW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_INTSTC_A_RXR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_INTSTC_A_TXERR&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_INTSTC_A_RXERR&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_INTSTC_A_TXW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_INTSTC_A_RXR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_INTSTC_A_TXERR&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_INTSTC_A_RXERR&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x00000008&nbsp;</code></td><td><code>&nbsp;0xfffffff7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='PCM_GRAY'>PCM_GRAY</a></h3>
-<h4>Address: 0x7e203020</h4>
+<h3><a name='pcm_gray'>PCM_GRAY</a></h3>
+<h4>Address: <code>0x7e203020</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;PCM_GRAY_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_GRAY_CLR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_GRAY_FLUSH&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_GRAY_RXLEVEL&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003f0</pre></td><td>&nbsp;<pre>0xfffffc0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_GRAY_FLUSHED&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000fc00</pre></td><td>&nbsp;<pre>0xffff03ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;PCM_GRAY_RXFIFOLEVEL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;PCM_GRAY_EN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_GRAY_CLR&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_GRAY_FLUSH&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_GRAY_RXLEVEL&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x000003f0&nbsp;</code></td><td><code>&nbsp;0xfffffc0f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_GRAY_FLUSHED&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x0000fc00&nbsp;</code></td><td><code>&nbsp;0xffff03ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;PCM_GRAY_RXFIFOLEVEL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x003f0000&nbsp;</code></td><td><code>&nbsp;0xffc0ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
 <br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>

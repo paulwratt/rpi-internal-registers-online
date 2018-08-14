@@ -5,70 +5,70 @@
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: SPI (0x7e204000)</h1>
+<h1>Register Region: SPI (<code>0x7e204000</code>)</h1>
 <h2>Info</h2>
 <table><tr><th>Name</th><th>Value</th></tr>
-<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e204000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td><code>&nbsp;0x7e204000&nbsp;</code></td></tr>
 </table>
 
 <h2>Registers</h2>
 <table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>&nbsp;<a href='#spi_cs'>SPI_CS</a>&nbsp;</td><td>&nbsp;<pre>0x7e204000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x001f07ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#spi_fifo'>SPI_FIFO</a>&nbsp;</td><td>&nbsp;<pre>0x7e204004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#spi_clk'>SPI_CLK</a>&nbsp;</td><td>&nbsp;<pre>0x7e204008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#spi_dlen'>SPI_DLEN</a>&nbsp;</td><td>&nbsp;<pre>0x7e20400c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#spi_ltoh'>SPI_LTOH</a>&nbsp;</td><td>&nbsp;<pre>0x7e204010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000001</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#spi_cs'>SPI_CS</a>&nbsp;</td><td><code>&nbsp;0x7e204000&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x001f07ff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#spi_fifo'>SPI_FIFO</a>&nbsp;</td><td><code>&nbsp;0x7e204004&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000000ff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#spi_clk'>SPI_CLK</a>&nbsp;</td><td><code>&nbsp;0x7e204008&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#spi_dlen'>SPI_DLEN</a>&nbsp;</td><td><code>&nbsp;0x7e20400c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#spi_ltoh'>SPI_LTOH</a>&nbsp;</td><td><code>&nbsp;0x7e204010&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td align=center><code>&nbsp;0x00000001&nbsp;</code></td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
 <table><tr><th>Define</th><th>Value</th></tr>
-<tr><td>&nbsp;SPI_RX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x70000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_TX_DMA&nbsp;</td><td align=center>&nbsp;<pre>0x60000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;SPI_RX_DMA&nbsp;</td><td align=center><code>&nbsp;0x70000&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_TX_DMA&nbsp;</td><td align=center><code>&nbsp;0x60000&nbsp;</code></td></tr>
 </table>
 
 <h2>Register info</h2>
-<h3><a name='SPI_CS'>SPI_CS</a></h3>
-<h4>Address: 0x7e204000</h4>
+<h3><a name='spi_cs'>SPI_CS</a></h3>
+<h4>Address: <code>0x7e204000</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_CPHA&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_CPOL&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_CLEAR&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000030</pre></td><td>&nbsp;<pre>0xffffffcf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_CSPOL&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_TA&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_DMAEN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_INTD&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_INTR&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_DONE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_RXD&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_TXD&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x00040000</pre></td><td>&nbsp;<pre>0xfffbffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_RXR&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x00080000</pre></td><td>&nbsp;<pre>0xfff7ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;SPI_CS_RXF&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_CPHA&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_CPOL&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x00000008&nbsp;</code></td><td><code>&nbsp;0xfffffff7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_CLEAR&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000030&nbsp;</code></td><td><code>&nbsp;0xffffffcf&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_CSPOL&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x00000040&nbsp;</code></td><td><code>&nbsp;0xffffffbf&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_TA&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x00000080&nbsp;</code></td><td><code>&nbsp;0xffffff7f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_DMAEN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_INTD&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x00000200&nbsp;</code></td><td><code>&nbsp;0xfffffdff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_INTR&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td><code>&nbsp;0x00000400&nbsp;</code></td><td><code>&nbsp;0xfffffbff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_DONE&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x00010000&nbsp;</code></td><td><code>&nbsp;0xfffeffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_RXD&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00020000&nbsp;</code></td><td><code>&nbsp;0xfffdffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_TXD&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td><code>&nbsp;0x00040000&nbsp;</code></td><td><code>&nbsp;0xfffbffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_RXR&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x00080000&nbsp;</code></td><td><code>&nbsp;0xfff7ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;SPI_CS_RXF&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x00100000&nbsp;</code></td><td><code>&nbsp;0xffefffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='SPI_FIFO'>SPI_FIFO</a></h3>
-<h4>Address: 0x7e204004</h4>
+<h3><a name='spi_fifo'>SPI_FIFO</a></h3>
+<h4>Address: <code>0x7e204004</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;SPI_FIFO_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre></td><td>&nbsp;<pre>0xffffff00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SPI_FIFO_DATA&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x000000ff&nbsp;</code></td><td><code>&nbsp;0xffffff00&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='SPI_CLK'>SPI_CLK</a></h3>
-<h4>Address: 0x7e204008</h4>
+<h3><a name='spi_clk'>SPI_CLK</a></h3>
+<h4>Address: <code>0x7e204008</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;SPI_CLK_CDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SPI_CLK_CDIV&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='SPI_DLEN'>SPI_DLEN</a></h3>
-<h4>Address: 0x7e20400c</h4>
+<h3><a name='spi_dlen'>SPI_DLEN</a></h3>
+<h4>Address: <code>0x7e20400c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;SPI_DLEN_LEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;SPI_DLEN_LEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='SPI_LTOH'>SPI_LTOH</a></h3>
-<h4>Address: 0x7e204010</h4>
+<h3><a name='spi_ltoh'>SPI_LTOH</a></h3>
+<h4>Address: <code>0x7e204010</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;SPI_LTOH_TOH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;SPI_LTOH_TOH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td><code>&nbsp;0xfffffff0&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
 </table><br>
 
 <br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>

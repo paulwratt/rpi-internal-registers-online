@@ -5,115 +5,115 @@
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: DMA (0x7e007fe0)</h1>
+<h1>Register Region: DMA (<code>0x7e007fe0</code>)</h1>
 <h2>Info</h2>
 <table><tr><th>Name</th><th>Value</th></tr>
-<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e007fe0</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td><code>&nbsp;0x7e007fe0&nbsp;</code></td></tr>
 </table>
 
 <h2>Registers</h2>
 <table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>&nbsp;<a href='#dma_int_status'>DMA_INT_STATUS</a>&nbsp;</td><td>&nbsp;<pre>0x7e007fe0</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#dma_enable'>DMA_ENABLE</a>&nbsp;</td><td>&nbsp;<pre>0x7e007ff0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00007fff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00007fff</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#dma_int_status'>DMA_INT_STATUS</a>&nbsp;</td><td><code>&nbsp;0x7e007fe0&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#dma_enable'>DMA_ENABLE</a>&nbsp;</td><td><code>&nbsp;0x7e007ff0&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x00007fff&nbsp;</code></td><td align=center><code>&nbsp;0x00007fff&nbsp;</code></td></tr>
 </table>
 
 <h2>Unsupported Defines</h2>
 <table><tr><th>Define</th><th>Value</th></tr>
-<tr><td>&nbsp;DMA_CB_2DSTR(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CB_ADDR(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CB_DA(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CB_NEXT(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CB_SA(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CB_TI(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CB_TL(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CH_BASE(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_ABORT&nbsp;</td><td align=center>&nbsp;<pre>0x40000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_ACTIVE&nbsp;</td><td align=center>&nbsp;<pre>1</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_DIS_DBS_PAUSE&nbsp;</td><td align=center>&nbsp;<pre>0x20000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_DREQ&nbsp;</td><td align=center>&nbsp;<pre>8</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_DREQ_PAUSED&nbsp;</td><td align=center>&nbsp;<pre>32</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_END&nbsp;</td><td align=center>&nbsp;<pre>2</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_ERROR&nbsp;</td><td align=center>&nbsp;<pre>256</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_INT&nbsp;</td><td align=center>&nbsp;<pre>4</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_PANIC_PRIORITY&nbsp;</td><td align=center>&nbsp;<pre>0x100000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_PAUSED&nbsp;</td><td align=center>&nbsp;<pre>16</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_PRIORITY&nbsp;</td><td align=center>&nbsp;<pre>0x10000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_RESET&nbsp;</td><td align=center>&nbsp;<pre>0x80000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_WAITING_FOR_LAST_WRITE&nbsp;</td><td align=center>&nbsp;<pre>64</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_CS_WAIT_FOR_LAST_WRITE&nbsp;</td><td align=center>&nbsp;<pre>0x10000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG_FIFO_ERR&nbsp;</td><td align=center>&nbsp;<pre>2</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG_ID&nbsp;</td><td align=center>&nbsp;<pre>256</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG_OUTSTANDING_WRITES&nbsp;</td><td align=center>&nbsp;<pre>16</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG_READ_ERR&nbsp;</td><td align=center>&nbsp;<pre>4</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG_READ_LAST_ERR&nbsp;</td><td align=center>&nbsp;<pre>(0)</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG_STATE&nbsp;</td><td align=center>&nbsp;<pre>0x10000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_DEBUG_VERSION&nbsp;</td><td align=center>&nbsp;<pre>0x2000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INTERRUPT(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_REG(n,offset)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_BURST_N(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_D_128&nbsp;</td><td align=center>&nbsp;<pre>32</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_D_32&nbsp;</td><td align=center>&nbsp;<pre>0</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_D_DREQ&nbsp;</td><td align=center>&nbsp;<pre>64</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_D_IGNORE&nbsp;</td><td align=center>&nbsp;<pre>128</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_D_INC&nbsp;</td><td align=center>&nbsp;<pre>16</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_D_WIDTH&nbsp;</td><td align=center>&nbsp;<pre>32</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_INT&nbsp;</td><td align=center>&nbsp;<pre>1</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_NO_WIDE_BURSTS&nbsp;</td><td align=center>&nbsp;<pre>0x4000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_PERMAP&nbsp;</td><td align=center>&nbsp;<pre>0x10000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_PER_MAP(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_S_128&nbsp;</td><td align=center>&nbsp;<pre>0x200</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_S_32&nbsp;</td><td align=center>&nbsp;<pre>0</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_S_DREQ&nbsp;</td><td align=center>&nbsp;<pre>0x400</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_S_IGNORE&nbsp;</td><td align=center>&nbsp;<pre>0x800</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_S_INC&nbsp;</td><td align=center>&nbsp;<pre>256</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_S_WIDTH&nbsp;</td><td align=center>&nbsp;<pre>0x200</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_TDMODE&nbsp;</td><td align=center>&nbsp;<pre>2</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_WAITS(n)&nbsp;</td><td align=center>&nbsp;<pre>MACRO</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_TI_WAIT_RESP&nbsp;</td><td align=center>&nbsp;<pre>8</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;DMA_CB_2DSTR(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CB_ADDR(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CB_DA(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CB_NEXT(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CB_SA(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CB_TI(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CB_TL(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CH_BASE(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_ABORT&nbsp;</td><td align=center><code>&nbsp;0x40000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_ACTIVE&nbsp;</td><td align=center><code>&nbsp;1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_DIS_DBS_PAUSE&nbsp;</td><td align=center><code>&nbsp;0x20000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_DREQ&nbsp;</td><td align=center><code>&nbsp;8&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_DREQ_PAUSED&nbsp;</td><td align=center><code>&nbsp;32&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_END&nbsp;</td><td align=center><code>&nbsp;2&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_ERROR&nbsp;</td><td align=center><code>&nbsp;256&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_INT&nbsp;</td><td align=center><code>&nbsp;4&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_PANIC_PRIORITY&nbsp;</td><td align=center><code>&nbsp;0x100000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_PAUSED&nbsp;</td><td align=center><code>&nbsp;16&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_PRIORITY&nbsp;</td><td align=center><code>&nbsp;0x10000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_RESET&nbsp;</td><td align=center><code>&nbsp;0x80000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_WAITING_FOR_LAST_WRITE&nbsp;</td><td align=center><code>&nbsp;64&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_CS_WAIT_FOR_LAST_WRITE&nbsp;</td><td align=center><code>&nbsp;0x10000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG_FIFO_ERR&nbsp;</td><td align=center><code>&nbsp;2&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG_ID&nbsp;</td><td align=center><code>&nbsp;256&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG_OUTSTANDING_WRITES&nbsp;</td><td align=center><code>&nbsp;16&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG_READ_ERR&nbsp;</td><td align=center><code>&nbsp;4&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG_READ_LAST_ERR&nbsp;</td><td align=center><code>&nbsp;(0)&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG_STATE&nbsp;</td><td align=center><code>&nbsp;0x10000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_DEBUG_VERSION&nbsp;</td><td align=center><code>&nbsp;0x2000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INTERRUPT(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_REG(n,offset)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_BURST_N(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_D_128&nbsp;</td><td align=center><code>&nbsp;32&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_D_32&nbsp;</td><td align=center><code>&nbsp;0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_D_DREQ&nbsp;</td><td align=center><code>&nbsp;64&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_D_IGNORE&nbsp;</td><td align=center><code>&nbsp;128&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_D_INC&nbsp;</td><td align=center><code>&nbsp;16&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_D_WIDTH&nbsp;</td><td align=center><code>&nbsp;32&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_INT&nbsp;</td><td align=center><code>&nbsp;1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_NO_WIDE_BURSTS&nbsp;</td><td align=center><code>&nbsp;0x4000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_PERMAP&nbsp;</td><td align=center><code>&nbsp;0x10000&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_PER_MAP(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_S_128&nbsp;</td><td align=center><code>&nbsp;0x200&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_S_32&nbsp;</td><td align=center><code>&nbsp;0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_S_DREQ&nbsp;</td><td align=center><code>&nbsp;0x400&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_S_IGNORE&nbsp;</td><td align=center><code>&nbsp;0x800&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_S_INC&nbsp;</td><td align=center><code>&nbsp;256&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_S_WIDTH&nbsp;</td><td align=center><code>&nbsp;0x200&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_TDMODE&nbsp;</td><td align=center><code>&nbsp;2&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_WAITS(n)&nbsp;</td><td align=center><code>&nbsp;MACRO&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_TI_WAIT_RESP&nbsp;</td><td align=center><code>&nbsp;8&nbsp;</code></td></tr>
 </table>
 
 <h2>Register info</h2>
-<h3><a name='DMA_INT_STATUS'>DMA_INT_STATUS</a></h3>
-<h4>Address: 0x7e007fe0</h4>
+<h3><a name='dma_int_status'>DMA_INT_STATUS</a></h3>
+<h4>Address: <code>0x7e007fe0</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_INT_STATUS_INT15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x00000008&nbsp;</code></td><td><code>&nbsp;0xfffffff7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000010&nbsp;</code></td><td><code>&nbsp;0xffffffef&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000020&nbsp;</code></td><td><code>&nbsp;0xffffffdf&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x00000040&nbsp;</code></td><td><code>&nbsp;0xffffffbf&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x00000080&nbsp;</code></td><td><code>&nbsp;0xffffff7f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x00000200&nbsp;</code></td><td><code>&nbsp;0xfffffdff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td><code>&nbsp;0x00000400&nbsp;</code></td><td><code>&nbsp;0xfffffbff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000800&nbsp;</code></td><td><code>&nbsp;0xfffff7ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td><code>&nbsp;0x00001000&nbsp;</code></td><td><code>&nbsp;0xffffefff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td><code>&nbsp;0x00002000&nbsp;</code></td><td><code>&nbsp;0xffffdfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00004000&nbsp;</code></td><td><code>&nbsp;0xffffbfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_INT_STATUS_INT15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x00008000&nbsp;</code></td><td><code>&nbsp;0xffff7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='DMA_ENABLE'>DMA_ENABLE</a></h3>
-<h4>Address: 0x7e007ff0</h4>
+<h3><a name='dma_enable'>DMA_ENABLE</a></h3>
+<h4>Address: <code>0x7e007ff0</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000040</pre></td><td>&nbsp;<pre>0xffffffbf</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x00000080</pre></td><td>&nbsp;<pre>0xffffff7f</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;DMA_ENABLE_EN14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x00000008&nbsp;</code></td><td><code>&nbsp;0xfffffff7&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000010&nbsp;</code></td><td><code>&nbsp;0xffffffef&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000020&nbsp;</code></td><td><code>&nbsp;0xffffffdf&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x00000040&nbsp;</code></td><td><code>&nbsp;0xffffffbf&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x00000080&nbsp;</code></td><td><code>&nbsp;0xffffff7f&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x00000200&nbsp;</code></td><td><code>&nbsp;0xfffffdff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td><code>&nbsp;0x00000400&nbsp;</code></td><td><code>&nbsp;0xfffffbff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000800&nbsp;</code></td><td><code>&nbsp;0xfffff7ff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td><code>&nbsp;0x00001000&nbsp;</code></td><td><code>&nbsp;0xffffefff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td><code>&nbsp;0x00002000&nbsp;</code></td><td><code>&nbsp;0xffffdfff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;DMA_ENABLE_EN14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00004000&nbsp;</code></td><td><code>&nbsp;0xffffbfff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
 </table><br>
 
 <br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>

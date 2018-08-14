@@ -5,47 +5,47 @@
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: L2 (0x7ee01000)</h1>
+<h1>Register Region: L2 (<code>0x7ee01000</code>)</h1>
 <h2>Info</h2>
 <table><tr><th>Name</th><th>Value</th></tr>
-<tr><td>&nbsp;description&nbsp;</td><td>&nbsp;<pre>VC4-L2 control</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7ee01000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x4c324343</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;description&nbsp;</td><td><code>&nbsp;VC4-L2 control&nbsp;</code></td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td><code>&nbsp;0x7ee01000&nbsp;</code></td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td><code>&nbsp;0x4c324343&nbsp;</code></td></tr>
 </table>
 
 <h2>Registers</h2>
 <table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>&nbsp;<a href='#l2_cont_off'>L2_CONT_OFF</a>&nbsp;</td><td>&nbsp;<pre>0x7ee01000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x00ff0c3f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_FLUSH_STA&nbsp;</td><td>&nbsp;<pre>0x7ee01004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x0fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_FLUSH_END&nbsp;</td><td>&nbsp;<pre>0x7ee01008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x0fffffe0</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x0fffffe0</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION&nbsp;</td><td>&nbsp;<pre>0x7ee01080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION_ID&nbsp;</td><td>&nbsp;<pre>0x7ee01084</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION_ADDR&nbsp;</td><td>&nbsp;<pre>0x7ee01088</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td>&nbsp;<pre></pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_RD_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee01100</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_RD_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee01104</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_WR_HITS&nbsp;</td><td>&nbsp;<pre>0x7ee01108</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_WR_MISSES&nbsp;</td><td>&nbsp;<pre>0x7ee0110c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_WR_BACKS&nbsp;</td><td>&nbsp;<pre>0x7ee01110</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_IN_FLIGHT&nbsp;</td><td>&nbsp;<pre>0x7ee01114</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_STALLS&nbsp;</td><td>&nbsp;<pre>0x7ee0111c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_TAG_STALLS&nbsp;</td><td>&nbsp;<pre>0x7ee01120</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;L2_SD_STALLS&nbsp;</td><td>&nbsp;<pre>0x7ee01124</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#l2_cont_off'>L2_CONT_OFF</a>&nbsp;</td><td><code>&nbsp;0x7ee01000&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td><code>&nbsp;0x00ff0c3f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_FLUSH_STA&nbsp;</td><td><code>&nbsp;0x7ee01004&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x0fffffe0&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_FLUSH_END&nbsp;</td><td><code>&nbsp;0x7ee01008&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x0fffffe0&nbsp;</code></td><td align=center><code>&nbsp;0x0fffffe0&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION&nbsp;</td><td><code>&nbsp;0x7ee01080&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td><code>&nbsp;&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION_ID&nbsp;</td><td><code>&nbsp;0x7ee01084&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td><code>&nbsp;&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_L2_ALIAS_EXCEPTION_ADDR&nbsp;</td><td><code>&nbsp;0x7ee01088&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;&nbsp;</td><td><code>&nbsp;&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_RD_HITS&nbsp;</td><td><code>&nbsp;0x7ee01100&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_RD_MISSES&nbsp;</td><td><code>&nbsp;0x7ee01104&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_WR_HITS&nbsp;</td><td><code>&nbsp;0x7ee01108&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_WR_MISSES&nbsp;</td><td><code>&nbsp;0x7ee0110c&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_WR_BACKS&nbsp;</td><td><code>&nbsp;0x7ee01110&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_IN_FLIGHT&nbsp;</td><td><code>&nbsp;0x7ee01114&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_STALLS&nbsp;</td><td><code>&nbsp;0x7ee0111c&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_TAG_STALLS&nbsp;</td><td><code>&nbsp;0x7ee01120&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_SD_STALLS&nbsp;</td><td><code>&nbsp;0x7ee01124&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
 </table>
 
 <h2>Register info</h2>
-<h3><a name='L2_CONT_OFF'>L2_CONT_OFF</a></h3>
-<h4>Address: 0x7ee01000</h4>
+<h3><a name='l2_cont_off'>L2_CONT_OFF</a></h3>
+<h4>Address: <code>0x7ee01000</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_disable&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_no_wr_allocate&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_flush&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_flush_mode&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000018</pre></td><td>&nbsp;<pre>0xffffffe7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_enable_stats&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000020</pre></td><td>&nbsp;<pre>0xffffffdf</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_standby&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000c00</pre></td><td>&nbsp;<pre>0xfffff3ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_flush_flush_limit&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000f0000</pre></td><td>&nbsp;<pre>0xfff0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;L2_CONT_OFF_l2_flush_core_limit&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00f00000</pre></td><td>&nbsp;<pre>0xff0fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_disable&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_no_wr_allocate&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush_mode&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000018&nbsp;</code></td><td><code>&nbsp;0xffffffe7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_enable_stats&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000020&nbsp;</code></td><td><code>&nbsp;0xffffffdf&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_standby&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000c00&nbsp;</code></td><td><code>&nbsp;0xfffff3ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush_flush_limit&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000f0000&nbsp;</code></td><td><code>&nbsp;0xfff0ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;L2_CONT_OFF_l2_flush_core_limit&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00f00000&nbsp;</code></td><td><code>&nbsp;0xff0fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
 <br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>

@@ -5,393 +5,393 @@
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: GP (0x7e200000)</h1>
+<h1>Register Region: GP (<code>0x7e200000</code>)</h1>
 <h2>Info</h2>
 <table><tr><th>Name</th><th>Value</th></tr>
-<tr><td>&nbsp;description&nbsp;</td><td>&nbsp;<pre>GPIO control</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e200000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x6770696f</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;description&nbsp;</td><td><code>&nbsp;GPIO control&nbsp;</code></td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td><code>&nbsp;0x7e200000&nbsp;</code></td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td><code>&nbsp;0x6770696f&nbsp;</code></td></tr>
 </table>
 
 <h2>Registers</h2>
 <table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>&nbsp;<a href='#gp_fsel0'>GP_FSEL0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fsel1'>GP_FSEL1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fsel2'>GP_FSEL2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fsel3'>GP_FSEL3</a>&nbsp;</td><td>&nbsp;<pre>0x7e20000c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fsel4'>GP_FSEL4</a>&nbsp;</td><td>&nbsp;<pre>0x7e200010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fsel5'>GP_FSEL5</a>&nbsp;</td><td>&nbsp;<pre>0x7e200014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fsel6'>GP_FSEL6</a>&nbsp;</td><td>&nbsp;<pre>0x7e200018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_set0'>GP_SET0</a>&nbsp;</td><td>&nbsp;<pre>0x7e20001c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_set1'>GP_SET1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_set2'>GP_SET2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_clr0'>GP_CLR0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_clr1'>GP_CLR1</a>&nbsp;</td><td>&nbsp;<pre>0x7e20002c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_clr2'>GP_CLR2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_lev0'>GP_LEV0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200034</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_lev1'>GP_LEV1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200038</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_lev2'>GP_LEV2</a>&nbsp;</td><td>&nbsp;<pre>0x7e20003c</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_eds0'>GP_EDS0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_eds1'>GP_EDS1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_eds2'>GP_EDS2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_ren0'>GP_REN0</a>&nbsp;</td><td>&nbsp;<pre>0x7e20004c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_ren1'>GP_REN1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_ren2'>GP_REN2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fen0'>GP_FEN0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fen1'>GP_FEN1</a>&nbsp;</td><td>&nbsp;<pre>0x7e20005c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_fen2'>GP_FEN2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_hen0'>GP_HEN0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_hen1'>GP_HEN1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_hen2'>GP_HEN2</a>&nbsp;</td><td>&nbsp;<pre>0x7e20006c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_len0'>GP_LEN0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200070</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_len1'>GP_LEN1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200074</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_len2'>GP_LEN2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200078</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_aren0'>GP_AREN0</a>&nbsp;</td><td>&nbsp;<pre>0x7e20007c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_aren1'>GP_AREN1</a>&nbsp;</td><td>&nbsp;<pre>0x7e200080</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_aren2'>GP_AREN2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200084</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_afen0'>GP_AFEN0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200088</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_afen1'>GP_AFEN1</a>&nbsp;</td><td>&nbsp;<pre>0x7e20008c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_afen2'>GP_AFEN2</a>&nbsp;</td><td>&nbsp;<pre>0x7e200090</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_pud'>GP_PUD</a>&nbsp;</td><td>&nbsp;<pre>0x7e200094</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000003</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_pudclk0'>GP_PUDCLK0</a>&nbsp;</td><td>&nbsp;<pre>0x7e200098</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_pudclk1'>GP_PUDCLK1</a>&nbsp;</td><td>&nbsp;<pre>0x7e20009c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_pudclk2'>GP_PUDCLK2</a>&nbsp;</td><td>&nbsp;<pre>0x7e2000a0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_sen0'>GP_SEN0</a>&nbsp;</td><td>&nbsp;<pre>0x7e2000a4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0xffffffff</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_sen1'>GP_SEN1</a>&nbsp;</td><td>&nbsp;<pre>0x7e2000a8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x003fffff</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#gp_gptest'>GP_GPTEST</a>&nbsp;</td><td>&nbsp;<pre>0x7e2000b0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;GP_AJBCONF&nbsp;</td><td>&nbsp;<pre>0x7e2000c0</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x80ffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;GP_AJBTMS&nbsp;</td><td>&nbsp;<pre>0x7e2000c4</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;GP_AJBTDI&nbsp;</td><td>&nbsp;<pre>0x7e2000c8</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;GP_AJBTDO&nbsp;</td><td>&nbsp;<pre>0x7e2000cc</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#gp_fsel0'>GP_FSEL0</a>&nbsp;</td><td><code>&nbsp;0x7e200000&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fsel1'>GP_FSEL1</a>&nbsp;</td><td><code>&nbsp;0x7e200004&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fsel2'>GP_FSEL2</a>&nbsp;</td><td><code>&nbsp;0x7e200008&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fsel3'>GP_FSEL3</a>&nbsp;</td><td><code>&nbsp;0x7e20000c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fsel4'>GP_FSEL4</a>&nbsp;</td><td><code>&nbsp;0x7e200010&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fsel5'>GP_FSEL5</a>&nbsp;</td><td><code>&nbsp;0x7e200014&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fsel6'>GP_FSEL6</a>&nbsp;</td><td><code>&nbsp;0x7e200018&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_set0'>GP_SET0</a>&nbsp;</td><td><code>&nbsp;0x7e20001c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_set1'>GP_SET1</a>&nbsp;</td><td><code>&nbsp;0x7e200020&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_set2'>GP_SET2</a>&nbsp;</td><td><code>&nbsp;0x7e200024&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_clr0'>GP_CLR0</a>&nbsp;</td><td><code>&nbsp;0x7e200028&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_clr1'>GP_CLR1</a>&nbsp;</td><td><code>&nbsp;0x7e20002c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_clr2'>GP_CLR2</a>&nbsp;</td><td><code>&nbsp;0x7e200030&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_lev0'>GP_LEV0</a>&nbsp;</td><td><code>&nbsp;0x7e200034&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_lev1'>GP_LEV1</a>&nbsp;</td><td><code>&nbsp;0x7e200038&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_lev2'>GP_LEV2</a>&nbsp;</td><td><code>&nbsp;0x7e20003c&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_eds0'>GP_EDS0</a>&nbsp;</td><td><code>&nbsp;0x7e200040&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_eds1'>GP_EDS1</a>&nbsp;</td><td><code>&nbsp;0x7e200044&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_eds2'>GP_EDS2</a>&nbsp;</td><td><code>&nbsp;0x7e200048&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_ren0'>GP_REN0</a>&nbsp;</td><td><code>&nbsp;0x7e20004c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_ren1'>GP_REN1</a>&nbsp;</td><td><code>&nbsp;0x7e200050&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_ren2'>GP_REN2</a>&nbsp;</td><td><code>&nbsp;0x7e200054&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fen0'>GP_FEN0</a>&nbsp;</td><td><code>&nbsp;0x7e200058&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fen1'>GP_FEN1</a>&nbsp;</td><td><code>&nbsp;0x7e20005c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_fen2'>GP_FEN2</a>&nbsp;</td><td><code>&nbsp;0x7e200060&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_hen0'>GP_HEN0</a>&nbsp;</td><td><code>&nbsp;0x7e200064&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_hen1'>GP_HEN1</a>&nbsp;</td><td><code>&nbsp;0x7e200068&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_hen2'>GP_HEN2</a>&nbsp;</td><td><code>&nbsp;0x7e20006c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_len0'>GP_LEN0</a>&nbsp;</td><td><code>&nbsp;0x7e200070&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_len1'>GP_LEN1</a>&nbsp;</td><td><code>&nbsp;0x7e200074&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_len2'>GP_LEN2</a>&nbsp;</td><td><code>&nbsp;0x7e200078&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_aren0'>GP_AREN0</a>&nbsp;</td><td><code>&nbsp;0x7e20007c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_aren1'>GP_AREN1</a>&nbsp;</td><td><code>&nbsp;0x7e200080&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_aren2'>GP_AREN2</a>&nbsp;</td><td><code>&nbsp;0x7e200084&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_afen0'>GP_AFEN0</a>&nbsp;</td><td><code>&nbsp;0x7e200088&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_afen1'>GP_AFEN1</a>&nbsp;</td><td><code>&nbsp;0x7e20008c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_afen2'>GP_AFEN2</a>&nbsp;</td><td><code>&nbsp;0x7e200090&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_pud'>GP_PUD</a>&nbsp;</td><td><code>&nbsp;0x7e200094&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000003&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_pudclk0'>GP_PUDCLK0</a>&nbsp;</td><td><code>&nbsp;0x7e200098&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_pudclk1'>GP_PUDCLK1</a>&nbsp;</td><td><code>&nbsp;0x7e20009c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_pudclk2'>GP_PUDCLK2</a>&nbsp;</td><td><code>&nbsp;0x7e2000a0&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_sen0'>GP_SEN0</a>&nbsp;</td><td><code>&nbsp;0x7e2000a4&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0xffffffff&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_sen1'>GP_SEN1</a>&nbsp;</td><td><code>&nbsp;0x7e2000a8&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td><code>&nbsp;0x003fffff&nbsp;</code></td><td align=center><code>&nbsp;0x003fffff&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#gp_gptest'>GP_GPTEST</a>&nbsp;</td><td><code>&nbsp;0x7e2000b0&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_AJBCONF&nbsp;</td><td><code>&nbsp;0x7e2000c0&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0x80ffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_AJBTMS&nbsp;</td><td><code>&nbsp;0x7e2000c4&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_AJBTDI&nbsp;</td><td><code>&nbsp;0x7e2000c8&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_AJBTDO&nbsp;</td><td><code>&nbsp;0x7e2000cc&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
 </table>
 
 <h2>Register info</h2>
-<h3><a name='GP_FSEL0'>GP_FSEL0</a></h3>
-<h4>Address: 0x7e200000</h4>
+<h3><a name='gp_fsel0'>GP_FSEL0</a></h3>
+<h4>Address: <code>0x7e200000</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL00&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL01&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL02&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL03&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL04&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL05&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00038000</pre></td><td>&nbsp;<pre>0xfffc7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL06&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001c0000</pre></td><td>&nbsp;<pre>0xffe3ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL07&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00e00000</pre></td><td>&nbsp;<pre>0xff1fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL08&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL0_FSEL09&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x38000000</pre></td><td>&nbsp;<pre>0xc7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL00&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL01&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000038&nbsp;</code></td><td><code>&nbsp;0xffffffc7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL02&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000001c0&nbsp;</code></td><td><code>&nbsp;0xfffffe3f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL03&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000e00&nbsp;</code></td><td><code>&nbsp;0xfffff1ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL04&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007000&nbsp;</code></td><td><code>&nbsp;0xffff8fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL05&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00038000&nbsp;</code></td><td><code>&nbsp;0xfffc7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL06&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001c0000&nbsp;</code></td><td><code>&nbsp;0xffe3ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL07&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00e00000&nbsp;</code></td><td><code>&nbsp;0xff1fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL08&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x07000000&nbsp;</code></td><td><code>&nbsp;0xf8ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL0_FSEL09&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x38000000&nbsp;</code></td><td><code>&nbsp;0xc7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FSEL1'>GP_FSEL1</a></h3>
-<h4>Address: 0x7e200004</h4>
+<h3><a name='gp_fsel1'>GP_FSEL1</a></h3>
+<h4>Address: <code>0x7e200004</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL10&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL11&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL12&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL13&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL14&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00038000</pre></td><td>&nbsp;<pre>0xfffc7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL16&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001c0000</pre></td><td>&nbsp;<pre>0xffe3ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL17&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00e00000</pre></td><td>&nbsp;<pre>0xff1fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL18&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL1_FSEL19&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x38000000</pre></td><td>&nbsp;<pre>0xc7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL10&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL11&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000038&nbsp;</code></td><td><code>&nbsp;0xffffffc7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL12&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000001c0&nbsp;</code></td><td><code>&nbsp;0xfffffe3f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL13&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000e00&nbsp;</code></td><td><code>&nbsp;0xfffff1ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL14&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007000&nbsp;</code></td><td><code>&nbsp;0xffff8fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00038000&nbsp;</code></td><td><code>&nbsp;0xfffc7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL16&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001c0000&nbsp;</code></td><td><code>&nbsp;0xffe3ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL17&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00e00000&nbsp;</code></td><td><code>&nbsp;0xff1fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL18&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x07000000&nbsp;</code></td><td><code>&nbsp;0xf8ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL1_FSEL19&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x38000000&nbsp;</code></td><td><code>&nbsp;0xc7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FSEL2'>GP_FSEL2</a></h3>
-<h4>Address: 0x7e200008</h4>
+<h3><a name='gp_fsel2'>GP_FSEL2</a></h3>
+<h4>Address: <code>0x7e200008</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL20&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL21&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL22&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL23&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL24&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL25&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00038000</pre></td><td>&nbsp;<pre>0xfffc7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL26&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001c0000</pre></td><td>&nbsp;<pre>0xffe3ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL27&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00e00000</pre></td><td>&nbsp;<pre>0xff1fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL28&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL2_FSEL29&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x38000000</pre></td><td>&nbsp;<pre>0xc7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL20&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL21&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000038&nbsp;</code></td><td><code>&nbsp;0xffffffc7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL22&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000001c0&nbsp;</code></td><td><code>&nbsp;0xfffffe3f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL23&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000e00&nbsp;</code></td><td><code>&nbsp;0xfffff1ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL24&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007000&nbsp;</code></td><td><code>&nbsp;0xffff8fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL25&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00038000&nbsp;</code></td><td><code>&nbsp;0xfffc7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL26&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001c0000&nbsp;</code></td><td><code>&nbsp;0xffe3ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL27&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00e00000&nbsp;</code></td><td><code>&nbsp;0xff1fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL28&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x07000000&nbsp;</code></td><td><code>&nbsp;0xf8ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL2_FSEL29&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x38000000&nbsp;</code></td><td><code>&nbsp;0xc7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FSEL3'>GP_FSEL3</a></h3>
-<h4>Address: 0x7e20000c</h4>
+<h3><a name='gp_fsel3'>GP_FSEL3</a></h3>
+<h4>Address: <code>0x7e20000c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL30&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL31&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL32&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL33&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL34&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL35&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00038000</pre></td><td>&nbsp;<pre>0xfffc7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL36&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001c0000</pre></td><td>&nbsp;<pre>0xffe3ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL37&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00e00000</pre></td><td>&nbsp;<pre>0xff1fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL38&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL3_FSEL39&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x38000000</pre></td><td>&nbsp;<pre>0xc7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL30&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL31&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000038&nbsp;</code></td><td><code>&nbsp;0xffffffc7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL32&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000001c0&nbsp;</code></td><td><code>&nbsp;0xfffffe3f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL33&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000e00&nbsp;</code></td><td><code>&nbsp;0xfffff1ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL34&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007000&nbsp;</code></td><td><code>&nbsp;0xffff8fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL35&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00038000&nbsp;</code></td><td><code>&nbsp;0xfffc7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL36&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001c0000&nbsp;</code></td><td><code>&nbsp;0xffe3ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL37&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00e00000&nbsp;</code></td><td><code>&nbsp;0xff1fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL38&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x07000000&nbsp;</code></td><td><code>&nbsp;0xf8ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL3_FSEL39&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x38000000&nbsp;</code></td><td><code>&nbsp;0xc7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FSEL4'>GP_FSEL4</a></h3>
-<h4>Address: 0x7e200010</h4>
+<h3><a name='gp_fsel4'>GP_FSEL4</a></h3>
+<h4>Address: <code>0x7e200010</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL40&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL41&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL42&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL43&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL44&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL45&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00038000</pre></td><td>&nbsp;<pre>0xfffc7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL46&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001c0000</pre></td><td>&nbsp;<pre>0xffe3ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL47&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00e00000</pre></td><td>&nbsp;<pre>0xff1fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL48&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL4_FSEL49&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x38000000</pre></td><td>&nbsp;<pre>0xc7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL40&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL41&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000038&nbsp;</code></td><td><code>&nbsp;0xffffffc7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL42&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000001c0&nbsp;</code></td><td><code>&nbsp;0xfffffe3f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL43&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000e00&nbsp;</code></td><td><code>&nbsp;0xfffff1ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL44&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007000&nbsp;</code></td><td><code>&nbsp;0xffff8fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL45&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00038000&nbsp;</code></td><td><code>&nbsp;0xfffc7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL46&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001c0000&nbsp;</code></td><td><code>&nbsp;0xffe3ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL47&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00e00000&nbsp;</code></td><td><code>&nbsp;0xff1fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL48&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x07000000&nbsp;</code></td><td><code>&nbsp;0xf8ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL4_FSEL49&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x38000000&nbsp;</code></td><td><code>&nbsp;0xc7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FSEL5'>GP_FSEL5</a></h3>
-<h4>Address: 0x7e200014</h4>
+<h3><a name='gp_fsel5'>GP_FSEL5</a></h3>
+<h4>Address: <code>0x7e200014</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL50&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL51&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL52&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL53&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL54&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL55&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00038000</pre></td><td>&nbsp;<pre>0xfffc7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL56&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001c0000</pre></td><td>&nbsp;<pre>0xffe3ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL57&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00e00000</pre></td><td>&nbsp;<pre>0xff1fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL58&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL5_FSEL59&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x38000000</pre></td><td>&nbsp;<pre>0xc7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL50&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL51&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000038&nbsp;</code></td><td><code>&nbsp;0xffffffc7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL52&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000001c0&nbsp;</code></td><td><code>&nbsp;0xfffffe3f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL53&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000e00&nbsp;</code></td><td><code>&nbsp;0xfffff1ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL54&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007000&nbsp;</code></td><td><code>&nbsp;0xffff8fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL55&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00038000&nbsp;</code></td><td><code>&nbsp;0xfffc7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL56&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001c0000&nbsp;</code></td><td><code>&nbsp;0xffe3ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL57&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00e00000&nbsp;</code></td><td><code>&nbsp;0xff1fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL58&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x07000000&nbsp;</code></td><td><code>&nbsp;0xf8ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL5_FSEL59&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x38000000&nbsp;</code></td><td><code>&nbsp;0xc7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FSEL6'>GP_FSEL6</a></h3>
-<h4>Address: 0x7e200018</h4>
+<h3><a name='gp_fsel6'>GP_FSEL6</a></h3>
+<h4>Address: <code>0x7e200018</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL60&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL61&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000038</pre></td><td>&nbsp;<pre>0xffffffc7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL62&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000001c0</pre></td><td>&nbsp;<pre>0xfffffe3f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL63&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000e00</pre></td><td>&nbsp;<pre>0xfffff1ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL64&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00007000</pre></td><td>&nbsp;<pre>0xffff8fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL65&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00038000</pre></td><td>&nbsp;<pre>0xfffc7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL66&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001c0000</pre></td><td>&nbsp;<pre>0xffe3ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL67&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00e00000</pre></td><td>&nbsp;<pre>0xff1fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL68&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x07000000</pre></td><td>&nbsp;<pre>0xf8ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_FSEL6_FSEL69&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x38000000</pre></td><td>&nbsp;<pre>0xc7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL60&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL61&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000038&nbsp;</code></td><td><code>&nbsp;0xffffffc7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL62&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000001c0&nbsp;</code></td><td><code>&nbsp;0xfffffe3f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL63&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000e00&nbsp;</code></td><td><code>&nbsp;0xfffff1ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL64&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00007000&nbsp;</code></td><td><code>&nbsp;0xffff8fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL65&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00038000&nbsp;</code></td><td><code>&nbsp;0xfffc7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL66&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001c0000&nbsp;</code></td><td><code>&nbsp;0xffe3ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL67&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00e00000&nbsp;</code></td><td><code>&nbsp;0xff1fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL68&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x07000000&nbsp;</code></td><td><code>&nbsp;0xf8ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_FSEL6_FSEL69&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x38000000&nbsp;</code></td><td><code>&nbsp;0xc7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_SET0'>GP_SET0</a></h3>
-<h4>Address: 0x7e20001c</h4>
+<h3><a name='gp_set0'>GP_SET0</a></h3>
+<h4>Address: <code>0x7e20001c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_SET0_SETn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_SET0_SETn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_SET1'>GP_SET1</a></h3>
-<h4>Address: 0x7e200020</h4>
+<h3><a name='gp_set1'>GP_SET1</a></h3>
+<h4>Address: <code>0x7e200020</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_SET1_SETn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_SET1_SETn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_SET2'>GP_SET2</a></h3>
-<h4>Address: 0x7e200024</h4>
+<h3><a name='gp_set2'>GP_SET2</a></h3>
+<h4>Address: <code>0x7e200024</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_SET2_SETn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_SET2_SETn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_CLR0'>GP_CLR0</a></h3>
-<h4>Address: 0x7e200028</h4>
+<h3><a name='gp_clr0'>GP_CLR0</a></h3>
+<h4>Address: <code>0x7e200028</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_CLR0_CLRn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_CLR0_CLRn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_CLR1'>GP_CLR1</a></h3>
-<h4>Address: 0x7e20002c</h4>
+<h3><a name='gp_clr1'>GP_CLR1</a></h3>
+<h4>Address: <code>0x7e20002c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_CLR1_CLRn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_CLR1_CLRn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_CLR2'>GP_CLR2</a></h3>
-<h4>Address: 0x7e200030</h4>
+<h3><a name='gp_clr2'>GP_CLR2</a></h3>
+<h4>Address: <code>0x7e200030</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_CLR2_CLRn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_CLR2_CLRn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_LEV0'>GP_LEV0</a></h3>
-<h4>Address: 0x7e200034</h4>
+<h3><a name='gp_lev0'>GP_LEV0</a></h3>
+<h4>Address: <code>0x7e200034</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_LEV0_LEVn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_LEV0_LEVn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_LEV1'>GP_LEV1</a></h3>
-<h4>Address: 0x7e200038</h4>
+<h3><a name='gp_lev1'>GP_LEV1</a></h3>
+<h4>Address: <code>0x7e200038</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_LEV1_LEVn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_LEV1_LEVn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_LEV2'>GP_LEV2</a></h3>
-<h4>Address: 0x7e20003c</h4>
+<h3><a name='gp_lev2'>GP_LEV2</a></h3>
+<h4>Address: <code>0x7e20003c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_LEV2_LEVn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_LEV2_LEVn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_EDS0'>GP_EDS0</a></h3>
-<h4>Address: 0x7e200040</h4>
+<h3><a name='gp_eds0'>GP_EDS0</a></h3>
+<h4>Address: <code>0x7e200040</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_EDS0_EDSn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_EDS0_EDSn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_EDS1'>GP_EDS1</a></h3>
-<h4>Address: 0x7e200044</h4>
+<h3><a name='gp_eds1'>GP_EDS1</a></h3>
+<h4>Address: <code>0x7e200044</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_EDS1_EDSn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_EDS1_EDSn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_EDS2'>GP_EDS2</a></h3>
-<h4>Address: 0x7e200048</h4>
+<h3><a name='gp_eds2'>GP_EDS2</a></h3>
+<h4>Address: <code>0x7e200048</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_EDS2_EDSn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_EDS2_EDSn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_REN0'>GP_REN0</a></h3>
-<h4>Address: 0x7e20004c</h4>
+<h3><a name='gp_ren0'>GP_REN0</a></h3>
+<h4>Address: <code>0x7e20004c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_REN0_RENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_REN0_RENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_REN1'>GP_REN1</a></h3>
-<h4>Address: 0x7e200050</h4>
+<h3><a name='gp_ren1'>GP_REN1</a></h3>
+<h4>Address: <code>0x7e200050</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_REN1_RENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_REN1_RENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_REN2'>GP_REN2</a></h3>
-<h4>Address: 0x7e200054</h4>
+<h3><a name='gp_ren2'>GP_REN2</a></h3>
+<h4>Address: <code>0x7e200054</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_REN2_RENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_REN2_RENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FEN0'>GP_FEN0</a></h3>
-<h4>Address: 0x7e200058</h4>
+<h3><a name='gp_fen0'>GP_FEN0</a></h3>
+<h4>Address: <code>0x7e200058</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FEN0_FENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FEN0_FENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FEN1'>GP_FEN1</a></h3>
-<h4>Address: 0x7e20005c</h4>
+<h3><a name='gp_fen1'>GP_FEN1</a></h3>
+<h4>Address: <code>0x7e20005c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FEN1_FENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FEN1_FENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_FEN2'>GP_FEN2</a></h3>
-<h4>Address: 0x7e200060</h4>
+<h3><a name='gp_fen2'>GP_FEN2</a></h3>
+<h4>Address: <code>0x7e200060</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_FEN2_FENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_FEN2_FENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_HEN0'>GP_HEN0</a></h3>
-<h4>Address: 0x7e200064</h4>
+<h3><a name='gp_hen0'>GP_HEN0</a></h3>
+<h4>Address: <code>0x7e200064</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_HEN0_HENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_HEN0_HENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_HEN1'>GP_HEN1</a></h3>
-<h4>Address: 0x7e200068</h4>
+<h3><a name='gp_hen1'>GP_HEN1</a></h3>
+<h4>Address: <code>0x7e200068</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_HEN1_HENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_HEN1_HENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_HEN2'>GP_HEN2</a></h3>
-<h4>Address: 0x7e20006c</h4>
+<h3><a name='gp_hen2'>GP_HEN2</a></h3>
+<h4>Address: <code>0x7e20006c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_HEN2_HENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_HEN2_HENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_LEN0'>GP_LEN0</a></h3>
-<h4>Address: 0x7e200070</h4>
+<h3><a name='gp_len0'>GP_LEN0</a></h3>
+<h4>Address: <code>0x7e200070</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_LEN0_LENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_LEN0_LENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_LEN1'>GP_LEN1</a></h3>
-<h4>Address: 0x7e200074</h4>
+<h3><a name='gp_len1'>GP_LEN1</a></h3>
+<h4>Address: <code>0x7e200074</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_LEN1_LENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_LEN1_LENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_LEN2'>GP_LEN2</a></h3>
-<h4>Address: 0x7e200078</h4>
+<h3><a name='gp_len2'>GP_LEN2</a></h3>
+<h4>Address: <code>0x7e200078</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_LEN2_LENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_LEN2_LENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_AREN0'>GP_AREN0</a></h3>
-<h4>Address: 0x7e20007c</h4>
+<h3><a name='gp_aren0'>GP_AREN0</a></h3>
+<h4>Address: <code>0x7e20007c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_AREN0_ARENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_AREN0_ARENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_AREN1'>GP_AREN1</a></h3>
-<h4>Address: 0x7e200080</h4>
+<h3><a name='gp_aren1'>GP_AREN1</a></h3>
+<h4>Address: <code>0x7e200080</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_AREN1_ARENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_AREN1_ARENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_AREN2'>GP_AREN2</a></h3>
-<h4>Address: 0x7e200084</h4>
+<h3><a name='gp_aren2'>GP_AREN2</a></h3>
+<h4>Address: <code>0x7e200084</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_AREN2_ARENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_AREN2_ARENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_AFEN0'>GP_AFEN0</a></h3>
-<h4>Address: 0x7e200088</h4>
+<h3><a name='gp_afen0'>GP_AFEN0</a></h3>
+<h4>Address: <code>0x7e200088</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_AFEN0_AFENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_AFEN0_AFENn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_AFEN1'>GP_AFEN1</a></h3>
-<h4>Address: 0x7e20008c</h4>
+<h3><a name='gp_afen1'>GP_AFEN1</a></h3>
+<h4>Address: <code>0x7e20008c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_AFEN1_AFENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_AFEN1_AFENn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_AFEN2'>GP_AFEN2</a></h3>
-<h4>Address: 0x7e200090</h4>
+<h3><a name='gp_afen2'>GP_AFEN2</a></h3>
+<h4>Address: <code>0x7e200090</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_AFEN2_AFENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_AFEN2_AFENn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_PUD'>GP_PUD</a></h3>
-<h4>Address: 0x7e200094</h4>
+<h3><a name='gp_pud'>GP_PUD</a></h3>
+<h4>Address: <code>0x7e200094</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_PUD_PUD&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000003</pre></td><td>&nbsp;<pre>0xfffffffc</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_PUD_PUD&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000003&nbsp;</code></td><td><code>&nbsp;0xfffffffc&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_PUDCLK0'>GP_PUDCLK0</a></h3>
-<h4>Address: 0x7e200098</h4>
+<h3><a name='gp_pudclk0'>GP_PUDCLK0</a></h3>
+<h4>Address: <code>0x7e200098</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_PUDCLK0_PUDCLKn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_PUDCLK0_PUDCLKn0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_PUDCLK1'>GP_PUDCLK1</a></h3>
-<h4>Address: 0x7e20009c</h4>
+<h3><a name='gp_pudclk1'>GP_PUDCLK1</a></h3>
+<h4>Address: <code>0x7e20009c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_PUDCLK1_PUDCLKn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_PUDCLK1_PUDCLKn32&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_PUDCLK2'>GP_PUDCLK2</a></h3>
-<h4>Address: 0x7e2000a0</h4>
+<h3><a name='gp_pudclk2'>GP_PUDCLK2</a></h3>
+<h4>Address: <code>0x7e2000a0</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_PUDCLK2_PUDCLKn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_PUDCLK2_PUDCLKn64&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_SEN0'>GP_SEN0</a></h3>
-<h4>Address: 0x7e2000a4</h4>
+<h3><a name='gp_sen0'>GP_SEN0</a></h3>
+<h4>Address: <code>0x7e2000a4</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_SEN0_SEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0xffffffff&nbsp;</td></tr>
+<tr><td>&nbsp;GP_SEN0_SEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0xffffffff&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_SEN1'>GP_SEN1</a></h3>
-<h4>Address: 0x7e2000a8</h4>
+<h3><a name='gp_sen1'>GP_SEN1</a></h3>
+<h4>Address: <code>0x7e2000a8</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_SEN1_SEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003fffff</pre></td><td>&nbsp;<pre>0xffc00000</pre>&nbsp;</td><td align=center>&nbsp;0x3fffff&nbsp;</td></tr>
+<tr><td>&nbsp;GP_SEN1_SEN&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x003fffff&nbsp;</code></td><td><code>&nbsp;0xffc00000&nbsp;</code></td><td align=center><code>&nbsp;0x3fffff&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='GP_GPTEST'>GP_GPTEST</a></h3>
-<h4>Address: 0x7e2000b0</h4>
+<h3><a name='gp_gptest'>GP_GPTEST</a></h3>
+<h4>Address: <code>0x7e2000b0</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;GP_GPTEST_SMPS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;GP_GPTEST_SPARE&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000e</pre></td><td>&nbsp;<pre>0xfffffff1</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;GP_GPTEST_SMPS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;GP_GPTEST_SPARE&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x0000000e&nbsp;</code></td><td><code>&nbsp;0xfffffff1&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
 <br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>

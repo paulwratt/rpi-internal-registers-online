@@ -5,104 +5,104 @@
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: HD (0x7e808000)</h1>
+<h1>Register Region: HD (<code>0x7e808000</code>)</h1>
 <h2>Info</h2>
 <table><tr><th>Name</th><th>Value</th></tr>
-<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e808000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x48444d49</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td><code>&nbsp;0x7e808000&nbsp;</code></td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td><code>&nbsp;0x48444d49&nbsp;</code></td></tr>
 </table>
 
 <h2>Registers</h2>
 <table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>&nbsp;<a href='#hd_hdm_ctl'>HD_HDM_CTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e80800c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x000003f7</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x000000f0</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#hd_mai_ctl'>HD_MAI_CTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e808014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00000020</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#hd_mai_thr'>HD_MAI_THR</a>&nbsp;</td><td>&nbsp;<pre>0x7e808018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x01010101</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_FMT&nbsp;</td><td>&nbsp;<pre>0x7e80801c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_DAT&nbsp;</td><td>&nbsp;<pre>0x7e808020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_SPARE&nbsp;</td><td>&nbsp;<pre>0x7e808024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_SMP&nbsp;</td><td>&nbsp;<pre>0x7e80802c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#hd_vid_ctl'>HD_VID_CTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e808038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xfffc0000</pre>&nbsp;</td><td align=center>&nbsp;<pre>0x00040000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#hd_csc_ctl'>HD_CSC_CTL</a>&nbsp;</td><td>&nbsp;<pre>0x7e808040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x000000ff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_12_11&nbsp;</td><td>&nbsp;<pre>0x7e808044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_14_13&nbsp;</td><td>&nbsp;<pre>0x7e808048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_22_21&nbsp;</td><td>&nbsp;<pre>0x7e80804c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_24_23&nbsp;</td><td>&nbsp;<pre>0x7e808050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_32_31&nbsp;</td><td>&nbsp;<pre>0x7e808054</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_34_33&nbsp;</td><td>&nbsp;<pre>0x7e808058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;HD_FRAME_CNT&nbsp;</td><td>&nbsp;<pre>0x7e808068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre>0000000000</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#hd_hdm_ctl'>HD_HDM_CTL</a>&nbsp;</td><td><code>&nbsp;0x7e80800c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td><code>&nbsp;0x000003f7&nbsp;</code></td><td align=center><code>&nbsp;0x000000f0&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#hd_mai_ctl'>HD_MAI_CTL</a>&nbsp;</td><td><code>&nbsp;0x7e808014&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td align=center><code>&nbsp;0x00000020&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#hd_mai_thr'>HD_MAI_THR</a>&nbsp;</td><td><code>&nbsp;0x7e808018&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0x01010101&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_FMT&nbsp;</td><td><code>&nbsp;0x7e80801c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_DAT&nbsp;</td><td><code>&nbsp;0x7e808020&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_SPARE&nbsp;</td><td><code>&nbsp;0x7e808024&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_SMP&nbsp;</td><td><code>&nbsp;0x7e80802c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#hd_vid_ctl'>HD_VID_CTL</a>&nbsp;</td><td><code>&nbsp;0x7e808038&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xfffc0000&nbsp;</code></td><td align=center><code>&nbsp;0x00040000&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#hd_csc_ctl'>HD_CSC_CTL</a>&nbsp;</td><td><code>&nbsp;0x7e808040&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x000000ff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_12_11&nbsp;</td><td><code>&nbsp;0x7e808044&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_14_13&nbsp;</td><td><code>&nbsp;0x7e808048&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_22_21&nbsp;</td><td><code>&nbsp;0x7e80804c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_24_23&nbsp;</td><td><code>&nbsp;0x7e808050&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_32_31&nbsp;</td><td><code>&nbsp;0x7e808054&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_34_33&nbsp;</td><td><code>&nbsp;0x7e808058&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_FRAME_CNT&nbsp;</td><td><code>&nbsp;0x7e808068&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;0000000000&nbsp;</code></td></tr>
 </table>
 
 <h2>Register info</h2>
-<h3><a name='HD_HDM_CTL'>HD_HDM_CTL</a></h3>
-<h4>Address: 0x7e80800c</h4>
+<h3><a name='hd_hdm_ctl'>HD_HDM_CTL</a></h3>
+<h4>Address: <code>0x7e80800c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;HD_HDM_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_HDM_CTL_ENDIAN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_HDM_CTL_SW_RST&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;HD_HDM_CTL_PDSTBY&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x00000030</pre></td><td>&nbsp;<pre>0xffffffcf</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
-<tr><td>&nbsp;HD_HDM_CTL_RFSTBY&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000c0</pre></td><td>&nbsp;<pre>0xffffff3f</pre>&nbsp;</td><td align=center>&nbsp;0x3&nbsp;</td></tr>
-<tr><td>&nbsp;HD_HDM_CTL_CECOVR&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_HDM_CTL_CECRXD&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;HD_HDM_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_HDM_CTL_ENDIAN&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_HDM_CTL_SW_RST&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_HDM_CTL_PDSTBY&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x00000030&nbsp;</code></td><td><code>&nbsp;0xffffffcf&nbsp;</code></td><td align=center><code>&nbsp;0x3&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_HDM_CTL_RFSTBY&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x000000c0&nbsp;</code></td><td><code>&nbsp;0xffffff3f&nbsp;</code></td><td align=center><code>&nbsp;0x3&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_HDM_CTL_CECOVR&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_HDM_CTL_CECRXD&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x00000200&nbsp;</code></td><td><code>&nbsp;0xfffffdff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='HD_MAI_CTL'>HD_MAI_CTL</a></h3>
-<h4>Address: 0x7e808014</h4>
+<h3><a name='hd_mai_ctl'>HD_MAI_CTL</a></h3>
+<h4>Address: <code>0x7e808014</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;HD_MAI_CTL_RST_MAI&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_ERRORF&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_ERRORE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000004</pre></td><td>&nbsp;<pre>0xfffffffb</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x00000008</pre></td><td>&nbsp;<pre>0xfffffff7</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_CHNUM&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_PAREN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_FLUSH&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000200</pre></td><td>&nbsp;<pre>0xfffffdff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_EMPTY&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td>&nbsp;<pre>0x00000400</pre></td><td>&nbsp;<pre>0xfffffbff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_FULL&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>0x00000800</pre></td><td>&nbsp;<pre>0xfffff7ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_WHOLSMP&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_CHALIGN&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00002000</pre></td><td>&nbsp;<pre>0xffffdfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_BUSY&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td>&nbsp;<pre>0x00004000</pre></td><td>&nbsp;<pre>0xffffbfff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_CTL_DLATE&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x00008000</pre></td><td>&nbsp;<pre>0xffff7fff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_RST_MAI&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_ERRORF&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_ERRORE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000004&nbsp;</code></td><td><code>&nbsp;0xfffffffb&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x00000008&nbsp;</code></td><td><code>&nbsp;0xfffffff7&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_CHNUM&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x000000f0&nbsp;</code></td><td><code>&nbsp;0xffffff0f&nbsp;</code></td><td align=center><code>&nbsp;0x2&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_PAREN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_FLUSH&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x00000200&nbsp;</code></td><td><code>&nbsp;0xfffffdff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_EMPTY&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td><code>&nbsp;0x00000400&nbsp;</code></td><td><code>&nbsp;0xfffffbff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_FULL&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;0x00000800&nbsp;</code></td><td><code>&nbsp;0xfffff7ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_WHOLSMP&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td><code>&nbsp;0x00001000&nbsp;</code></td><td><code>&nbsp;0xffffefff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_CHALIGN&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td><code>&nbsp;0x00002000&nbsp;</code></td><td><code>&nbsp;0xffffdfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_BUSY&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td><code>&nbsp;0x00004000&nbsp;</code></td><td><code>&nbsp;0xffffbfff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_CTL_DLATE&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x00008000&nbsp;</code></td><td><code>&nbsp;0xffff7fff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='HD_MAI_THR'>HD_MAI_THR</a></h3>
-<h4>Address: 0x7e808018</h4>
+<h3><a name='hd_mai_thr'>HD_MAI_THR</a></h3>
+<h4>Address: <code>0x7e808018</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;HD_MAI_THR_DREQLOW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td>&nbsp;<pre>0x0000003f</pre></td><td>&nbsp;<pre>0xffffffc0</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_THR_DREQHIGH&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td>&nbsp;<pre>0x00003f00</pre></td><td>&nbsp;<pre>0xffffc0ff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_THR_PANICLOW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x003f0000</pre></td><td>&nbsp;<pre>0xffc0ffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;HD_MAI_THR_PANICHIGH&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3f000000</pre></td><td>&nbsp;<pre>0xc0ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
+<tr><td>&nbsp;HD_MAI_THR_DREQLOW&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td><code>&nbsp;0x0000003f&nbsp;</code></td><td><code>&nbsp;0xffffffc0&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_THR_DREQHIGH&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td><code>&nbsp;0x00003f00&nbsp;</code></td><td><code>&nbsp;0xffffc0ff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;14&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_THR_PANICLOW&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x003f0000&nbsp;</code></td><td><code>&nbsp;0xffc0ffff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_MAI_THR_PANICHIGH&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x3f000000&nbsp;</code></td><td><code>&nbsp;0xc0ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='HD_VID_CTL'>HD_VID_CTL</a></h3>
-<h4>Address: 0x7e808038</h4>
+<h3><a name='hd_vid_ctl'>HD_VID_CTL</a></h3>
+<h4>Address: <code>0x7e808038</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_BLANKPIX&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td>&nbsp;<pre>0x00040000</pre></td><td>&nbsp;<pre>0xfffbffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_EMPRGB&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x00080000</pre></td><td>&nbsp;<pre>0xfff7ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_EMPSYNC&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_FULRGB&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00200000</pre></td><td>&nbsp;<pre>0xffdfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_FULSYNC&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td>&nbsp;<pre>0x00400000</pre></td><td>&nbsp;<pre>0xffbfffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_CLRRGB&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>0x00800000</pre></td><td>&nbsp;<pre>0xff7fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_CLRSYNC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x01000000</pre></td><td>&nbsp;<pre>0xfeffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_ERROR&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>0x06000000</pre></td><td>&nbsp;<pre>0xf9ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_HPOL&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x08000000</pre></td><td>&nbsp;<pre>0xf7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_VPOL&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_RST_FRAMEC&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_UFEN&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_VID_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_BLANKPIX&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td><code>&nbsp;0x00040000&nbsp;</code></td><td><code>&nbsp;0xfffbffff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_EMPRGB&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x00080000&nbsp;</code></td><td><code>&nbsp;0xfff7ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_EMPSYNC&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x00100000&nbsp;</code></td><td><code>&nbsp;0xffefffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_FULRGB&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x00200000&nbsp;</code></td><td><code>&nbsp;0xffdfffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_FULSYNC&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td align=center>&nbsp;22&nbsp;</td><td><code>&nbsp;0x00400000&nbsp;</code></td><td><code>&nbsp;0xffbfffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_CLRRGB&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;0x00800000&nbsp;</code></td><td><code>&nbsp;0xff7fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_CLRSYNC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td><code>&nbsp;0x01000000&nbsp;</code></td><td><code>&nbsp;0xfeffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_ERROR&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;0x06000000&nbsp;</code></td><td><code>&nbsp;0xf9ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_HPOL&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x08000000&nbsp;</code></td><td><code>&nbsp;0xf7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_VPOL&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_RST_FRAMEC&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_UFEN&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_VID_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='HD_CSC_CTL'>HD_CSC_CTL</a></h3>
-<h4>Address: 0x7e808040</h4>
+<h3><a name='hd_csc_ctl'>HD_CSC_CTL</a></h3>
+<h4>Address: <code>0x7e808040</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;HD_CSC_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_CTL_USERGB2YCC&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td>&nbsp;<pre>0x00000002</pre></td><td>&nbsp;<pre>0xfffffffd</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_CTL_MODE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000c</pre></td><td>&nbsp;<pre>0xfffffff3</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_CTL_PADMSB&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;HD_CSC_CTL_COLORD&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000e0</pre></td><td>&nbsp;<pre>0xffffff1f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;HD_CSC_CTL_ENABLE&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_CTL_USERGB2YCC&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td><code>&nbsp;0x00000002&nbsp;</code></td><td><code>&nbsp;0xfffffffd&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_CTL_MODE&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x0000000c&nbsp;</code></td><td><code>&nbsp;0xfffffff3&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_CTL_PADMSB&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000010&nbsp;</code></td><td><code>&nbsp;0xffffffef&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;HD_CSC_CTL_COLORD&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x000000e0&nbsp;</code></td><td><code>&nbsp;0xffffff1f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
 <br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>

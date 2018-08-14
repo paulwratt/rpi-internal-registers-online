@@ -5,313 +5,313 @@
 </head>
 <body>
 <font face='sans-serif'><a href='index.html'>&lt;&lt; RPi Registers Index</a><br><br>
-<h1>Register Region: MPHI (0x7e006000)</h1>
+<h1>Register Region: MPHI (<code>0x7e006000</code>)</h1>
 <h2>Info</h2>
 <table><tr><th>Name</th><th>Value</th></tr>
-<tr><td>&nbsp;base&nbsp;</td><td>&nbsp;<pre>0x7e006000</pre>&nbsp;</td></tr>
-<tr><td>&nbsp;id&nbsp;</td><td>&nbsp;<pre>0x6d706869</pre>&nbsp;</td></tr>
+<tr><td>&nbsp;base&nbsp;</td><td><code>&nbsp;0x7e006000&nbsp;</code></td></tr>
+<tr><td>&nbsp;id&nbsp;</td><td><code>&nbsp;0x6d706869&nbsp;</code></td></tr>
 </table>
 
 <h2>Registers</h2>
 <table><tr><th>Register Name</th><th>Address</th><th>Type</th><th>Width</th><th>Mask</th><th>Reset</th></tr>
-<tr><td>&nbsp;<a href='#mphi_c0indda'>MPHI_C0INDDA</a>&nbsp;</td><td>&nbsp;<pre>0x7e006000</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c0inddb'>MPHI_C0INDDB</a>&nbsp;</td><td>&nbsp;<pre>0x7e006004</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c1indda'>MPHI_C1INDDA</a>&nbsp;</td><td>&nbsp;<pre>0x7e006008</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c1inddb'>MPHI_C1INDDB</a>&nbsp;</td><td>&nbsp;<pre>0x7e00600c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c0inds'>MPHI_C0INDS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006010</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c1inds'>MPHI_C1INDS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006014</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c0indcf'>MPHI_C0INDCF</a>&nbsp;</td><td>&nbsp;<pre>0x7e006018</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c1indcf'>MPHI_C1INDCF</a>&nbsp;</td><td>&nbsp;<pre>0x7e00601c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c0indfs'>MPHI_C0INDFS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006020</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_c1indfs'>MPHI_C1INDFS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006024</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_outdda'>MPHI_OUTDDA</a>&nbsp;</td><td>&nbsp;<pre>0x7e006028</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_outddb'>MPHI_OUTDDB</a>&nbsp;</td><td>&nbsp;<pre>0x7e00602c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x3fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_outds'>MPHI_OUTDS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006030</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x5fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_outdfs'>MPHI_OUTDFS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006034</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_minfs'>MPHI_MINFS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006038</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_moutfs'>MPHI_MOUTFS</a>&nbsp;</td><td>&nbsp;<pre>0x7e00603c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_axipriv'>MPHI_AXIPRIV</a>&nbsp;</td><td>&nbsp;<pre>0x7e006040</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x00000177</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_rxaxicfg'>MPHI_RXAXICFG</a>&nbsp;</td><td>&nbsp;<pre>0x7e006044</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_txaxicfg'>MPHI_TXAXICFG</a>&nbsp;</td><td>&nbsp;<pre>0x7e006048</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x0001ffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_ctrl'>MPHI_CTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e00604c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0x88031111</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_intstat'>MPHI_INTSTAT</a>&nbsp;</td><td>&nbsp;<pre>0x7e006050</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xf9111111</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_VERSION&nbsp;</td><td>&nbsp;<pre>0x7e006054</pre>&nbsp;</td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_intctrl'>MPHI_INTCTRL</a>&nbsp;</td><td>&nbsp;<pre>0x7e006058</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td>&nbsp;<pre>0x00111111</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_hsindcf'>MPHI_HSINDCF</a>&nbsp;</td><td>&nbsp;<pre>0x7e00605c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_hsinds'>MPHI_HSINDS</a>&nbsp;</td><td>&nbsp;<pre>0x7e006060</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_hsindda'>MPHI_HSINDDA</a>&nbsp;</td><td>&nbsp;<pre>0x7e006064</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_hsinddb'>MPHI_HSINDDB</a>&nbsp;</td><td>&nbsp;<pre>0x7e006068</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x2fffffff</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
-<tr><td>&nbsp;<a href='#mphi_hsindfs'>MPHI_HSINDFS</a>&nbsp;</td><td>&nbsp;<pre>0x7e00606c</pre>&nbsp;</td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td>&nbsp;<pre>0xffff0001</pre>&nbsp;</td><td align=center>&nbsp;<pre></pre>&nbsp;</td></tr>
+<tr><td>&nbsp;<a href='#mphi_c0indda'>MPHI_C0INDDA</a>&nbsp;</td><td><code>&nbsp;0x7e006000&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c0inddb'>MPHI_C0INDDB</a>&nbsp;</td><td><code>&nbsp;0x7e006004&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c1indda'>MPHI_C1INDDA</a>&nbsp;</td><td><code>&nbsp;0x7e006008&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c1inddb'>MPHI_C1INDDB</a>&nbsp;</td><td><code>&nbsp;0x7e00600c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c0inds'>MPHI_C0INDS</a>&nbsp;</td><td><code>&nbsp;0x7e006010&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c1inds'>MPHI_C1INDS</a>&nbsp;</td><td><code>&nbsp;0x7e006014&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c0indcf'>MPHI_C0INDCF</a>&nbsp;</td><td><code>&nbsp;0x7e006018&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c1indcf'>MPHI_C1INDCF</a>&nbsp;</td><td><code>&nbsp;0x7e00601c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c0indfs'>MPHI_C0INDFS</a>&nbsp;</td><td><code>&nbsp;0x7e006020&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_c1indfs'>MPHI_C1INDFS</a>&nbsp;</td><td><code>&nbsp;0x7e006024&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_outdda'>MPHI_OUTDDA</a>&nbsp;</td><td><code>&nbsp;0x7e006028&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_outddb'>MPHI_OUTDDB</a>&nbsp;</td><td><code>&nbsp;0x7e00602c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x3fffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_outds'>MPHI_OUTDS</a>&nbsp;</td><td><code>&nbsp;0x7e006030&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x5fffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_outdfs'>MPHI_OUTDFS</a>&nbsp;</td><td><code>&nbsp;0x7e006034&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_minfs'>MPHI_MINFS</a>&nbsp;</td><td><code>&nbsp;0x7e006038&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_moutfs'>MPHI_MOUTFS</a>&nbsp;</td><td><code>&nbsp;0x7e00603c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_axipriv'>MPHI_AXIPRIV</a>&nbsp;</td><td><code>&nbsp;0x7e006040&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x00000177&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_rxaxicfg'>MPHI_RXAXICFG</a>&nbsp;</td><td><code>&nbsp;0x7e006044&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x0001ffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_txaxicfg'>MPHI_TXAXICFG</a>&nbsp;</td><td><code>&nbsp;0x7e006048&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x0001ffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_ctrl'>MPHI_CTRL</a>&nbsp;</td><td><code>&nbsp;0x7e00604c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0x88031111&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_intstat'>MPHI_INTSTAT</a>&nbsp;</td><td><code>&nbsp;0x7e006050&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xf9111111&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_VERSION&nbsp;</td><td><code>&nbsp;0x7e006054&nbsp;</code></td><td align=center>&nbsp;RO&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_intctrl'>MPHI_INTCTRL</a>&nbsp;</td><td><code>&nbsp;0x7e006058&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td><code>&nbsp;0x00111111&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_hsindcf'>MPHI_HSINDCF</a>&nbsp;</td><td><code>&nbsp;0x7e00605c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_hsinds'>MPHI_HSINDS</a>&nbsp;</td><td><code>&nbsp;0x7e006060&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_hsindda'>MPHI_HSINDDA</a>&nbsp;</td><td><code>&nbsp;0x7e006064&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_hsinddb'>MPHI_HSINDDB</a>&nbsp;</td><td><code>&nbsp;0x7e006068&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x2fffffff&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
+<tr><td>&nbsp;<a href='#mphi_hsindfs'>MPHI_HSINDFS</a>&nbsp;</td><td><code>&nbsp;0x7e00606c&nbsp;</code></td><td align=center>&nbsp;RW&nbsp;</td><td align=center>&nbsp;32&nbsp;</td><td><code>&nbsp;0xffff0001&nbsp;</code></td><td align=center><code>&nbsp;&nbsp;</code></td></tr>
 </table>
 
 <h2>Register info</h2>
-<h3><a name='MPHI_C0INDDA'>MPHI_C0INDDA</a></h3>
-<h4>Address: 0x7e006000</h4>
+<h3><a name='mphi_c0indda'>MPHI_C0INDDA</a></h3>
+<h4>Address: <code>0x7e006000</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C0INDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C0INDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C0INDDB'>MPHI_C0INDDB</a></h3>
-<h4>Address: 0x7e006004</h4>
+<h3><a name='mphi_c0inddb'>MPHI_C0INDDB</a></h3>
+<h4>Address: <code>0x7e006004</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C0INDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0ff00000</pre></td><td>&nbsp;<pre>0xf00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDDB_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDDB_MENDINT&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDDB_MORUN&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C0INDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000fffff&nbsp;</code></td><td><code>&nbsp;0xfff00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x0ff00000&nbsp;</code></td><td><code>&nbsp;0xf00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDDB_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDDB_MENDINT&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDDB_MORUN&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C1INDDA'>MPHI_C1INDDA</a></h3>
-<h4>Address: 0x7e006008</h4>
+<h3><a name='mphi_c1indda'>MPHI_C1INDDA</a></h3>
+<h4>Address: <code>0x7e006008</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C1INDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C1INDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C1INDDB'>MPHI_C1INDDB</a></h3>
-<h4>Address: 0x7e00600c</h4>
+<h3><a name='mphi_c1inddb'>MPHI_C1INDDB</a></h3>
+<h4>Address: <code>0x7e00600c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C1INDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0ff00000</pre></td><td>&nbsp;<pre>0xf00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDDB_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDDB_MENDINT&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDDB_MORUN&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C1INDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000fffff&nbsp;</code></td><td><code>&nbsp;0xfff00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x0ff00000&nbsp;</code></td><td><code>&nbsp;0xf00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDDB_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDDB_MENDINT&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDDB_MORUN&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C0INDS'>MPHI_C0INDS</a></h3>
-<h4>Address: 0x7e006010</h4>
+<h3><a name='mphi_c0inds'>MPHI_C0INDS</a></h3>
+<h4>Address: <code>0x7e006010</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C0INDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre></td><td>&nbsp;<pre>0xffe00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x1fe00000</pre></td><td>&nbsp;<pre>0xe01fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDS_DISCARD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C0INDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001fffff&nbsp;</code></td><td><code>&nbsp;0xffe00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x1fe00000&nbsp;</code></td><td><code>&nbsp;0xe01fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDS_DISCARD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C1INDS'>MPHI_C1INDS</a></h3>
-<h4>Address: 0x7e006014</h4>
+<h3><a name='mphi_c1inds'>MPHI_C1INDS</a></h3>
+<h4>Address: <code>0x7e006014</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C1INDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre></td><td>&nbsp;<pre>0xffe00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x1fe00000</pre></td><td>&nbsp;<pre>0xe01fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDS_DISCARD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C1INDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001fffff&nbsp;</code></td><td><code>&nbsp;0xffe00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x1fe00000&nbsp;</code></td><td><code>&nbsp;0xe01fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDS_DISCARD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C0INDCF'>MPHI_C0INDCF</a></h3>
-<h4>Address: 0x7e006018</h4>
+<h3><a name='mphi_c0indcf'>MPHI_C0INDCF</a></h3>
+<h4>Address: <code>0x7e006018</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C0INDCF_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDCF_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0ff00000</pre></td><td>&nbsp;<pre>0xf00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDCF_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDCF_ORUN&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDCF_LENERR&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDCF_EMPTY&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C0INDCF_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000fffff&nbsp;</code></td><td><code>&nbsp;0xfff00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDCF_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x0ff00000&nbsp;</code></td><td><code>&nbsp;0xf00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDCF_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDCF_ORUN&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDCF_LENERR&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDCF_EMPTY&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C1INDCF'>MPHI_C1INDCF</a></h3>
-<h4>Address: 0x7e00601c</h4>
+<h3><a name='mphi_c1indcf'>MPHI_C1INDCF</a></h3>
+<h4>Address: <code>0x7e00601c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C1INDCF_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDCF_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0ff00000</pre></td><td>&nbsp;<pre>0xf00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDCF_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDCF_ORUN&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDCF_LENERR&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDCF_EMPTY&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C1INDCF_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000fffff&nbsp;</code></td><td><code>&nbsp;0xfff00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDCF_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x0ff00000&nbsp;</code></td><td><code>&nbsp;0xf00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDCF_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDCF_ORUN&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDCF_LENERR&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDCF_EMPTY&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C0INDFS'>MPHI_C0INDFS</a></h3>
-<h4>Address: 0x7e006020</h4>
+<h3><a name='mphi_c0indfs'>MPHI_C0INDFS</a></h3>
+<h4>Address: <code>0x7e006020</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C0INDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C0INDFS_CFIFOLVL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffff0000</pre></td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C0INDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C0INDFS_CFIFOLVL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_C1INDFS'>MPHI_C1INDFS</a></h3>
-<h4>Address: 0x7e006024</h4>
+<h3><a name='mphi_c1indfs'>MPHI_C1INDFS</a></h3>
+<h4>Address: <code>0x7e006024</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_C1INDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_C1INDFS_CFIFOLVL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffff0000</pre></td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_C1INDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_C1INDFS_CFIFOLVL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_OUTDDA'>MPHI_OUTDDA</a></h3>
-<h4>Address: 0x7e006028</h4>
+<h3><a name='mphi_outdda'>MPHI_OUTDDA</a></h3>
+<h4>Address: <code>0x7e006028</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_OUTDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_OUTDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_OUTDDB'>MPHI_OUTDDB</a></h3>
-<h4>Address: 0x7e00602c</h4>
+<h3><a name='mphi_outddb'>MPHI_OUTDDB</a></h3>
+<h4>Address: <code>0x7e00602c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_OUTDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_OUTDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0ff00000</pre></td><td>&nbsp;<pre>0xf00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_OUTDDB_CHANNEL&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_OUTDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_OUTDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000fffff&nbsp;</code></td><td><code>&nbsp;0xfff00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_OUTDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x0ff00000&nbsp;</code></td><td><code>&nbsp;0xf00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_OUTDDB_CHANNEL&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_OUTDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_OUTDS'>MPHI_OUTDS</a></h3>
-<h4>Address: 0x7e006030</h4>
+<h3><a name='mphi_outds'>MPHI_OUTDS</a></h3>
+<h4>Address: <code>0x7e006030</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_OUTDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre></td><td>&nbsp;<pre>0xffe00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_OUTDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x1fe00000</pre></td><td>&nbsp;<pre>0xe01fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_OUTDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_OUTDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001fffff&nbsp;</code></td><td><code>&nbsp;0xffe00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_OUTDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x1fe00000&nbsp;</code></td><td><code>&nbsp;0xe01fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_OUTDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_OUTDFS'>MPHI_OUTDFS</a></h3>
-<h4>Address: 0x7e006034</h4>
+<h3><a name='mphi_outdfs'>MPHI_OUTDFS</a></h3>
+<h4>Address: <code>0x7e006034</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_OUTDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>0x0000ffff</pre></td><td>&nbsp;<pre>0xffff0000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_OUTDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_MINFS'>MPHI_MINFS</a></h3>
-<h4>Address: 0x7e006038</h4>
+<h3><a name='mphi_minfs'>MPHI_MINFS</a></h3>
+<h4>Address: <code>0x7e006038</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_MINFS_LEVEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_MINFS_WPTR&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000ffc00</pre></td><td>&nbsp;<pre>0xfff003ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_MINFS_RPTR&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3ff00000</pre></td><td>&nbsp;<pre>0xc00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_MINFS_OFLOW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_MINFS_LEVEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x000003ff&nbsp;</code></td><td><code>&nbsp;0xfffffc00&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_MINFS_WPTR&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000ffc00&nbsp;</code></td><td><code>&nbsp;0xfff003ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_MINFS_RPTR&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x3ff00000&nbsp;</code></td><td><code>&nbsp;0xc00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_MINFS_OFLOW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_MOUTFS'>MPHI_MOUTFS</a></h3>
-<h4>Address: 0x7e00603c</h4>
+<h3><a name='mphi_moutfs'>MPHI_MOUTFS</a></h3>
+<h4>Address: <code>0x7e00603c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_MOUTFS_LEVEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td>&nbsp;<pre>0x000003ff</pre></td><td>&nbsp;<pre>0xfffffc00</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_MOUTFS_WPTR&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000ffc00</pre></td><td>&nbsp;<pre>0xfff003ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_MOUTFS_RPTR&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x3ff00000</pre></td><td>&nbsp;<pre>0xc00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_MOUTFS_UFLOW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_MOUTFS_LEVEL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td><code>&nbsp;0x000003ff&nbsp;</code></td><td><code>&nbsp;0xfffffc00&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_MOUTFS_WPTR&nbsp;</td><td align=center>&nbsp;10&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000ffc00&nbsp;</code></td><td><code>&nbsp;0xfff003ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_MOUTFS_RPTR&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x3ff00000&nbsp;</code></td><td><code>&nbsp;0xc00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_MOUTFS_UFLOW&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_AXIPRIV'>MPHI_AXIPRIV</a></h3>
-<h4>Address: 0x7e006040</h4>
+<h3><a name='mphi_axipriv'>MPHI_AXIPRIV</a></h3>
+<h4>Address: <code>0x7e006040</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_AXIPRIV_TXPROT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td>&nbsp;<pre>0x00000007</pre></td><td>&nbsp;<pre>0xfffffff8</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_AXIPRIV_RXPROT&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td>&nbsp;<pre>0x00000070</pre></td><td>&nbsp;<pre>0xffffff8f</pre>&nbsp;</td><td align=center>&nbsp;0x2&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_AXIPRIV_HSPECEN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_AXIPRIV_TXPROT&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;2&nbsp;</td><td><code>&nbsp;0x00000007&nbsp;</code></td><td><code>&nbsp;0xfffffff8&nbsp;</code></td><td align=center><code>&nbsp;0x2&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_AXIPRIV_RXPROT&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;6&nbsp;</td><td><code>&nbsp;0x00000070&nbsp;</code></td><td><code>&nbsp;0xffffff8f&nbsp;</code></td><td align=center><code>&nbsp;0x2&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_AXIPRIV_HSPECEN&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_RXAXICFG'>MPHI_RXAXICFG</a></h3>
-<h4>Address: 0x7e006044</h4>
+<h3><a name='mphi_rxaxicfg'>MPHI_RXAXICFG</a></h3>
+<h4>Address: <code>0x7e006044</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_RXAXICFG_RXNPRIO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_RXAXICFG_RXPPRIO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_RXAXICFG_INTHRESH&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0001ff00</pre></td><td>&nbsp;<pre>0xfffe00ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_RXAXICFG_RXNPRIO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td><code>&nbsp;0xfffffff0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_RXAXICFG_RXPPRIO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x000000f0&nbsp;</code></td><td><code>&nbsp;0xffffff0f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_RXAXICFG_INTHRESH&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x0001ff00&nbsp;</code></td><td><code>&nbsp;0xfffe00ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_TXAXICFG'>MPHI_TXAXICFG</a></h3>
-<h4>Address: 0x7e006048</h4>
+<h3><a name='mphi_txaxicfg'>MPHI_TXAXICFG</a></h3>
+<h4>Address: <code>0x7e006048</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_TXAXICFG_TXNPRIO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>0x0000000f</pre></td><td>&nbsp;<pre>0xfffffff0</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_TXAXICFG_TXPPRIO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>0x000000f0</pre></td><td>&nbsp;<pre>0xffffff0f</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_TXAXICFG_INTHRESH&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x0001ff00</pre></td><td>&nbsp;<pre>0xfffe00ff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_TXAXICFG_TXNPRIO&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;0x0000000f&nbsp;</code></td><td><code>&nbsp;0xfffffff0&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_TXAXICFG_TXPPRIO&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;0x000000f0&nbsp;</code></td><td><code>&nbsp;0xffffff0f&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_TXAXICFG_INTHRESH&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x0001ff00&nbsp;</code></td><td><code>&nbsp;0xfffe00ff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_CTRL'>MPHI_CTRL</a></h3>
-<h4>Address: 0x7e00604c</h4>
+<h3><a name='mphi_ctrl'>MPHI_CTRL</a></h3>
+<h4>Address: <code>0x7e00604c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_CTRL_HATVAL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_CTRL_DIRECT&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_CTRL_INVERT&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_CTRL_EIGHTBIT&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_CTRL_REQ_SOFT_RST&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_CTRL_SOFT_RST_DNE&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td>&nbsp;<pre>0x00020000</pre></td><td>&nbsp;<pre>0xfffdffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_CTRL_STBY&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x08000000</pre></td><td>&nbsp;<pre>0xf7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x1&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_CTRL_ENABLE&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_CTRL_HATVAL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_CTRL_DIRECT&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000010&nbsp;</code></td><td><code>&nbsp;0xffffffef&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_CTRL_INVERT&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_CTRL_EIGHTBIT&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td><code>&nbsp;0x00001000&nbsp;</code></td><td><code>&nbsp;0xffffefff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_CTRL_REQ_SOFT_RST&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x00010000&nbsp;</code></td><td><code>&nbsp;0xfffeffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_CTRL_SOFT_RST_DNE&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td><code>&nbsp;0x00020000&nbsp;</code></td><td><code>&nbsp;0xfffdffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;18&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_CTRL_STBY&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x08000000&nbsp;</code></td><td><code>&nbsp;0xf7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x1&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_CTRL_ENABLE&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_INTSTAT'>MPHI_INTSTAT</a></h3>
-<h4>Address: 0x7e006050</h4>
+<h3><a name='mphi_intstat'>MPHI_INTSTAT</a></h3>
+<h4>Address: <code>0x7e006050</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_RX0MEND&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_RX0TEND&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_RX1MEND&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_RX1TEND&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_TXEND&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_RX0DISC&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_RX1DISC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td>&nbsp;<pre>0x01000000</pre></td><td>&nbsp;<pre>0xfeffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_HSDCFOFLW&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x08000000</pre></td><td>&nbsp;<pre>0xf7ffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_OMFUFLW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_IMFOFLW&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_HSDISC&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTSTAT_HSTEND&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_RX0MEND&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_RX0TEND&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000010&nbsp;</code></td><td><code>&nbsp;0xffffffef&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_RX1MEND&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_RX1TEND&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td><code>&nbsp;0x00001000&nbsp;</code></td><td><code>&nbsp;0xffffefff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_TXEND&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x00010000&nbsp;</code></td><td><code>&nbsp;0xfffeffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_RX0DISC&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x00100000&nbsp;</code></td><td><code>&nbsp;0xffefffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;23&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_RX1DISC&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td align=center>&nbsp;24&nbsp;</td><td><code>&nbsp;0x01000000&nbsp;</code></td><td><code>&nbsp;0xfeffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;25&nbsp;</td><td align=center>&nbsp;26&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_HSDCFOFLW&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x08000000&nbsp;</code></td><td><code>&nbsp;0xf7ffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_OMFUFLW&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_IMFOFLW&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_HSDISC&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTSTAT_HSTEND&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_INTCTRL'>MPHI_INTCTRL</a></h3>
-<h4>Address: 0x7e006058</h4>
+<h3><a name='mphi_intctrl'>MPHI_INTCTRL</a></h3>
+<h4>Address: <code>0x7e006058</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_INTCTRL_RX0DISC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTCTRL_RX1DISC&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td>&nbsp;<pre>0x00000010</pre></td><td>&nbsp;<pre>0xffffffef</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTCTRL_IMFOFLW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td>&nbsp;<pre>0x00000100</pre></td><td>&nbsp;<pre>0xfffffeff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTCTRL_OMFUFLW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td>&nbsp;<pre>0x00001000</pre></td><td>&nbsp;<pre>0xffffefff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTCTRL_HSDISC&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td>&nbsp;<pre>0x00010000</pre></td><td>&nbsp;<pre>0xfffeffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_INTCTRL_HSDCOFLW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x00100000</pre></td><td>&nbsp;<pre>0xffefffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_INTCTRL_RX0DISC&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;3&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTCTRL_RX1DISC&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td align=center>&nbsp;4&nbsp;</td><td><code>&nbsp;0x00000010&nbsp;</code></td><td><code>&nbsp;0xffffffef&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;5&nbsp;</td><td align=center>&nbsp;7&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTCTRL_IMFOFLW&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td align=center>&nbsp;8&nbsp;</td><td><code>&nbsp;0x00000100&nbsp;</code></td><td><code>&nbsp;0xfffffeff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;9&nbsp;</td><td align=center>&nbsp;11&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTCTRL_OMFUFLW&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td align=center>&nbsp;12&nbsp;</td><td><code>&nbsp;0x00001000&nbsp;</code></td><td><code>&nbsp;0xffffefff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;13&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTCTRL_HSDISC&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td><code>&nbsp;0x00010000&nbsp;</code></td><td><code>&nbsp;0xfffeffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;17&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_INTCTRL_HSDCOFLW&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x00100000&nbsp;</code></td><td><code>&nbsp;0xffefffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_HSINDCF'>MPHI_HSINDCF</a></h3>
-<h4>Address: 0x7e00605c</h4>
+<h3><a name='mphi_hsindcf'>MPHI_HSINDCF</a></h3>
+<h4>Address: <code>0x7e00605c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_HSINDCF_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDCF_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0ff00000</pre></td><td>&nbsp;<pre>0xf00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDCF_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x10000000</pre></td><td>&nbsp;<pre>0xefffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDCF_LENERR&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDCF_EMPTY&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_HSINDCF_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000fffff&nbsp;</code></td><td><code>&nbsp;0xfff00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDCF_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x0ff00000&nbsp;</code></td><td><code>&nbsp;0xf00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDCF_MTERM&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x10000000&nbsp;</code></td><td><code>&nbsp;0xefffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDCF_LENERR&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDCF_EMPTY&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_HSINDS'>MPHI_HSINDS</a></h3>
-<h4>Address: 0x7e006060</h4>
+<h3><a name='mphi_hsinds'>MPHI_HSINDS</a></h3>
+<h4>Address: <code>0x7e006060</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_HSINDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td>&nbsp;<pre>0x001fffff</pre></td><td>&nbsp;<pre>0xffe00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>0x1fe00000</pre></td><td>&nbsp;<pre>0xe01fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td>&nbsp;<pre>0x40000000</pre></td><td>&nbsp;<pre>0xbfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDS_DISCARD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0x80000000</pre></td><td>&nbsp;<pre>0x7fffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_HSINDS_WORDS&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td><code>&nbsp;0x001fffff&nbsp;</code></td><td><code>&nbsp;0xffe00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDS_HANDLE&nbsp;</td><td align=center>&nbsp;21&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;0x1fe00000&nbsp;</code></td><td><code>&nbsp;0xe01fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDS_VALID&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td align=center>&nbsp;30&nbsp;</td><td><code>&nbsp;0x40000000&nbsp;</code></td><td><code>&nbsp;0xbfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDS_DISCARD&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0x80000000&nbsp;</code></td><td><code>&nbsp;0x7fffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_HSINDDA'>MPHI_HSINDDA</a></h3>
-<h4>Address: 0x7e006064</h4>
+<h3><a name='mphi_hsindda'>MPHI_HSINDDA</a></h3>
+<h4>Address: <code>0x7e006064</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_HSINDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffffffff</pre></td><td>&nbsp;<pre>0x00000000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_HSINDDA_START&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffffffff&nbsp;</code></td><td><code>&nbsp;0x00000000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_HSINDDB'>MPHI_HSINDDB</a></h3>
-<h4>Address: 0x7e006068</h4>
+<h3><a name='mphi_hsinddb'>MPHI_HSINDDB</a></h3>
+<h4>Address: <code>0x7e006068</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_HSINDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td>&nbsp;<pre>0x000fffff</pre></td><td>&nbsp;<pre>0xfff00000</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td>&nbsp;<pre>0x0ff00000</pre></td><td>&nbsp;<pre>0xf00fffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td>&nbsp;<pre>0x20000000</pre></td><td>&nbsp;<pre>0xdfffffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_HSINDDB_LENGTH&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;19&nbsp;</td><td><code>&nbsp;0x000fffff&nbsp;</code></td><td><code>&nbsp;0xfff00000&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDDB_HANDLE&nbsp;</td><td align=center>&nbsp;20&nbsp;</td><td align=center>&nbsp;27&nbsp;</td><td><code>&nbsp;0x0ff00000&nbsp;</code></td><td><code>&nbsp;0xf00fffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td align=center>&nbsp;28&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDDB_TENDINT&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td align=center>&nbsp;29&nbsp;</td><td><code>&nbsp;0x20000000&nbsp;</code></td><td><code>&nbsp;0xdfffffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
-<h3><a name='MPHI_HSINDFS'>MPHI_HSINDFS</a></h3>
-<h4>Address: 0x7e00606c</h4>
+<h3><a name='mphi_hsindfs'>MPHI_HSINDFS</a></h3>
+<h4>Address: <code>0x7e00606c</code></h4>
 <table><tr><th>Field Name</th><th>Start Bit</th><th>End Bit</th><th>Set</th><th>Clear</th><th>Reset</th></tr>
-<tr><td>&nbsp;MPHI_HSINDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td>&nbsp;<pre>0x00000001</pre></td><td>&nbsp;<pre>0xfffffffe</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
-<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td>&nbsp;<pre>NA</pre></td><td>&nbsp;<pre>NA</pre>&nbsp;</td><td align=center>&nbsp;NA&nbsp;</td></tr>
-<tr><td>&nbsp;MPHI_HSINDFS_CFIFOLVL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td>&nbsp;<pre>0xffff0000</pre></td><td>&nbsp;<pre>0x0000ffff</pre>&nbsp;</td><td align=center>&nbsp;0x0&nbsp;</td></tr>
+<tr><td>&nbsp;MPHI_HSINDFS_DFIFOLVL&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td align=center>&nbsp;0&nbsp;</td><td><code>&nbsp;0x00000001&nbsp;</code></td><td><code>&nbsp;0xfffffffe&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
+<tr><td>&nbsp;missing definiton&nbsp;</td><td align=center>&nbsp;1&nbsp;</td><td align=center>&nbsp;15&nbsp;</td><td><code>&nbsp;NA&nbsp;</code></td><td><code>&nbsp;NA&nbsp;</code></td><td align=center><code>&nbsp;NA&nbsp;</code></td></tr>
+<tr><td>&nbsp;MPHI_HSINDFS_CFIFOLVL&nbsp;</td><td align=center>&nbsp;16&nbsp;</td><td align=center>&nbsp;31&nbsp;</td><td><code>&nbsp;0xffff0000&nbsp;</code></td><td><code>&nbsp;0x0000ffff&nbsp;</code></td><td align=center><code>&nbsp;0x0&nbsp;</code></td></tr>
 </table><br>
 
 <br><br><a href='index.html'>&lt;&lt; RPi Registers Index</a>

@@ -5,6 +5,7 @@ this project contains scripts to automatically
 generate a register map from the broadcom-provided: 
 * old url - [Brcm_Android_ICS_Graphics_Stack.tar.gz](http://www.broadcom.com/docs/support/videocore/Brcm_Android_ICS_Graphics_Stack.tar.gz) 
 * new url - [Brcm_Android_ICS_Graphics_Stack.tar.gz](https://docs.broadcom.com/docs/12358546)
+* [VideoCoreIV-AG100-R.pdf](https://docs.broadcom.com/docs-and-downloads/docs/support/videocore/VideoCoreIV-AG100-R.pdf)
 
 it creates it as a single html and MediaWiki Markup files, and 
 as multiple linked files as markdown and html versions:

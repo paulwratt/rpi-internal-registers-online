@@ -1,5 +1,5 @@
-rpi-registers
-=============
+rpi-internal-registers-online
+=============================
 
 this project contains scripts to automatically
 generate a register map from the broadcom-provided: 
@@ -8,10 +8,10 @@ generate a register map from the broadcom-provided:
 
 it creates it as a single html and MediaWiki Markup files, and 
 as multiple linked files as markdown and html versions:
-* [single html](https://rawgithub.com/paulwratt/rpi-registers/master/rpi-registers.html)
-* [single markup](https://rawgithub.com/paulwratt/rpi-registers/master/mediawiki.markup)
+* [single html](https://rawgithub.com/paulwratt/rpi-internal-registers-online/master/rpi-registers.html)
+* [single markup](https://rawgithub.com/paulwratt/rpi-internal-registers-online/master/mediawiki.markup)
 * [multiple markdown](md/README.md)
-* [multiple html](http://paulwratt.github.io/rpi-registers/)
+* [multiple html](http://paulwratt.github.io/rpi-internal-registers-online/)
 
 to create it yourself:
 * untar the broadcom provided tar to a directory

@@ -318,7 +318,7 @@ sub toDOCS {
         ."<body>\n"
         ."<font face='sans-serif'><h1>RPi Registers</h1>\n"
         ."<table border=0 class='nobdr'>"
-        ."<tr><th>by Base Address</th><th>&nbps;</th><th>a-z Alphabetical</th></tr>\n<tr><td>";
+        ."<tr><th>by Base Address</th><th>&nbsp;</th><th>a-z Alphabetical</th></tr>\n<tr><td>";
 
     # resort to base addresses
     my $adrs=$d;
@@ -330,9 +330,9 @@ sub toDOCS {
     print FH "<table><tr><th>Base</th><th>Region</th><th>Description</th></tr>\n";
     foreach my $k (@basesorted) {
 	print FH "<tr>"
-            ."<td><pre>".$d->{$k}->{base}."</pre></td>"
-            ."<td><a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a></td>"
-            ."<td>".$d->{$k}->{description}."&nbsp;</td>"
+            ."<td><pre>&nbsp;".$d->{$k}->{base}.">&nbsp;</pre></td>"
+            ."<td>&nbsp;<a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a>&nbsp;</td>"
+            ."<td>&nbsp;".$d->{$k}->{description}."&nbsp;</td>"
             ."</tr>\n";
     }
     print FH "</table>\n";
@@ -346,7 +346,7 @@ sub toDOCS {
     foreach my $k (sort keys %{$d}) {
 	print FH "<tr>"
             ."<td>&nbsp;<a href='Region_".$d->{$k}->{name}.".html'>".$d->{$k}->{name}."</a>&nbsp;</td>"
-            ."<td>&nbsp;<pre>".$d->{$k}->{base}."&nbsp;</pre></td>"
+            ."<td<pre>&nbsp;".$d->{$k}->{base}.">&nbsp;</pre></td>"
             ."<td>&nbsp;".$d->{$k}->{description}."&nbsp;</td>"
             ."</tr>\n";
     }
@@ -373,7 +373,7 @@ sub toDOCS {
 	print FH "<table><tr><th>Name</th><th>Value</th></tr>\n";
 	for my $k ("description", "notes", "base","id","password") {
 	    if ($d->{$s}->{$k}) {
-		print FH "<tr><td>&nbsp;".$k."&nbsp;</td><td>&nbsp;<pre>".$d->{$s}->{$k}."</pre>&nbsp;</td></tr>\n";
+		print FH "<tr><td>&nbsp;".$k."&nbsp;</td><td><pre>&nbsp;".$d->{$s}->{$k}."&nbsp;</pre></td></tr>\n";
 	    }
 	}
         print FH "</table>\n\n";
@@ -393,11 +393,11 @@ sub toDOCS {
 		print FH "<tr><td>&nbsp;".$r->{name}."&nbsp;</td>";
 	    }
 	    print FH ""
-                ."<td>&nbsp;<pre>".$r->{addr}."</pre>&nbsp;</td>"
+                ."<td><pre>&nbsp;".$r->{addr}."&nbsp;</pre></td>"
 	        ."<td align=center>&nbsp;".$r->{type}."&nbsp;</td>"
 	        ."<td align=center>&nbsp;".$r->{width}."&nbsp;</td>"
-	        ."<td>&nbsp;<pre>".$r->{mask}."</pre>&nbsp;</td>"
-	        ."<td align=center>&nbsp;<pre>".$r->{reset}."</pre>&nbsp;</td>"
+	        ."<td><pre>&nbsp;".$r->{mask}."&nbsp;</pre></td>"
+	        ."<td align=center><pre>&nbsp;".$r->{reset}."&nbsp;</pre></td>"
 	        ."</tr>\n";
 	}
         print FH "</table>\n\n";
@@ -410,9 +410,9 @@ sub toDOCS {
 	    print FH "<table><tr><th>Define</th><th>Value</th></tr>\n";
 	    foreach my $n (@k) {
 		if ($n eq $defs->{$n}) {
-		    print FH "<tr><td>&nbsp;".$n."&nbsp;</td><td align=center>&nbsp;<pre>UNKNOWN</pre>&nbsp;</td></tr>\n";
+		    print FH "<tr><td>&nbsp;".$n."&nbsp;</td><td align=center><pre>&nbsp;UNKNOWN&nbsp;</pre></td></tr>\n";
 		} else {
-		    print FH "<tr><td>&nbsp;".$n."&nbsp;</td><td align=center>&nbsp;<pre>".$defs->{$n}."</pre>&nbsp;</td></tr>\n";
+		    print FH "<tr><td>&nbsp;".$n."&nbsp;</td><td align=center><pre>&nbsp;".$defs->{$n}."&nbsp;</pre></td></tr>\n";
 		}
 	    }
             print FH "</table>\n\n";
@@ -435,9 +435,9 @@ sub toDOCS {
                     ."<td>&nbsp;".$f->{name}."&nbsp;</td>"
 		    ."<td align=center>&nbsp;".$f->{lsb}."&nbsp;</td>"
 		    ."<td align=center>&nbsp;".$f->{msb}."&nbsp;</td>"
-		    ."<td>&nbsp;<pre>".$f->{set}."</pre></td>"
-		    ."<td>&nbsp;<pre>".$f->{clear}."</pre>&nbsp;</td>"
-		    ."<td align=center>&nbsp;".$f->{reset}."&nbsp;</td>"
+		    ."<td><pre>&nbsp;".$f->{set}."&nbsp;</pre></td>"
+		    ."<td><pre>&nbsp;".$f->{clear}."&nbsp;</pre></td>"
+		    ."<td align=center><pre>&nbsp;".$f->{reset}."&nbsp;</pre></td>"
 		    ."</tr>\n";
 		}
                 print FH "</table><br>\n\n";
